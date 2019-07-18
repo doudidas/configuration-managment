@@ -152,8 +152,8 @@ pipeline {
     }
     stage('push') {
       steps {
-        sh 'git add --all'
-        sh "git commit -m 'build from Jenkins: $BUILD-NUMBER' "
+        sh 'git add --all && '
+        sh 'git commit -m "build by jenkins"' 
         sh 'git push'
       }
     }
