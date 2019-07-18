@@ -8,8 +8,9 @@ pipeline {
             sh 'pwsh connectToServer.ps1'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
+            sh 'git fetch'
             sh 'git branch -a'
           }
         }
