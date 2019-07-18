@@ -1,9 +1,0 @@
-{
-  "Server": "https://cava-n-80-154.eng.vmware.com",
-  "Token": "MTU2MzQ1NTMxNzQ2MjpkMTM1Mjg3N2ZmMTQwMzg5NTg2Nzp0ZW5hbnQ6dnNwaGVyZS5sb2NhbHVzZXJuYW1lOmV0b3BpbkB2c3BoZXJlLmxvY2FsZXhwaXJhdGlvbjoxNTYzNDg0MTE3MDAwOmY1ZjNlMDE0ZGU1ZDNkZTQ0N2JmZGIxNmZlNmM5NzMzNjc3MDFlNzVlZjE2NzU2NmE2Y2QwMTE4MTZiOWY3ZTA4MmY5YTZkNDc3ZWU0ZDQ2MGUzYmEzNDJmZGI2OTA0NjE4NWI1YjZlMWYyMjNmYWYxZjg4YzgwZDJkM2I5ZjA3",
-  "Tenant": "vsphere.local",
-  "Username": "etopin@vsphere.local",
-  "APIVersion": "7.5",
-  "SignedCertificates": false,
-  "SslProtocol": "Default"
-}
