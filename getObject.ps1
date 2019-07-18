@@ -7,7 +7,10 @@ param(
 Get-Content .cached_session.json | ConvertFrom-Json | Set-Variable vRAConnection
 
 Write-Output $cmd
+
 $elements = Invoke-Expression $cmd
+
+Write-Output $elements
 
 $folderPath = "export/$cmd"
 If (!(test-path $folderPath)) {
