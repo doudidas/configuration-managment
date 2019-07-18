@@ -152,9 +152,7 @@ pipeline {
     }
     stage('push') {
       steps {
-        sh 'git add --all && '
-        sh 'git commit -m "build by jenkins"' 
-        sh 'git push'
+        sh 'git add --all && git commit -m "build by jenkins" && git push'
       }
     }
     stage('DIFF') {
