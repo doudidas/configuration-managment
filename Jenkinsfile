@@ -150,14 +150,9 @@ pipeline {
         }
       }
     }
-    stage('push') {
-      steps {
-        sh 'git add --all && git commit -m "build by jenkins" && git push'
-      }
-    }
     stage('DIFF') {
       steps {
-        sh 'git diff development-reference'
+        sh 'git diff @{upstream} origin/development-reference export/*'
       }
     }
     stage('archive') {
