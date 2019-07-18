@@ -1,10 +1,18 @@
 pipeline {
   agent any
   stages {
-    stage("Capture plateform") {
+    stage("Connexion") {
       steps {
-      sh 'ls'
-
+        sh 'pwsh connectToServer.ps1'
+      }
+    }
+    stage("Capture plateform") {
+      parrallel {
+        stage("Get-vRAAuthorizationRole") {
+          steps {
+            sh 'pwsh getObject.ps1 Get-vRAAuthorizationRole'
+          }
+        }
       }
     }
   }
