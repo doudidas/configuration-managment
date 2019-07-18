@@ -1,0 +1,17 @@
+{
+  "Id": "5986d1a8-ca42-46f3-8c9a-387dac21745a",
+  "Name": "iaas-service",
+  "CreatedDate": null,
+  "LastUpdated": null,
+  "OwnerId": "iaas.usr-d0eb04b6-9e69-4800-b1a1-102d2f0ee7b8",
+  "ServiceVersion": null,
+  "ServiceAttributes": null,
+  "EndPoints": null,
+  "ServiceType": {
+    "serviceTypeId": "com.vmware.csp.iaas.blueprint.service",
+    "productId": "com.vmware.csp.iaas",
+    "typeId": "blueprint.service",
+    "serviceName": null
+  },
+  "NameMsgKey": null
+}

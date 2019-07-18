@@ -1,0 +1,45 @@
+{
+  "Id": "App.Container",
+  "Callbacks": {
+    "list": true,
+    "details": true
+  },
+  "CostFeatures": null,
+  "Description": "Container",
+  "Forms": {
+    "catalogResourceInfoHidden": null,
+    "details": {
+      "type": "external",
+      "formId": "Container.Resource.Details"
+    }
+  },
+  "ListView": {
+    "columns": [
+      "@{id=address; label=Address; description=The host/ip of the container.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
+      "@{id=status; label=Status; description=The Status of the container.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
+      "@{id=image; label=Image; description=The Image from which the container is created.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
+      "@{id=container_id; label=Container Id; description=The Id of the container.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
+      "@{id=command; label=Commands; description=The commands which the container is started with.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
+      "@{id=ports; label=Ports; description=Ports of the container.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}"
+    ],
+    "defaultSequence": [
+      "container_id",
+      "image",
+      "status",
+      "command",
+      "address",
+      "ports"
+    ]
+  },
+  "Name": "Container",
+  "PluralizedName": "Container",
+  "Primary": true,
+  "ProviderTypeId": "com.vmware.csp.component.cafe.container",
+  "Schema": {
+    "classId": "App.Container.Schema",
+    "typeFilter": "App.Container.Schema"
+  },
+  "ListDescendantTypesSeparately": null,
+  "ShowChildrenOutsideParent": false,
+  "Status": "ACTIVE"
+}

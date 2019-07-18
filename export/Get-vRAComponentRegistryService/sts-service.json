@@ -1,0 +1,17 @@
+{
+  "Id": "c99e4547-5879-43d6-b3d3-3b37e900b73c",
+  "Name": "sts-service",
+  "CreatedDate": null,
+  "LastUpdated": null,
+  "OwnerId": "sso-user",
+  "ServiceVersion": null,
+  "ServiceAttributes": null,
+  "EndPoints": null,
+  "ServiceType": {
+    "serviceTypeId": "com.vmware.cis.core.sso",
+    "productId": "com.vmware.cis",
+    "typeId": "core.sso",
+    "serviceName": null
+  },
+  "NameMsgKey": null
+}

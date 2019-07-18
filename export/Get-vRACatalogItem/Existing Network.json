@@ -1,0 +1,26 @@
+{
+  "Id": "b9fc8994-d970-41ed-b5b8-24ea576acf1d",
+  "Name": "Existing Network",
+  "Description": null,
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-06-24T14:27:03.585Z",
+  "LastUpdatedDate": null,
+  "Requestable": false,
+  "IsNoteworthy": false,
+  "Organization": null,
+  "CatalogItemType": "Existing Network",
+  "OutputResourceType": "Existing Network",
+  "Callbacks": null,
+  "Forms": null,
+  "IconId": "cafe_default_icon_genericCatalogItem",
+  "ProviderBinding": {
+    "bindingId": "Infrastructure.Network.Network.Existing",
+    "providerRef": {
+      "id": "8e80fbde-da18-4582-a3b7-c9a64d5fe8b0",
+      "label": "Network Service"
+    }
+  }
+}
