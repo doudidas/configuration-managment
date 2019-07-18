@@ -1,0 +1,7 @@
+{
+  "Id": "composite-blueprint",
+  "Name": "Composite Blueprint Content Type",
+  "Description": "The content type corresponding to the composite blueprint",
+  "ClassId": "Composite.Blueprint",
+  "ServiceTypeId": "com.vmware.csp.component.cafe.composition"
+}

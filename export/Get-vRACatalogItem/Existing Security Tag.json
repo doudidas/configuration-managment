@@ -1,0 +1,26 @@
+{
+  "Id": "1fb7600e-2b0e-4b4a-8a67-fce7ea9db7c0",
+  "Name": "Existing Security Tag",
+  "Description": null,
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-06-24T14:27:00.673Z",
+  "LastUpdatedDate": null,
+  "Requestable": false,
+  "IsNoteworthy": false,
+  "Organization": null,
+  "CatalogItemType": "Existing Security Tag",
+  "OutputResourceType": "Security Tag",
+  "Callbacks": null,
+  "Forms": null,
+  "IconId": "cafe_default_icon_genericCatalogItem",
+  "ProviderBinding": {
+    "bindingId": "Infrastructure.Network.SecurityTag.NSX.Existing",
+    "providerRef": {
+      "id": "8e80fbde-da18-4582-a3b7-c9a64d5fe8b0",
+      "label": "Network Service"
+    }
+  }
+}

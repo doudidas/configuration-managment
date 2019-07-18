@@ -1,0 +1,49 @@
+{
+  "Name": "Azure Machine",
+  "Id": "18793cf3-357e-44fd-b496-66323cd50591",
+  "Description": "Creates new Azure virtual machine",
+  "WorkflowId": "f9e48b61-e9b3-4f70-afff-86c03812d728",
+  "CatalogRequestInfoHidden": false,
+  "Forms": [
+    {
+      "id": "78d412f1-bdce-41bb-b68b-75d3e8da65b3",
+      "form": "@{name=Request form; designerLayout=}",
+      "scenario": "@{usageClass=SubmitUsage; id=Request.Submit}"
+    }
+  ],
+  "Status": "PUBLISHED",
+  "StatusName": "Published",
+  "Version": {
+    "version": "0.0.2",
+    "major": 0,
+    "minor": 0,
+    "micro": 2,
+    "revision": null
+  },
+  "OutputParameter": {
+    "id": "bffd4d6e-6b4f-4721-8c73-c81b255fec5e",
+    "name": "virtualMachine",
+    "resourceType": {
+      "id": "@{id=dda3cc3f-f2da-45f5-bc64-a292c1ace3ba; tenant=_internal}",
+      "access": "internal",
+      "name": "Azure Virtual Machine",
+      "description": "Azure Virtual Machine",
+      "vcoType": "Azure:VirtualMachine",
+      "tenantId": "_internal",
+      "providerId": "8bad6605-c731-4b07-b666-ff2a02c3e5c1",
+      "detailsForm": "@{id=16d1e8b6-dab9-4c44-910e-1d66e92b8c05; form=; scenario=}",
+      "externalTypeId": null,
+      "externalTypeName": null,
+      "mappingWorkflowId": null,
+      "mappingWorkflow": null,
+      "mappingScriptActionFqn": null,
+      "mappingScriptAction": null,
+      "targetCriteria": null,
+      "version": "@{version=0.0.1; major=0; minor=0; micro=1; revision=}",
+      "listLayout": "@{pages=System.Object[]}",
+      "categoryId": "blueprint.service",
+      "reservationTypeId": "reservation.type.id.azure",
+      "builtIn": true
+    }
+  }
+}

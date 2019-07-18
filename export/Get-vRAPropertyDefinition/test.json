@@ -1,0 +1,36 @@
+{
+  "Id": "test",
+  "Label": "test",
+  "Description": null,
+  "Type": "DECIMAL",
+  "IsMultivalued": false,
+  "Display": "SLIDER",
+  "TenantId": "vsphere.local",
+  "DisplayIndex": null,
+  "PermittedValues": null,
+  "Options": {
+    "increment": {
+      "type": "constant",
+      "value": "@{type=decimal; value=1}"
+    },
+    "mandatory": {
+      "type": "constant",
+      "value": "@{type=boolean; value=False}"
+    },
+    "minValue": {
+      "type": "constant",
+      "value": "@{type=integer; value=5}"
+    },
+    "maxValue": {
+      "type": "constant",
+      "value": "@{type=integer; value=10}"
+    },
+    "encrypted": {
+      "type": "constant",
+      "value": "@{type=boolean; value=False}"
+    }
+  },
+  "Version": 0,
+  "DateCreated": "2019-07-16T13:54:25.91Z",
+  "LastUpdatedDate": "2019-07-16T13:54:25.91Z"
+}

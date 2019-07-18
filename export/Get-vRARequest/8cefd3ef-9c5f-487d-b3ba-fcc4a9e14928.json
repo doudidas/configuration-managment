@@ -1,0 +1,57 @@
+{
+  "Id": "8cefd3ef-9c5f-487d-b3ba-fcc4a9e14928",
+  "RequestNumber": 2,
+  "State": "PROVIDER_FAILED",
+  "Description": null,
+  "CatalogItem": "Docker - CoreOS",
+  "RequestedItemName": "Docker - CoreOS",
+  "RequestedItemDescription": "Sample template for provisioning Docker hosts for Bellevue",
+  "Reasons": null,
+  "RequestedFor": "etopin@vsphere.local",
+  "RequestedBy": "etopin@vsphere.local",
+  "DateCreated": "2019-06-24T16:25:09.059Z",
+  "LastUpdated": "2019-06-24T16:42:04.193Z",
+  "DateSubmitted": "2019-06-24T16:25:09.059Z",
+  "DateApproved": null,
+  "DateCompleted": null,
+  "WaitingStatus": "NOT_WAITING",
+  "ExecutionStatus": "STOPPED",
+  "ApprovalStatus": "PRE_APPROVED",
+  "Phase": "FAILED",
+  "IconId": "composition.blueprint.png",
+  "Version": 5,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+    "subtenantLabel": "businessgroup-01"
+  },
+  "RequestorEntitlementId": "1d751b3b-21fa-4adf-8224-f624156ecfdf",
+  "PreApprovalId": null,
+  "PostApprovalId": null,
+  "Quote": {
+    "leasePeriod": null,
+    "leaseRate": null,
+    "totalLeaseCost": null
+  },
+  "RequestCompletion": {
+    "requestCompletionState": "FAILED",
+    "completionDetails": "The following component requests failed:\nvSphere_Machine_1. Allocation request [Composition RequestId: [b9467cc1-362d-4db0-b157-c1d24c04f696], CompTypeId: [Infrastructure.CatalogItem.Machine.Virtual.vSphere], BlueprintId: [DockerCoreOS], CompId: [vSphere_Machine_1], BlueprintRequestId: [4e6c3fb3-4de2-4c7a-9424-06f7ac7d9001], RootCafeRequestId: [8cefd3ef-9c5f-487d-b3ba-fcc4a9e14928], SubtenantId: [b3a2dc51-5267-410c-87f3-ddfefc1645a7]] with binding id [1bef9144-31ec-4a74-bab1-4b47b282307b] failed with [Infrastructure service provider error: A server error was encountered. Error requesting machine. No reservation is available to allocate within the group businessgroup-01.  Total 8 GB of storage was requested.].\n",
+    "resourceBindingIds": null
+  },
+  "RequestData": {
+    "entries": [
+      "@{key=provider-vSphere_Machine_1; value=}"
+    ]
+  },
+  "RetriesRemaining": 3,
+  "Components": null,
+  "StateName": "Failed",
+  "CatalogItemProviderBinding": {
+    "bindingId": "vsphere.local!::!DockerCoreOS",
+    "providerRef": {
+      "id": "766b90da-6823-4131-9d12-29e1db85f768",
+      "label": "Blueprint Service"
+    }
+  }
+}

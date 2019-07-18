@@ -1,0 +1,27 @@
+{
+  "Id": "97414d58-1bce-4b05-8a1b-7f7f9a58c63c",
+  "Name": "authorization",
+  "TypeId": "com.vmware.csp.cafe.authorization",
+  "NotAvailable": false,
+  "LastUpdated": "2019-06-24T14:13:39.745Z",
+  "EndpointUrl": "https://cava-n-80-154.eng.vmware.com/identity/api/status",
+  "ServiceStatus": {
+    "initialized": true,
+    "serviceName": "identity",
+    "solutionUser": "cafe-OE867l_C_A",
+    "startedTime": "2019-06-24T14:13:39.397Z",
+    "serviceInitializationStatus": "REGISTERED",
+    "errorMessage": null,
+    "identityCertificateInfo": null,
+    "serviceRegistrationId": "64922aac-7e3a-4587-b08c-09b85d1f0492",
+    "sslCertificateInfo": {
+      "identityCertificateExists": true,
+      "issuerName": "CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US",
+      "principalName": "CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US",
+      "notValidBefore": "2019-06-24T13:53:42Z",
+      "notValidAfter": "2024-06-22T13:53:42Z",
+      "thumbprint": "80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26"
+    },
+    "defaultServiceEndpointType": "com.vmware.csp.core.cafe.identity.api"
+  }
+}
