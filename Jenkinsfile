@@ -10,7 +10,7 @@ pipeline {
         }
         stage('error') {
           steps {
-            git(url: 'https://github.com/doudidas/Configuration-Check', branch: 'development-reference')
+            sh 'git pull https://github.com/doudidas/Configuration-Check'
             sh 'git fetch -a'
             sh 'git branch -a'
             sh 'git remote -v'
