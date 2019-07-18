@@ -152,7 +152,7 @@ pipeline {
     }
     stage('DIFF') {
       steps {
-        sh 'git diff @{upstream} origin/development-reference export/*'
+        sh 'git diff @{upstream} development-reference export/*'
       }
     }
     stage('archive') {
