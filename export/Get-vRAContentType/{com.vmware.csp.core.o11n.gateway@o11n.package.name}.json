@@ -1,0 +1,7 @@
+{
+  "Id": "o11n-package-type",
+  "Name": "{com.vmware.csp.core.o11n.gateway@o11n.package.name}",
+  "Description": "{com.vmware.csp.core.o11n.gateway@o11n.package.description}",
+  "ClassId": "o11nPackageType",
+  "ServiceTypeId": "com.vmware.csp.core.o11n.gateway"
+}

@@ -1,0 +1,62 @@
+{
+  "Id": "e8ab5627-f639-4d7d-b305-96e30350328d",
+  "RequestNumber": 16,
+  "State": "SUCCESSFUL",
+  "Description": null,
+  "CatalogItem": "Centos",
+  "RequestedItemName": "Centos",
+  "RequestedItemDescription": "",
+  "Reasons": null,
+  "RequestedFor": "etopin@vsphere.local",
+  "RequestedBy": "etopin@vsphere.local",
+  "DateCreated": "2019-06-25T19:57:00.303Z",
+  "LastUpdated": "2019-06-25T20:00:21.354Z",
+  "DateSubmitted": "2019-06-25T19:57:00.303Z",
+  "DateApproved": null,
+  "DateCompleted": "2019-06-25T20:00:21.33Z",
+  "WaitingStatus": "NOT_WAITING",
+  "ExecutionStatus": "STOPPED",
+  "ApprovalStatus": "POST_APPROVED",
+  "Phase": "SUCCESSFUL",
+  "IconId": "8b0c1cca-2678-470d-ab27-05f7c8a9fc21",
+  "Version": 6,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+    "subtenantLabel": "businessgroup-01"
+  },
+  "RequestorEntitlementId": "1d751b3b-21fa-4adf-8224-f624156ecfdf",
+  "PreApprovalId": null,
+  "PostApprovalId": null,
+  "Quote": {
+    "leasePeriod": null,
+    "leaseRate": null,
+    "totalLeaseCost": null
+  },
+  "RequestCompletion": {
+    "requestCompletionState": "SUCCESSFUL",
+    "completionDetails": "",
+    "resourceBindingIds": null
+  },
+  "RequestData": {
+    "entries": [
+      "@{key=provider-_leaseDays; value=}",
+      "@{key=provider-providerId; value=}",
+      "@{key=provider-providerBindingId; value=}",
+      "@{key=provider-centos; value=}",
+      "@{key=provider-_number_of_instances; value=}",
+      "@{key=provider-subtenantId; value=}"
+    ]
+  },
+  "RetriesRemaining": 3,
+  "Components": null,
+  "StateName": "Successful",
+  "CatalogItemProviderBinding": {
+    "bindingId": "vsphere.local!::!Centos",
+    "providerRef": {
+      "id": "766b90da-6823-4131-9d12-29e1db85f768",
+      "label": "Blueprint Service"
+    }
+  }
+}

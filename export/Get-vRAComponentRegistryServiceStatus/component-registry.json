@@ -1,0 +1,27 @@
+{
+  "Id": "729154ee-2354-4d46-8848-5c2a054ead59",
+  "Name": "component-registry",
+  "TypeId": "com.vmware.csp.core.cafe.componentregistry",
+  "NotAvailable": false,
+  "LastUpdated": "2019-06-24T14:13:20.547Z",
+  "EndpointUrl": "https://cava-n-80-154.eng.vmware.com/component-registry/api/status",
+  "ServiceStatus": {
+    "initialized": true,
+    "serviceName": "component-registry",
+    "solutionUser": "cafe-OE867l_C_A",
+    "startedTime": "2019-06-24T14:13:20.876Z",
+    "serviceInitializationStatus": "REGISTERED",
+    "errorMessage": null,
+    "identityCertificateInfo": null,
+    "serviceRegistrationId": null,
+    "sslCertificateInfo": {
+      "identityCertificateExists": false,
+      "issuerName": null,
+      "principalName": null,
+      "notValidBefore": null,
+      "notValidAfter": null,
+      "thumbprint": null
+    },
+    "defaultServiceEndpointType": null
+  }
+}

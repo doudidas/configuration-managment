@@ -1,0 +1,14 @@
+{
+  "Id": "028e85a1-3323-4e08-9d15-6614569b589a",
+  "ContentId": "dda3cc3f-f2da-45f5-bc64-a292c1ace3ba",
+  "Name": "Azure Virtual Machine",
+  "Description": null,
+  "ContentTypeId": "xaas-resource-type",
+  "MimeType": null,
+  "TenantId": "_internal",
+  "SubtenantId": null,
+  "Dependencies": [],
+  "CreatedDate": "2019-06-24T14:18:29.097Z",
+  "LastUpdated": "2019-06-24T14:18:29.097Z",
+  "Version": 0
+}

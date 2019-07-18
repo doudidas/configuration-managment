@@ -1,0 +1,44 @@
+{
+  "Id": "CSP_SYSTEM_ADMIN",
+  "Name": "System Administrator",
+  "Description": "CSP System Administrator",
+  "Type": "SystemRole",
+  "AssignedPermissions": [
+    {
+      "id": "MANAGE_PROPERTY_DEFINITIONS_SYSTEM",
+      "name": "Manage System Context Property Definitions",
+      "description": "Create, update and delete context property definitions for the system",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "SYSTEM_TENANT_MANAGEMENT",
+      "name": "System Tenant Management",
+      "description": "Manage the system tenant.",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "TENANT_ADMIN_ROLE_ASSIGNMENT",
+      "name": "Tenant Administrator Role Assignment",
+      "description": "Assign the tenant administrator role to other users.",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "MANAGE_PROPERTY_GROUP_DEFINITIONS_SYSTEM",
+      "name": "Manage System Context Property Groups",
+      "description": "Create, update and delete context property groups for the system",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "GUI_SYSTEM_TENANT_MANAGEMENT",
+      "name": "System Tenant User Interface",
+      "description": "Access the system tenant management GUI.",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "VIEW_EVENT_LOG",
+      "name": "View tenant event log",
+      "description": "View event log messages for the tenant",
+      "prereqAdminPermissions": null
+    }
+  ]
+}
