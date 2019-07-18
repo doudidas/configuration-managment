@@ -1,6 +1,7 @@
 pipeline {
   agent any
   stages {
+    stage("Capture plateform") {
     parallel {
       stage('Get-vRAAuthorizationRole') {
         steps {
@@ -142,7 +143,7 @@ pipeline {
           sh 'pwsh getObject.ps1 Get-vRAAuthorizationRole'
         }
       }
-
+    }
     }
   }
 }
