@@ -4,7 +4,7 @@ param(
 )
 
 # Connect to the source vRA instance
-Get-Content .cache_session.json | ConvertFrom-Json | Set-Variable vRAConnection
+Get-Content cached_session.json | ConvertFrom-Json | Set-Variable vRAConnection
 
 Write-Output $cmd
 $elements = Invoke-Expression $cmd
