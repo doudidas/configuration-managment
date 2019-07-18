@@ -1,0 +1,62 @@
+{
+  "Id": "1a2de224-e122-42df-9f70-8ddbdbf0189b",
+  "RequestNumber": 9,
+  "State": "PROVIDER_FAILED",
+  "Description": null,
+  "CatalogItem": "Centos",
+  "RequestedItemName": "Centos",
+  "RequestedItemDescription": "",
+  "Reasons": null,
+  "RequestedFor": "etopin@vsphere.local",
+  "RequestedBy": "etopin@vsphere.local",
+  "DateCreated": "2019-06-25T09:12:10.769Z",
+  "LastUpdated": "2019-06-25T09:21:06.378Z",
+  "DateSubmitted": "2019-06-25T09:12:10.769Z",
+  "DateApproved": null,
+  "DateCompleted": null,
+  "WaitingStatus": "NOT_WAITING",
+  "ExecutionStatus": "STOPPED",
+  "ApprovalStatus": "PRE_APPROVED",
+  "Phase": "FAILED",
+  "IconId": "8b0c1cca-2678-470d-ab27-05f7c8a9fc21",
+  "Version": 5,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+    "subtenantLabel": "businessgroup-01"
+  },
+  "RequestorEntitlementId": "1d751b3b-21fa-4adf-8224-f624156ecfdf",
+  "PreApprovalId": null,
+  "PostApprovalId": null,
+  "Quote": {
+    "leasePeriod": null,
+    "leaseRate": null,
+    "totalLeaseCost": null
+  },
+  "RequestCompletion": {
+    "requestCompletionState": "FAILED",
+    "completionDetails": "The following component requests failed:\ncentos. Allocation request [Composition RequestId: [b1a14862-e829-46af-8334-584a7632ca06], CompTypeId: [Infrastructure.CatalogItem.Machine.Virtual.vSphere], BlueprintId: [Centos], CompId: [centos], BlueprintRequestId: [76efd5d1-ecd3-4732-a65a-2c32d519a942], RootCafeRequestId: [1a2de224-e122-42df-9f70-8ddbdbf0189b], SubtenantId: [b3a2dc51-5267-410c-87f3-ddfefc1645a7]] with binding id [670e0137-59b4-4b79-8620-a988117f0bf3] failed with [Infrastructure service provider error: A server error was encountered. Error requesting machine. No reservation is available to allocate within the group businessgroup-01.  Total 41 GB of storage was requested.].\n",
+    "resourceBindingIds": null
+  },
+  "RequestData": {
+    "entries": [
+      "@{key=provider-_leaseDays; value=}",
+      "@{key=provider-providerId; value=}",
+      "@{key=provider-providerBindingId; value=}",
+      "@{key=provider-centos; value=}",
+      "@{key=provider-_number_of_instances; value=}",
+      "@{key=provider-subtenantId; value=}"
+    ]
+  },
+  "RetriesRemaining": 3,
+  "Components": null,
+  "StateName": "Failed",
+  "CatalogItemProviderBinding": {
+    "bindingId": "vsphere.local!::!Centos",
+    "providerRef": {
+      "id": "766b90da-6823-4131-9d12-29e1db85f768",
+      "label": "Blueprint Service"
+    }
+  }
+}
