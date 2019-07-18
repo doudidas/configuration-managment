@@ -150,6 +150,18 @@ pipeline {
         }
       }
     }
+    stage('push') {
+      steps {
+        sh 'git add --all'
+        sh "git commit -m 'build from Jenkins: $BUILD-NUMBER' "
+        sh 'git push'
+      }
+    }
+    stage('DIFF') {
+      steps {
+        sh 'git diff development-reference'
+      }
+    }
     stage('archive') {
       steps {
         archiveArtifacts(artifacts: 'export/**/*.json', allowEmptyArchive: true)
