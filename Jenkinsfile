@@ -2,8 +2,17 @@ pipeline {
   agent any
   stages {
     stage('Connexion') {
-      steps {
-        sh 'pwsh connectToServer.ps1'
+      parallel {
+        stage('Connexion') {
+          steps {
+            sh 'pwsh connectToServer.ps1'
+          }
+        }
+        stage('') {
+          steps {
+            sh 'git branch -a'
+          }
+        }
       }
     }
     stage('Capture plateform') {
