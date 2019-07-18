@@ -10,8 +10,9 @@ pipeline {
         }
         stage('error') {
           steps {
-            sh 'git fetch'
+            sh 'git fetch -a'
             sh 'git branch -a'
+            sh 'git remote -v'
           }
         }
       }
