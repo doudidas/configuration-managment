@@ -150,5 +150,10 @@ pipeline {
         }
       }
     }
+    stage('archive') {
+      steps {
+        archiveArtifacts(artifacts: 'Directory/**/*.json', allowEmptyArchive: true)
+      }
+    }
   }
 }
