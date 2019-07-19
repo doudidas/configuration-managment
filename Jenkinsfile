@@ -345,10 +345,11 @@ pipeline {
               catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 sh './check.sh Get-vRAVersion'
               }
+            }
           }
         }
       }
-    }
+    } 
     stage('archive') {
       steps {
         archiveArtifacts(artifacts: 'export/**/*.json', allowEmptyArchive: true)
