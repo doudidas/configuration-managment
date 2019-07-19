@@ -154,142 +154,142 @@ pipeline {
         parallel {
           stage('Get-vRAAuthorizationRole') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAAuthorizationRole'
+              sh 'check.sh Get-vRAAuthorizationRole'
             }
           }
           stage('Get-vRABlueprint') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRABlueprint'
+              sh 'check.sh Get-vRABlueprint'
             }
           }
           stage('Get-vRABusinessGroup') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRABusinessGroup'
+              sh 'check.sh Get-vRABusinessGroup'
             }
           }
           stage('Get-vRACatalogItem') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRACatalogItem'
+              sh 'check.sh Get-vRACatalogItem'
             }
           }
           stage('Get-vRAComponentRegistryService') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAComponentRegistryService'
+              sh 'check.sh Get-vRAComponentRegistryService'
             }
           }
           stage('Get-vRAComponentRegistryServiceStatus') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAComponentRegistryServiceStatus'
+              sh 'check.sh Get-vRAComponentRegistryServiceStatus'
             }
           }
           stage('Get-vRAContent') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAContent'
+              sh 'check.sh Get-vRAContent'
             }
           }
           stage('Get-vRAContentType') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAContentType'
+              sh 'check.sh Get-vRAContentType'
             }
           }
           stage('Get-vRAEntitledCatalogItem') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAEntitledCatalogItem'
+              sh 'check.sh Get-vRAEntitledCatalogItem'
             }
           }
           stage('Get-vRAEntitledService') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAEntitledService'
+              sh 'check.sh Get-vRAEntitledService'
             }
           }
           stage('Get-vRAEntitlement') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAEntitlement'
+              sh 'check.sh Get-vRAEntitlement'
             }
           }
           stage('Get-vRAExternalNetworkProfile') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAExternalNetworkProfile'
+              sh 'check.sh Get-vRAExternalNetworkProfile'
             }
           }
           stage('Get-vRAGroupPrincipal') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAGroupPrincipal'
+              sh 'check.sh Get-vRAGroupPrincipal'
             }
           }
           stage('Get-vRANATNetworkProfile') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRANATNetworkProfile'
+              sh 'check.sh Get-vRANATNetworkProfile'
             }
           }
           stage('Get-vRAPackage') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAPackage'
+              sh 'check.sh Get-vRAPackage'
             }
           }
           stage('Get-vRAPropertyDefinition') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAPropertyDefinition'
+              sh 'check.sh Get-vRAPropertyDefinition'
             }
           }
           stage('Get-vRAPropertyGroup') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAPropertyGroup'
+              sh 'check.sh Get-vRAPropertyGroup'
             }
           }
           stage('Get-vRARequest') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRARequest'
+              sh 'check.sh Get-vRARequest'
             }
           }
           stage('Get-vRAReservation') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAReservation'
+              sh 'check.sh Get-vRAReservation'
             }
           }
           stage('Get-vRAReservationPolicy') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAReservationPolicy'
+              sh 'check.sh Get-vRAReservationPolicy'
             }
           }
           stage('Get-vRAReservationType') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAReservationType'
+              sh 'check.sh Get-vRAReservationType'
             }
           }
           stage('Get-vRAResourceMetric') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAResourceMetric'
+              sh 'check.sh Get-vRAResourceMetric'
             }
           }
           stage('Get-vRAResourceOperation') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAResourceOperation'
+              sh 'check.sh Get-vRAResourceOperation'
             }
           }
           stage('Get-vRAResourceType') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAResourceType'
+              sh 'check.sh Get-vRAResourceType'
             }
           }
           stage('Get-vRAService') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAService'
+              sh 'check.sh Get-vRAService'
             }
           }
           stage('Get-vRAServiceBlueprint') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAServiceBlueprint'
+              sh 'check.sh Get-vRAServiceBlueprint'
             }
           }
           stage('Get-vRAUserPrincipal') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAUserPrincipal'
+              sh 'check.sh Get-vRAUserPrincipal'
             }
           }
           stage('Get-vRAVersion') {
             steps {
-              sh 'git diff development-current..remotes/origin/development-reference -- export/Get-vRAVersion'
+              sh 'check.sh Get-vRAVersion'
           }
         }
       }
