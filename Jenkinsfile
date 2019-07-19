@@ -199,16 +199,12 @@ pipeline {
           }
           stage('vRAExternalNetworkProfile') {
             steps {
-              catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 sh './check.sh Get-vRAExternalNetworkProfile'
-              }
             }
           }
           stage('vRAGroupPrincipal') {
             steps {
-              catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 sh './check.sh Get-vRAGroupPrincipal'
-              }
             }
           }
           stage('vRANATNetworkProfile') {
