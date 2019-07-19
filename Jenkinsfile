@@ -347,7 +347,6 @@ pipeline {
               }
             }
           }
-        }
       }
     } 
     stage('archive') {
