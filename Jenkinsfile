@@ -151,154 +151,147 @@ pipeline {
       }
     }
     stage('DIFF') {
-        parallel {
-          stage('vRAAuthorizationRole') {
-            steps {
-              sh './check.sh Get-vRAAuthorizationRole'
+      parallel {
+        stage('vRAAuthorizationRole') {
+          steps {
+            sh './check.sh Get-vRAAuthorizationRole'
+          }
+        }
+        stage('vRABlueprint') {
+          steps {
+            sh './check.sh Get-vRABlueprint'
+          }
+        }
+        stage('vRABusinessGroup') {
+          steps {
+            sh './check.sh Get-vRABusinessGroup'
+          }
+        }
+        stage('vRACatalogItem') {
+          steps {
+            sh './check.sh Get-vRACatalogItem'
+          }
+        }
+        stage('vRAComponentRegistryService') {
+          steps {
+            sh './check.sh Get-vRAComponentRegistryService'
+          }
+        }
+        stage('vRAComponentRegistryServiceStatus') {
+          steps {
+            sh './check.sh Get-vRAComponentRegistryServiceStatus'
+          }
+        }
+        stage('vRAContent') {
+          steps {
+            sh './check.sh Get-vRAContent'
+          }
+        }
+        stage('vRAContentType') {
+          steps {
+            sh './check.sh Get-vRAContentType'
+          }
+        }
+        stage('vRAEntitledCatalogItem') {
+          steps {
+            sh './check.sh Get-vRAEntitledCatalogItem'
+          }
+        }
+        stage('vRAEntitledService') {
+          steps {                
+            sh './check.sh Get-vRAEntitledService'
+          }
+        }
+        stage('vRAEntitlement') {
+          steps {                
+            sh './check.sh Get-vRAEntitlement'
+          }
+        }
+        stage('vRAExternalNetworkProfile') {
+          steps {
+            sh './check.sh Get-vRAExternalNetworkProfile'
+          }
+        }
+        stage('vRAGroupPrincipal') {
+          steps {
+            sh './check.sh Get-vRAGroupPrincipal'
+          }
+        }
+        stage('vRANATNetworkProfile') {
+          steps {
+            sh './check.sh Get-vRANATNetworkProfile'
+          }
+        }
+        stage('vRAPackage') {
+          steps {
+            sh './check.sh Get-vRAPackage'
+          }
+        }
+        stage('vRAPropertyDefinition') {
+          steps {
+            sh './check.sh Get-vRAPropertyDefinition'
+          }
+        }
+        stage('vRAPropertyGroup') {
+          steps {
+            sh './check.sh Get-vRAPropertyGroup'
+          }
+        }
+        stage('vRARequest') {
+          steps {
+            sh './check.sh Get-vRARequest'
+          }
+        }
+        stage('vRAReservation') {
+          steps {
+            sh './check.sh Get-vRAReservation'
+          }
+        }
+        stage('vRAReservationPolicy') {
+          steps {
+            sh './check.sh Get-vRAReservationPolicy'
+          }
+        }
+        stage('vRAReservationType') {
+          steps {
+            sh './check.sh Get-vRAReservationType'
+          }
+        }
+        stage('vRAResourceMetric') {
+          steps {
+            sh './check.sh Get-vRAResourceMetric'
+          }
+        }
+        stage('vRAResourceOperation') {
+          steps {
+            sh './check.sh Get-vRAResourceOperation'
+          }
+        }
+        stage('vRAResourceType') {
+          steps {
+            sh './check.sh Get-vRAResourceType'
+          }
+        }
+        stage('vRAService') {
+          steps {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAService'
             }
           }
-          stage('vRABlueprint') {
-            steps {
-              sh './check.sh Get-vRABlueprint'
-            }
+        }
+        stage('vRAServiceBlueprint') {
+          steps {
+            sh './check.sh Get-vRAServiceBlueprint'
           }
-          stage('vRABusinessGroup') {
-            steps {
-              sh './check.sh Get-vRABusinessGroup'
-            }
+        }
+        stage('vRAUserPrincipal') {
+          steps {
+            sh './check.sh Get-vRAUserPrincipal'
           }
-          stage('vRACatalogItem') {
-            steps {
-              sh './check.sh Get-vRACatalogItem'
-            }
-          }
-          stage('vRAComponentRegistryService') {
-            steps {
-              sh './check.sh Get-vRAComponentRegistryService'
-            }
-          }
-          stage('vRAComponentRegistryServiceStatus') {
-            steps {
-              sh './check.sh Get-vRAComponentRegistryServiceStatus'
-            }
-          }
-          stage('vRAContent') {
-            steps {
-              sh './check.sh Get-vRAContent'
-            }
-          }
-          stage('vRAContentType') {
-            steps {
-              sh './check.sh Get-vRAContentType'
-            }
-          }
-          stage('vRAEntitledCatalogItem') {
-            steps {
-              sh './check.sh Get-vRAEntitledCatalogItem'
-            }
-          }
-          stage('vRAEntitledService') {
-            steps {                
-              sh './check.sh Get-vRAEntitledService'
-            }
-          }
-          stage('vRAEntitlement') {
-            steps {                
-              sh './check.sh Get-vRAEntitlement'
-            }
-          }
-          stage('vRAExternalNetworkProfile') {
-            steps {
-              sh './check.sh Get-vRAExternalNetworkProfile'
-            }
-          }
-          stage('vRAGroupPrincipal') {
-            steps {
-              sh './check.sh Get-vRAGroupPrincipal'
-            }
-          }
-          stage('vRANATNetworkProfile') {
-            steps {
-              sh './check.sh Get-vRANATNetworkProfile'
-            }
-          }
-          stage('vRAPackage') {
-            steps {
-              sh './check.sh Get-vRAPackage'
-            }
-          }
-          stage('vRAPropertyDefinition') {
-            steps {
-              sh './check.sh Get-vRAPropertyDefinition'
-            }
-          }
-          stage('vRAPropertyGroup') {
-            steps {
-              sh './check.sh Get-vRAPropertyGroup'
-            }
-          }
-          stage('vRARequest') {
-            steps {
-              sh './check.sh Get-vRARequest'
-            }
-          }
-          stage('vRAReservation') {
-            steps {
-              sh './check.sh Get-vRAReservation'
-            }
-          }
-          stage('vRAReservationPolicy') {
-            steps {
-              sh './check.sh Get-vRAReservationPolicy'
-            }
-          }
-          stage('vRAReservationType') {
-            steps {
-              sh './check.sh Get-vRAReservationType'
-            }
-          }
-          stage('vRAResourceMetric') {
-            steps {
-              sh './check.sh Get-vRAResourceMetric'
-            }
-          }
-          stage('vRAResourceOperation') {
-            steps {
-              sh './check.sh Get-vRAResourceOperation'
-            }
-          }
-          stage('vRAResourceType') {
-            steps {
-              sh './check.sh Get-vRAResourceType'
-            }
-          }
-          stage('vRAService') {
-            steps {
-              catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                sh './check.sh Get-vRAService'
-              }
-            }
-          }
-          stage('vRAServiceBlueprint') {
-            steps {
-              catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                sh './check.sh Get-vRAServiceBlueprint'
-              }
-            }
-          }
-          stage('vRAUserPrincipal') {
-            steps {
-              catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                sh './check.sh Get-vRAUserPrincipal'
-              }
-            }
-          }
-          stage('vRAVersion') {
-            steps {
-              catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                sh './check.sh Get-vRAVersion'
-              }
-            }
+        }
+        stage('vRAVersion') {
+          steps {
+            sh './check.sh Get-vRAVersion'
           }
         }
       }
@@ -309,5 +302,4 @@ pipeline {
       }
     }
   }
-}
 }
