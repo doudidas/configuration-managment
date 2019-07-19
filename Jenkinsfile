@@ -233,7 +233,7 @@ pipeline {
         stage('vRAPropertyDefinition') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'if [[ -n $(git diff $platform-current..remotes/origin/$platform-reference -- export/$1)]];then cat /git diff $platform-current..remotes/origin/$platform-reference -- export/$1 exit 1;else exit 0;fi'
+              sh './check.sh Get-vRAPropertyDefinition'
             }
           }
         }
