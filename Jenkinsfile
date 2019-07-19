@@ -362,6 +362,7 @@ pipeline {
     stage('archive') {
       steps {
         archiveArtifacts(artifacts: 'export/**/*.json', allowEmptyArchive: true)
+        archiveArtifacts(artifacts: 'diff/*.txt', allowEmptyArchive: true)
       }
     }
   }
