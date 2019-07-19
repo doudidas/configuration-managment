@@ -158,35 +158,35 @@ pipeline {
         stage('vRAAuthorizationRole') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh './check.sh Get-vRAAuthorizationRole'
+              sh './check.sh Get-vRAAuthorizationRole $platform'
             }
           }
         }
         stage('vRABlueprint') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh './check.sh Get-vRABlueprint'
+              sh './check.sh Get-vRABlueprint $platform'
             }
           }
         }
         stage('vRABusinessGroup') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh './check.sh Get-vRABusinessGroup'
+              sh './check.sh Get-vRABusinessGroup $platform'
             }
           }
         }
         stage('vRACatalogItem') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh './check.sh Get-vRACatalogItem'
+              sh './check.sh Get-vRACatalogItem $platform'
             }
           }
         }
         stage('vRAComponentRegistryService') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh './check.sh Get-vRAComponentRegistryService'
+              sh './check.sh Get-vRAComponentRegistryService $platform'
             }
           }
         }
@@ -284,7 +284,7 @@ pipeline {
         stage('vRAReservation') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh './check.sh Get-vRAReservation'
+              sh './check.sh Get-vRAReservation $platform'
             }
           }
         }
