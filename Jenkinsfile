@@ -297,10 +297,10 @@ pipeline {
         }
       }
     }
-    stage('archive') {
-      steps {
-        archiveArtifacts(artifacts: 'export/**/*.json', allowEmptyArchive: true)
-      }
+  }
+  stage('archive') {
+    steps {
+      archiveArtifacts(artifacts: 'export/**/*.json', allowEmptyArchive: true)
     }
   }
 }
