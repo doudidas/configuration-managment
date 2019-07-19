@@ -4,13 +4,6 @@ pipeline {
       platform = 'development'
     }
   stages {
-    stage('test'){
-      steps {
-        sh 'git pull'
-        sh 'git branch -a'
-        sh './check.sh Get-vRAReservation development'
-      }
-    }
     stage('Connexion') {
       steps {
         sh 'pwsh connectToServer.ps1'
