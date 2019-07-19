@@ -1,0 +1,43 @@
+--- /dev/null
++++ b/export/Get-vRAReservation/eservation-bg-02.json
++  "CreatedDate": "2019-07-19T14:45:56.403Z",
++  "LastUpdated": "2019-07-19T14:45:56.403Z",
++  "Version": 0,
++  "Id": "77ae506e-28a7-4e7b-be29-8bb541e00cee",
++  "Name": "eservation-bg-02",
++  "ReservationTypeId": "Infrastructure.Reservation.Virtual.vSphere",
++  "TenantId": "vsphere.local",
++  "SubTenantId": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
++  "Enabled": true,
++  "Priority": 1,
++  "ReservationPolicyId": null,
++  "AlertPolicy": {
++    "enabled": false,
++    "frequencyReminder": 0,
++    "emailBgMgr": true,
++    "recipients": [],
++    "alerts": [
++      "@{alertPercentLevel=80; referenceResourceId=storage}",
++      "@{alertPercentLevel=80; referenceResourceId=memory}",
++      "@{alertPercentLevel=80; referenceResourceId=cpu}",
++      "@{alertPercentLevel=80; referenceResourceId=machine}"
++    ]
++  },
++  "ExtensionData": {
++    "entries": [
++      "@{key=reservationMemory; value=}",
++      "@{key=reservationStorages; value=}",
++      "@{key=machineQuota; value=}",
++      "@{key=computeResource; value=}",
++      "@{key=reservationNetworks; value=}",
++      "@{key=resourcePool; value=}"
++    ]
++  }
+--- a/export/Get-vRAReservation/reservation-bg-01.json
++++ b/export/Get-vRAReservation/reservation-bg-01.json
+-  "LastUpdated": "2019-07-16T15:35:03.57Z",
+-  "Version": 3,
++  "LastUpdated": "2019-07-19T14:46:14.859Z",
++  "Version": 4,
+-  "Priority": 1,
++  "Priority": 2,
