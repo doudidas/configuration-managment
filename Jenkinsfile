@@ -6,6 +6,7 @@ pipeline {
   stages {
     stage('test'){
       steps {
+        sh 'git pull'
         sh 'git branch -a'
         sh './check.sh Get-vRAReservation development'
       }
