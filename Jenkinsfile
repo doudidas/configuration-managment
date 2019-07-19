@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Connexion') {
       steps {
-        sh 'git branch | grep \* | cut -d ' ' -f2'
+        sh "git branch | grep \* | cut -d ' ' -f2"
         sh 'pwsh connectToServer.ps1'
       }
     }
