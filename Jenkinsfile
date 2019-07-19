@@ -8,12 +8,9 @@ pipeline {
             sh 'pwsh connectToServer.ps1'
           }
         }
-        stage('error') {
+        stage('check') {
           steps {
-            sh 'git remote add github git@github.com:doudidas/configuration-managment.git'
-            sh 'git fetch -a'
-            sh 'git branch -a'
-            sh 'git remote -v'
+            sh 'git diff development-current development-reference export/*'
           }
         }
       }
