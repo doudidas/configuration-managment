@@ -1,8 +1,8 @@
 #!/bin/bash
-currentBranch=$(git rev-parse --abbrev-ref HEAD)
-remoteBranch=${currentBranch/current/reference}
-echo $remoteBranch
-git diff $currentBranch..$remoteBranch -- export/$1/* | grep -e "^\+  .*" -e "^\-  .*" -e "^\+++.*" -e "^\---.*"> /tmp/diff
+currentBranch=$platform-current
+referenceBranch=$platform-reference
+
+git diff $currentBranch..$referenceBranch -- export/$1/* | grep -e "^\+  .*" -e "^\-  .*" -e "^\+++.*" -e "^\---.*"> /tmp/diff
 if [[ -n $(cat /tmp/diff) ]]; then
     cat /tmp/diff
     exit 1
