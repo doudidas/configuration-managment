@@ -229,7 +229,9 @@ pipeline {
         }
         stage('vRAPropertyDefinition') {
           steps {
-            sh './check.sh Get-vRAPropertyDefinition'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAPropertyDefinition'
+            }
           }
         }
         stage('vRAPropertyGroup') {
