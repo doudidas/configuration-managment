@@ -21,9 +21,9 @@
     {
       "approvalPolicyId": null,
       "hidden": false,
-      "active": true,
+      "active": false,
       "catalogItemRef": "@{id=8b0c1cca-2678-470d-ab27-05f7c8a9fc21; label=Centos}",
-      "catalogItemRequestable": true
+      "catalogItemRequestable": false
     },
     {
       "approvalPolicyId": null,
@@ -478,16 +478,23 @@
   "EntitledServices": [],
   "ExpiryDate": null,
   "LastUpdatedBy": "Edouard Topin",
-  "LastUpdatedDate": "2019-07-17T14:24:14.508Z",
+  "LastUpdatedDate": "2019-07-19T14:48:08.227Z",
   "Organization": {
     "tenantRef": "vsphere.local",
     "tenantLabel": "vsphere.local",
     "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
     "subtenantLabel": "businessgroup-01"
   },
-  "Principals": [],
+  "Principals": [
+    {
+      "tenantName": "vsphere.local",
+      "ref": "api-user@vsphere.local",
+      "type": "USER",
+      "value": "api user"
+    }
+  ],
   "PriorityOrder": 1,
   "StatusName": "Active",
   "LocalScopeForActions": true,
-  "Version": 7
+  "Version": 8
 }
