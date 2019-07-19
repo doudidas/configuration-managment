@@ -10,7 +10,7 @@ pipeline {
         }
         stage('check') {
           steps {
-            sh 'git diff development-current development-reference export/*'
+            sh 'git diff development-current..development-reference -- export/*'
           }
         }
       }
