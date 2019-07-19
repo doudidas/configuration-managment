@@ -10,7 +10,8 @@ pipeline {
         }
         stage('check') {
           steps {
-            sh 'git diff development-current..development-reference -- export/*'
+            sh 'git branch -a'
+            sh 'git diff development-current..remotes/origin/development-reference -- export/*'
           }
         }
       }
