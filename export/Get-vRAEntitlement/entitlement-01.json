@@ -475,10 +475,16 @@
       "resourceOperationRef": "@{id=284b7fb0-a410-4931-9272-2f2d6d06f364; label=Unregister VDI}"
     }
   ],
-  "EntitledServices": [],
+  "EntitledServices": [
+    {
+      "approvalPolicyId": null,
+      "active": true,
+      "serviceRef": "@{id=8a445baf-8436-4955-81ee-9372cd5828d3; label=Virtual Machines}"
+    }
+  ],
   "ExpiryDate": null,
   "LastUpdatedBy": "Edouard Topin",
-  "LastUpdatedDate": "2019-07-19T14:48:08.227Z",
+  "LastUpdatedDate": "2019-07-23T14:44:14.054Z",
   "Organization": {
     "tenantRef": "vsphere.local",
     "tenantLabel": "vsphere.local",
@@ -496,5 +502,5 @@
   "PriorityOrder": 1,
   "StatusName": "Active",
   "LocalScopeForActions": true,
-  "Version": 8
+  "Version": 9
 }
