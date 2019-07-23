@@ -1,5 +1,8 @@
 pipeline {
   agent any
+    environment {
+      platform = 'maquette'
+    }
   stages {
     stage('Connexion') {
       steps {
@@ -154,146 +157,198 @@ pipeline {
       parallel {
         stage('vRAAuthorizationRole') {
           steps {
-            sh './check.sh Get-vRAAuthorizationRole'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAAuthorizationRole $platform'
+            }
           }
         }
         stage('vRABlueprint') {
           steps {
-            sh './check.sh Get-vRABlueprint'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRABlueprint $platform'
+            }
           }
         }
         stage('vRABusinessGroup') {
           steps {
-            sh './check.sh Get-vRABusinessGroup'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRABusinessGroup $platform'
+            }
           }
         }
         stage('vRACatalogItem') {
           steps {
-            sh './check.sh Get-vRACatalogItem'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRACatalogItem $platform'
+            }
           }
         }
         stage('vRAComponentRegistryService') {
           steps {
-            sh './check.sh Get-vRAComponentRegistryService'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAComponentRegistryService $platform'
+            }
           }
         }
         stage('vRAComponentRegistryServiceStatus') {
           steps {
-            sh './check.sh Get-vRAComponentRegistryServiceStatus'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAComponentRegistryServiceStatus $platform'
+            }
           }
         }
         stage('vRAContent') {
           steps {
-            sh './check.sh Get-vRAContent'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAContent $platform'
+            }
           }
         }
         stage('vRAContentType') {
           steps {
-            sh './check.sh Get-vRAContentType'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAContentType $platform'
+            }
           }
         }
         stage('vRAEntitledCatalogItem') {
           steps {
-            sh './check.sh Get-vRAEntitledCatalogItem'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAEntitledCatalogItem $platform'
+            }
           }
         }
         stage('vRAEntitledService') {
-          steps {                
-            sh './check.sh Get-vRAEntitledService'
+          steps {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAEntitledService $platform'
+            }
           }
         }
         stage('vRAEntitlement') {
-          steps {                
-            sh './check.sh Get-vRAEntitlement'
+          steps {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAEntitlement $platform'
+            }
           }
         }
         stage('vRAExternalNetworkProfile') {
           steps {
-            sh './check.sh Get-vRAExternalNetworkProfile'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAExternalNetworkProfile $platform'
+            }
           }
         }
         stage('vRAGroupPrincipal') {
           steps {
-            sh './check.sh Get-vRAGroupPrincipal'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAGroupPrincipal $platform'
+            }
           }
         }
         stage('vRANATNetworkProfile') {
           steps {
-            sh './check.sh Get-vRANATNetworkProfile'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRANATNetworkProfile $platform'
+            }
           }
         }
         stage('vRAPackage') {
           steps {
-            sh './check.sh Get-vRAPackage'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAPackage $platform'
+            }
           }
         }
         stage('vRAPropertyDefinition') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh './check.sh Get-vRAPropertyDefinition'
+              sh './check.sh Get-vRAPropertyDefinition $platform'
             }
           }
         }
         stage('vRAPropertyGroup') {
           steps {
-            sh './check.sh Get-vRAPropertyGroup'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAPropertyGroup $platform'
+            }
           }
         }
         stage('vRARequest') {
           steps {
-            sh './check.sh Get-vRARequest'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRARequest $platform'
+            }
           }
         }
         stage('vRAReservation') {
           steps {
-            sh './check.sh Get-vRAReservation'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAReservation $platform'
+            }
           }
         }
         stage('vRAReservationPolicy') {
           steps {
-            sh './check.sh Get-vRAReservationPolicy'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAReservationPolicy $platform'
+            }
           }
         }
         stage('vRAReservationType') {
           steps {
-            sh './check.sh Get-vRAReservationType'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAReservationType $platform'
+            }
           }
         }
         stage('vRAResourceMetric') {
           steps {
-            sh './check.sh Get-vRAResourceMetric'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAResourceMetric $platform'
+            }
           }
         }
         stage('vRAResourceOperation') {
           steps {
-            sh './check.sh Get-vRAResourceOperation'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAResourceOperation $platform'
+            }
           }
         }
         stage('vRAResourceType') {
           steps {
-            sh './check.sh Get-vRAResourceType'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAResourceType $platform'
+            }
           }
         }
         stage('vRAService') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh './check.sh Get-vRAService'
+              sh './check.sh Get-vRAService $platform'
             }
           }
         }
         stage('vRAServiceBlueprint') {
           steps {
-            sh './check.sh Get-vRAServiceBlueprint'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAServiceBlueprint $platform'
+            }
           }
         }
         stage('vRAUserPrincipal') {
           steps {
-            sh './check.sh Get-vRAUserPrincipal'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAUserPrincipal $platform'
+            }
           }
         }
         stage('vRAVersion') {
           steps {
-            sh './check.sh Get-vRAVersion'
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh './check.sh Get-vRAVersion $platform'
+            }
           }
         }
       }
@@ -301,6 +356,7 @@ pipeline {
     stage('archive') {
       steps {
         archiveArtifacts(artifacts: 'export/**/*.json', allowEmptyArchive: true)
+        archiveArtifacts(artifacts: 'diff/*.txt', allowEmptyArchive: true)
       }
     }
   }
