@@ -9,7 +9,7 @@ If (!(test-path "diff")) {
 
 $referenceBranch = "remotes/origin/$platform-reference"
 $rootPath = "export/$element/"
-$output =  @()
+[array]$output =  @()
 
 $size = "--- a/export/$element/"
 
@@ -40,7 +40,10 @@ ForEach-Object {
     }
 
 }
-
-write-output $output
-
-$output | Out-File "diff/$element.log"
+Write-Output $output
+if ($output.Count -eq 0) {
+    Write-Output "No diff for $element"
+} else {
+    $output | Out-File "diff/$element.log"
+    exit 1
+}
