@@ -9,6 +9,7 @@ pipeline {
         sh 'pwsh connectToServer.ps1'
         sh 'git remote set-url origin git@github.com:doudidas/configuration-managment.git'
         sh 'git checkout $platform-current'
+        sh 'git pull'
       }
     }
     stage('Capture plateform') {
