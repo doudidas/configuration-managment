@@ -362,8 +362,8 @@ pipeline {
     stage('update git') {
       steps {
         sh 'git add --all'
-        sh 'git commit -m "Pushed by Jenkins. #$BUILD_NUMBER $BUILD_ID"'
-        sh 'git push origin'
+        sh 'git commit -m "Jenkins job n°$BUILD_NUMBER "'
+        sh 'git push'
       }
     }
   }
