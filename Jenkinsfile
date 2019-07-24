@@ -359,5 +359,10 @@ pipeline {
         archiveArtifacts(artifacts: 'diff/*.txt', allowEmptyArchive: true)
       }
     }
+    stage('update git') {
+      steps {
+        sh 'git add --all; git commit -m "Pushed by Jenkins"; git push origin'
+      }
+    }
   }
 }
