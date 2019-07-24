@@ -9,14 +9,13 @@ If (!(test-path "diff")) {
 
 $referenceBranch = "remotes/origin/$platform-reference"
 $rootPath = "export/$element/"
-[array]$output =  @()
+[array]$output = @()
 
 $size = "--- a/export/$element/"
 
 git diff $referenceBranch | Select-String -Pattern "---.*$element/.*json" |
 ForEach-Object {
     $fileName = $_.Line.Substring($size.Length)
-    Write-Output $fileName
     $pathToFile = $rootPath + $fileName
 
     git diff $referenceBranch -- $pathToFile | Select-String -Pattern "-  " |
@@ -40,10 +39,12 @@ ForEach-Object {
     }
 
 }
-Write-Output $output
+
 if ($output.Count -eq 0) {
     Write-Output "No diff for $element"
-} else {
+}
+else {
+    Write-Output $output | Format-Table
     $output | Out-File "diff/$element.log"
     exit 1
 }
