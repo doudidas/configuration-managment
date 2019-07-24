@@ -3,6 +3,9 @@ param(
     [string]$element,
     [string]$platform
 )
+If (!(test-path "diff")) {
+    New-Item -ItemType Directory -Force -Path "diff"
+}
 
 $referenceBranch = "remotes/origin/$platform-reference"
 $rootPath = "export/$element/"
