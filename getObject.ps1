@@ -13,9 +13,13 @@ $elements = Invoke-Expression $cmd
 Write-Output $elements
 
 $folderPath = "export/$cmd"
+
 If (!(test-path $folderPath)) {
     New-Item -ItemType Directory -Force -Path $folderPath
+} else {
+    Remove-Item $folderPath/*.json
 }
+
 
 foreach ($element in $elements) {
     if (Get-Member -inputobject $element -name "Name" -Membertype Properties) {
