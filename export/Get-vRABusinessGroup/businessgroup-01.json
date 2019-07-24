@@ -5,6 +5,7 @@
   "Roles": null,
   "ExtensionData": {
     "entries": [
+      "@{key=bytel.registered.status; value=}",
       "@{key=iaas-ad-container; value=}",
       "@{key=iaas-manager-emails; value=}"
     ]
