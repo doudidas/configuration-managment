@@ -7,9 +7,6 @@ pipeline {
     stage('Connexion') {
       steps {
         sh 'pwsh connectToServer.ps1'
-        sh 'git remote set-url origin git@github.com:doudidas/configuration-managment.git'
-        sh 'git checkout refs/remotes/$platform-current'
-        sh 'git pull'
       }
     }
     stage('Capture plateform') {
@@ -359,13 +356,6 @@ pipeline {
     stage('archive') {
       steps {
         archiveArtifacts(artifacts: 'diff/*.txt', allowEmptyArchive: true)
-      }
-    }
-    stage('update git') {
-      steps {
-        sh 'git add --all'
-        sh 'git commit -m "Jenkins job n°$BUILD_NUMBER "'
-        sh 'git push origin'
       }
     }
   }
