@@ -361,10 +361,8 @@ pipeline {
     }
     stage('update git') {
       steps {
-        sh 'git config --global user.name "Jenkins"'
-        sh 'git config --global user.email etopin@vmware.com'
         sh 'git add --all'
-        sh 'git commit -m "Pushed by Jenkins"'
+        sh 'git commit -m "Pushed by Jenkins. #$BUILD_NUMBER $BUILD_ID"'
         sh 'git push origin'
       }
     }
