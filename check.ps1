@@ -9,7 +9,7 @@ If (!(test-path "diff")) {
 }
 
 $referenceBranch = "remotes/origin/$platform-reference"
-git add "export/$element"
+git add --all "export/$element"
 
 git diff --cached $referenceBranch -- "export/$element/*.json" | Out-File -FilePath "diff/$element"
 [array]$lines = Get-Content "diff/$element"
