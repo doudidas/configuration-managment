@@ -22,9 +22,11 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
         $overview += $tmp
         $tmp = New-Object -TypeName PSObject
         $tmp | Add-Member -Name 'Name' -MemberType Noteproperty -Value ''
+        $tmp | Add-Member -Name 'Type' -MemberType Noteproperty -Value $element.Substring(4)
         $tmp | Add-Member -Name 'Added' -MemberType Noteproperty -Value ''
         $tmp | Add-Member -Name 'Updated' -MemberType Noteproperty -Value ''
         $tmp | Add-Member -Name 'Deleted' -MemberType Noteproperty -Value ''
+
     }
     elseif ($current -match "^deleted file mode [0-9].*") {
         $tmp.Deleted = '   x'
@@ -64,9 +66,9 @@ if ($overview.Count -eq 0) {
 }
 else {
     if ($verbose -eq "verbose") {
-        $details | Out-String -Width 4096 | Write-Output
+        $details | Format-Table | Out-String -Width 4096 | Write-Output
     }
     else {
-        write-output $overview
+        $overview | Format-Table | Out-String -Width 4096 | Write-Output
     }
 }
