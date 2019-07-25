@@ -2,7 +2,7 @@
 param(
     [string]$element,
     [string]$platform,
-    [bool]$verbose
+    [string]$verbose
 )
 If (!(test-path "diff")) {
     New-Item -ItemType Directory -Force -Path "diff"
@@ -63,8 +63,9 @@ if ($overview.Count -eq 0) {
     Write-Output "No diff for $element"
 }
 else {
-    if ($verbose) {
+    if ($verbose -eq "verbose") {
         Write-Output $details
+        exit 1
     }
     else {
         Write-Output $overview
