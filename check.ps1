@@ -64,11 +64,9 @@ if ($overview.Count -eq 0) {
 }
 else {
     if ($verbose -eq "verbose") {
-        Write-Output $details
-        exit 1
+        $details
     }
     else {
-        Write-Output $overview
-        exit 1
+        $overview
     }
 }
