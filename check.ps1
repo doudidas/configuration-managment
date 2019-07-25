@@ -9,8 +9,9 @@ If (!(test-path "diff")) {
 }
 
 $referenceBranch = "remotes/origin/$platform-reference"
+git add "export/$element"
 
-git diff $referenceBranch -- "export/$element/*.json" | Out-File -FilePath "diff/$element"
+git diff --cached $referenceBranch -- "export/$element/*.json" | Out-File -FilePath "diff/$element"
 [array]$lines = Get-Content "diff/$element"
 $overview = @()
 $details = @()
@@ -39,7 +40,7 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
     }
     elseif ($current -match "^(---|\+\+\+)") {
         if ($current -notmatch "(---|\+\+\+) /dev/null") {
-            $tmp.Name = $current.Substring($trimSize).trim()
+            $tmp.Name = $current.Substring($trimSize).trim().Replace('"',"")
         }
     }
     elseif ($current -match "^-") {
