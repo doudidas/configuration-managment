@@ -1,81 +1,73 @@
 # Parameters
 param(
     [string]$element,
-    [string]$platform
+    [string]$platform,
+    [bool]$verbose
 )
 If (!(test-path "diff")) {
     New-Item -ItemType Directory -Force -Path "diff"
 }
 
 $referenceBranch = "remotes/origin/$platform-reference"
-$rootPath = "export/$element/"
-[array]$output = @()
-[array]$overview = @()
-$size = "--- a/export/$element/"
-git diff $referenceBranch | Select-String -Pattern "(---|\+\+\+).*$element/.*json" -Context 1, 1 | ForEach-Object {
-    $fileName = $_.Line.Substring($size.Length)
-    if ($_.line -match "\+\+\+") {
-        if ($_.Context.PostContext[0] -contains "+++ /dev/null") {
-            $object = New-Object -TypeName PSObject
-            $object | Add-Member -Name 'Name' -MemberType Noteproperty -Value $fileName
-            $object | Add-Member -Name 'Added' -MemberType Noteproperty -Value "X"
-            $object | Add-Member -Name 'Updated' -MemberType Noteproperty -Value ""
-            $object | Add-Member -Name 'Removed' -MemberType Noteproperty -Value ""
-            $overview += $object
-        }
-        else {
-            $object = New-Object -TypeName PSObject
-            $object | Add-Member -Name 'Name' -MemberType Noteproperty -Value $fileName
-            $object | Add-Member -Name 'Added' -MemberType Noteproperty -Value ""
-            $object | Add-Member -Name 'Updated' -MemberType Noteproperty -Value "X"
-            $object | Add-Member -Name 'Removed' -MemberType Noteproperty -Value ""
-            $overview += $object
+
+git diff $referenceBranch -- "export/$element/*.json" | Out-File -FilePath "diff/$element"
+[array]$lines = Get-Content "diff/$element"
+$overview = @()
+$details = @()
+$trimSize = 14 + $element.Length 
+$tmp = New-Object -TypeName PSObject
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    $current = $lines[$i]
+    if ($current -match "^diff --git") {
+        $overview += $tmp
+        $tmp = New-Object -TypeName PSObject
+        $tmp | Add-Member -Name 'Name' -MemberType Noteproperty -Value ''
+        $tmp | Add-Member -Name 'Added' -MemberType Noteproperty -Value ''
+        $tmp | Add-Member -Name 'Updated' -MemberType Noteproperty -Value ''
+        $tmp | Add-Member -Name 'Deleted' -MemberType Noteproperty -Value ''
+    }
+    elseif ($current -match "^deleted file mode [0-9].*") {
+        $tmp.Deleted = '   x'
+    }
+    elseif ($current -match "^new file mode [0-9].*") {
+        $tmp.Added = '  x'
+    }
+    elseif ($current -match "^index [0-9a-z].*..[0-9a-z].* [0-9a-z].*") {
+        $tmp.Updated = '   x'
+    }
+    elseif ($current -match "^(---|\+\+\+)") {
+        if ($current -notmatch "(---|\+\+\+) /dev/null") {
+            $tmp.Name = $current.Substring($trimSize).trim()
         }
     }
-    elseif ($_.Context.PostContext[0] -contains "+++ /dev/null") {
-        $object = New-Object -TypeName PSObject
-        $object | Add-Member -Name 'Name' -MemberType Noteproperty -Value $fileName
-        $object | Add-Member -Name 'Added' -MemberType Noteproperty -Value ""
-        $object | Add-Member -Name 'Updated' -MemberType Noteproperty -Value ""
-        $object | Add-Member -Name 'Removed' -MemberType Noteproperty -Value "X"
-        $overview += $object
+    elseif ($current -match "^-") {
+        $detail = New-Object -TypeName PSObject
+        $detail | Add-Member -Name 'Name' -MemberType Noteproperty -Value $tmp.Name
+        $detail | Add-Member -Name 'Type' -MemberType Noteproperty -Value $element.Substring(4)
+        $detail | Add-Member -Name 'Added' -MemberType Noteproperty -Value ''
+        $detail | Add-Member -Name 'Removed' -MemberType Noteproperty -Value $current.Substring(1)
+        $details += $detail
+    }
+    elseif ($current -match "^\+") {
+        $detail = New-Object -TypeName PSObject
+        $detail | Add-Member -Name 'Name' -MemberType Noteproperty -Value $tmp.Name
+        $detail | Add-Member -Name 'Type' -MemberType Noteproperty -Value $element.Substring(4)
+        $detail | Add-Member -Name 'Added' -MemberType Noteproperty -Value $current.Substring(1)
+        $detail | Add-Member -Name 'Removed' -MemberType Noteproperty -Value ''
+        $details += $detail
     }
 }
+$overview += $tmp
 
-Write-Output $overview | Format-List 
-
-# if ($output.Count -eq 0) {
-#     Write-Output "No diff for $element"
-# }
-# else {
-#     Write-Output $output | Format-Table
-#     $output | Out-File "diff/$element.log"
-#     exit 1
-# }
-
-
-function getupdateDetail {
-    param (
-        [string]$pathToFile
-    )
-    $return = @()
-    git diff $referenceBranch -- $pathToFile | Select-String -Pattern "-  " |
-    ForEach-Object {
-        $object = New-Object -TypeName PSObject
-        $object | Add-Member -Name 'Name' -MemberType Noteproperty -Value $fileName.TrimEnd('.json')
-        $object | Add-Member -Name 'Type' -MemberType Noteproperty -Value $element.Substring(4)
-        $object | Add-Member -Name "Removed" -MemberType Noteproperty -Value $_.Line.Substring(1)
-        $object | Add-Member -Name "Added" -MemberType Noteproperty -Value ""
-        $return += $object
+if ($overview.Count -eq 0) {
+    Write-Output "No diff for $element"
+}
+else {
+    if ($verbose) {
+        Write-Output $details
     }
-    git diff $referenceBranch -- $pathToFile | Select-String -Pattern "\+  " |
-    ForEach-Object {
-        $object = New-Object -TypeName PSObject
-        $object | Add-Member -Name 'Name' -MemberType Noteproperty -Value $fileName.TrimEnd('.json')
-        $object | Add-Member -Name 'Type' -MemberType Noteproperty -Value $element.Substring(4)
-        $object | Add-Member -Name "Removed" -MemberType Noteproperty -Value ""
-        $object | Add-Member -Name "Added" -MemberType Noteproperty -Value $_.Line.Substring(1)
-        $return += $object
+    else {
+        Write-Output $overview
+        exit 1
     }
-    return $return
 }
