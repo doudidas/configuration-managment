@@ -1,9 +1,11 @@
 # Parameters
 param(
     [string]$element,
-    [string]$platform,
     [string]$verbose
 )
+
+
+$platform = git rev-parse --abbrev-ref HEAD | cut -d "-" -f1
 If (!(test-path "diff")) {
     New-Item -ItemType Directory -Force -Path "diff"
 }
