@@ -1,11 +1,9 @@
 pipeline {
   agent any
-    environment {
-      platform = ''
-    }
   stages {
     stage("Connexion"){
       steps {
+        sh 'echo ${platform}'
         sh 'pwsh connectToServer.ps1'
       }
     }
