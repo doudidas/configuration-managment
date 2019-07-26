@@ -1,12 +1,24 @@
 pipeline {
   agent any
     environment {
-      platform = 'development'
+      platform = ''
     }
   stages {
-    stage('Connexion') {
-      steps {
-        sh 'pwsh connectToServer.ps1'
+    stage('Init') {
+      parallel {
+        stage("Connexion"){
+          steps {
+            sh 'pwsh connectToServer.ps1'
+          }
+        }
+        stage("Get Env"){
+          steps {
+            platform = sh (
+                script: 'git rev-parse --abbrev-ref HEAD | cut -d "-" -f1 ',
+                returnStdout: true
+            ).trim()
+          }
+        }
       }
     }
     stage('Capture plateform') {
