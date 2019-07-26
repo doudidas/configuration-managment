@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Get Env"){
           steps {
-            def platform = sh returnStdout: true, script: 'git rev-parse --abbrev-ref HEAD | cut -d "-" -f1'
+            def platform = sh(returnStdout: true, script: 'git rev-parse --abbrev-ref HEAD | cut -d "-" -f1')
           }
         }
       }
