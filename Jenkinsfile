@@ -1,7 +1,7 @@
 pipeline {
   agent any
     environment {
-      platform = ''
+      platform = 'development'
     }
   stages {
     stage('Connexion'){
