@@ -6,13 +6,13 @@ param(
 )
 
 If (!(test-path "diff")) {
-    New-Item -ItemType Directory -Force -Path "diff"
+    New-Item -ItemType Directory -Force -Path "diff"  | Out-Null
 }
 If (test-path "diff/$element.log") {
-    Remove-Item -Path "diff/$element.log"
+    Remove-Item -Path "diff/$element.log" | Out-Null
 }
 
-New-Item -Path "diff/$element.log" -ItemType File
+New-Item -Path "diff/$element.log" -ItemType File | Out-Null
 
 $referenceBranch = "remotes/origin/$platform-reference"
 git add --all "export/$element"
