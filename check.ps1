@@ -18,8 +18,8 @@ $referenceBranch = "remotes/origin/$platform-reference"
 git add --all "export/$element"
 
 [array]$lines = git diff --cached $referenceBranch -- "export/$element/*.json" 
-$overview = @()
-$details = @()
+[array]$overview = @()
+[array]$details = @()
 $trimSize = 14 + $element.Length 
 $tmp = New-Object -TypeName PSObject
 for ($i = 0; $i -lt $lines.Count; $i++) {
@@ -99,11 +99,9 @@ $details | ForEach-Object {
     $previous = $name
 }
 
-
-if ($overview.Count -eq 0) {
+if ($overview.count -gt 0) {
     Write-Output "No diff for $element"
-}
-else {
+} else {
     if ($verbose -eq "verbose") {
         $details | Format-Table | Out-String -Width 4096 | Write-Output
     }
