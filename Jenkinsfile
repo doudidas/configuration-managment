@@ -1,3 +1,4 @@
+def token = ''
 pipeline {
   agent any
     environment {
@@ -6,13 +7,14 @@ pipeline {
   stages {
     stage('Connexion'){
       steps {
-        sh 'pwsh connectToServer.ps1'
+        token = sh(returnStdout: true, script: 'pwsh connectToServer.ps1')
       }
     }
     stage('Capture plateform') {
       parallel {
         stage('vRAAuthorizationRole') {
           steps {
+            echo "${browser}"
             sh 'pwsh getObject.ps1 Get-vRAAuthorizationRole'
           }
         }
