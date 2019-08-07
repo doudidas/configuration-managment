@@ -99,7 +99,7 @@ $details | ForEach-Object {
     $previous = $name
 }
 
-if ($overview.count -gt 0) {
+if ($overview.count -eq 0) {
     Write-Output "No diff for $element"
 } else {
     if ($verbose -eq "verbose") {
