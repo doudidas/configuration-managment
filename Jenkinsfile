@@ -7,7 +7,9 @@ pipeline {
   stages {
     stage('Connexion'){
       steps {
-        token = sh(returnStdout: true, script: 'pwsh connectToServer.ps1')
+        script{
+          token = sh(returnStdout: true, script: 'pwsh connectToServer.ps1')
+        }
       }
     }
     stage('Capture plateform') {
