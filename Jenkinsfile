@@ -16,7 +16,7 @@ pipeline {
       parallel {
         stage('vRAAuthorizationRole') {
           steps {
-            sh "${browser}"
+            sh "echo ${token}"
             sh 'pwsh getObject.ps1 Get-vRAAuthorizationRole'
           }
         }
