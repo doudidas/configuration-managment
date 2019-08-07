@@ -110,4 +110,5 @@ else {
     else {
         $overview | Format-Table | Out-String -Width 4096 | Write-Output
     }
+    exit 9
 }
