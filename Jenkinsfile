@@ -8,7 +8,7 @@ pipeline {
         stage("Set Environment") {
       steps {
         script {
-          platform = sh(returnStdout: true, script: 'git name-rev --name-only HEAD | cut -d "-" -f 1').trim()
+          platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
         }
       }
     }
