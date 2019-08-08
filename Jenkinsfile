@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage("Set environment") {
       steps {
-        branch = sh "git name-rev --name-only HEAD"
+        sh "git name-rev --name-only HEAD"
       }
     } 
     stage('Connexion'){
