@@ -5,11 +5,13 @@ pipeline {
       platform = 'development'
     }
   stages {
-    stage("Set environment") {
+        stage("Set Environment") {
       steps {
-        sh "git name-rev --name-only HEAD"
+        script {
+          platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD").trim()
+        }
       }
-    } 
+    }
     stage('Connexion'){
       steps {
         sh 'pwsh connectToServer.ps1'
