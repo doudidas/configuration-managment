@@ -5,6 +5,10 @@ pipeline {
       platform = 'development'
     }
   stages {
+    stage("Set environment")
+      steps {
+        branch = sh "git branch | sed -n '/\* /s///p'"
+      }
     stage('Connexion'){
       steps {
         sh 'pwsh connectToServer.ps1'
