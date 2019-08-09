@@ -1,0 +1,29 @@
+{
+  "Id": "Infrastructure.Network.Network.NSX",
+  "Callbacks": {
+    "list": true,
+    "details": true
+  },
+  "CostFeatures": null,
+  "Description": null,
+  "Forms": {
+    "catalogResourceInfoHidden": null,
+    "details": {
+      "type": "extension",
+      "extensionId": "com.vmware.vcac.core.design.blueprints.network.itemDetails",
+      "extensionPointId": null
+    }
+  },
+  "ListView": null,
+  "Name": "Network",
+  "PluralizedName": null,
+  "Primary": false,
+  "ProviderTypeId": "com.vmware.csp.component.network.service",
+  "Schema": {
+    "classId": "Infrastructure.Network.Network.NSX",
+    "typeFilter": null
+  },
+  "ListDescendantTypesSeparately": null,
+  "ShowChildrenOutsideParent": false,
+  "Status": "ACTIVE"
+}

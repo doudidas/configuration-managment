@@ -1,0 +1,23 @@
+{
+  "Id": "6abd15cc-1898-4068-9f0c-3127c31cb8c5",
+  "Name": "np-ext-01",
+  "Description": null,
+  "CreatedDate": "2019-07-18T15:55:31Z",
+  "LastModifiedDate": "2019-07-18T15:55:31Z",
+  "IsHidden": false,
+  "DefinedRanges": [],
+  "DefinedAddresses": null,
+  "ReclaimedAddresses": null,
+  "IPAMEndpointId": null,
+  "IPAMEndpointName": null,
+  "AddressSpaceExternalId": null,
+  "ProfileType": "EXTERNAL",
+  "SubnetMask": "255.255.255.0",
+  "GatewayAddress": null,
+  "PrimaryDnsAddress": null,
+  "SecondaryDnsAddress": null,
+  "DnsSuffix": null,
+  "DnsSearchSuffix": null,
+  "PrimaryWinsAddress": null,
+  "SecondaryWinsAddress": null
+}

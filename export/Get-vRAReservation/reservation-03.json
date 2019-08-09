@@ -1,0 +1,33 @@
+{
+  "CreatedDate": "2019-08-02T10:46:25.61Z",
+  "LastUpdated": "2019-08-02T10:46:25.61Z",
+  "Version": 0,
+  "Id": "989ef742-a128-41d1-a4e5-c6be33760e83",
+  "Name": "reservation-03",
+  "ReservationTypeId": "Infrastructure.Reservation.Virtual.vSphere",
+  "TenantId": "vsphere.local",
+  "SubTenantId": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+  "Enabled": true,
+  "Priority": 1,
+  "ReservationPolicyId": null,
+  "AlertPolicy": {
+    "enabled": false,
+    "frequencyReminder": 0,
+    "emailBgMgr": true,
+    "recipients": [],
+    "alerts": [
+      "@{alertPercentLevel=80; referenceResourceId=storage}",
+      "@{alertPercentLevel=80; referenceResourceId=memory}",
+      "@{alertPercentLevel=80; referenceResourceId=cpu}",
+      "@{alertPercentLevel=80; referenceResourceId=machine}"
+    ]
+  },
+  "ExtensionData": {
+    "entries": [
+      "@{key=reservationMemory; value=}",
+      "@{key=reservationStorages; value=}",
+      "@{key=computeResource; value=}",
+      "@{key=reservationNetworks; value=}"
+    ]
+  }
+}

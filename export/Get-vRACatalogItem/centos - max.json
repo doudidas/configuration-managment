@@ -1,0 +1,50 @@
+{
+  "Id": "47b4e000-f116-4021-bc5a-8fed47f168a9",
+  "Name": "centos - max",
+  "Description": "",
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-08-09T14:05:12.433Z",
+  "LastUpdatedDate": null,
+  "Requestable": true,
+  "IsNoteworthy": false,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": null,
+    "subtenantLabel": null
+  },
+  "CatalogItemType": "Composite Blueprint",
+  "OutputResourceType": "Deployment",
+  "Callbacks": null,
+  "Forms": {
+    "itemDetails": {
+      "type": "external",
+      "formId": "composition.catalog.item.details"
+    },
+    "catalogRequestInfoHidden": true,
+    "requestFormScale": "BIG",
+    "requestSubmission": {
+      "type": "extension",
+      "extensionId": "com.vmware.vcac.core.design.blueprints.requestForm",
+      "extensionPointId": null
+    },
+    "requestDetails": {
+      "type": "extension",
+      "extensionId": "com.vmware.vcac.core.design.blueprints.requestDetailsForm",
+      "extensionPointId": null
+    },
+    "requestPreApproval": null,
+    "requestPostApproval": null
+  },
+  "IconId": "composition.blueprint.png",
+  "ProviderBinding": {
+    "bindingId": "vsphere.local!::!centosmax",
+    "providerRef": {
+      "id": "766b90da-6823-4131-9d12-29e1db85f768",
+      "label": "Blueprint Service"
+    }
+  }
+}

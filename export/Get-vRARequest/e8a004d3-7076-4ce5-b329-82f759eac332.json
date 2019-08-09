@@ -1,0 +1,52 @@
+{
+  "Id": "e8a004d3-7076-4ce5-b329-82f759eac332",
+  "RequestNumber": 198,
+  "State": "SUCCESSFUL",
+  "Description": null,
+  "CatalogItem": null,
+  "RequestedItemName": "Destroy - Centos-26958655",
+  "RequestedItemDescription": "{com.vmware.csp.component.cafe.composition@resource.action.deployment.destroy.description}",
+  "Reasons": null,
+  "RequestedFor": "etopin@vsphere.local",
+  "RequestedBy": "etopin@vsphere.local",
+  "DateCreated": "2019-08-09T13:29:13.691Z",
+  "LastUpdated": "2019-08-09T13:31:00.027Z",
+  "DateSubmitted": "2019-08-09T13:29:13.691Z",
+  "DateApproved": null,
+  "DateCompleted": "2019-08-09T13:31:00.026Z",
+  "WaitingStatus": "NOT_WAITING",
+  "ExecutionStatus": "STOPPED",
+  "ApprovalStatus": "POST_APPROVED",
+  "Phase": "SUCCESSFUL",
+  "IconId": "composition.destroy.png",
+  "Version": 6,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+    "subtenantLabel": "businessgroup-01"
+  },
+  "RequestorEntitlementId": "1d751b3b-21fa-4adf-8224-f624156ecfdf",
+  "PreApprovalId": null,
+  "PostApprovalId": null,
+  "Quote": {
+    "leasePeriod": null,
+    "leaseRate": null,
+    "totalLeaseCost": null
+  },
+  "RequestCompletion": {
+    "requestCompletionState": "SUCCESSFUL",
+    "completionDetails": "",
+    "resourceBindingIds": null
+  },
+  "RequestData": {
+    "entries": [
+      "@{key=provider-ForceDestroy; value=}",
+      "@{key=provider-DeleteVolumes; value=}"
+    ]
+  },
+  "RetriesRemaining": 3,
+  "Components": null,
+  "StateName": "Successful",
+  "CatalogItemProviderBinding": null
+}

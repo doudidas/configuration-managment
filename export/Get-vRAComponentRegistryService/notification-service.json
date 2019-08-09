@@ -1,0 +1,17 @@
+{
+  "Id": "b23584fe-5f55-414a-89bb-846b562ff399",
+  "Name": "notification-service",
+  "CreatedDate": null,
+  "LastUpdated": null,
+  "OwnerId": "cafe-OE867l_C_A",
+  "ServiceVersion": null,
+  "ServiceAttributes": null,
+  "EndPoints": null,
+  "ServiceType": {
+    "serviceTypeId": "com.vmware.csp.cafe.notification",
+    "productId": "com.vmware.csp",
+    "typeId": "cafe.notification",
+    "serviceName": null
+  },
+  "NameMsgKey": null
+}

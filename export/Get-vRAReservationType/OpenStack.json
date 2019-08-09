@@ -1,0 +1,28 @@
+{
+  "CreatedDate": "2019-06-24T14:26:58.439Z",
+  "LastUpdated": "2019-06-24T14:26:58.439Z",
+  "Version": 0,
+  "Id": "Infrastructure.Reservation.Cloud.OpenStack",
+  "Name": "OpenStack",
+  "Description": "OpenStack Reservation",
+  "Category": "Cloud",
+  "ServiceTypeId": "com.vmware.csp.iaas.blueprint.service",
+  "TenantId": null,
+  "FormReference": {
+    "type": "extension",
+    "extensionId": "com.vmware.vcac.iaas.reservation.details",
+    "extensionPointId": "cafe.forms.extensions"
+  },
+  "SchemaClassId": "Infrastructure.Reservation.Cloud.OpenStack",
+  "AlertTypes": [
+    {
+      "createdDate": "2019-06-24T14:26:58.439Z",
+      "lastUpdated": "2019-06-24T14:26:58.439Z",
+      "version": 0,
+      "id": "a96490a6-a8e9-4410-bb66-75ac6078be0f",
+      "name": "Machine quota",
+      "description": "The threshold for machine quota usage. The system will send email notifications when the usage exceeds the threshold.",
+      "referenceResourceId": "machine"
+    }
+  ]
+}
