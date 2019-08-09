@@ -11,9 +11,10 @@ pipeline {
 
           }
         }
-        stage('') {
+        stage('error') {
           steps {
-            sh '''git branch
+            sh '''git pull --all
+git branch
 exit 1'''
           }
         }
