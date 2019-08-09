@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Set Environment') {
       parallel {
-        stage('Set Master Environment') {
+        stage('only for Master') {
           when {
             branch 'master'
           }
@@ -14,7 +14,7 @@ pipeline {
 
           }
         }
-        stage('Set Environment') {
+        stage('Not master Branch') {
           when {
             not {
               branch 'master'
