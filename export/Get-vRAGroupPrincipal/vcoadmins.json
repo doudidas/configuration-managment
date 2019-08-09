@@ -1,7 +1,0 @@
-{
-  "GroupType": "SSO",
-  "Name": "vcoadmins",
-  "Domain": "vsphere.local",
-  "Description": null,
-  "PrincipalId": "vcoadmins@vsphere.local"
-}
