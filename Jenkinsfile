@@ -1,13 +1,22 @@
 pipeline {
   agent any
-
   stages {
     stage('Set Environment') {
-      steps {
-        script {
-          platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
-        }
+      parallel {
+        stage('Set Environment') {
+          steps {
+            script {
+              platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
+            }
 
+          }
+        }
+        stage('') {
+          steps {
+            sh '''git branch
+exit 1'''
+          }
+        }
       }
     }
     stage('Connexion') {
