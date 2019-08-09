@@ -1,13 +1,13 @@
 {
-  "Id": "9d935143-13ff-4b68-9fcf-6c54fd251c9e",
-  "Name": "Docker - PhotonOS",
-  "Description": "Sample template for provisioning Docker hosts for Bellevue",
-  "Service": "Virtual Machines",
+  "Id": "47b4e000-f116-4021-bc5a-8fed47f168a9",
+  "Name": "centos - max",
+  "Description": "",
+  "Service": null,
   "Status": "PUBLISHED",
   "Quota": 0,
-  "Version": 3,
-  "DateCreated": "2019-06-24T14:27:45.682Z",
-  "LastUpdatedDate": "2019-07-31T09:05:06.078Z",
+  "Version": 0,
+  "DateCreated": "2019-08-09T14:05:12.433Z",
+  "LastUpdatedDate": null,
   "Requestable": true,
   "IsNoteworthy": false,
   "Organization": {
@@ -41,7 +41,7 @@
   },
   "IconId": "composition.blueprint.png",
   "ProviderBinding": {
-    "bindingId": "vsphere.local!::!DockerPhotonOS",
+    "bindingId": "vsphere.local!::!centosmax",
     "providerRef": {
       "id": "766b90da-6823-4131-9d12-29e1db85f768",
       "label": "Blueprint Service"

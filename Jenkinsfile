@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('only for Dev') {
           when {
-            branch 'master'
+            branch 'dev'
           }
           steps {
             script {
@@ -14,10 +14,10 @@ pipeline {
 
           }
         }
-        stage('Not master Branch') {
+        stage('None dev Branch') {
           when {
             not {
-              branch 'master'
+              branch 'dev'
             }
 
           }

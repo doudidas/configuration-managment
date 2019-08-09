@@ -3,7 +3,7 @@
   "Id": "DockerPhotonOS",
   "Description": "Sample template for provisioning Docker hosts for Bellevue",
   "CreatedDate": "2019-06-24T14:27:45.623Z",
-  "LastUpdated": "2019-07-31T09:05:05.991Z",
-  "Version": 3,
-  "PublishStatus": "Published"
+  "LastUpdated": "2019-08-09T14:03:52.474Z",
+  "Version": 4,
+  "PublishStatus": "Draft"
 }

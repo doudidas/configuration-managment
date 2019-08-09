@@ -1,19 +1,19 @@
 {
-  "Id": "d941558b-0c10-458b-ae2d-0f4f4419b04b",
-  "RequestNumber": 97,
+  "Id": "e8a004d3-7076-4ce5-b329-82f759eac332",
+  "RequestNumber": 198,
   "State": "SUCCESSFUL",
-  "Description": "Resource Archive period has expired.",
+  "Description": null,
   "CatalogItem": null,
-  "RequestedItemName": "Destroy - Centos-08918670",
+  "RequestedItemName": "Destroy - Centos-26958655",
   "RequestedItemDescription": "{com.vmware.csp.component.cafe.composition@resource.action.deployment.destroy.description}",
-  "Reasons": "Resource Archive period has expired.",
-  "RequestedFor": "api-user@vsphere.local",
-  "RequestedBy": "System User",
-  "DateCreated": "2019-07-12T11:02:20.074Z",
-  "LastUpdated": "2019-07-12T11:03:51.089Z",
-  "DateSubmitted": "2019-07-12T11:02:20.074Z",
+  "Reasons": null,
+  "RequestedFor": "etopin@vsphere.local",
+  "RequestedBy": "etopin@vsphere.local",
+  "DateCreated": "2019-08-09T13:29:13.691Z",
+  "LastUpdated": "2019-08-09T13:31:00.027Z",
+  "DateSubmitted": "2019-08-09T13:29:13.691Z",
   "DateApproved": null,
-  "DateCompleted": "2019-07-12T11:03:51.088Z",
+  "DateCompleted": "2019-08-09T13:31:00.026Z",
   "WaitingStatus": "NOT_WAITING",
   "ExecutionStatus": "STOPPED",
   "ApprovalStatus": "POST_APPROVED",
@@ -26,7 +26,7 @@
     "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
     "subtenantLabel": "businessgroup-01"
   },
-  "RequestorEntitlementId": null,
+  "RequestorEntitlementId": "1d751b3b-21fa-4adf-8224-f624156ecfdf",
   "PreApprovalId": null,
   "PostApprovalId": null,
   "Quote": {
@@ -40,7 +40,10 @@
     "resourceBindingIds": null
   },
   "RequestData": {
-    "entries": []
+    "entries": [
+      "@{key=provider-ForceDestroy; value=}",
+      "@{key=provider-DeleteVolumes; value=}"
+    ]
   },
   "RetriesRemaining": 3,
   "Components": null,

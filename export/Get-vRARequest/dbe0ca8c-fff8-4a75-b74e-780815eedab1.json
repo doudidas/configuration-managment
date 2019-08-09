@@ -1,24 +1,24 @@
 {
-  "Id": "eb5bab0f-5257-4b25-89cd-148a300690eb",
-  "RequestNumber": 96,
+  "Id": "dbe0ca8c-fff8-4a75-b74e-780815eedab1",
+  "RequestNumber": 196,
   "State": "SUCCESSFUL",
-  "Description": "Resource Lease has expired.",
+  "Description": null,
   "CatalogItem": null,
-  "RequestedItemName": "Expire - Centos-41774712",
-  "RequestedItemDescription": "{com.vmware.csp.component.cafe.composition@resource.action.deployment.archive.description}",
-  "Reasons": "Resource Lease has expired.",
-  "RequestedFor": "api-user@vsphere.local",
-  "RequestedBy": "System User",
-  "DateCreated": "2019-07-12T10:47:20.147Z",
-  "LastUpdated": "2019-07-12T10:47:37.051Z",
-  "DateSubmitted": "2019-07-12T10:47:20.147Z",
+  "RequestedItemName": "Destroy - Centos-40387878",
+  "RequestedItemDescription": "{com.vmware.csp.component.cafe.composition@resource.action.deployment.destroy.description}",
+  "Reasons": null,
+  "RequestedFor": "etopin@vsphere.local",
+  "RequestedBy": "etopin@vsphere.local",
+  "DateCreated": "2019-08-09T13:17:34.672Z",
+  "LastUpdated": "2019-08-09T13:19:03.993Z",
+  "DateSubmitted": "2019-08-09T13:17:34.672Z",
   "DateApproved": null,
-  "DateCompleted": "2019-07-12T10:47:37.05Z",
+  "DateCompleted": "2019-08-09T13:19:03.992Z",
   "WaitingStatus": "NOT_WAITING",
   "ExecutionStatus": "STOPPED",
   "ApprovalStatus": "POST_APPROVED",
   "Phase": "SUCCESSFUL",
-  "IconId": "composition.archive.png",
+  "IconId": "composition.destroy.png",
   "Version": 6,
   "Organization": {
     "tenantRef": "vsphere.local",
@@ -26,7 +26,7 @@
     "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
     "subtenantLabel": "businessgroup-01"
   },
-  "RequestorEntitlementId": null,
+  "RequestorEntitlementId": "1d751b3b-21fa-4adf-8224-f624156ecfdf",
   "PreApprovalId": null,
   "PostApprovalId": null,
   "Quote": {
@@ -40,7 +40,10 @@
     "resourceBindingIds": null
   },
   "RequestData": {
-    "entries": []
+    "entries": [
+      "@{key=provider-ForceDestroy; value=}",
+      "@{key=provider-DeleteVolumes; value=}"
+    ]
   },
   "RetriesRemaining": 3,
   "Components": null,

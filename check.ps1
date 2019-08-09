@@ -15,7 +15,7 @@ try {
 
     New-Item -Path "diff/$element.log" -ItemType File | Out-Null
 
-    $referenceBranch = "github/$platform-reference"
+    $referenceBranch = "remotes/origin/$platform-reference"
     git add --all "export/$element"
 
     [array]$lines = git diff --cached $referenceBranch -- "export/$element/*.json" 
@@ -92,7 +92,7 @@ try {
         else {
             $type = $_.Type
             $value = "[ENV]$platform[/ENV][OBJ]$name[/OBJ][TYPE]$type[/TYPE][STATE]$status[/STATE]$added$deleted"
-            Add-Content -Path "diff/$element.log" -Value $value
+            Add-Content -Path "/var/log/jenkins/configuration-drift/$platform-$element.log" -Value $value
             $status = ""
             $added = ""
             $deleted = ""
