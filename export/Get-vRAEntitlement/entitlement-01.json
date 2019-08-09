@@ -7,16 +7,16 @@
     {
       "approvalPolicyId": null,
       "hidden": false,
-      "active": true,
+      "active": false,
       "catalogItemRef": "@{id=d32b5661-fc01-4bad-afb7-8d38a1f868b8; label=Docker - CoreOS}",
-      "catalogItemRequestable": true
+      "catalogItemRequestable": false
     },
     {
       "approvalPolicyId": null,
       "hidden": false,
-      "active": false,
+      "active": true,
       "catalogItemRef": "@{id=9d935143-13ff-4b68-9fcf-6c54fd251c9e; label=Docker - PhotonOS}",
-      "catalogItemRequestable": false
+      "catalogItemRequestable": true
     },
     {
       "approvalPolicyId": null,

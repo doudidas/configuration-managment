@@ -1,13 +1,13 @@
 {
-  "Id": "d32b5661-fc01-4bad-afb7-8d38a1f868b8",
-  "Name": "Docker - CoreOS",
+  "Id": "9d935143-13ff-4b68-9fcf-6c54fd251c9e",
+  "Name": "Docker - PhotonOS",
   "Description": "Sample template for provisioning Docker hosts for Bellevue",
   "Service": "Virtual Machines",
   "Status": "PUBLISHED",
   "Quota": null,
-  "Version": 7,
-  "DateCreated": "2019-06-24T14:27:44.932Z",
-  "LastUpdatedDate": "2019-08-09T14:42:47.826Z",
+  "Version": 5,
+  "DateCreated": "2019-06-24T14:27:45.682Z",
+  "LastUpdatedDate": "2019-08-09T15:02:05.241Z",
   "Requestable": true,
   "IsNoteworthy": false,
   "Organization": {
@@ -28,7 +28,7 @@
     "requestFormScale": "BIG",
     "requestSubmission": {
       "type": "extension",
-      "extensionId": "com.vmware.vcac.core.forms.renderer",
+      "extensionId": "com.vmware.vcac.core.design.blueprints.requestForm",
       "extensionPointId": null
     },
     "requestDetails": {
@@ -41,7 +41,7 @@
   },
   "IconId": "composition.blueprint.png",
   "ProviderBinding": {
-    "bindingId": "vsphere.local!::!DockerCoreOS",
+    "bindingId": "vsphere.local!::!DockerPhotonOS",
     "providerRef": {
       "id": "766b90da-6823-4131-9d12-29e1db85f768",
       "label": "Blueprint Service"
