@@ -92,7 +92,7 @@ try {
         else {
             $type = $_.Type
             $value = "[ENV]$platform[/ENV][OBJ]$name[/OBJ][TYPE]$type[/TYPE][STATE]$status[/STATE]$added$deleted"
-            Add-Content -Path "var/log/jenkins/configuration-drift/$platform-$element.log" -Value $value
+            Add-Content -Path "/var/log/jenkins/configuration-drift/$platform-$element.log" -Value $value
             $status = ""
             $added = ""
             $deleted = ""
