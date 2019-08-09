@@ -13,7 +13,7 @@ $elements = Invoke-Expression $cmd
 Write-Output $elements
 
 $folderPath = "export/$cmd"
-
+ 
 If (!(test-path $folderPath)) {
     New-Item -ItemType Directory -Force -Path $folderPath
 } else {

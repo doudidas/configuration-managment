@@ -3,7 +3,24 @@ pipeline {
   stages {
     stage('Set Environment') {
       parallel {
-        stage('Set Environment') {
+        stage('only for Dev') {
+          when {
+            branch 'master'
+          }
+          steps {
+            script {
+              platform = "development"
+            }
+
+          }
+        }
+        stage('Not master Branch') {
+          when {
+            not {
+              branch 'master'
+            }
+
+          }
           steps {
             script {
               platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
@@ -14,6 +31,7 @@ pipeline {
         stage('Get remotes branches') {
           steps {
             sh 'git pull --all'
+            sh 'git branch --all'
           }
         }
       }
