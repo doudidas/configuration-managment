@@ -1,0 +1,14 @@
+{
+  "Id": "a4d60d03-0ff5-4b1a-9c6c-5d11e6849161",
+  "ContentId": "jk",
+  "Name": "jk",
+  "Description": null,
+  "ContentTypeId": "property-definition",
+  "MimeType": null,
+  "TenantId": "vsphere.local",
+  "SubtenantId": null,
+  "Dependencies": [],
+  "CreatedDate": "2019-07-16T14:01:01.112Z",
+  "LastUpdated": "2019-07-18T08:39:32.844Z",
+  "Version": 1
+}

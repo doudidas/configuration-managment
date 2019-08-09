@@ -1,0 +1,26 @@
+{
+  "Id": "c49539dd-8642-4aad-a0a7-8a7dca07600e",
+  "Name": "Cloud Machine Component",
+  "Description": "Corresponds to any blueprint component that represents Infrastructure Machines of type Cloud.",
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-06-24T14:26:53.126Z",
+  "LastUpdatedDate": null,
+  "Requestable": false,
+  "IsNoteworthy": false,
+  "Organization": null,
+  "CatalogItemType": "Cloud Machine",
+  "OutputResourceType": "Cloud Machine",
+  "Callbacks": null,
+  "Forms": null,
+  "IconId": "cafe_default_icon_genericCatalogItem",
+  "ProviderBinding": {
+    "bindingId": "Infrastructure.Cloud.Machine.Component",
+    "providerRef": {
+      "id": "5986d1a8-ca42-46f3-8c9a-387dac21745a",
+      "label": "Infrastructure Service"
+    }
+  }
+}

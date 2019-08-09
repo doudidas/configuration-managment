@@ -1,0 +1,20 @@
+{
+  "Id": "HEALTHBROKER_ADMIN",
+  "Name": "Health Consumer",
+  "Description": "Health Consumer",
+  "Type": "TenantRole",
+  "AssignedPermissions": [
+    {
+      "id": "HB_CONSUMER",
+      "name": "Manage Health Configurations",
+      "description": "Access Health UI and Tests results",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "GUI_MY_TENANT_MANAGEMENT",
+      "name": "My Tenant Administration User Interface",
+      "description": "Access my tenant administration GUI.",
+      "prereqAdminPermissions": null
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 # Parameters
 param(
-    [string]$cmd
+    [string]$cmd,
+    [string]$verbose
 )
 
 # Connect to the source vRA instance
@@ -9,8 +10,10 @@ Get-Content .cached_session.json | ConvertFrom-Json | Set-Variable vRAConnection
 Write-Output $cmd
 
 $elements = Invoke-Expression $cmd
+if ($verbose -ne 'silent') {
+    Write-Output $elements
+}
 
-Write-Output $elements
 
 $folderPath = "export/$cmd"
  
