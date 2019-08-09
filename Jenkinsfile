@@ -441,9 +441,14 @@ pipeline {
         }
       }
     }
-    stage('archive') {
+    stage('update current-branch') {
+      when {
+        branch 'dev'
+       }
       steps {
-        archiveArtifacts(artifacts: 'diff/*.log', allowEmptyArchive: true)
+        sh "git add --all"
+        sh "git commit -m 'Pushed by Jenkins job # ${BUILD_NUMBER}'"
+        sh "git push"
       }
     }
   }
