@@ -7,9 +7,9 @@
     {
       "approvalPolicyId": null,
       "hidden": false,
-      "active": false,
+      "active": true,
       "catalogItemRef": "@{id=d32b5661-fc01-4bad-afb7-8d38a1f868b8; label=Docker - CoreOS}",
-      "catalogItemRequestable": false
+      "catalogItemRequestable": true
     },
     {
       "approvalPolicyId": null,
