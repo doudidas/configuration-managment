@@ -443,7 +443,7 @@ pipeline {
     }
     stage('update current-branch') {
       when {
-        branch 'dev'
+         expression { BRANCH_NAME ==~ /(dev|.*-current)/ }
        }
       steps {
         sh "git add --all"
