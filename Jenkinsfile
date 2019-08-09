@@ -1,9 +1,6 @@
 
 pipeline {
   agent any
-    environment {
-      platform = 'development'
-    }
   stages {
         stage("Set Environment") {
       steps {

@@ -5,10 +5,10 @@ param(
     [string]$verbose
 )
 
-If (!(test-path "diff")) {
-    New-Item -ItemType Directory -Force -Path "diff"  | Out-Null
+If (!(Test-Path "diff")) {
+    New-Item -ItemType Directory -Force -Path "diff" | Out-Null
 }
-If (test-path "diff/$element.log") {
+If (Test-Path "diff/$element.log") {
     Remove-Item -Path "diff/$element.log" | Out-Null
 }
 
@@ -78,35 +78,38 @@ $previous = ""
 $details | ForEach-Object {
     $name = $_.Name
     $status = $_.Status 
-    if($name -eq $previous) {
+    if ($name -eq $previous) {
         if ($status -eq "Added") {
             $a = $_.Added
             $added += "[ADD]$a[/ADD]"
-        } elseif ($status -eq "Deleted") {
+        }
+        elseif ($status -eq "Deleted") {
             $d = $_.Removed
             $deleted += "[DEL]$d[/DEL]"
         } 
-    } else  {
-    $type = $_.Type
-
-    write-output $_.Added.Trim()
-    $value = "[ENV]$platform[/ENV][OBJ]$name[/OBJ][TYPE]$type[/TYPE][STATE]$status[/STATE]$added$deleted"
-    Add-Content -Path "diff/$element.log" -Value $value
-    $status = ""
-    $added = ""
-    $deleted = ""
+    }
+    else {
+        $type = $_.Type
+        $value = "[ENV]$platform[/ENV][OBJ]$name[/OBJ][TYPE]$type[/TYPE][STATE]$status[/STATE]$added$deleted"
+        Add-Content -Path "diff/$element.log" -Value $value
+        $status = ""
+        $added = ""
+        $deleted = ""
     }
     $previous = $name
 }
 
-if ($overview.count -eq 0) {
+if ($details.count -eq 0) {
     Write-Output "No diff for $element"
+    exit 0
 } else {
     if ($verbose -eq "verbose") {
         $details | Format-Table | Out-String -Width 4096 | Write-Output
+        exit 9
     }
     else {
         $overview | Format-Table | Out-String -Width 4096 | Write-Output
+        exit 9
     }
-    exit 9
+    exit 0
 }
