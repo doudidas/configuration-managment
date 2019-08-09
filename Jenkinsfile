@@ -447,7 +447,7 @@ pipeline {
        }
       steps {
         sh "git add --all"
-        sh "git commit -m --allow-empty 'Pushed by Jenkins job # ${BUILD_NUMBER}'"
+        sh 'git commit -m --allow-empty "Pushed by Jenkins job #${BUILD_NUMBER}"'
         sh "git push"
       }
     }
