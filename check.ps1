@@ -5,7 +5,6 @@ param(
     [string]$verbose
 )
 try {
-    
 
     If (!(Test-Path "diff")) {
         New-Item -ItemType Directory -Force -Path "diff" | Out-Null

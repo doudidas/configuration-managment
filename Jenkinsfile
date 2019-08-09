@@ -1,9 +1,6 @@
-
+def platform = ""
 pipeline {
   agent any
-  environment {
-    platform = ""
-  }
   stages {
         stage("Set Environment") {
       steps {
