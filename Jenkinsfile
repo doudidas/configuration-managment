@@ -14,7 +14,8 @@ pipeline {
         stage('error') {
           steps {
             sh '''git pull --all
-git branch
+git branch --remotes
+git diff development-reference -- "export/*"
 exit 1'''
           }
         }
