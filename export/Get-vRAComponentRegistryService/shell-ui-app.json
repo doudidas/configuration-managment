@@ -1,0 +1,17 @@
+{
+  "Id": "5524d440-78c2-4bec-85e1-324228fea4e0",
+  "Name": "shell-ui-app",
+  "CreatedDate": null,
+  "LastUpdated": null,
+  "OwnerId": "cafe-OE867l_C_A",
+  "ServiceVersion": null,
+  "ServiceAttributes": null,
+  "EndPoints": null,
+  "ServiceType": {
+    "serviceTypeId": "com.vmware.csp.core.cafe.shell",
+    "productId": "com.vmware.csp.core",
+    "typeId": "cafe.shell",
+    "serviceName": null
+  },
+  "NameMsgKey": null
+}

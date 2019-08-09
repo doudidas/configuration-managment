@@ -1,0 +1,9 @@
+{
+  "Name": "Docker - PhotonOS",
+  "Id": "DockerPhotonOS",
+  "Description": "Sample template for provisioning Docker hosts for Bellevue",
+  "CreatedDate": "2019-06-24T14:27:45.623Z",
+  "LastUpdated": "2019-06-26T09:23:46.667Z",
+  "Version": 2,
+  "PublishStatus": "Draft"
+}

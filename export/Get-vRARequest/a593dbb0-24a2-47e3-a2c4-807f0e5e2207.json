@@ -1,0 +1,49 @@
+{
+  "Id": "a593dbb0-24a2-47e3-a2c4-807f0e5e2207",
+  "RequestNumber": 64,
+  "State": "SUCCESSFUL",
+  "Description": "Resource Archive period has expired.",
+  "CatalogItem": null,
+  "RequestedItemName": "Destroy - Centos-98170462",
+  "RequestedItemDescription": "{com.vmware.csp.component.cafe.composition@resource.action.deployment.destroy.description}",
+  "Reasons": "Resource Archive period has expired.",
+  "RequestedFor": "api-user@vsphere.local",
+  "RequestedBy": "System User",
+  "DateCreated": "2019-06-29T16:02:20.092Z",
+  "LastUpdated": "2019-06-29T16:03:46.584Z",
+  "DateSubmitted": "2019-06-29T16:02:20.092Z",
+  "DateApproved": null,
+  "DateCompleted": "2019-06-29T16:03:46.581Z",
+  "WaitingStatus": "NOT_WAITING",
+  "ExecutionStatus": "STOPPED",
+  "ApprovalStatus": "POST_APPROVED",
+  "Phase": "SUCCESSFUL",
+  "IconId": "composition.destroy.png",
+  "Version": 6,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+    "subtenantLabel": "businessgroup-01"
+  },
+  "RequestorEntitlementId": null,
+  "PreApprovalId": null,
+  "PostApprovalId": null,
+  "Quote": {
+    "leasePeriod": null,
+    "leaseRate": null,
+    "totalLeaseCost": null
+  },
+  "RequestCompletion": {
+    "requestCompletionState": "SUCCESSFUL",
+    "completionDetails": "",
+    "resourceBindingIds": null
+  },
+  "RequestData": {
+    "entries": []
+  },
+  "RetriesRemaining": 3,
+  "Components": null,
+  "StateName": "Successful",
+  "CatalogItemProviderBinding": null
+}
