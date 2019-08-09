@@ -1,7 +1,0 @@
-{
-  "Id": "property-definition",
-  "Name": "Property Definition",
-  "Description": "Content type corresponding to the property definitions.",
-  "ClassId": "PropertyDefinition",
-  "ServiceTypeId": "com.vmware.csp.core.properties.service"
-}
