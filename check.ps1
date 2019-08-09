@@ -15,7 +15,7 @@ try {
 
     New-Item -Path "diff/$element.log" -ItemType File | Out-Null
 
-    $referenceBranch = "github/$platform-reference"
+    $referenceBranch = "remotes/origin/$platform-reference"
     git add --all "export/$element"
 
     [array]$lines = git diff --cached $referenceBranch -- "export/$element/*.json" 
