@@ -14,9 +14,9 @@
     {
       "approvalPolicyId": null,
       "hidden": false,
-      "active": false,
+      "active": true,
       "catalogItemRef": "@{id=9d935143-13ff-4b68-9fcf-6c54fd251c9e; label=Docker - PhotonOS}",
-      "catalogItemRequestable": false
+      "catalogItemRequestable": true
     },
     {
       "approvalPolicyId": null,
