@@ -1,13 +1,13 @@
 {
-  "Id": "47b4e000-f116-4021-bc5a-8fed47f168a9",
-  "Name": "centos - max",
-  "Description": "",
-  "Service": null,
+  "Id": "d32b5661-fc01-4bad-afb7-8d38a1f868b8",
+  "Name": "Docker - CoreOS",
+  "Description": "Sample template for provisioning Docker hosts for Bellevue",
+  "Service": "Virtual Machines",
   "Status": "PUBLISHED",
-  "Quota": 0,
-  "Version": 0,
-  "DateCreated": "2019-08-09T14:05:12.433Z",
-  "LastUpdatedDate": null,
+  "Quota": null,
+  "Version": 7,
+  "DateCreated": "2019-06-24T14:27:44.932Z",
+  "LastUpdatedDate": "2019-08-09T14:42:47.826Z",
   "Requestable": true,
   "IsNoteworthy": false,
   "Organization": {
@@ -28,7 +28,7 @@
     "requestFormScale": "BIG",
     "requestSubmission": {
       "type": "extension",
-      "extensionId": "com.vmware.vcac.core.design.blueprints.requestForm",
+      "extensionId": "com.vmware.vcac.core.forms.renderer",
       "extensionPointId": null
     },
     "requestDetails": {
@@ -41,10 +41,11 @@
   },
   "IconId": "composition.blueprint.png",
   "ProviderBinding": {
-    "bindingId": "vsphere.local!::!centosmax",
+    "bindingId": "vsphere.local!::!DockerCoreOS",
     "providerRef": {
       "id": "766b90da-6823-4131-9d12-29e1db85f768",
       "label": "Blueprint Service"
     }
-  }
+  },
+  "EntitledOrganizations": null
 }

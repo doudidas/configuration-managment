@@ -1,0 +1,14 @@
+{
+  "Id": "06363878-7215-4369-812c-a9f9ee85e563",
+  "ContentId": "DockerCoreOS",
+  "Name": "Docker - CoreOS",
+  "Description": "Docker - CoreOS",
+  "ContentTypeId": "composite-blueprint",
+  "MimeType": null,
+  "TenantId": "vsphere.local",
+  "SubtenantId": null,
+  "Dependencies": [],
+  "CreatedDate": "2019-08-09T14:42:47.898Z",
+  "LastUpdated": "2019-08-09T14:42:47.898Z",
+  "Version": 0
+}
