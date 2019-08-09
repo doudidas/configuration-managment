@@ -11,12 +11,9 @@ pipeline {
 
           }
         }
-        stage('error') {
+        stage('Get remotes branches') {
           steps {
-            sh '''git pull --all
-git branch --remotes
-git diff github/development-reference -- "export/*"
-exit 1'''
+            sh 'git pull --all'
           }
         }
       }
