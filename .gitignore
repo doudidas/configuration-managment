@@ -1,1 +1,3 @@
 .gitignore
+.cached_session.json
+diff/*
