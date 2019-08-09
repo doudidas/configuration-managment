@@ -1,0 +1,22 @@
+{
+  "Id": "8a445baf-8436-4955-81ee-9372cd5828d3",
+  "Name": "Virtual Machines",
+  "Description": "",
+  "Status": "ACTIVE",
+  "StatusName": "Active",
+  "Version": 0,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": null,
+    "subtenantLabel": null
+  },
+  "Hours": null,
+  "Owner": null,
+  "SupportTeam": null,
+  "ChangeWindow": null,
+  "NewDuration": null,
+  "LastUpdatedDate": "2019-06-24T16:24:39.443Z",
+  "LastUpdatedBy": "Edouard Topin",
+  "IconId": "ServiceIcon-1561393447039"
+}

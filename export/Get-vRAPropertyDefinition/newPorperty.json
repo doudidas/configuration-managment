@@ -1,0 +1,20 @@
+{
+  "Id": "newPorperty",
+  "Label": "newPorperty",
+  "Description": null,
+  "Type": "BOOLEAN",
+  "IsMultivalued": false,
+  "Display": "CHECKBOX",
+  "TenantId": "vsphere.local",
+  "DisplayIndex": null,
+  "PermittedValues": null,
+  "Options": {
+    "encrypted": {
+      "type": "constant",
+      "value": "@{type=boolean; value=False}"
+    }
+  },
+  "Version": 1,
+  "DateCreated": "2019-07-18T08:16:10.534Z",
+  "LastUpdatedDate": "2019-07-18T08:25:45.473Z"
+}

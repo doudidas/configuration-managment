@@ -1,0 +1,33 @@
+{
+  "Id": "419633a1-f4fc-4e4b-80b3-749c5ed4a888",
+  "Name": "Destroy",
+  "ExternalId": "REMOVE_RESOURCE",
+  "Description": "Destroy Action",
+  "IconId": "icon_destroy.png",
+  "TargetCriteria": {
+    "type": "and",
+    "subClauses": [
+      "@{type=expression; operator=; leftOperand=; rightOperand=}",
+      "@{type=expression; operator=; leftOperand=; rightOperand=}"
+    ]
+  },
+  "TargetResourceTypeRef": {
+    "id": "App.Container",
+    "label": "Container"
+  },
+  "Status": "PUBLISHED",
+  "Entitleable": true,
+  "organization": null,
+  "RequestSchema": {
+    "classId": "resourceActionRequest",
+    "typeFilter": "REMOVE_RESOURCE"
+  },
+  "Forms": null,
+  "Callbacks": null,
+  "LifecycleAction": "Destroy",
+  "BindingId": "REMOVE_RESOURCE",
+  "ProviderTypeRef": {
+    "id": "com.vmware.csp.component.cafe.container",
+    "label": "Container Service"
+  }
+}

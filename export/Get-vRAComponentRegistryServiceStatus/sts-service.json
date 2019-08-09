@@ -1,0 +1,20 @@
+{
+  "Id": "c99e4547-5879-43d6-b3d3-3b37e900b73c",
+  "Name": "sts-service",
+  "TypeId": "com.vmware.cis.core.sso",
+  "NotAvailable": false,
+  "LastUpdated": "2019-06-24T14:13:20.442Z",
+  "EndpointUrl": "https://cava-n-80-154.eng.vmware.com:443/SAAS/API/1.0/REST/system/health",
+  "ServiceStatus": {
+    "initialized": true,
+    "serviceName": null,
+    "solutionUser": null,
+    "startedTime": null,
+    "serviceInitializationStatus": "REGISTERED",
+    "errorMessage": null,
+    "identityCertificateInfo": null,
+    "serviceRegistrationId": null,
+    "sslCertificateInfo": null,
+    "defaultServiceEndpointType": null
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Id": "s",
+  "Label": "slkjlkhjl",
+  "Description": null,
+  "Type": "BOOLEAN",
+  "IsMultivalued": false,
+  "Display": "YES_NO",
+  "TenantId": "vsphere.local",
+  "DisplayIndex": null,
+  "PermittedValues": null,
+  "Options": {
+    "encrypted": {
+      "type": "constant",
+      "value": "@{type=boolean; value=False}"
+    }
+  },
+  "Version": 3,
+  "DateCreated": "2019-07-16T14:01:49.829Z",
+  "LastUpdatedDate": "2019-07-18T14:25:40.941Z"
+}

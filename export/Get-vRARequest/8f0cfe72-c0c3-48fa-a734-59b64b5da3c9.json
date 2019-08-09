@@ -1,0 +1,49 @@
+{
+  "Id": "8f0cfe72-c0c3-48fa-a734-59b64b5da3c9",
+  "RequestNumber": 102,
+  "State": "SUCCESSFUL",
+  "Description": "Resource Lease has expired.",
+  "CatalogItem": null,
+  "RequestedItemName": "Expire - Centos-09737249",
+  "RequestedItemDescription": "{com.vmware.csp.component.cafe.composition@resource.action.deployment.archive.description}",
+  "Reasons": "Resource Lease has expired.",
+  "RequestedFor": "api-user@vsphere.local",
+  "RequestedBy": "System User",
+  "DateCreated": "2019-07-19T16:02:20.363Z",
+  "LastUpdated": "2019-07-19T16:03:42.375Z",
+  "DateSubmitted": "2019-07-19T16:02:20.363Z",
+  "DateApproved": null,
+  "DateCompleted": "2019-07-19T16:03:42.374Z",
+  "WaitingStatus": "NOT_WAITING",
+  "ExecutionStatus": "STOPPED",
+  "ApprovalStatus": "POST_APPROVED",
+  "Phase": "SUCCESSFUL",
+  "IconId": "composition.archive.png",
+  "Version": 6,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+    "subtenantLabel": "businessgroup-01"
+  },
+  "RequestorEntitlementId": null,
+  "PreApprovalId": null,
+  "PostApprovalId": null,
+  "Quote": {
+    "leasePeriod": null,
+    "leaseRate": null,
+    "totalLeaseCost": null
+  },
+  "RequestCompletion": {
+    "requestCompletionState": "SUCCESSFUL",
+    "completionDetails": "",
+    "resourceBindingIds": null
+  },
+  "RequestData": {
+    "entries": []
+  },
+  "RetriesRemaining": 3,
+  "Components": null,
+  "StateName": "Successful",
+  "CatalogItemProviderBinding": null
+}

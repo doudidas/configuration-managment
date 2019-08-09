@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Set Environment') {
       parallel {
-        stage('only for Master') {
+        stage('only for Dev') {
           when {
             branch 'master'
           }
@@ -32,7 +32,6 @@ pipeline {
           steps {
             sh 'git pull --all'
             sh 'git branch --all'
-            sh 'exit 1'
           }
         }
       }

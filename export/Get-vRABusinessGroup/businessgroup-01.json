@@ -1,0 +1,28 @@
+{
+  "Name": "businessgroup-01",
+  "ID": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+  "Description": "",
+  "Roles": null,
+  "ExtensionData": {
+    "entries": [
+      "@{key=bytel.registered.status; value=}",
+      "@{key=iaas-ad-container; value=}",
+      "@{key=iaas-manager-emails; value=}"
+    ]
+  },
+  "GroupManagerRole": [
+    {
+      "domain": "vsphere.local",
+      "name": "etopin"
+    }
+  ],
+  "SupportUserRole": [],
+  "SharedAccessUserRole": null,
+  "UserRole": [
+    {
+      "domain": "vsphere.local",
+      "name": "api-user"
+    }
+  ],
+  "Tenant": "vsphere.local"
+}

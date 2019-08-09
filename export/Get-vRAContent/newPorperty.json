@@ -1,0 +1,14 @@
+{
+  "Id": "c4916691-1423-4a3b-9837-d7b05f31200a",
+  "ContentId": "newPorperty",
+  "Name": "newPorperty updated",
+  "Description": "ceci est une nouvelle version !!",
+  "ContentTypeId": "property-definition",
+  "MimeType": null,
+  "TenantId": "vsphere.local",
+  "SubtenantId": null,
+  "Dependencies": [],
+  "CreatedDate": "2019-07-18T08:16:10.66Z",
+  "LastUpdated": "2019-07-18T08:25:45.464Z",
+  "Version": 1
+}
