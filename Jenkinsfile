@@ -9,10 +9,6 @@ pipeline {
       steps {
         script {
           platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
-          echo "${platform}"
-          if(platform == "master") {
-            platform = "development"
-          }
         }
       }
     }
