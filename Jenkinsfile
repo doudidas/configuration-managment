@@ -15,6 +15,7 @@ pipeline {
           steps {
             sh '''git pull --all
 git branch --remotes
+git branch -m github/remote/development-reference development-reference
 git diff development-reference -- "export/*"
 exit 1'''
           }
