@@ -1,6 +1,7 @@
 def platform = ""
 pipeline {
   agent any
+
   stages {
         stage("Set Environment") {
       steps {
@@ -163,224 +164,224 @@ pipeline {
         stage('vRAAuthorizationRole') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAAuthorizationRole ${platform}'
-              sh 'pwsh check.ps1 Get-vRAAuthorizationRole ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAAuthorizationRole ${platform}"
+              sh "pwsh check.ps1 Get-vRAAuthorizationRole ${platform} verbose"
             }
           }
         }
         stage('vRABlueprint') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRABlueprint ${platform}'
-              sh 'pwsh check.ps1 Get-vRABlueprint ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRABlueprint ${platform}"
+              sh "pwsh check.ps1 Get-vRABlueprint ${platform} verbose"
             }
           }
         }
         stage('vRABusinessGroup') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRABusinessGroup ${platform}'
-              sh 'pwsh check.ps1 Get-vRABusinessGroup ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRABusinessGroup ${platform}"
+              sh "pwsh check.ps1 Get-vRABusinessGroup ${platform} verbose"
             }
           }
         }
         stage('vRACatalogItem') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRACatalogItem ${platform}'
-              sh 'pwsh check.ps1 Get-vRACatalogItem ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRACatalogItem ${platform}"
+              sh "pwsh check.ps1 Get-vRACatalogItem ${platform} verbose"
             }
           }
         }
         stage('vRAComponentRegistryService') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAComponentRegistryService ${platform}'
-              sh 'pwsh check.ps1 Get-vRAComponentRegistryService ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAComponentRegistryService ${platform}"
+              sh "pwsh check.ps1 Get-vRAComponentRegistryService ${platform} verbose"
             }
           }
         }
         stage('vRAComponentRegistryServiceStatus') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAComponentRegistryServiceStatus ${platform}'
-              sh 'pwsh check.ps1 Get-vRAComponentRegistryServiceStatus ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAComponentRegistryServiceStatus ${platform}"
+              sh "pwsh check.ps1 Get-vRAComponentRegistryServiceStatus ${platform} verbose"
             }
           }
         }
         stage('vRAContent') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAContent ${platform}'
-              sh 'pwsh check.ps1 Get-vRAContent ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAContent ${platform}"
+              sh "pwsh check.ps1 Get-vRAContent ${platform} verbose"
             }
           }
         }
         stage('vRAContentType') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAContentType ${platform}'
-              sh 'pwsh check.ps1 Get-vRAContentType ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAContentType ${platform}"
+              sh "pwsh check.ps1 Get-vRAContentType ${platform} verbose"
             }
           }
         }
         stage('vRAEntitledCatalogItem') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAEntitledCatalogItem ${platform}'
-              sh 'pwsh check.ps1 Get-vRAEntitledCatalogItem ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAEntitledCatalogItem ${platform}"
+              sh "pwsh check.ps1 Get-vRAEntitledCatalogItem ${platform} verbose"
             }
           }
         }
         stage('vRAEntitledService') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAEntitledService ${platform}'
-              sh 'pwsh check.ps1 Get-vRAEntitledService ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAEntitledService ${platform}"
+              sh "pwsh check.ps1 Get-vRAEntitledService ${platform} verbose"
             }
           }
         }
         stage('vRAEntitlement') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAEntitlement ${platform}'
-              sh 'pwsh check.ps1 Get-vRAEntitlement ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAEntitlement ${platform}"
+              sh "pwsh check.ps1 Get-vRAEntitlement ${platform} verbose"
             }
           }
         }
         stage('vRAExternalNetworkProfile') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAExternalNetworkProfile ${platform}'
-              sh 'pwsh check.ps1 Get-vRAExternalNetworkProfile ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAExternalNetworkProfile ${platform}"
+              sh "pwsh check.ps1 Get-vRAExternalNetworkProfile ${platform} verbose"
             }
           }
         }
         stage('vRAGroupPrincipal') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAGroupPrincipal ${platform}'
-              sh 'pwsh check.ps1 Get-vRAGroupPrincipal ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAGroupPrincipal ${platform}"
+              sh "pwsh check.ps1 Get-vRAGroupPrincipal ${platform} verbose"
             }
           }
         }
         stage('vRANATNetworkProfile') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRANATNetworkProfile ${platform}'
-              sh 'pwsh check.ps1 Get-vRANATNetworkProfile ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRANATNetworkProfile ${platform}"
+              sh "pwsh check.ps1 Get-vRANATNetworkProfile ${platform} verbose"
             }
           }
         }
         stage('vRAPackage') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAPackage ${platform}'
-              sh 'pwsh check.ps1 Get-vRAPackage ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAPackage ${platform}"
+              sh "pwsh check.ps1 Get-vRAPackage ${platform} verbose"
             }
           }
         }
         stage('vRAPropertyDefinition') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAPropertyDefinition ${platform}'
-              sh 'pwsh check.ps1 Get-vRAPropertyDefinition ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAPropertyDefinition ${platform}"
+              sh "pwsh check.ps1 Get-vRAPropertyDefinition ${platform} verbose"
             }
           }
         }
         stage('vRAPropertyGroup') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAPropertyGroup ${platform}'
-              sh 'pwsh check.ps1 Get-vRAPropertyGroup ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAPropertyGroup ${platform}"
+              sh "pwsh check.ps1 Get-vRAPropertyGroup ${platform} verbose"
             }
           }
         }
         stage('vRARequest') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRARequest ${platform}'
-              sh 'pwsh check.ps1 Get-vRARequest ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRARequest ${platform}"
+              sh "pwsh check.ps1 Get-vRARequest ${platform} verbose"
             }
           }
         }
         stage('vRAReservation') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAReservation ${platform}'
-              sh 'pwsh check.ps1 Get-vRAReservation ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAReservation ${platform}"
+              sh "pwsh check.ps1 Get-vRAReservation ${platform} verbose"
             }
           }
         }
         stage('vRAReservationPolicy') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAReservationPolicy ${platform}'
-              sh 'pwsh check.ps1 Get-vRAReservationPolicy ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAReservationPolicy ${platform}"
+              sh "pwsh check.ps1 Get-vRAReservationPolicy ${platform} verbose"
             }
           }
         }
         stage('vRAReservationType') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAReservationType ${platform}'
-              sh 'pwsh check.ps1 Get-vRAReservationType ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAReservationType ${platform}"
+              sh "pwsh check.ps1 Get-vRAReservationType ${platform} verbose"
             }
           }
         }
         stage('vRAResourceMetric') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAResourceMetric ${platform}'
-              sh 'pwsh check.ps1 Get-vRAResourceMetric ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAResourceMetric ${platform}"
+              sh "pwsh check.ps1 Get-vRAResourceMetric ${platform} verbose"
             }
           }
         }
         stage('vRAResourceOperation') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAResourceOperation ${platform}'
-              sh 'pwsh check.ps1 Get-vRAResourceOperation ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAResourceOperation ${platform}"
+              sh "pwsh check.ps1 Get-vRAResourceOperation ${platform} verbose"
             }
           }
         }
         stage('vRAResourceType') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAResourceType ${platform}'
-              sh 'pwsh check.ps1 Get-vRAResourceType ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAResourceType ${platform}"
+              sh "pwsh check.ps1 Get-vRAResourceType ${platform} verbose"
             }
           }
         }
         stage('vRAService') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAService ${platform}'
-              sh 'pwsh check.ps1 Get-vRAService ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAService ${platform}"
+              sh "pwsh check.ps1 Get-vRAService ${platform} verbose"
             }
           }
         }
         stage('vRAServiceBlueprint') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAServiceBlueprint ${platform}'
-              sh 'pwsh check.ps1 Get-vRAServiceBlueprint ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAServiceBlueprint ${platform}"
+              sh "pwsh check.ps1 Get-vRAServiceBlueprint ${platform} verbose"
             }
           }
         }
         stage('vRAUserPrincipal') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAUserPrincipal ${platform}'
-              sh 'pwsh check.ps1 Get-vRAUserPrincipal ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAUserPrincipal ${platform}"
+              sh "pwsh check.ps1 Get-vRAUserPrincipal ${platform} verbose"
             }
           }
         }
         stage('vRAVersion') {
           steps {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-              sh 'pwsh check.ps1 Get-vRAVersion ${platform}'
-              sh 'pwsh check.ps1 Get-vRAVersion ${platform} verbose'
+              sh "pwsh check.ps1 Get-vRAVersion ${platform}"
+              sh "pwsh check.ps1 Get-vRAVersion ${platform} verbose"
             }
           }
         }
@@ -388,7 +389,7 @@ pipeline {
     }
     stage('archive') {
       steps {
-        archiveArtifacts(artifacts: 'diff/*.txt', allowEmptyArchive: true)
+        archiveArtifacts(artifacts: 'diff/*.log', allowEmptyArchive: true)
       }
     }
   }
