@@ -1,4 +1,5 @@
 
+def platform = ''
 pipeline {
   agent any
   stages {
@@ -6,6 +7,9 @@ pipeline {
       steps {
         script {
           platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
+          if(platform == "master") {
+            platform = "development"
+          }
         }
       }
     }
