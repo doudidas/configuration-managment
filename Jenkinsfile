@@ -1,16 +1,16 @@
-def platform = ""
 pipeline {
   agent any
 
   stages {
-        stage("Set Environment") {
+    stage('Set Environment') {
       steps {
         script {
           platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
         }
+
       }
     }
-    stage('Connexion'){
+    stage('Connexion') {
       steps {
         sh 'pwsh connectToServer.ps1'
       }
@@ -167,6 +167,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAAuthorizationRole ${platform}"
               sh "pwsh check.ps1 Get-vRAAuthorizationRole ${platform} verbose"
             }
+
           }
         }
         stage('vRABlueprint') {
@@ -175,6 +176,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRABlueprint ${platform}"
               sh "pwsh check.ps1 Get-vRABlueprint ${platform} verbose"
             }
+
           }
         }
         stage('vRABusinessGroup') {
@@ -183,6 +185,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRABusinessGroup ${platform}"
               sh "pwsh check.ps1 Get-vRABusinessGroup ${platform} verbose"
             }
+
           }
         }
         stage('vRACatalogItem') {
@@ -191,6 +194,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRACatalogItem ${platform}"
               sh "pwsh check.ps1 Get-vRACatalogItem ${platform} verbose"
             }
+
           }
         }
         stage('vRAComponentRegistryService') {
@@ -199,6 +203,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAComponentRegistryService ${platform}"
               sh "pwsh check.ps1 Get-vRAComponentRegistryService ${platform} verbose"
             }
+
           }
         }
         stage('vRAComponentRegistryServiceStatus') {
@@ -207,6 +212,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAComponentRegistryServiceStatus ${platform}"
               sh "pwsh check.ps1 Get-vRAComponentRegistryServiceStatus ${platform} verbose"
             }
+
           }
         }
         stage('vRAContent') {
@@ -215,6 +221,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAContent ${platform}"
               sh "pwsh check.ps1 Get-vRAContent ${platform} verbose"
             }
+
           }
         }
         stage('vRAContentType') {
@@ -223,6 +230,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAContentType ${platform}"
               sh "pwsh check.ps1 Get-vRAContentType ${platform} verbose"
             }
+
           }
         }
         stage('vRAEntitledCatalogItem') {
@@ -231,6 +239,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAEntitledCatalogItem ${platform}"
               sh "pwsh check.ps1 Get-vRAEntitledCatalogItem ${platform} verbose"
             }
+
           }
         }
         stage('vRAEntitledService') {
@@ -239,6 +248,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAEntitledService ${platform}"
               sh "pwsh check.ps1 Get-vRAEntitledService ${platform} verbose"
             }
+
           }
         }
         stage('vRAEntitlement') {
@@ -247,6 +257,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAEntitlement ${platform}"
               sh "pwsh check.ps1 Get-vRAEntitlement ${platform} verbose"
             }
+
           }
         }
         stage('vRAExternalNetworkProfile') {
@@ -255,6 +266,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAExternalNetworkProfile ${platform}"
               sh "pwsh check.ps1 Get-vRAExternalNetworkProfile ${platform} verbose"
             }
+
           }
         }
         stage('vRAGroupPrincipal') {
@@ -263,6 +275,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAGroupPrincipal ${platform}"
               sh "pwsh check.ps1 Get-vRAGroupPrincipal ${platform} verbose"
             }
+
           }
         }
         stage('vRANATNetworkProfile') {
@@ -271,6 +284,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRANATNetworkProfile ${platform}"
               sh "pwsh check.ps1 Get-vRANATNetworkProfile ${platform} verbose"
             }
+
           }
         }
         stage('vRAPackage') {
@@ -279,6 +293,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAPackage ${platform}"
               sh "pwsh check.ps1 Get-vRAPackage ${platform} verbose"
             }
+
           }
         }
         stage('vRAPropertyDefinition') {
@@ -287,6 +302,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAPropertyDefinition ${platform}"
               sh "pwsh check.ps1 Get-vRAPropertyDefinition ${platform} verbose"
             }
+
           }
         }
         stage('vRAPropertyGroup') {
@@ -295,6 +311,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAPropertyGroup ${platform}"
               sh "pwsh check.ps1 Get-vRAPropertyGroup ${platform} verbose"
             }
+
           }
         }
         stage('vRARequest') {
@@ -303,6 +320,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRARequest ${platform}"
               sh "pwsh check.ps1 Get-vRARequest ${platform} verbose"
             }
+
           }
         }
         stage('vRAReservation') {
@@ -311,6 +329,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAReservation ${platform}"
               sh "pwsh check.ps1 Get-vRAReservation ${platform} verbose"
             }
+
           }
         }
         stage('vRAReservationPolicy') {
@@ -319,6 +338,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAReservationPolicy ${platform}"
               sh "pwsh check.ps1 Get-vRAReservationPolicy ${platform} verbose"
             }
+
           }
         }
         stage('vRAReservationType') {
@@ -327,6 +347,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAReservationType ${platform}"
               sh "pwsh check.ps1 Get-vRAReservationType ${platform} verbose"
             }
+
           }
         }
         stage('vRAResourceMetric') {
@@ -335,6 +356,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAResourceMetric ${platform}"
               sh "pwsh check.ps1 Get-vRAResourceMetric ${platform} verbose"
             }
+
           }
         }
         stage('vRAResourceOperation') {
@@ -343,6 +365,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAResourceOperation ${platform}"
               sh "pwsh check.ps1 Get-vRAResourceOperation ${platform} verbose"
             }
+
           }
         }
         stage('vRAResourceType') {
@@ -351,6 +374,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAResourceType ${platform}"
               sh "pwsh check.ps1 Get-vRAResourceType ${platform} verbose"
             }
+
           }
         }
         stage('vRAService') {
@@ -359,6 +383,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAService ${platform}"
               sh "pwsh check.ps1 Get-vRAService ${platform} verbose"
             }
+
           }
         }
         stage('vRAServiceBlueprint') {
@@ -367,6 +392,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAServiceBlueprint ${platform}"
               sh "pwsh check.ps1 Get-vRAServiceBlueprint ${platform} verbose"
             }
+
           }
         }
         stage('vRAUserPrincipal') {
@@ -375,6 +401,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAUserPrincipal ${platform}"
               sh "pwsh check.ps1 Get-vRAUserPrincipal ${platform} verbose"
             }
+
           }
         }
         stage('vRAVersion') {
@@ -383,6 +410,7 @@ pipeline {
               sh "pwsh check.ps1 Get-vRAVersion ${platform}"
               sh "pwsh check.ps1 Get-vRAVersion ${platform} verbose"
             }
+
           }
         }
       }
