@@ -31,6 +31,8 @@ pipeline {
         stage('Get remotes branches') {
           steps {
             sh 'git pull --all'
+            sh 'git branch --all'
+            sh 'exit 1'
           }
         }
       }
