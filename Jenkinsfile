@@ -32,6 +32,7 @@ pipeline {
           steps {
             sh 'git pull --all'
             sh 'git branch --all'
+            echo "${GIT_BRANCH}"
           }
         }
       }
@@ -448,7 +449,7 @@ pipeline {
       steps {
         sh "git add --all"
         sh 'git commit -m --allow-empty "Pushed by Jenkins job #${BUILD_NUMBER}"'
-        sh "git push"
+        sh "git push origin"
       }
     }
   }
