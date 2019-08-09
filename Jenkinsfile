@@ -3,26 +3,29 @@ pipeline {
   stages {
     stage('Set Environment') {
       parallel {
-        stage ('Set Master Environment') {
+        stage('Set Master Environment') {
+          when {
+            branch 'master'
+          }
           steps {
-            when {
-              branch 'master'
-            } 
             script {
               platform = "development"
             }
+
           }
         }
         stage('Set Environment') {
-          steps {
-            when { 
-              not { 
-                branch 'master' 
-                } 
+          when {
+            not {
+              branch 'master'
             }
+
+          }
+          steps {
             script {
               platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
             }
+
           }
         }
         stage('Get remotes branches') {
@@ -31,7 +34,7 @@ pipeline {
           }
         }
       }
-    } 
+    }
     stage('Connexion') {
       steps {
         sh 'pwsh connectToServer.ps1'
