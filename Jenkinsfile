@@ -1,5 +1,6 @@
 pipeline {
   agent any
+  triggers { cron('@midnight')}
   stages {
     stage('Set Environment') {
       parallel {
