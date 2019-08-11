@@ -1,7 +1,7 @@
 {
-  "Name": "businessGroup-02",
-  "ID": "7b52fb7d-c179-4127-b5db-3b95ce4ae2a5",
-  "Description": "ceci est un test",
+  "Name": "malicious-bg",
+  "ID": "f25e16b1-7439-4d7a-9a4d-f100e00a7fae",
+  "Description": "",
   "Roles": null,
   "ExtensionData": {
     "entries": [
