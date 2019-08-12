@@ -1,7 +1,5 @@
 pipeline {
   agent any
-  environment path = "/var/log/jenkins/configuration-drift/"
-  triggers { cron('@midnight')}
   stages {
     stage('Set Environment') {
       parallel {
@@ -445,13 +443,22 @@ pipeline {
     }
     stage('update current-branch') {
       when {
-         expression { BRANCH_NAME ==~ /(dev|.*-current)/ }
-       }
+        expression {
+          BRANCH_NAME ==~ /(dev|.*-current)/
+        }
+
+      }
       steps {
-        sh "git add --all"
-        sh 'git commit --allow-empty -m "[${GIT_BRANCH}] Pushed by Jenkins: build nÂ°${BUILD_NUMBER}"'
+        sh 'git add --all'
+        sh 'git commit --allow-empty -m "[${GIT_BRANCH}] Pushed by Jenkins: build n°${BUILD_NUMBER}"'
         sh "git push origin ${GIT_BRANCH}"
       }
     }
+  }
+  environment {
+    path = '/var/log/jenkins/configuration-drift/'
+  }
+  triggers {
+    cron('@midnight')
   }
 }
