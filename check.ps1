@@ -16,7 +16,7 @@ try {
 
     # Set folder and files
     If (!(Test-Path "$path")) { New-Item -ItemType Directory -Force -Path "diff" | Out-Null}
-    If (Test-Path "$path/$platform-$element.json") { Remove-Item -Path "$path/$platform-$element.json" | Out-Null}
+    # If (Test-Path "$path/$platform-$element.log") { Remove-Item -Path "$path/$platform-$element.log" | Out-Null}
 
     #Get all diffs
     git add --all "export/$element"
@@ -50,7 +50,7 @@ try {
             }
         }
         elseif ($lines[$i] -match '(^\-|^\+)\s*".*') {
-            $status = @("Removed","Added")[$lines[$i][0] -eq "-"]
+            $status = @("Added","Removed")[$lines[$i][0] -eq "-"]
             $m      = ($lines[$i].Substring(1) | select-string '(".*?")|([a-zA-Z0-9{}[\]].*\,*)' -allmatches).matches
             $key    = $m[0].Value.trim() -replace '\"', ""
             $value  = $m[1].Value -replace '"', "" -replace ",",""
@@ -60,8 +60,8 @@ try {
                 $cachedType = $value
             } else{
                 if($key -eq "value" -and $value -notin "{", "[") {
-                    $key = $cachedKey
                     if($cachedKey -ne ''){
+                        $key = $cachedKey
                         $value = [PSCustomObject]@{
                             type= $cachedType
                             value= $value
@@ -69,7 +69,6 @@ try {
                     } else {
                         $value = $value
                     }
-
                     $cachedKey = ""
                     $cachedType = ""
                 }
@@ -77,8 +76,8 @@ try {
                     Environment = $platform    
                     Name        = $tmp.Name
                     Type        = $element.Substring(4)
-                    Status      = $status
                     Key         = $key
+                    Status      = $status
                     Value       = $value
                 }
                 if($detail.Value -notin "[", "{", ""){
@@ -90,32 +89,18 @@ try {
 
     $overview += $tmp
 
-    # $previous = ""
-    # $details | ForEach-Object {
-    #     $name = $_.Name
-    #     $status = $_.Status 
-    #     if ($name -eq $previous) {
-    #         if ($status -eq "Added") {
-    #             $a = $_.Added
-    #             $added += "[ADD]$a[/ADD]"
-    #         }
-    #         elseif ($status -eq "Deleted") {
-    #             Write-Output $d
-    #             $deleted += "[DEL]$d[/DEL]"
-    #         } 
-    #     }
-    #     else {
-    #         $type = $_.Type
-    #         $value = "[ENV]$platform[/ENV][OBJ]$name[/OBJ][TYPE]$type[/TYPE][STATE]$status[/STATE]$added$deleted"
-    #         Add-Content -Encoding utf8 -Path "$path/$platform-$element.log" -Value $value
-    #         $status = ""
-    #         $added = ""
-    #         $deleted = ""
-    #     }
-    #     $previous = $name
-    # }
+    $details | ForEach-Object {
+        Write-Output -InputObject $_
+        $env = $_.Environment
+        $name = $_.Name
+        $type = $_.Type
+        $key  =  @($_.Key,"Unkown")[$_.Key -eq ""]
+        $status = $_.Status
+        $value = $_.Value
+        $value = "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][KEY]$key[/KEY][STATE]$status[/STATE][VALUE]$value[/VALUE]"
+        Add-Content -Encoding utf8 -Path "$path/$platform-$element.log" -Value $value
+    }
 
-    ConvertTo-Json -InputObject $details -Compress | Add-Content -Encoding utf8 -Path "$path/$platform-$element.json"
     if ($details.count -eq 0) {
         Write-Output "No diff for $element"
         exit 0

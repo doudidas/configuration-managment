@@ -3,9 +3,9 @@ pipeline {
   agent any
   triggers { cron('@midnight')}
   stages {
-    stage('Set Environment') {
+    stage('Set default value') {
       parallel {
-        stage('only for Dev') {
+        stage('Dev') {
           when {
             branch 'dev'
           }
@@ -16,7 +16,7 @@ pipeline {
 
           }
         }
-        stage('None dev Branch') {
+        stage('Get from branch name') {
           when {
             not {
               branch 'dev'
@@ -28,11 +28,6 @@ pipeline {
               platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
             }
 
-          }
-        }
-        stage('Get remotes branches') {
-          steps {
-            sh 'git branch --all'
           }
         }
       }
