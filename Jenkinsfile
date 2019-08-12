@@ -450,7 +450,4 @@ pipeline {
       }
     }
   }
-  environment {
-    path = '/var/log/jenkins/configuration-drift/'
-  }
 }
