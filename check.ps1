@@ -2,7 +2,6 @@
 param(
     [string]$element,
     [string]$platform,
-    [string]$path,
     [string]$verbose
 )
 try {
