@@ -7,13 +7,13 @@ param(
 )
 try {
     #Init variables
-    [array] $overview        = @()
-    [array] $details         = @()
+    [array]$overview         = @()
+    [array]$details          = @()
+    [string]$path            = "/var/log/jenkins/configuration-drift/"
     [string]$cachedKey       = ""
     [string]$cachedType      = ""
     [string]$referenceBranch = "remotes/origin/$platform-reference"
     [string]$trimSize        = 14 + $element.Length
-
     # Set folder and files
     If (!(Test-Path "$path")) { New-Item -ItemType Directory -Force -Path "diff" | Out-Null}
     # If (Test-Path "$path/$platform-$element.log") { Remove-Item -Path "$path/$platform-$element.log" | Out-Null}
