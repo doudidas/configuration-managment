@@ -16,7 +16,7 @@ try {
 
     # Set folder and files
     If (!(Test-Path "$path")) { New-Item -ItemType Directory -Force -Path "diff" | Out-Null}
-    If (Test-Path "$path/$platform-$element.log") { Remove-Item -Path "$path/$platform-$element.log" | Out-Null}
+    If (Test-Path "$path/$platform-$element.json") { Remove-Item -Path "$path/$platform-$element.json" | Out-Null}
 
     #Get all diffs
     git add --all "export/$element"
@@ -117,7 +117,7 @@ try {
 
     # sort
     # $details = $details | Sort-Object -Property Name,Key,Status
-    ConvertTo-Json -InputObject $details | Add-Content -Encoding utf8 -Path "$path/$platform-$element.log"
+    ConvertTo-Json -InputObject $details | Add-Content -Encoding utf8 -Path "$path/$platform-$element.json"
     if ($details.count -eq 0) {
         Write-Output "No diff for $element"
         exit 0
