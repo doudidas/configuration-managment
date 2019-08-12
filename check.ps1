@@ -90,7 +90,6 @@ try {
     $overview += $tmp
 
     $details | ForEach-Object {
-        Write-Output -InputObject $_
         $env = $_.Environment
         $name = $_.Name
         $type = $_.Type
