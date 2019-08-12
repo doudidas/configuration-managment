@@ -1,6 +1,6 @@
+def path = "/var/log/jenkins/configuration-drift/"
 pipeline {
   agent any
-  environment path = "/var/log/jenkins/configuration-drift/"
   triggers { cron('@midnight')}
   stages {
     stage('Set Environment') {
