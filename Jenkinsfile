@@ -32,7 +32,7 @@ pipeline {
         }
         stage('Get remotes branches') {
           steps {
-            sh 'git pull --all'
+            // sh 'git pull --all'
             sh 'git branch --all'
           }
         }
