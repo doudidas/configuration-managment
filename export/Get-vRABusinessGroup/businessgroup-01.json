@@ -4,71 +4,15 @@
   "Description": "",
   "Roles": null,
   "ExtensionData": {
-    "entries": [
-      {
-        "key": "bytel.registered.status",
-        "value": {
-          "type": "complex",
-          "componentTypeId": null,
-          "componentId": null,
-          "classId": "iaas-custom-property",
-          "typeFilter": null,
-          "values": {
-            "entries": [
-              {
-                "key": "encrypted",
-                "value": {
-                  "type": "boolean",
-                  "value": false
-                }
-              },
-              {
-                "key": "value",
-                "value": {
-                  "type": "string",
-                  "value": "yes"
-                }
-              },
-              {
-                "key": "prompt-user",
-                "value": {
-                  "type": "boolean",
-                  "value": false
-                }
-              }
-            ]
-          }
-        }
-      },
-      {
-        "key": "iaas-ad-container",
-        "value": {
-          "type": "string",
-          "value": ""
-        }
-      },
-      {
-        "key": "iaas-manager-emails",
-        "value": {
-          "type": "string",
-          "value": "etopin@vmware.com"
-        }
-      }
-    ]
+    "entries": "  "
   },
   "GroupManagerRole": [
-    {
-      "domain": "vsphere.local",
-      "name": "etopin"
-    }
+    "@{domain=vsphere.local; name=etopin}"
   ],
   "SupportUserRole": [],
   "SharedAccessUserRole": null,
   "UserRole": [
-    {
-      "domain": "vsphere.local",
-      "name": "api-user"
-    }
+    "@{domain=vsphere.local; name=api-user}"
   ],
   "Tenant": "vsphere.local"
 }

@@ -43,23 +43,11 @@
     "entries": [
       {
         "key": "provider-ForceDestroy",
-        "value": {
-          "type": "boolean",
-          "value": false
-        }
+        "value": "@{type=boolean; value=False}"
       },
       {
         "key": "provider-centos",
-        "value": {
-          "type": "complex",
-          "componentTypeId": "com.vmware.csp.iaas.blueprint.service",
-          "componentId": null,
-          "classId": "Blueprint.Node",
-          "typeFilter": "Centos*centos",
-          "values": {
-            "entries": []
-          }
-        }
+        "value": "@{type=complex; componentTypeId=com.vmware.csp.iaas.blueprint.service; componentId=; classId=Blueprint.Node; typeFilter=Centos*centos; values=}"
       }
     ]
   },

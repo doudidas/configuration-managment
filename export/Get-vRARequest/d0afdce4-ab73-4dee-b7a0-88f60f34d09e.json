@@ -39,17 +39,11 @@
     "entries": [
       {
         "key": "provider-ForceDestroy",
-        "value": {
-          "type": "boolean",
-          "value": false
-        }
+        "value": "@{type=boolean; value=False}"
       },
       {
         "key": "provider-DeleteVolumes",
-        "value": {
-          "type": "boolean",
-          "value": false
-        }
+        "value": "@{type=boolean; value=False}"
       }
     ]
   },

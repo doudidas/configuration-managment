@@ -4,28 +4,10 @@
   "Description": "",
   "Roles": null,
   "ExtensionData": {
-    "entries": [
-      {
-        "key": "iaas-ad-container",
-        "value": {
-          "type": "string",
-          "value": ""
-        }
-      },
-      {
-        "key": "iaas-manager-emails",
-        "value": {
-          "type": "string",
-          "value": "ed.topin@gmail.com"
-        }
-      }
-    ]
+    "entries": " "
   },
   "GroupManagerRole": [
-    {
-      "domain": "vsphere.local",
-      "name": "api-user"
-    }
+    "@{domain=vsphere.local; name=api-user}"
   ],
   "SupportUserRole": [],
   "SharedAccessUserRole": null,
