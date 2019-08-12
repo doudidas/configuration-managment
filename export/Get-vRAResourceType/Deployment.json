@@ -18,8 +18,44 @@
   },
   "ListView": {
     "columns": [
-      "@{id=Component; label=Component; description=The name of the component from which the machine was provisioned.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
-      "@{id=ip_address; label=IP Address; description=IP Address that is used by other machines to communicate with this machine.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}"
+      {
+        "id": "Component",
+        "label": "Component",
+        "description": "The name of the component from which the machine was provisioned.",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": "TEXTBOX",
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": []
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      },
+      {
+        "id": "ip_address",
+        "label": "IP Address",
+        "description": "IP Address that is used by other machines to communicate with this machine.",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": "TEXTBOX",
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": []
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      }
     ],
     "defaultSequence": [
       "Component",

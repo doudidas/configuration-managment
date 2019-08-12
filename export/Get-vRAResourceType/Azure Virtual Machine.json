@@ -15,8 +15,66 @@
   },
   "ListView": {
     "columns": [
-      "@{id=location; label=location; description=; orderIndex=; dataType=; displayAdvice=; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
-      "@{id=powerState; label=powerState; description=; orderIndex=; dataType=; displayAdvice=; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}"
+      {
+        "id": "location",
+        "label": "location",
+        "description": "",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": null,
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": [
+            {
+              "type": "readOnly",
+              "value": {
+                "type": "constantClause",
+                "value": {
+                  "type": "boolean",
+                  "value": true
+                }
+              }
+            }
+          ]
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      },
+      {
+        "id": "powerState",
+        "label": "powerState",
+        "description": "",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": null,
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": [
+            {
+              "type": "readOnly",
+              "value": {
+                "type": "constantClause",
+                "value": {
+                  "type": "boolean",
+                  "value": true
+                }
+              }
+            }
+          ]
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      }
     ],
     "defaultSequence": [
       "powerState",

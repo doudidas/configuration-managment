@@ -15,7 +15,10 @@
     },
     "rightOperand": {
       "type": "constant",
-      "value": "@{type=boolean; value=True}"
+      "value": {
+        "type": "boolean",
+        "value": true
+      }
     }
   },
   "TargetResourceTypeRef": {

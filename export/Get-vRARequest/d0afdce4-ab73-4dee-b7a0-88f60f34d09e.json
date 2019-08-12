@@ -37,8 +37,20 @@
   "RequestCompletion": null,
   "RequestData": {
     "entries": [
-      "@{key=provider-ForceDestroy; value=}",
-      "@{key=provider-DeleteVolumes; value=}"
+      {
+        "key": "provider-ForceDestroy",
+        "value": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "key": "provider-DeleteVolumes",
+        "value": {
+          "type": "boolean",
+          "value": false
+        }
+      }
     ]
   },
   "RetriesRemaining": 3,

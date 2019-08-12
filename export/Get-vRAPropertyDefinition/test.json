@@ -11,23 +11,38 @@
   "Options": {
     "increment": {
       "type": "constant",
-      "value": "@{type=decimal; value=1}"
+      "value": {
+        "type": "decimal",
+        "value": 1.0
+      }
     },
     "mandatory": {
       "type": "constant",
-      "value": "@{type=boolean; value=False}"
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
     },
     "minValue": {
       "type": "constant",
-      "value": "@{type=integer; value=5}"
+      "value": {
+        "type": "integer",
+        "value": 5
+      }
     },
     "maxValue": {
       "type": "constant",
-      "value": "@{type=integer; value=10}"
+      "value": {
+        "type": "integer",
+        "value": 10
+      }
     },
     "encrypted": {
       "type": "constant",
-      "value": "@{type=boolean; value=False}"
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
     }
   },
   "Version": 0,

@@ -7,8 +7,75 @@
   "TargetCriteria": {
     "type": "and",
     "subClauses": [
-      "@{type=and; subClauses=System.Object[]}",
-      "@{type=or; subClauses=System.Object[]}"
+      {
+        "type": "and",
+        "subClauses": [
+          {
+            "type": "expression",
+            "operator": {
+              "type": "isDefined"
+            },
+            "leftOperand": {
+              "type": "path",
+              "path": "ChangeLease"
+            },
+            "rightOperand": null
+          },
+          {
+            "type": "expression",
+            "operator": {
+              "type": "equals"
+            },
+            "leftOperand": {
+              "type": "path",
+              "path": "ChangeLease"
+            },
+            "rightOperand": {
+              "type": "constant",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "or",
+        "subClauses": [
+          {
+            "type": "expression",
+            "operator": {
+              "type": "equals"
+            },
+            "leftOperand": {
+              "type": "path",
+              "path": "parentResource"
+            },
+            "rightOperand": {
+              "type": "constant",
+              "value": null
+            }
+          },
+          {
+            "type": "expression",
+            "operator": {
+              "type": "equals"
+            },
+            "leftOperand": {
+              "type": "path",
+              "path": "isSingleComponent"
+            },
+            "rightOperand": {
+              "type": "constant",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            }
+          }
+        ]
+      }
     ]
   },
   "TargetResourceTypeRef": {

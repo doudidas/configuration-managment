@@ -15,12 +15,120 @@
   },
   "ListView": {
     "columns": [
-      "@{id=address; label=Address; description=The host/ip of the container.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
-      "@{id=status; label=Status; description=The Status of the container.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
-      "@{id=image; label=Image; description=The Image from which the container is created.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
-      "@{id=container_id; label=Container Id; description=The Id of the container.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
-      "@{id=command; label=Commands; description=The commands which the container is started with.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}",
-      "@{id=ports; label=Ports; description=Ports of the container.; orderIndex=; dataType=; displayAdvice=TEXTBOX; permissibleValues=; state=; filterable=False; sortable=False; isMultiValued=False}"
+      {
+        "id": "address",
+        "label": "Address",
+        "description": "The host/ip of the container.",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": "TEXTBOX",
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": []
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      },
+      {
+        "id": "status",
+        "label": "Status",
+        "description": "The Status of the container.",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": "TEXTBOX",
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": []
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      },
+      {
+        "id": "image",
+        "label": "Image",
+        "description": "The Image from which the container is created.",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": "TEXTBOX",
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": []
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      },
+      {
+        "id": "container_id",
+        "label": "Container Id",
+        "description": "The Id of the container.",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": "TEXTBOX",
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": []
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      },
+      {
+        "id": "command",
+        "label": "Commands",
+        "description": "The commands which the container is started with.",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": "TEXTBOX",
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": []
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      },
+      {
+        "id": "ports",
+        "label": "Ports",
+        "description": "Ports of the container.",
+        "orderIndex": null,
+        "dataType": {
+          "type": "primitive",
+          "typeId": "STRING"
+        },
+        "displayAdvice": "TEXTBOX",
+        "permissibleValues": null,
+        "state": {
+          "dependencies": [],
+          "facets": []
+        },
+        "filterable": false,
+        "sortable": false,
+        "isMultiValued": false
+      }
     ],
     "defaultSequence": [
       "container_id",

@@ -11,11 +11,17 @@
   "Options": {
     "mandatory": {
       "type": "constant",
-      "value": "@{type=boolean; value=False}"
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
     },
     "encrypted": {
       "type": "constant",
-      "value": "@{type=boolean; value=False}"
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
     }
   },
   "Version": 0,

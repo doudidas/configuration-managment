@@ -41,8 +41,26 @@
   },
   "RequestData": {
     "entries": [
-      "@{key=provider-ForceDestroy; value=}",
-      "@{key=provider-centos; value=}"
+      {
+        "key": "provider-ForceDestroy",
+        "value": {
+          "type": "boolean",
+          "value": false
+        }
+      },
+      {
+        "key": "provider-centos",
+        "value": {
+          "type": "complex",
+          "componentTypeId": "com.vmware.csp.iaas.blueprint.service",
+          "componentId": null,
+          "classId": "Blueprint.Node",
+          "typeFilter": "Centos*centos",
+          "values": {
+            "entries": []
+          }
+        }
+      }
     ]
   },
   "RetriesRemaining": 3,

@@ -16,19 +16,222 @@
     "emailBgMgr": true,
     "recipients": [],
     "alerts": [
-      "@{alertPercentLevel=80; referenceResourceId=storage}",
-      "@{alertPercentLevel=80; referenceResourceId=memory}",
-      "@{alertPercentLevel=80; referenceResourceId=cpu}",
-      "@{alertPercentLevel=80; referenceResourceId=machine}"
+      {
+        "alertPercentLevel": 80,
+        "referenceResourceId": "storage"
+      },
+      {
+        "alertPercentLevel": 80,
+        "referenceResourceId": "memory"
+      },
+      {
+        "alertPercentLevel": 80,
+        "referenceResourceId": "cpu"
+      },
+      {
+        "alertPercentLevel": 80,
+        "referenceResourceId": "machine"
+      }
     ]
   },
   "ExtensionData": {
     "entries": [
-      "@{key=reservationMemory; value=}",
-      "@{key=reservationStorages; value=}",
-      "@{key=machineQuota; value=}",
-      "@{key=computeResource; value=}",
-      "@{key=reservationNetworks; value=}"
+      {
+        "key": "reservationMemory",
+        "value": {
+          "type": "complex",
+          "componentTypeId": null,
+          "componentId": null,
+          "classId": null,
+          "typeFilter": null,
+          "values": {
+            "entries": [
+              {
+                "key": "computeResourceMemoryTotalSizeMB",
+                "value": {
+                  "type": "integer",
+                  "value": 16384
+                }
+              },
+              {
+                "key": "computeResourceMemoryReservedTotalSizeMB",
+                "value": {
+                  "type": "integer",
+                  "value": 16384
+                }
+              },
+              {
+                "key": "memoryReservedSizeMb",
+                "value": {
+                  "type": "integer",
+                  "value": 16384
+                }
+              },
+              {
+                "key": "computeResourceMemoryAllocatedTotalSizeMB",
+                "value": {
+                  "type": "integer",
+                  "value": 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "reservationStorages",
+        "value": {
+          "type": "multiple",
+          "elementTypeId": "COMPLEX",
+          "items": [
+            {
+              "type": "complex",
+              "componentTypeId": null,
+              "componentId": null,
+              "classId": null,
+              "typeFilter": null,
+              "values": {
+                "entries": [
+                  {
+                    "key": "storageReservedSizeGB",
+                    "value": {
+                      "type": "integer",
+                      "value": 85
+                    }
+                  },
+                  {
+                    "key": "storageReservationPriority",
+                    "value": {
+                      "type": "integer",
+                      "value": 1
+                    }
+                  },
+                  {
+                    "key": "permissible_value_selected",
+                    "value": {
+                      "type": "boolean",
+                      "value": true
+                    }
+                  },
+                  {
+                    "key": "storageAllocatedSizeGB",
+                    "value": {
+                      "type": "integer",
+                      "value": 0
+                    }
+                  },
+                  {
+                    "key": "computeResourceStorageTotalSizeGB",
+                    "value": {
+                      "type": "integer",
+                      "value": 92
+                    }
+                  },
+                  {
+                    "key": "isStorageCluster",
+                    "value": {
+                      "type": "boolean",
+                      "value": false
+                    }
+                  },
+                  {
+                    "key": "storagePath",
+                    "value": {
+                      "type": "entityRef",
+                      "classId": "Storage",
+                      "id": "55bc178a-ae64-4212-a175-ff9accee4be2",
+                      "componentId": null,
+                      "label": "datastore1"
+                    }
+                  },
+                  {
+                    "key": "storageEnabled",
+                    "value": {
+                      "type": "boolean",
+                      "value": true
+                    }
+                  },
+                  {
+                    "key": "computeResourceStorageReservedSizeGB",
+                    "value": {
+                      "type": "integer",
+                      "value": 85
+                    }
+                  },
+                  {
+                    "key": "isSDRSEnabled",
+                    "value": {
+                      "type": "boolean",
+                      "value": false
+                    }
+                  },
+                  {
+                    "key": "computeResourceStorageFreeSizeGB",
+                    "value": {
+                      "type": "integer",
+                      "value": 85
+                    }
+                  },
+                  {
+                    "key": "diskCost",
+                    "value": {
+                      "type": "integer",
+                      "value": 0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "key": "machineQuota",
+        "value": {
+          "type": "integer",
+          "value": 0
+        }
+      },
+      {
+        "key": "computeResource",
+        "value": {
+          "type": "entityRef",
+          "classId": "ComputeResource",
+          "id": "e544f902-53f2-4b29-bfb6-c96018ae74b8",
+          "componentId": null,
+          "label": "Cluster (cava-s-188-39.eng.vmware.com)"
+        }
+      },
+      {
+        "key": "reservationNetworks",
+        "value": {
+          "type": "multiple",
+          "elementTypeId": "COMPLEX",
+          "items": [
+            {
+              "type": "complex",
+              "componentTypeId": "com.vmware.csp.iaas.blueprint.service",
+              "componentId": null,
+              "classId": "Infrastructure.Reservation.Network",
+              "typeFilter": null,
+              "values": {
+                "entries": [
+                  {
+                    "key": "networkPath",
+                    "value": {
+                      "type": "entityRef",
+                      "classId": "Network",
+                      "id": "9763650d-1e45-4e14-8575-98d9c87204c0",
+                      "componentId": null,
+                      "label": "VMNetwork-PortGroup"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
     ]
   }
 }

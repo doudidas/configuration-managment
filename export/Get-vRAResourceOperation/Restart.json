@@ -15,7 +15,10 @@
     },
     "rightOperand": {
       "type": "constant",
-      "value": "@{type=string; value=PowerState/running}"
+      "value": {
+        "type": "string",
+        "value": "PowerState/running"
+      }
     }
   },
   "TargetResourceTypeRef": {

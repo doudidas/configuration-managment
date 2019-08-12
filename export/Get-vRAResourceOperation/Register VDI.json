@@ -7,8 +7,34 @@
   "TargetCriteria": {
     "type": "and",
     "subClauses": [
-      "@{type=expression; operator=; leftOperand=; rightOperand=}",
-      "@{type=expression; operator=; leftOperand=; rightOperand=}"
+      {
+        "type": "expression",
+        "operator": {
+          "type": "isDefined"
+        },
+        "leftOperand": {
+          "type": "path",
+          "path": "RegisterVdi"
+        },
+        "rightOperand": null
+      },
+      {
+        "type": "expression",
+        "operator": {
+          "type": "equals"
+        },
+        "leftOperand": {
+          "type": "path",
+          "path": "RegisterVdi"
+        },
+        "rightOperand": {
+          "type": "constant",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        }
+      }
     ]
   },
   "TargetResourceTypeRef": {
