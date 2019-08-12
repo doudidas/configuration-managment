@@ -27,10 +27,10 @@ If (!(test-path $folderPath)) {
 foreach ($element in $elements) {
     if (Get-Member -inputobject $element -name "Name" -Membertype Properties) {
         $pathToFile = $folderPath + "/" + $element.Name + ".json"
-        ConvertTo-Json -InputObject $element -Depth 100 | Out-File -FilePath $pathToFile
+        ConvertTo-json -InputObject $element -Depth 50 | Out-File -FilePath $pathToFile
     }
     elseif (Get-Member -inputobject $element -name "ID" -Membertype Properties) {
         $pathToFile = $folderPath + "/" + $element.ID + ".json"
-        ConvertTo-Json -InputObject $element -Depth 100 | Out-File -FilePath $pathToFile
+        ConvertTo-Json -InputObject $element -Depth 50 | Out-File -FilePath $pathToFile
     }
 }

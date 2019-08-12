@@ -6,11 +6,13 @@ param(
     [string]$verbose
 )
 try {
-    #Init
-    [array]$overview = @()
-    [array]$details = @()
-    $referenceBranch = "remotes/origin/$platform-reference"
-    $trimSize = 14 + $element.Length
+    #Init variables
+    [array] $overview        = @()
+    [array] $details         = @()
+    [string]$cachedKey       = ""
+    [string]$cachedType      = ""
+    [string]$referenceBranch = "remotes/origin/$platform-reference"
+    [string]$trimSize        = 14 + $element.Length
 
     # Set folder and files
     If (!(Test-Path "$path")) { New-Item -ItemType Directory -Force -Path "diff" | Out-Null}
@@ -18,6 +20,7 @@ try {
 
     #Get all diffs
     git add --all "export/$element"
+    Write-Output "git diff --cached $referenceBranch -- 'export/$element/*.json'"
     [array]$lines = git diff --cached $referenceBranch -- "export/$element/*.json" 
 
     for ($i = 0; $i -lt $lines.Count; $i++) {
@@ -46,18 +49,42 @@ try {
                 $tmp.Name = $lines[$i].Substring($trimSize).trim().Replace('"', "")
             }
         }
-        elseif ($lines[$i] -match "^-|^\+") {
-            write-output $lines[$i]
-            $m      = ($lines[$i].Substring(1) | select-string '(".*?")|([[:alnum:]].*\,*)' -allmatches).matches
-            $detail = [PSCustomObject]@{
-                Environment = $platform    
-                Name        = $tmp.Name
-                Type        = $element.Substring(4)
-                Status      = @("Removed","Added")[$lines[$i][0] -eq "-"]
-                Key         = $m[0] -replace '"', ""
-                Value       = $m[1] -replace '"', "" -replace ",",""
-              }
-            $details += $detail
+        elseif ($lines[$i] -match '(^\-|^\+)\s*".*') {
+            $status = @("Removed","Added")[$lines[$i][0] -eq "-"]
+            $m      = ($lines[$i].Substring(1) | select-string '(".*?")|([a-zA-Z0-9{}[\]].*\,*)' -allmatches).matches
+            $key    = $m[0].Value.trim() -replace '\"', ""
+            $value  = $m[1].Value -replace '"', "" -replace ",",""
+            if($key -eq "key" -and $cachedKey -eq "") {
+                $cachedKey = $value
+            }  elseif($key -eq "type" -and $cachedType -eq "") {
+                $cachedType = $value
+            } else{
+                if($key -eq "value" -and $value -notin "{", "[") {
+                    $key = $cachedKey
+                    if($cachedKey -ne ''){
+                        $value = [PSCustomObject]@{
+                            type= $cachedType
+                            value= $value
+                        }
+                    } else {
+                        $value = $value
+                    }
+
+                    $cachedKey = ""
+                    $cachedType = ""
+                }
+                $detail = [PSCustomObject]@{
+                    Environment = $platform    
+                    Name        = $tmp.Name
+                    Type        = $element.Substring(4)
+                    Status      = $status
+                    Key         = $key
+                    Value       = $value
+                }
+                if($detail.Value -notin "[", "{", ""){
+                    $details += $detail
+                }
+            }
         }
     }
 
@@ -89,7 +116,7 @@ try {
     # }
 
     # sort
-    $details = $details | Sort-Object -Property Name,Key,Status
+    # $details = $details | Sort-Object -Property Name,Key,Status
     ConvertTo-Json -InputObject $details | Add-Content -Encoding utf8 -Path "$path/$platform-$element.log"
     if ($details.count -eq 0) {
         Write-Output "No diff for $element"
@@ -108,6 +135,8 @@ try {
     }
 }
 catch {
-    Write-Host $_
+    $e = $_.Exception
+    $line = $_.InvocationInfo.ScriptLineNumber
+    Write-Host -ForegroundColor Red "caught exception: $e at $line"
     exit 9
 }
