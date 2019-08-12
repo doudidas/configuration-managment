@@ -1,6 +1,8 @@
 pipeline {
   agent any
-  triggers { cron('@midnight')}
+  triggers {
+    cron(BRANCH_NAME ==~ /(dev|.*-current)/ ? '@midnight' : '')
+  }
   stages {
     stage('Set default value') {
       parallel {
@@ -445,7 +447,7 @@ pipeline {
       }
       steps {
         sh 'git add --all'
-        sh 'git commit --allow-empty -m "[${GIT_BRANCH}] Pushed by Jenkins: build n�${BUILD_NUMBER}"'
+        sh 'git commit --allow-empty -m "[${GIT_BRANCH}] Pushed by Jenkins: build #${BUILD_NUMBER}"'
         sh "git push origin ${GIT_BRANCH}"
       }
     }
