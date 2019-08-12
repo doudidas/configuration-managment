@@ -6,6 +6,13 @@
   "ExtensionData": {
     "entries": [
       {
+        "key": "iaas-machine-prefix",
+        "value": {
+          "type": "string",
+          "value": "4cb9761d-71a7-4b4d-8168-146e6ede3da7"
+        }
+      },
+      {
         "key": "iaas-ad-container",
         "value": {
           "type": "string",
@@ -16,7 +23,7 @@
         "key": "iaas-manager-emails",
         "value": {
           "type": "string",
-          "value": "ed.topin@gmail.com"
+          "value": "toto@lapraline.com"
         }
       }
     ]
@@ -24,7 +31,11 @@
   "GroupManagerRole": [
     {
       "domain": "vsphere.local",
-      "name": "api-user"
+      "name": "vcoadmins"
+    },
+    {
+      "domain": "vsphere.local",
+      "name": "etopin"
     }
   ],
   "SupportUserRole": [],
