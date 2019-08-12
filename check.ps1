@@ -115,9 +115,7 @@ try {
     #     $previous = $name
     # }
 
-    # sort
-    # $details = $details | Sort-Object -Property Name,Key,Status
-    ConvertTo-Json -InputObject $details | Add-Content -Encoding utf8 -Path "$path/$platform-$element.json"
+    ConvertTo-Json -InputObject $details -Compress | Add-Content -Encoding utf8 -Path "$path/$platform-$element.json"
     if ($details.count -eq 0) {
         Write-Output "No diff for $element"
         exit 0
