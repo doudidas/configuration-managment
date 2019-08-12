@@ -460,7 +460,4 @@ pipeline {
   environment {
     path = '/var/log/jenkins/configuration-drift/'
   }
-  triggers {
-    cron('@midnight')
-  }
 }
