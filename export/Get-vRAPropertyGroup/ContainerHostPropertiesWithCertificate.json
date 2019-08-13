@@ -8,51 +8,51 @@
   "Properties": {
     "Container.Connection.Scheme": {
       "visibility": true,
-      "defaultValue": "https",
+      "mandatory": true,
       "encrypted": false,
-      "mandatory": true
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
-      "visibility": true,
-      "defaultValue": "Container*",
-      "encrypted": false,
-      "mandatory": true
-    },
-    "Container.Auth.PrivateKey": {
-      "visibility": true,
-      "defaultValue": "",
-      "encrypted": true,
-      "mandatory": true
-    },
-    "Container": {
-      "visibility": true,
-      "defaultValue": "App.Container",
-      "encrypted": false,
-      "mandatory": true
-    },
-    "Container.Auth.PublicKey": {
-      "visibility": true,
-      "defaultValue": "",
-      "encrypted": false,
-      "mandatory": true
-    },
-    "Container.Connection.Protocol": {
-      "visibility": true,
-      "defaultValue": "API",
-      "encrypted": false,
-      "mandatory": true
+      "defaultValue": "https"
     },
     "Container.Connection.Port": {
       "visibility": true,
-      "defaultValue": "2376",
+      "mandatory": true,
       "encrypted": false,
-      "mandatory": true
+      "defaultValue": "2376"
     },
     "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
       "visibility": true,
-      "defaultValue": "Container*",
+      "mandatory": true,
       "encrypted": false,
-      "mandatory": true
+      "defaultValue": "Container*"
+    },
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
+      "visibility": true,
+      "mandatory": true,
+      "encrypted": false,
+      "defaultValue": "Container*"
+    },
+    "Container": {
+      "visibility": true,
+      "mandatory": true,
+      "encrypted": false,
+      "defaultValue": "App.Container"
+    },
+    "Container.Auth.PrivateKey": {
+      "visibility": true,
+      "mandatory": true,
+      "encrypted": true,
+      "defaultValue": ""
+    },
+    "Container.Connection.Protocol": {
+      "visibility": true,
+      "mandatory": true,
+      "encrypted": false,
+      "defaultValue": "API"
+    },
+    "Container.Auth.PublicKey": {
+      "visibility": true,
+      "mandatory": true,
+      "encrypted": false,
+      "defaultValue": ""
     }
   }
 }
