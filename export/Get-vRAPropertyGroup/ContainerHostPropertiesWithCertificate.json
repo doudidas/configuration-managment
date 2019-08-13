@@ -6,53 +6,53 @@
   "DateCreated": "2019-06-24T14:18:13.946Z",
   "LastUpdatedDate": "2019-06-24T14:18:13.946Z",
   "Properties": {
-    "Container.Auth.PublicKey": {
-      "encrypted": false,
-      "mandatory": true,
-      "visibility": true,
-      "defaultValue": ""
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
-      "encrypted": false,
-      "mandatory": true,
-      "visibility": true,
-      "defaultValue": "Container*"
-    },
     "Container.Connection.Protocol": {
       "encrypted": false,
-      "mandatory": true,
+      "defaultValue": "API",
       "visibility": true,
-      "defaultValue": "API"
-    },
-    "Container": {
-      "encrypted": false,
-      "mandatory": true,
-      "visibility": true,
-      "defaultValue": "App.Container"
-    },
-    "Container.Connection.Port": {
-      "encrypted": false,
-      "mandatory": true,
-      "visibility": true,
-      "defaultValue": "2376"
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
-      "encrypted": false,
-      "mandatory": true,
-      "visibility": true,
-      "defaultValue": "Container*"
+      "mandatory": true
     },
     "Container.Connection.Scheme": {
       "encrypted": false,
-      "mandatory": true,
+      "defaultValue": "https",
       "visibility": true,
-      "defaultValue": "https"
+      "mandatory": true
+    },
+    "Container.Connection.Port": {
+      "encrypted": false,
+      "defaultValue": "2376",
+      "visibility": true,
+      "mandatory": true
     },
     "Container.Auth.PrivateKey": {
       "encrypted": true,
-      "mandatory": true,
+      "defaultValue": "",
       "visibility": true,
-      "defaultValue": ""
+      "mandatory": true
+    },
+    "Container": {
+      "encrypted": false,
+      "defaultValue": "App.Container",
+      "visibility": true,
+      "mandatory": true
+    },
+    "Container.Auth.PublicKey": {
+      "encrypted": false,
+      "defaultValue": "",
+      "visibility": true,
+      "mandatory": true
+    },
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
+      "encrypted": false,
+      "defaultValue": "Container*",
+      "visibility": true,
+      "mandatory": true
+    },
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
+      "encrypted": false,
+      "defaultValue": "Container*",
+      "visibility": true,
+      "mandatory": true
     }
   }
 }
