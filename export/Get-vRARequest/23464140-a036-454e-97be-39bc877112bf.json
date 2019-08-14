@@ -1,7 +1,7 @@
 {
-  "Id": "24a5c8ea-3d9a-4359-b4e3-da59726b3552",
-  "RequestNumber": 109,
-  "State": "PROVIDER_FAILED",
+  "Id": "23464140-a036-454e-97be-39bc877112bf",
+  "RequestNumber": 209,
+  "State": "SUCCESSFUL",
   "Description": null,
   "CatalogItem": "Centos",
   "RequestedItemName": "Centos",
@@ -9,17 +9,17 @@
   "Reasons": null,
   "RequestedFor": "etopin@vsphere.local",
   "RequestedBy": "etopin@vsphere.local",
-  "DateCreated": "2019-08-01T15:27:51.967Z",
-  "LastUpdated": "2019-08-07T13:01:30.348Z",
-  "DateSubmitted": "2019-08-01T15:27:51.967Z",
+  "DateCreated": "2019-08-14T00:45:10.942Z",
+  "LastUpdated": "2019-08-14T00:48:05.954Z",
+  "DateSubmitted": "2019-08-14T00:45:10.942Z",
   "DateApproved": null,
-  "DateCompleted": null,
+  "DateCompleted": "2019-08-14T00:48:05.953Z",
   "WaitingStatus": "NOT_WAITING",
   "ExecutionStatus": "STOPPED",
-  "ApprovalStatus": "PRE_APPROVED",
-  "Phase": "FAILED",
+  "ApprovalStatus": "POST_APPROVED",
+  "Phase": "SUCCESSFUL",
   "IconId": "8b0c1cca-2678-470d-ab27-05f7c8a9fc21",
-  "Version": 5,
+  "Version": 6,
   "Organization": {
     "tenantRef": "vsphere.local",
     "tenantLabel": "vsphere.local",
@@ -39,8 +39,8 @@
     "totalLeaseCost": null
   },
   "RequestCompletion": {
-    "requestCompletionState": "FAILED",
-    "completionDetails": "The following component requests failed:\ncentos. Request failed: Machine businessgro0041: CloneVM :  Unable to connect to the remote server.\n",
+    "requestCompletionState": "SUCCESSFUL",
+    "completionDetails": "",
     "resourceBindingIds": null
   },
   "RequestData": {
@@ -468,7 +468,7 @@
   },
   "RetriesRemaining": 3,
   "Components": null,
-  "StateName": "Failed",
+  "StateName": "Successful",
   "CatalogItemProviderBinding": {
     "bindingId": "vsphere.local!::!Centos",
     "providerRef": {
