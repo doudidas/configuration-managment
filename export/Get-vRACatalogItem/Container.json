@@ -1,0 +1,26 @@
+{
+  "Id": "ee526f46-0785-4e5b-b58d-e405c896fad5",
+  "Name": "Container",
+  "Description": "Container",
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-06-24T14:18:08.892Z",
+  "LastUpdatedDate": null,
+  "Requestable": false,
+  "IsNoteworthy": false,
+  "Organization": null,
+  "CatalogItemType": "Container",
+  "OutputResourceType": "Container",
+  "Callbacks": null,
+  "Forms": null,
+  "IconId": "cafe_default_icon_genericCatalogItem",
+  "ProviderBinding": {
+    "bindingId": "App.Container",
+    "providerRef": {
+      "id": "3fbc212f-0f92-4548-ae3e-5135b7553338",
+      "label": "Container Service"
+    }
+  }
+}
