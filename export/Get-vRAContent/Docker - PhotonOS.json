@@ -1,0 +1,14 @@
+{
+  "Id": "887f3408-adad-480a-9dce-8e3d5e67655c",
+  "ContentId": "DockerPhotonOS",
+  "Name": "Docker - PhotonOS",
+  "Description": "Docker - PhotonOS",
+  "ContentTypeId": "composite-blueprint",
+  "MimeType": null,
+  "TenantId": "vsphere.local",
+  "SubtenantId": null,
+  "Dependencies": [],
+  "CreatedDate": "2019-08-09T15:02:05.316Z",
+  "LastUpdated": "2019-08-09T15:02:05.316Z",
+  "Version": 0
+}
