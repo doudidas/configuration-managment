@@ -19,9 +19,9 @@ try {
 
     #Get all diffs
     git add --all "export/$element"
-    Write-Output "git diff --cached $referenceBranch -- 'export/$element/*.json'"
-    [array]$lines = git diff --cached $referenceBranch -- "export/$element/*.json" 
-
+    $cmd = "git diff --cached $referenceBranch -- 'export/$element/*.json'"
+    Write-Output $cmd
+    [array]$lines = Invoke-Expression -Command $cmd
     for ($i = 0; $i -lt $lines.Count; $i++) {
         $lines[$i] = $lines[$i]
         if ($lines[$i] -match "^diff --git") {
@@ -87,7 +87,7 @@ try {
     }
 
     $overview += $tmp
-
+    $details | Format-Table | Out-String -Width 4096 | Out-File /tmp/$platform-$element.txt
     $details | ForEach-Object {
         $env = $_.Environment
         $name = $_.Name
@@ -96,7 +96,6 @@ try {
         $status = $_.Status
         $value = $_.Value
         $value = "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][KEY]$key[/KEY][STATE]$status[/STATE][VALUE]$value[/VALUE]"
-        Add-Content -Encoding utf8 -Path "$path/$platform-$element.log" -Value $value
     }
 
     if ($details.count -eq 0) {
