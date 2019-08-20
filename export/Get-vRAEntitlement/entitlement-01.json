@@ -1,7 +1,7 @@
 {
   "Id": "1d751b3b-21fa-4adf-8224-f624156ecfdf",
   "Name": "entitlement-01",
-  "Description": "",
+  "Description": "test",
   "Status": "ACTIVE",
   "EntitledCatalogItems": [
     {
@@ -829,7 +829,7 @@
   ],
   "ExpiryDate": null,
   "LastUpdatedBy": "Edouard Topin",
-  "LastUpdatedDate": "2019-07-26T12:45:38.889Z",
+  "LastUpdatedDate": "2019-08-14T08:45:25.644Z",
   "Organization": {
     "tenantRef": "vsphere.local",
     "tenantLabel": "vsphere.local",
@@ -853,5 +853,5 @@
   "PriorityOrder": 1,
   "StatusName": "Active",
   "LocalScopeForActions": true,
-  "Version": 10
+  "Version": 11
 }
