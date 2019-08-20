@@ -1,0 +1,42 @@
+{
+  "Id": "99dafe72-b4cc-4239-bfa2-f684f753fac1",
+  "Name": "np-nat-02",
+  "Description": null,
+  "CreatedDate": "2019-08-14T08:43:01Z",
+  "LastModifiedDate": "2019-08-14T08:43:01Z",
+  "IsHidden": false,
+  "DefinedRanges": [
+    {
+      "id": "5ef6e9e9-8631-4b73-9b34-aba354b96bc7",
+      "name": "range-01",
+      "description": "",
+      "beginIPv4Address": "192.168.0.5",
+      "endIPv4Address": "192.168.0.10",
+      "state": "UNALLOCATED",
+      "networkProfileId": null,
+      "createdDate": "2019-08-14T08:43:01Z",
+      "lastModifiedDate": "2019-08-14T08:43:01Z",
+      "definedAddresses": null,
+      "gateway": null,
+      "externalId": null
+    }
+  ],
+  "DefinedAddresses": null,
+  "ReclaimedAddresses": null,
+  "IPAMEndpointId": null,
+  "IPAMEndpointName": null,
+  "AddressSpaceExternalId": null,
+  "ProfileType": "NAT",
+  "NatType": "ONETOONE",
+  "SubnetMask": "255.255.255.0",
+  "GatewayAddress": "192.168.0.1",
+  "PrimaryDnsAddress": null,
+  "SecondaryDnsAddress": null,
+  "DnsSuffix": null,
+  "DnsSearchSuffix": null,
+  "PrimaryWinsAddress": null,
+  "SecondaryWinsAddress": null,
+  "ExternalNetworkProfileId": "6abd15cc-1898-4068-9f0c-3127c31cb8c5",
+  "ExternalNetworkProfileName": "np-ext-01",
+  "DhcpConfig": null
+}

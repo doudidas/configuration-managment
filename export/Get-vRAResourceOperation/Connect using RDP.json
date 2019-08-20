@@ -1,0 +1,53 @@
+{
+  "Id": "145f534a-f4ab-4a6f-8074-cc1c4c2ef0de",
+  "Name": "Connect using RDP",
+  "ExternalId": "csp.places.iaas.item.noform.ConnectViaRdp",
+  "Description": "Infrastructure connect using RDP",
+  "IconId": "cafe_default_icon_genericResourceOperation",
+  "TargetCriteria": {
+    "type": "and",
+    "subClauses": [
+      {
+        "type": "expression",
+        "operator": {
+          "type": "isDefined"
+        },
+        "leftOperand": {
+          "type": "path",
+          "path": "ConnectViaRdp"
+        },
+        "rightOperand": null
+      },
+      {
+        "type": "expression",
+        "operator": {
+          "type": "equals"
+        },
+        "leftOperand": {
+          "type": "path",
+          "path": "ConnectViaRdp"
+        },
+        "rightOperand": {
+          "type": "constant",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        }
+      }
+    ]
+  },
+  "TargetResourceTypeRef": {
+    "id": "Infrastructure.Machine",
+    "label": "Machine"
+  },
+  "Status": "PUBLISHED",
+  "Entitleable": true,
+  "organization": null,
+  "RequestSchema": null,
+  "Forms": null,
+  "Callbacks": null,
+  "LifecycleAction": null,
+  "BindingId": null,
+  "ProviderTypeRef": null
+}
