@@ -1,0 +1,82 @@
+{
+  "Id": "4203abc8-ef23-4599-857b-ed0ab212f38b",
+  "Name": "Scale In",
+  "ExternalId": "composition.resource.action.deployment.scalein",
+  "Description": "Scales in any scalable component in a deployment.",
+  "IconId": "composition.scalein.png",
+  "TargetCriteria": {
+    "type": "or",
+    "subClauses": [
+      {
+        "type": "expression",
+        "operator": {
+          "type": "equals"
+        },
+        "leftOperand": {
+          "type": "path",
+          "path": "parentResource"
+        },
+        "rightOperand": {
+          "type": "constant",
+          "value": null
+        }
+      },
+      {
+        "type": "expression",
+        "operator": {
+          "type": "equals"
+        },
+        "leftOperand": {
+          "type": "path",
+          "path": "isSingleComponent"
+        },
+        "rightOperand": {
+          "type": "constant",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        }
+      }
+    ]
+  },
+  "TargetResourceTypeRef": {
+    "id": "composition.resource.type.deployment",
+    "label": "Deployment"
+  },
+  "Status": "PUBLISHED",
+  "Entitleable": true,
+  "organization": null,
+  "RequestSchema": {
+    "classId": "resourceActionRequest",
+    "typeFilter": "composition.resource.action.deployment.scalein"
+  },
+  "Forms": {
+    "catalogRequestInfoHidden": true,
+    "requestFormScale": "BIG",
+    "requestSubmission": {
+      "type": "extension",
+      "extensionId": "com.vmware.vcac.core.design.blueprints.scaleIn.requestForm",
+      "extensionPointId": null
+    },
+    "requestDetails": {
+      "type": "extension",
+      "extensionId": "com.vmware.vcac.core.design.blueprints.scaleIn.requestDetailsForm",
+      "extensionPointId": null
+    },
+    "requestPreApproval": null,
+    "requestPostApproval": null
+  },
+  "Callbacks": {
+    "validate": true,
+    "rollback": false,
+    "itemInformation": true,
+    "itemInitialize": true
+  },
+  "LifecycleAction": "ScaleIn",
+  "BindingId": "composition.resource.action.deployment.scalein",
+  "ProviderTypeRef": {
+    "id": "com.vmware.csp.component.cafe.composition",
+    "label": "Blueprint Service"
+  }
+}

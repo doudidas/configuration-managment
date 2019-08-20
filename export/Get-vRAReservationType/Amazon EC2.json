@@ -1,0 +1,28 @@
+{
+  "CreatedDate": "2019-06-24T14:26:58.464Z",
+  "LastUpdated": "2019-06-24T14:26:58.464Z",
+  "Version": 0,
+  "Id": "Infrastructure.Reservation.Cloud.Amazon",
+  "Name": "Amazon EC2",
+  "Description": "Amazon Reservation",
+  "Category": "Cloud",
+  "ServiceTypeId": "com.vmware.csp.iaas.blueprint.service",
+  "TenantId": null,
+  "FormReference": {
+    "type": "extension",
+    "extensionId": "com.vmware.vcac.iaas.reservation.details",
+    "extensionPointId": "cafe.forms.extensions"
+  },
+  "SchemaClassId": "Infrastructure.Reservation.Cloud.Amazon",
+  "AlertTypes": [
+    {
+      "createdDate": "2019-06-24T14:26:58.465Z",
+      "lastUpdated": "2019-06-24T14:26:58.465Z",
+      "version": 0,
+      "id": "c379a1c1-ac6d-481f-a6ac-764879e4882e",
+      "name": "Machine quota",
+      "description": "The threshold for machine quota usage. The system will send email notifications when the usage exceeds the threshold.",
+      "referenceResourceId": "machine"
+    }
+  ]
+}

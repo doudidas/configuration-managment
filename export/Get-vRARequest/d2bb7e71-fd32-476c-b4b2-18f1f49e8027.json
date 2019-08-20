@@ -1,0 +1,479 @@
+{
+  "Id": "d2bb7e71-fd32-476c-b4b2-18f1f49e8027",
+  "RequestNumber": 148,
+  "State": "PROVIDER_FAILED",
+  "Description": null,
+  "CatalogItem": "Centos",
+  "RequestedItemName": "Centos",
+  "RequestedItemDescription": "",
+  "Reasons": null,
+  "RequestedFor": "etopin@vsphere.local",
+  "RequestedBy": "etopin@vsphere.local",
+  "DateCreated": "2019-08-07T12:57:08.208Z",
+  "LastUpdated": "2019-08-07T13:00:01.6Z",
+  "DateSubmitted": "2019-08-07T12:57:08.208Z",
+  "DateApproved": null,
+  "DateCompleted": null,
+  "WaitingStatus": "NOT_WAITING",
+  "ExecutionStatus": "STOPPED",
+  "ApprovalStatus": "PRE_APPROVED",
+  "Phase": "FAILED",
+  "IconId": "8b0c1cca-2678-470d-ab27-05f7c8a9fc21",
+  "Version": 5,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": "b3a2dc51-5267-410c-87f3-ddfefc1645a7",
+    "subtenantLabel": "businessgroup-01"
+  },
+  "RequestorEntitlementId": "1d751b3b-21fa-4adf-8224-f624156ecfdf",
+  "PreApprovalId": null,
+  "PostApprovalId": null,
+  "Quote": {
+    "leasePeriod": {
+      "type": "timeSpan",
+      "unit": "DAYS",
+      "amount": 1
+    },
+    "leaseRate": null,
+    "totalLeaseCost": null
+  },
+  "RequestCompletion": {
+    "requestCompletionState": "FAILED",
+    "completionDetails": "The following component requests failed:\ncentos. Allocation request [Composition RequestId: [da1d09ac-4040-4022-911d-24f016ec94d4], CompTypeId: [Infrastructure.CatalogItem.Machine.Virtual.vSphere], BlueprintId: [Centos], CompId: [centos], BlueprintRequestId: [e4066bde-e622-49e5-b5dd-9147e8a691b6], RootCafeRequestId: [d2bb7e71-fd32-476c-b4b2-18f1f49e8027], SubtenantId: [b3a2dc51-5267-410c-87f3-ddfefc1645a7]] with binding id [32ee38c5-d32b-4c41-832a-9b15bfd71370] failed with [Infrastructure service provider error: A server error was encountered. Error requesting machine. No reservation is available to allocate within the group businessgroup-01.  Total 11 GB of storage was requested.].\n",
+    "resourceBindingIds": null
+  },
+  "RequestData": {
+    "entries": [
+      {
+        "key": "provider-_leaseDays",
+        "value": {
+          "type": "integer",
+          "value": 1
+        }
+      },
+      {
+        "key": "provider-providerId",
+        "value": {
+          "type": "string",
+          "value": "766b90da-6823-4131-9d12-29e1db85f768"
+        }
+      },
+      {
+        "key": "provider-providerBindingId",
+        "value": {
+          "type": "string",
+          "value": "Centos"
+        }
+      },
+      {
+        "key": "provider-centos",
+        "value": {
+          "type": "complex",
+          "componentTypeId": "com.vmware.csp.component.cafe.composition",
+          "componentId": null,
+          "classId": "Blueprint.Component.Declaration",
+          "typeFilter": "Centos*centos",
+          "values": {
+            "entries": [
+              {
+                "key": "snapshot_name",
+                "value": null
+              },
+              {
+                "key": "memory",
+                "value": {
+                  "type": "integer",
+                  "value": 128
+                }
+              },
+              {
+                "key": "disks",
+                "value": {
+                  "type": "multiple",
+                  "elementTypeId": "COMPLEX",
+                  "items": [
+                    {
+                      "type": "complex",
+                      "componentTypeId": "com.vmware.csp.iaas.blueprint.service",
+                      "componentId": null,
+                      "classId": "Infrastructure.Compute.Machine.MachineDisk",
+                      "typeFilter": null,
+                      "values": {
+                        "entries": [
+                          {
+                            "key": "is_clone",
+                            "value": {
+                              "type": "boolean",
+                              "value": true
+                            }
+                          },
+                          {
+                            "key": "initial_location",
+                            "value": {
+                              "type": "string",
+                              "value": ""
+                            }
+                          },
+                          {
+                            "key": "volumeId",
+                            "value": {
+                              "type": "string",
+                              "value": "0"
+                            }
+                          },
+                          {
+                            "key": "custom_properties",
+                            "value": null
+                          },
+                          {
+                            "key": "label",
+                            "value": {
+                              "type": "string",
+                              "value": "Hard disk 1"
+                            }
+                          },
+                          {
+                            "key": "id",
+                            "value": {
+                              "type": "integer",
+                              "value": 1561394194720
+                            }
+                          },
+                          {
+                            "key": "userCreated",
+                            "value": {
+                              "type": "boolean",
+                              "value": false
+                            }
+                          },
+                          {
+                            "key": "storage_reservation_policy",
+                            "value": {
+                              "type": "string",
+                              "value": ""
+                            }
+                          },
+                          {
+                            "key": "capacity",
+                            "value": {
+                              "type": "integer",
+                              "value": 1
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "complex",
+                      "componentTypeId": "com.vmware.csp.iaas.blueprint.service",
+                      "componentId": null,
+                      "classId": "Infrastructure.Compute.Machine.MachineDisk",
+                      "typeFilter": null,
+                      "values": {
+                        "entries": [
+                          {
+                            "key": "is_clone",
+                            "value": {
+                              "type": "boolean",
+                              "value": false
+                            }
+                          },
+                          {
+                            "key": "initial_location",
+                            "value": {
+                              "type": "string",
+                              "value": ""
+                            }
+                          },
+                          {
+                            "key": "volumeId",
+                            "value": {
+                              "type": "string",
+                              "value": "1"
+                            }
+                          },
+                          {
+                            "key": "label",
+                            "value": {
+                              "type": "string",
+                              "value": ""
+                            }
+                          },
+                          {
+                            "key": "id",
+                            "value": {
+                              "type": "integer",
+                              "value": 1561394057515
+                            }
+                          },
+                          {
+                            "key": "userCreated",
+                            "value": {
+                              "type": "boolean",
+                              "value": true
+                            }
+                          },
+                          {
+                            "key": "storage_reservation_policy",
+                            "value": {
+                              "type": "string",
+                              "value": ""
+                            }
+                          },
+                          {
+                            "key": "capacity",
+                            "value": {
+                              "type": "integer",
+                              "value": 10
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "ovf_use_proxy",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              {
+                "key": "description",
+                "value": null
+              },
+              {
+                "key": "storage",
+                "value": {
+                  "type": "integer",
+                  "value": 11
+                }
+              },
+              {
+                "key": "guest_customization_specification",
+                "value": null
+              },
+              {
+                "key": "_hasChildren",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              {
+                "key": "reservation_policy",
+                "value": null
+              },
+              {
+                "key": "os_distribution",
+                "value": null
+              },
+              {
+                "key": "max_network_adapters",
+                "value": {
+                  "type": "integer",
+                  "value": -1
+                }
+              },
+              {
+                "key": "nics",
+                "value": {
+                  "type": "multiple",
+                  "elementTypeId": "COMPLEX",
+                  "items": [
+                    {
+                      "type": "complex",
+                      "componentTypeId": "com.vmware.csp.iaas.blueprint.service",
+                      "componentId": null,
+                      "classId": "Infrastructure.Compute.Machine.Nic",
+                      "typeFilter": null,
+                      "values": {
+                        "entries": [
+                          {
+                            "key": "network_profile",
+                            "value": null
+                          },
+                          {
+                            "key": "address",
+                            "value": {
+                              "type": "string",
+                              "value": ""
+                            }
+                          },
+                          {
+                            "key": "id",
+                            "value": {
+                              "type": "integer",
+                              "value": 0
+                            }
+                          },
+                          {
+                            "key": "assignment_type",
+                            "value": {
+                              "type": "string",
+                              "value": "DHCP"
+                            }
+                          },
+                          {
+                            "key": "network",
+                            "value": null
+                          },
+                          {
+                            "key": "load_balancing",
+                            "value": {
+                              "type": "string",
+                              "value": ""
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "key": "max_per_user",
+                "value": {
+                  "type": "integer",
+                  "value": 0
+                }
+              },
+              {
+                "key": "machine_prefix",
+                "value": null
+              },
+              {
+                "key": "ovfAuthNeeded",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              {
+                "key": "source_machine_vmsnapshot",
+                "value": null
+              },
+              {
+                "key": "display_location",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              {
+                "key": "os_version",
+                "value": null
+              },
+              {
+                "key": "os_arch",
+                "value": {
+                  "type": "string",
+                  "value": "x86_64"
+                }
+              },
+              {
+                "key": "datacenter_location",
+                "value": null
+              },
+              {
+                "key": "property_groups",
+                "value": null
+              },
+              {
+                "key": "cpu",
+                "value": {
+                  "type": "integer",
+                  "value": 1
+                }
+              },
+              {
+                "key": "ovf_proxy_endpoint",
+                "value": null
+              },
+              {
+                "key": "security_groups",
+                "value": {
+                  "type": "multiple",
+                  "elementTypeId": "ENTITY_REFERENCE",
+                  "items": []
+                }
+              },
+              {
+                "key": "_cluster",
+                "value": {
+                  "type": "integer",
+                  "value": 1
+                }
+              },
+              {
+                "key": "ovf_url_username",
+                "value": null
+              },
+              {
+                "key": "ovf_url",
+                "value": null
+              },
+              {
+                "key": "max_volumes",
+                "value": {
+                  "type": "integer",
+                  "value": 60
+                }
+              },
+              {
+                "key": "os_type",
+                "value": {
+                  "type": "string",
+                  "value": "Linux"
+                }
+              },
+              {
+                "key": "ovf_url_pwd",
+                "value": null
+              },
+              {
+                "key": "source_machine_external_snapshot",
+                "value": null
+              },
+              {
+                "key": "security_tags",
+                "value": {
+                  "type": "multiple",
+                  "elementTypeId": "ENTITY_REFERENCE",
+                  "items": []
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "provider-_number_of_instances",
+        "value": {
+          "type": "integer",
+          "value": 1
+        }
+      },
+      {
+        "key": "provider-subtenantId",
+        "value": {
+          "type": "string",
+          "value": "b3a2dc51-5267-410c-87f3-ddfefc1645a7"
+        }
+      }
+    ]
+  },
+  "RetriesRemaining": 3,
+  "Components": null,
+  "StateName": "Failed",
+  "CatalogItemProviderBinding": {
+    "bindingId": "vsphere.local!::!Centos",
+    "providerRef": {
+      "id": "766b90da-6823-4131-9d12-29e1db85f768",
+      "label": "Blueprint Service"
+    }
+  }
+}

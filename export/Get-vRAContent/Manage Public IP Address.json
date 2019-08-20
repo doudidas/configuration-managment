@@ -1,0 +1,16 @@
+{
+  "Id": "29396429-2747-4201-9416-12e780b5eb44",
+  "ContentId": "6379a166-b84e-4ddf-b1e7-39e3a1ea8a62",
+  "Name": "Manage Public IP Address",
+  "Description": null,
+  "ContentTypeId": "xaas-resource-action",
+  "MimeType": null,
+  "TenantId": "_internal",
+  "SubtenantId": null,
+  "Dependencies": [
+    "028e85a1-3323-4e08-9d15-6614569b589a"
+  ],
+  "CreatedDate": "2019-06-24T14:18:31.566Z",
+  "LastUpdated": "2019-06-24T14:18:31.566Z",
+  "Version": 0
+}
