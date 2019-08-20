@@ -7,51 +7,51 @@
   "LastUpdatedDate": "2019-06-24T14:18:13.946Z",
   "Properties": {
     "Container": {
-      "encrypted": false,
+      "mandatory": true,
       "defaultValue": "App.Container",
-      "mandatory": true,
-      "visibility": true
-    },
-    "Container.Connection.Port": {
       "encrypted": false,
-      "defaultValue": "2376",
-      "mandatory": true,
-      "visibility": true
-    },
-    "Container.Auth.PublicKey": {
-      "encrypted": false,
-      "defaultValue": "",
-      "mandatory": true,
-      "visibility": true
-    },
-    "Container.Connection.Scheme": {
-      "encrypted": false,
-      "defaultValue": "https",
-      "mandatory": true,
       "visibility": true
     },
     "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
-      "encrypted": false,
-      "defaultValue": "Container*",
       "mandatory": true,
+      "defaultValue": "Container*",
+      "encrypted": false,
       "visibility": true
     },
-    "Container.Connection.Protocol": {
-      "encrypted": false,
-      "defaultValue": "API",
+    "Container.Auth.PublicKey": {
       "mandatory": true,
-      "visibility": true
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
+      "defaultValue": "",
       "encrypted": false,
-      "defaultValue": "Container*",
-      "mandatory": true,
       "visibility": true
     },
     "Container.Auth.PrivateKey": {
-      "encrypted": true,
-      "defaultValue": "",
       "mandatory": true,
+      "defaultValue": "",
+      "encrypted": true,
+      "visibility": true
+    },
+    "Container.Connection.Scheme": {
+      "mandatory": true,
+      "defaultValue": "https",
+      "encrypted": false,
+      "visibility": true
+    },
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
+      "mandatory": true,
+      "defaultValue": "Container*",
+      "encrypted": false,
+      "visibility": true
+    },
+    "Container.Connection.Port": {
+      "mandatory": true,
+      "defaultValue": "2376",
+      "encrypted": false,
+      "visibility": true
+    },
+    "Container.Connection.Protocol": {
+      "mandatory": true,
+      "defaultValue": "API",
+      "encrypted": false,
       "visibility": true
     }
   }
