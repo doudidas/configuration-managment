@@ -87,7 +87,7 @@ try {
     }
 
     $overview += $tmp
-    $details | Format-Table | Out-String -Width 4096 | Out-File /tmp/$platform-$element.txt
+    $details | Format-Table | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$platform-$element.txt
     $details | ForEach-Object {
         $env = $_.Environment
         $name = $_.Name
