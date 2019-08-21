@@ -441,9 +441,8 @@ pipeline {
     stage('update current-branch') {
       when {
         expression {
-          BRANCH_NAME ==~ /(dev|.*-current)/
+          BRANCH_NAME ==~ /.*-current/
         }
-
       }
       steps {
         sh 'git add --all'
