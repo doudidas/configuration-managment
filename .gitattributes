@@ -1,2 +1,1 @@
-session.json merge=ours
-export/** merge=ours
+*.json merge=ours
