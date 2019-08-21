@@ -6,53 +6,53 @@
   "DateCreated": "2019-06-24T14:18:13.946Z",
   "LastUpdatedDate": "2019-06-24T14:18:13.946Z",
   "Properties": {
-    "Container": {
-      "mandatory": true,
-      "defaultValue": "App.Container",
-      "encrypted": false,
-      "visibility": true
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
-      "mandatory": true,
-      "defaultValue": "Container*",
-      "encrypted": false,
-      "visibility": true
-    },
-    "Container.Auth.PublicKey": {
-      "mandatory": true,
-      "defaultValue": "",
-      "encrypted": false,
-      "visibility": true
-    },
     "Container.Auth.PrivateKey": {
-      "mandatory": true,
       "defaultValue": "",
       "encrypted": true,
-      "visibility": true
+      "visibility": true,
+      "mandatory": true
     },
-    "Container.Connection.Scheme": {
-      "mandatory": true,
-      "defaultValue": "https",
-      "encrypted": false,
-      "visibility": true
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
-      "mandatory": true,
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
       "defaultValue": "Container*",
       "encrypted": false,
-      "visibility": true
-    },
-    "Container.Connection.Port": {
-      "mandatory": true,
-      "defaultValue": "2376",
-      "encrypted": false,
-      "visibility": true
+      "visibility": true,
+      "mandatory": true
     },
     "Container.Connection.Protocol": {
-      "mandatory": true,
       "defaultValue": "API",
       "encrypted": false,
-      "visibility": true
+      "visibility": true,
+      "mandatory": true
+    },
+    "Container.Connection.Scheme": {
+      "defaultValue": "https",
+      "encrypted": false,
+      "visibility": true,
+      "mandatory": true
+    },
+    "Container.Connection.Port": {
+      "defaultValue": "2376",
+      "encrypted": false,
+      "visibility": true,
+      "mandatory": true
+    },
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
+      "defaultValue": "Container*",
+      "encrypted": false,
+      "visibility": true,
+      "mandatory": true
+    },
+    "Container.Auth.PublicKey": {
+      "defaultValue": "",
+      "encrypted": false,
+      "visibility": true,
+      "mandatory": true
+    },
+    "Container": {
+      "defaultValue": "App.Container",
+      "encrypted": false,
+      "visibility": true,
+      "mandatory": true
     }
   }
 }
