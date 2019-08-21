@@ -10,7 +10,7 @@ do
     read  response
 done
 
-if [ "$response" =~ ^[^yY]$ ]
+if [[ "$response" =~ ^[^yY]$ ]]
 then
     majVersion=$((majVersion + 1))
     minVersion=0
