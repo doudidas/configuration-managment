@@ -8,51 +8,51 @@
   "Properties": {
     "Container": {
       "mandatory": true,
-      "defaultValue": "App.Container",
       "encrypted": false,
-      "visibility": true
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
-      "mandatory": true,
-      "defaultValue": "Container*",
-      "encrypted": false,
-      "visibility": true
-    },
-    "Container.Auth.PublicKey": {
-      "mandatory": true,
-      "defaultValue": "",
-      "encrypted": false,
-      "visibility": true
-    },
-    "Container.Auth.PrivateKey": {
-      "mandatory": true,
-      "defaultValue": "",
-      "encrypted": true,
-      "visibility": true
+      "visibility": true,
+      "defaultValue": "App.Container"
     },
     "Container.Connection.Scheme": {
       "mandatory": true,
-      "defaultValue": "https",
       "encrypted": false,
-      "visibility": true
+      "visibility": true,
+      "defaultValue": "https"
+    },
+    "Container.Auth.PublicKey": {
+      "mandatory": true,
+      "encrypted": false,
+      "visibility": true,
+      "defaultValue": ""
     },
     "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
       "mandatory": true,
-      "defaultValue": "Container*",
       "encrypted": false,
-      "visibility": true
+      "visibility": true,
+      "defaultValue": "Container*"
+    },
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
+      "mandatory": true,
+      "encrypted": false,
+      "visibility": true,
+      "defaultValue": "Container*"
+    },
+    "Container.Auth.PrivateKey": {
+      "mandatory": true,
+      "encrypted": true,
+      "visibility": true,
+      "defaultValue": ""
     },
     "Container.Connection.Port": {
       "mandatory": true,
-      "defaultValue": "2376",
       "encrypted": false,
-      "visibility": true
+      "visibility": true,
+      "defaultValue": "2376"
     },
     "Container.Connection.Protocol": {
       "mandatory": true,
-      "defaultValue": "API",
       "encrypted": false,
-      "visibility": true
+      "visibility": true,
+      "defaultValue": "API"
     }
   }
 }
