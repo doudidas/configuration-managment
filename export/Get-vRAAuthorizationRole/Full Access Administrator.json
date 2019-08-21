@@ -1,0 +1,26 @@
+{
+  "Id": "COM_VMWARE_IAAS_SCOPE_FULL_ACCESS_ADMINISTRATOR",
+  "Name": "Full Access Administrator",
+  "Description": "Full Access Administrator",
+  "Type": "ScopeRole",
+  "AssignedPermissions": [
+    {
+      "id": "COM_VMWARE_IAAS_FULL_ACCESS_TO_MODEL",
+      "name": "Full Access To Model",
+      "description": "Full Access To Model",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN",
+      "name": "Admin Requires System Admin",
+      "description": "Admin Requires System Admin",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "COM_VMWARE_IAAS_VIEW_ADMIN_REPORTS",
+      "name": "View Admin Reports",
+      "description": "View Admin Reports",
+      "prereqAdminPermissions": null
+    }
+  ]
+}

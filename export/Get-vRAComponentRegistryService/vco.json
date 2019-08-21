@@ -1,0 +1,17 @@
+{
+  "Id": "bfc832f0-04e9-4c25-9f8c-11a542ee999b",
+  "Name": "vco",
+  "CreatedDate": null,
+  "LastUpdated": null,
+  "OwnerId": "vco-dthtHEpyPA",
+  "ServiceVersion": null,
+  "ServiceAttributes": null,
+  "EndPoints": null,
+  "ServiceType": {
+    "serviceTypeId": "com.vmware.vco.o11n",
+    "productId": "com.vmware.vco",
+    "typeId": "o11n",
+    "serviceName": null
+  },
+  "NameMsgKey": null
+}

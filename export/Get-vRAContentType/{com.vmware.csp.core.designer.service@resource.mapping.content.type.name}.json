@@ -1,0 +1,7 @@
+{
+  "Id": "xaas-resource-mapping",
+  "Name": "{com.vmware.csp.core.designer.service@resource.mapping.content.type.name}",
+  "Description": "{com.vmware.csp.core.designer.service@resource.mapping.content.type.description}",
+  "ClassId": "xaasResourceMapping",
+  "ServiceTypeId": "com.vmware.csp.core.designer.service"
+}

@@ -1,0 +1,26 @@
+{
+  "Id": "c2b04187-cdc6-49d3-ba76-37b86dd68f62",
+  "Name": "On-Demand Security Group",
+  "Description": null,
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-06-24T14:26:59.731Z",
+  "LastUpdatedDate": null,
+  "Requestable": false,
+  "IsNoteworthy": false,
+  "Organization": null,
+  "CatalogItemType": "On-Demand Security Group",
+  "OutputResourceType": "Security Group",
+  "Callbacks": null,
+  "Forms": null,
+  "IconId": "cafe_default_icon_genericCatalogItem",
+  "ProviderBinding": {
+    "bindingId": "Infrastructure.Network.SecurityGroup.NSX.OnDemand",
+    "providerRef": {
+      "id": "8e80fbde-da18-4582-a3b7-c9a64d5fe8b0",
+      "label": "Network Service"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "Id": "ee18ef16-c2bb-42b0-8777-4a67e040d361",
+  "Name": "Existing Security Group",
+  "Description": null,
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-06-24T14:26:59.504Z",
+  "LastUpdatedDate": null,
+  "Requestable": false,
+  "IsNoteworthy": false,
+  "Organization": null,
+  "CatalogItemType": "Existing Security Group",
+  "OutputResourceType": "Security Group",
+  "Callbacks": null,
+  "Forms": null,
+  "IconId": "cafe_default_icon_genericCatalogItem",
+  "ProviderBinding": {
+    "bindingId": "Infrastructure.Network.SecurityGroup.NSX.Existing",
+    "providerRef": {
+      "id": "8e80fbde-da18-4582-a3b7-c9a64d5fe8b0",
+      "label": "Network Service"
+    }
+  }
+}

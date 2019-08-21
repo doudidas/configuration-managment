@@ -1,0 +1,20 @@
+{
+  "Id": "VRHB_ADMIN",
+  "Name": "Health Admin",
+  "Description": "Health Admin",
+  "Type": "TenantRole",
+  "AssignedPermissions": [
+    {
+      "id": "HB_ADMIN",
+      "name": "Create Health Configurations",
+      "description": "Create Health Configurations",
+      "prereqAdminPermissions": null
+    },
+    {
+      "id": "GUI_MY_TENANT_MANAGEMENT",
+      "name": "My Tenant Administration User Interface",
+      "description": "Access my tenant administration GUI.",
+      "prereqAdminPermissions": null
+    }
+  ]
+}

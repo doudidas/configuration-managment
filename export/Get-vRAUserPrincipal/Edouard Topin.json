@@ -1,0 +1,12 @@
+{
+  "FirstName": "Edouard",
+  "LastName": "Topin",
+  "EmailAddress": "etopin@vmware.com",
+  "Description": "Edouard Topin",
+  "Locked": false,
+  "Disabled": false,
+  "Password": null,
+  "PrincipalId": "etopin@vsphere.local",
+  "TenantName": "vsphere.local",
+  "Name": "Edouard Topin"
+}
