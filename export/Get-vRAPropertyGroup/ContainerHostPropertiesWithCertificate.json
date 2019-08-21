@@ -6,7 +6,6 @@
   "DateCreated": "2019-06-24T14:18:13.946Z",
   "LastUpdatedDate": "2019-06-24T14:18:13.946Z",
   "Properties": {
-<<<<<<< HEAD
     "Container": {
       "mandatory": true,
       "defaultValue": "App.Container",
@@ -54,55 +53,6 @@
       "defaultValue": "API",
       "encrypted": false,
       "visibility": true
-=======
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
-      "visibility": true,
-      "mandatory": true,
-      "encrypted": false,
-      "defaultValue": "Container*"
-    },
-    "Container.Auth.PrivateKey": {
-      "visibility": true,
-      "mandatory": true,
-      "encrypted": true,
-      "defaultValue": ""
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
-      "visibility": true,
-      "mandatory": true,
-      "encrypted": false,
-      "defaultValue": "Container*"
-    },
-    "Container.Connection.Scheme": {
-      "visibility": true,
-      "mandatory": true,
-      "encrypted": false,
-      "defaultValue": "https"
-    },
-    "Container.Connection.Protocol": {
-      "visibility": true,
-      "mandatory": true,
-      "encrypted": false,
-      "defaultValue": "API"
-    },
-    "Container": {
-      "visibility": true,
-      "mandatory": true,
-      "encrypted": false,
-      "defaultValue": "App.Container"
-    },
-    "Container.Connection.Port": {
-      "visibility": true,
-      "mandatory": true,
-      "encrypted": false,
-      "defaultValue": "2376"
-    },
-    "Container.Auth.PublicKey": {
-      "visibility": true,
-      "mandatory": true,
-      "encrypted": false,
-      "defaultValue": ""
->>>>>>> maquette-current
     }
   }
 }
