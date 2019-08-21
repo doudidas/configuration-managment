@@ -1,5 +1,4 @@
 #!/bin/bash
-git add --all
 
 majVersion=$(cat ./version.txt | cut -d'.' -f1)
 minVersion=$(cat ./version.txt | cut -d'.' -f2)
@@ -18,6 +17,6 @@ then
 else
     minVersion=$((minVersion + 1))
 fi
-
+git add --all
 git commit -m 'version: '$majVersion'.'$minVersion
 
