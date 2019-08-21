@@ -10,13 +10,13 @@ do
     read  response
 done
 
-if [[ "$response" =~ ^[^yY]$ ]]
-then
+if [[ "$response" =~ ^[^yY]$ ]];then
     majVersion=$((majVersion + 1))
     minVersion=0
 else
     minVersion=$((minVersion + 1))
 fi
+echo $majVersion.$minVersion > version.txt
 git add --all
 git commit -m 'version: '$majVersion'.'$minVersion
 
