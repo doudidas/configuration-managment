@@ -1,7 +1,0 @@
-{
-  "Id": "component-profile-value",
-  "Name": "Component Type Profile Value",
-  "Description": "The content type corresponding to the component type profile value",
-  "ClassId": "Component.Type.Extension.Value",
-  "ServiceTypeId": "com.vmware.csp.component.cafe.composition"
-}
