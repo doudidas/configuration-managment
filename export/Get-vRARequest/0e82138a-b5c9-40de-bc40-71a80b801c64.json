@@ -1,19 +1,19 @@
 {
-  "Id": "c188106e-e074-4f8e-a166-4d3001557c27",
-  "RequestNumber": 138,
+  "Id": "0e82138a-b5c9-40de-bc40-71a80b801c64",
+  "RequestNumber": 236,
   "State": "SUCCESSFUL",
   "Description": null,
   "CatalogItem": null,
-  "RequestedItemName": "Destroy - Centos-58815429",
+  "RequestedItemName": "Destroy - Centos-12725978",
   "RequestedItemDescription": "{com.vmware.csp.component.cafe.composition@resource.action.deployment.destroy.description}",
   "Reasons": null,
   "RequestedFor": "etopin@vsphere.local",
   "RequestedBy": "etopin@vsphere.local",
-  "DateCreated": "2019-08-07T12:11:50.433Z",
-  "LastUpdated": "2019-08-07T12:13:25.659Z",
-  "DateSubmitted": "2019-08-07T12:11:50.433Z",
+  "DateCreated": "2019-08-20T23:26:15.766Z",
+  "LastUpdated": "2019-08-20T23:27:38.905Z",
+  "DateSubmitted": "2019-08-20T23:26:15.766Z",
   "DateApproved": null,
-  "DateCompleted": "2019-08-07T12:13:25.658Z",
+  "DateCompleted": "2019-08-20T23:27:38.904Z",
   "WaitingStatus": "NOT_WAITING",
   "ExecutionStatus": "STOPPED",
   "ApprovalStatus": "POST_APPROVED",
@@ -49,16 +49,10 @@
         }
       },
       {
-        "key": "provider-centos",
+        "key": "provider-DeleteVolumes",
         "value": {
-          "type": "complex",
-          "componentTypeId": "com.vmware.csp.iaas.blueprint.service",
-          "componentId": null,
-          "classId": "Blueprint.Node",
-          "typeFilter": "Centos*centos",
-          "values": {
-            "entries": []
-          }
+          "type": "boolean",
+          "value": false
         }
       }
     ]
