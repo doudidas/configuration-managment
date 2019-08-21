@@ -19,5 +19,5 @@ else
     minVersion=$((minVersion + 1))
 fi
 
-git commit -m 'version $majVersion.$minVersion'
+git commit -m 'version: '$majVersion'.'$minVersion
 
