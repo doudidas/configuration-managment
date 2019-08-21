@@ -38,20 +38,30 @@
     },
     "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
       "defaultValue": "Container*",
+      "mandatory": true
+    },
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
       "encrypted": false,
       "visibility": true,
+      "defaultValue": "Container*",
+      "mandatory": true
+    },
+    "Container.Connection.Port": {
+      "encrypted": false,
+      "visibility": true,
+      "defaultValue": "2376",
+      "mandatory": true
+    },
+    "Container.Auth.PrivateKey": {
+      "encrypted": true,
+      "visibility": true,
+      "defaultValue": "",
       "mandatory": true
     },
     "Container.Auth.PublicKey": {
+      "encrypted": false,
+      "visibility": true,
       "defaultValue": "",
-      "encrypted": false,
-      "visibility": true,
-      "mandatory": true
-    },
-    "Container": {
-      "defaultValue": "App.Container",
-      "encrypted": false,
-      "visibility": true,
       "mandatory": true
     }
   }
