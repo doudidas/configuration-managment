@@ -1,5 +1,5 @@
 .cached_session.json
-.gitignore
 diff/*
 .cached_session
 push-all.sh
+.gitattributes
