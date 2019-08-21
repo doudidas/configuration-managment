@@ -1,0 +1,14 @@
+{
+  "Id": "897e82fa-a961-48e6-b494-ad92cba72761",
+  "ContentId": "Centos",
+  "Name": "Centos",
+  "Description": "Centos",
+  "ContentTypeId": "composite-blueprint",
+  "MimeType": null,
+  "TenantId": "vsphere.local",
+  "SubtenantId": null,
+  "Dependencies": [],
+  "CreatedDate": "2019-07-26T12:46:59.044Z",
+  "LastUpdated": "2019-08-02T10:48:19.978Z",
+  "Version": 1
+}

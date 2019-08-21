@@ -1,0 +1,31 @@
+{
+  "Id": "App.Volume",
+  "Callbacks": {
+    "list": true,
+    "details": true
+  },
+  "CostFeatures": null,
+  "Description": "Container Volume",
+  "Forms": {
+    "catalogResourceInfoHidden": null,
+    "details": {
+      "type": "external",
+      "formId": "Volume.Resource.Details"
+    }
+  },
+  "ListView": {
+    "columns": [],
+    "defaultSequence": []
+  },
+  "Name": "Container Volume",
+  "PluralizedName": "Container Volume",
+  "Primary": true,
+  "ProviderTypeId": "com.vmware.csp.component.cafe.container",
+  "Schema": {
+    "classId": "App.Container.Schema",
+    "typeFilter": "App.Volume.Schema"
+  },
+  "ListDescendantTypesSeparately": null,
+  "ShowChildrenOutsideParent": false,
+  "Status": "ACTIVE"
+}

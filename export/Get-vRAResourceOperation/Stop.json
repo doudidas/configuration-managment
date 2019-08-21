@@ -1,0 +1,56 @@
+{
+  "Id": "3417e732-d9f0-453f-b6d3-bb66a735f64c",
+  "Name": "Stop",
+  "ExternalId": "_internal!::!749dd1d9-bb53-40ba-b81f-21ebb89eac10",
+  "Description": "Powers off the specified Azure virtual machine.",
+  "IconId": "Azure-machinePowerOff.png",
+  "TargetCriteria": {
+    "type": "expression",
+    "operator": {
+      "type": "equals"
+    },
+    "leftOperand": {
+      "type": "path",
+      "path": "powerState"
+    },
+    "rightOperand": {
+      "type": "constant",
+      "value": {
+        "type": "string",
+        "value": "PowerState/running"
+      }
+    }
+  },
+  "TargetResourceTypeRef": {
+    "id": "_internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba",
+    "label": "Azure Virtual Machine"
+  },
+  "Status": "PUBLISHED",
+  "Entitleable": true,
+  "organization": null,
+  "RequestSchema": {
+    "classId": "asd.resourceActionRequest",
+    "typeFilter": "_internal!::!749dd1d9-bb53-40ba-b81f-21ebb89eac10"
+  },
+  "Forms": {
+    "catalogRequestInfoHidden": false,
+    "requestFormScale": "BIG",
+    "requestSubmission": {
+      "type": "external",
+      "formId": "_internal!::!749dd1d9-bb53-40ba-b81f-21ebb89eac10_Resource.Action.Submit"
+    },
+    "requestDetails": {
+      "type": "external",
+      "formId": "_internal!::!749dd1d9-bb53-40ba-b81f-21ebb89eac10_Resource.Action.Details"
+    },
+    "requestPreApproval": null,
+    "requestPostApproval": null
+  },
+  "Callbacks": null,
+  "LifecycleAction": null,
+  "BindingId": "_internal!::!749dd1d9-bb53-40ba-b81f-21ebb89eac10",
+  "ProviderTypeRef": {
+    "id": "com.vmware.csp.core.designer.service",
+    "label": "XaaS"
+  }
+}
