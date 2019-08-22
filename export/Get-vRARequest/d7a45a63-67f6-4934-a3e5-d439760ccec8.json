@@ -1,7 +1,7 @@
 {
-  "Id": "43d64e3f-f6c7-4bc6-b650-b0151e5ca6a6",
-  "RequestNumber": 150,
-  "State": "PROVIDER_FAILED",
+  "Id": "d7a45a63-67f6-4934-a3e5-d439760ccec8",
+  "RequestNumber": 249,
+  "State": "SUCCESSFUL",
   "Description": null,
   "CatalogItem": "Centos",
   "RequestedItemName": "Centos",
@@ -9,17 +9,17 @@
   "Reasons": null,
   "RequestedFor": "etopin@vsphere.local",
   "RequestedBy": "etopin@vsphere.local",
-  "DateCreated": "2019-08-07T12:57:14.988Z",
-  "LastUpdated": "2019-08-07T12:59:55.007Z",
-  "DateSubmitted": "2019-08-07T12:57:14.988Z",
+  "DateCreated": "2019-08-22T00:45:09.734Z",
+  "LastUpdated": "2019-08-22T00:49:16.624Z",
+  "DateSubmitted": "2019-08-22T00:45:09.734Z",
   "DateApproved": null,
-  "DateCompleted": null,
+  "DateCompleted": "2019-08-22T00:49:16.623Z",
   "WaitingStatus": "NOT_WAITING",
   "ExecutionStatus": "STOPPED",
-  "ApprovalStatus": "PRE_APPROVED",
-  "Phase": "FAILED",
+  "ApprovalStatus": "POST_APPROVED",
+  "Phase": "SUCCESSFUL",
   "IconId": "8b0c1cca-2678-470d-ab27-05f7c8a9fc21",
-  "Version": 5,
+  "Version": 6,
   "Organization": {
     "tenantRef": "vsphere.local",
     "tenantLabel": "vsphere.local",
@@ -39,8 +39,8 @@
     "totalLeaseCost": null
   },
   "RequestCompletion": {
-    "requestCompletionState": "FAILED",
-    "completionDetails": "The following component requests failed:\ncentos. Allocation request [Composition RequestId: [cd71ef0d-4c81-4ef8-8a9b-15477eec3b0a], CompTypeId: [Infrastructure.CatalogItem.Machine.Virtual.vSphere], BlueprintId: [Centos], CompId: [centos], BlueprintRequestId: [dbfc8b4d-fc65-45e4-a3a9-4e96098425f7], RootCafeRequestId: [43d64e3f-f6c7-4bc6-b650-b0151e5ca6a6], SubtenantId: [b3a2dc51-5267-410c-87f3-ddfefc1645a7]] with binding id [538ac854-4474-4a1c-b852-aab56e61993d] failed with [Infrastructure service provider error: A server error was encountered. Error requesting machine. No reservation is available to allocate within the group businessgroup-01.  Total 11 GB of storage was requested.].\n",
+    "requestCompletionState": "SUCCESSFUL",
+    "completionDetails": "",
     "resourceBindingIds": null
   },
   "RequestData": {
@@ -468,7 +468,7 @@
   },
   "RetriesRemaining": 3,
   "Components": null,
-  "StateName": "Failed",
+  "StateName": "Successful",
   "CatalogItemProviderBinding": {
     "bindingId": "vsphere.local!::!Centos",
     "providerRef": {
