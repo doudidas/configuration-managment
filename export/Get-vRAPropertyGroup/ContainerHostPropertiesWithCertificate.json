@@ -6,53 +6,53 @@
   "DateCreated": "2019-06-24T14:18:13.946Z",
   "LastUpdatedDate": "2019-06-24T14:18:13.946Z",
   "Properties": {
-    "Container.Connection.Protocol": {
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
+      "mandatory": true,
       "visibility": true,
       "encrypted": false,
-      "mandatory": true,
-      "defaultValue": "API"
+      "defaultValue": "Container*"
     },
     "Container": {
+      "mandatory": true,
       "visibility": true,
       "encrypted": false,
-      "mandatory": true,
       "defaultValue": "App.Container"
     },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
+    "Container.Auth.PublicKey": {
+      "mandatory": true,
       "visibility": true,
       "encrypted": false,
-      "mandatory": true,
-      "defaultValue": "Container*"
-    },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
-      "visibility": true,
-      "encrypted": false,
-      "mandatory": true,
-      "defaultValue": "Container*"
+      "defaultValue": ""
     },
     "Container.Auth.PrivateKey": {
+      "mandatory": true,
       "visibility": true,
       "encrypted": true,
-      "mandatory": true,
       "defaultValue": ""
     },
     "Container.Connection.Scheme": {
+      "mandatory": true,
       "visibility": true,
       "encrypted": false,
-      "mandatory": true,
       "defaultValue": "https"
     },
-    "Container.Connection.Port": {
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
+      "mandatory": true,
       "visibility": true,
       "encrypted": false,
-      "mandatory": true,
-      "defaultValue": "2376"
+      "defaultValue": "Container*"
     },
-    "Container.Auth.PublicKey": {
+    "Container.Connection.Protocol": {
+      "mandatory": true,
       "visibility": true,
       "encrypted": false,
+      "defaultValue": "API"
+    },
+    "Container.Connection.Port": {
       "mandatory": true,
-      "defaultValue": ""
+      "visibility": true,
+      "encrypted": false,
+      "defaultValue": "2376"
     }
   }
 }
