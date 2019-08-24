@@ -1,7 +1,7 @@
 {
-  "Id": "3e9400e4-327c-4dff-bc7a-b09370aa7888",
-  "RequestNumber": 166,
-  "State": "CANCELLED",
+  "Id": "c2f15660-5ec0-4cfb-bd57-b9392cea771b",
+  "RequestNumber": 263,
+  "State": "SUCCESSFUL",
   "Description": null,
   "CatalogItem": "Centos",
   "RequestedItemName": "Centos",
@@ -9,15 +9,15 @@
   "Reasons": null,
   "RequestedFor": "etopin@vsphere.local",
   "RequestedBy": "etopin@vsphere.local",
-  "DateCreated": "2019-08-07T13:15:18.438Z",
-  "LastUpdated": "2019-08-07T13:23:35.532Z",
-  "DateSubmitted": "2019-08-07T13:15:18.438Z",
+  "DateCreated": "2019-08-23T23:15:33.375Z",
+  "LastUpdated": "2019-08-23T23:19:27.897Z",
+  "DateSubmitted": "2019-08-23T23:15:33.375Z",
   "DateApproved": null,
-  "DateCompleted": null,
+  "DateCompleted": "2019-08-23T23:19:27.896Z",
   "WaitingStatus": "NOT_WAITING",
   "ExecutionStatus": "STOPPED",
-  "ApprovalStatus": "REJECTED",
-  "Phase": "FAILED",
+  "ApprovalStatus": "POST_APPROVED",
+  "Phase": "SUCCESSFUL",
   "IconId": "8b0c1cca-2678-470d-ab27-05f7c8a9fc21",
   "Version": 6,
   "Organization": {
@@ -39,7 +39,7 @@
     "totalLeaseCost": null
   },
   "RequestCompletion": {
-    "requestCompletionState": "CANCELLED",
+    "requestCompletionState": "SUCCESSFUL",
     "completionDetails": "",
     "resourceBindingIds": null
   },
@@ -468,7 +468,7 @@
   },
   "RetriesRemaining": 3,
   "Components": null,
-  "StateName": "Cancelled",
+  "StateName": "Successful",
   "CatalogItemProviderBinding": {
     "bindingId": "vsphere.local!::!Centos",
     "providerRef": {
