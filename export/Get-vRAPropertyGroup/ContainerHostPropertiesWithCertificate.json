@@ -6,53 +6,53 @@
   "DateCreated": "2019-06-24T14:18:13.946Z",
   "LastUpdatedDate": "2019-06-24T14:18:13.946Z",
   "Properties": {
-    "Container.Connection.Scheme": {
-      "encrypted": false,
+    "Container": {
       "mandatory": true,
+      "encrypted": false,
       "visibility": true,
-      "defaultValue": "https"
+      "defaultValue": "App.Container"
     },
     "Container.Auth.PublicKey": {
-      "encrypted": false,
       "mandatory": true,
+      "encrypted": false,
       "visibility": true,
       "defaultValue": ""
     },
     "Container.Auth.PrivateKey": {
-      "encrypted": true,
       "mandatory": true,
+      "encrypted": true,
       "visibility": true,
       "defaultValue": ""
     },
-    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
-      "encrypted": false,
-      "mandatory": true,
-      "visibility": true,
-      "defaultValue": "Container*"
-    },
-    "Container": {
-      "encrypted": false,
-      "mandatory": true,
-      "visibility": true,
-      "defaultValue": "App.Container"
-    },
-    "Container.Connection.Port": {
-      "encrypted": false,
-      "mandatory": true,
-      "visibility": true,
-      "defaultValue": "2376"
-    },
     "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.MachineActivated": {
-      "encrypted": false,
       "mandatory": true,
+      "encrypted": false,
       "visibility": true,
       "defaultValue": "Container*"
     },
     "Container.Connection.Protocol": {
-      "encrypted": false,
       "mandatory": true,
+      "encrypted": false,
       "visibility": true,
       "defaultValue": "API"
+    },
+    "Container.Connection.Scheme": {
+      "mandatory": true,
+      "encrypted": false,
+      "visibility": true,
+      "defaultValue": "https"
+    },
+    "Extensibility.Lifecycle.Properties.VMPSMasterWorkflow32.Disposing": {
+      "mandatory": true,
+      "encrypted": false,
+      "visibility": true,
+      "defaultValue": "Container*"
+    },
+    "Container.Connection.Port": {
+      "mandatory": true,
+      "encrypted": false,
+      "visibility": true,
+      "defaultValue": "2376"
     }
   }
 }
