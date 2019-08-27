@@ -1,25 +1,25 @@
 {
-  "Id": "d0afdce4-ab73-4dee-b7a0-88f60f34d09e",
-  "RequestNumber": 189,
-  "State": "CANCELLED",
+  "Id": "5093a05a-5af8-4933-ab65-eb54b29261c9",
+  "RequestNumber": 294,
+  "State": "SUCCESSFUL",
   "Description": null,
   "CatalogItem": null,
-  "RequestedItemName": "Destroy - Centos-91036816",
+  "RequestedItemName": "Destroy - Centos-63029567",
   "RequestedItemDescription": "{com.vmware.csp.component.cafe.composition@resource.action.deployment.destroy.description}",
   "Reasons": null,
   "RequestedFor": "etopin@vsphere.local",
   "RequestedBy": "etopin@vsphere.local",
-  "DateCreated": "2019-08-07T13:53:53.388Z",
-  "LastUpdated": "2019-08-07T13:54:34.709Z",
-  "DateSubmitted": "2019-08-07T13:53:53.388Z",
+  "DateCreated": "2019-08-26T23:19:03.082Z",
+  "LastUpdated": "2019-08-26T23:21:02.956Z",
+  "DateSubmitted": "2019-08-26T23:19:03.082Z",
   "DateApproved": null,
-  "DateCompleted": null,
+  "DateCompleted": "2019-08-26T23:21:02.955Z",
   "WaitingStatus": "NOT_WAITING",
   "ExecutionStatus": "STOPPED",
-  "ApprovalStatus": "REJECTED",
-  "Phase": "FAILED",
+  "ApprovalStatus": "POST_APPROVED",
+  "Phase": "SUCCESSFUL",
   "IconId": "composition.destroy.png",
-  "Version": 5,
+  "Version": 6,
   "Organization": {
     "tenantRef": "vsphere.local",
     "tenantLabel": "vsphere.local",
@@ -34,7 +34,11 @@
     "leaseRate": null,
     "totalLeaseCost": null
   },
-  "RequestCompletion": null,
+  "RequestCompletion": {
+    "requestCompletionState": "SUCCESSFUL",
+    "completionDetails": "",
+    "resourceBindingIds": null
+  },
   "RequestData": {
     "entries": [
       {
@@ -55,6 +59,6 @@
   },
   "RetriesRemaining": 3,
   "Components": null,
-  "StateName": "Cancelled",
+  "StateName": "Successful",
   "CatalogItemProviderBinding": null
 }
