@@ -1,0 +1,16 @@
+{
+  "Id": "fc223cff-0088-4676-9d45-2f94914d3ed6",
+  "ContentId": "d45ff428-3a90-419f-8ab0-216360bd4a8e",
+  "Name": "Start",
+  "Description": null,
+  "ContentTypeId": "xaas-resource-action",
+  "MimeType": null,
+  "TenantId": "_internal",
+  "SubtenantId": null,
+  "Dependencies": [
+    "028e85a1-3323-4e08-9d15-6614569b589a"
+  ],
+  "CreatedDate": "2019-06-24T14:18:34.074Z",
+  "LastUpdated": "2019-06-24T14:18:34.074Z",
+  "Version": 0
+}

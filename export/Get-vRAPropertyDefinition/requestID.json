@@ -1,0 +1,30 @@
+{
+  "Id": "requestID",
+  "Label": "requestID",
+  "Description": null,
+  "Type": "STRING",
+  "IsMultivalued": false,
+  "Display": "TEXTAREA",
+  "TenantId": null,
+  "DisplayIndex": 1,
+  "PermittedValues": null,
+  "Options": {
+    "mandatory": {
+      "type": "constant",
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
+    },
+    "encrypted": {
+      "type": "constant",
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
+    }
+  },
+  "Version": 0,
+  "DateCreated": "2019-06-28T14:13:35.446Z",
+  "LastUpdatedDate": "2019-06-28T14:13:35.446Z"
+}

@@ -1,0 +1,26 @@
+{
+  "Id": "f2267194-c67e-45ec-b897-3f55ecf6bcb2",
+  "Name": "Virtual Machine Component",
+  "Description": "Corresponds to any blueprint component that represents Infrastructure Machines of type Virtual.",
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-06-24T14:26:53.098Z",
+  "LastUpdatedDate": null,
+  "Requestable": false,
+  "IsNoteworthy": false,
+  "Organization": null,
+  "CatalogItemType": "Virtual Machine",
+  "OutputResourceType": "Virtual Machine",
+  "Callbacks": null,
+  "Forms": null,
+  "IconId": "cafe_default_icon_genericCatalogItem",
+  "ProviderBinding": {
+    "bindingId": "Infrastructure.Virtual.Machine.Component",
+    "providerRef": {
+      "id": "5986d1a8-ca42-46f3-8c9a-387dac21745a",
+      "label": "Infrastructure Service"
+    }
+  }
+}
