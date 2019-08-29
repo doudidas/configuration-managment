@@ -85,13 +85,10 @@ $log += "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][STATE]$status[/STAT
 }
 $log | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$platform-$element.log
 
-if ($verbose.count -eq 0) {
+if ($overview.count -eq 0) {
     Write-Output "No diff for $element"
     exit 0
 } else {
     $overview | Format-Table | Out-String -Width 4096 | Write-Output
-exit 9
+    exit 9
 }
-exit 0
-
-ConvertTo-Json -
