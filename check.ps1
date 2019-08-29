@@ -10,7 +10,7 @@ param(
 [string]$path = "/var/log/jenkins/configuration-drift/"
 [string]$referenceBranch = "remotes/origin/$platform-reference"
 [string]$trimSize = 14 + $element.Length
-[string]$log
+[string]$log = ""
 [array]$lines
 
 # Set folder and files
@@ -64,8 +64,12 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
             break
         }
         # Any other lines. 
-        ’.*’ {
-            $tmp.Detail += $lines[$i]
+        ’^(\+|-).*’ {
+            if($tmp.Status -eq "Updated") {
+                $tmp.Detail += $lines[$i]
+            } else {
+                $tmp.Detail = ""
+            }
             break
         }   
     }
@@ -74,14 +78,15 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
 # Add the last cached value
 $overview += $tmp
 
-$overview | ForEach-Object {
-    $env = $_.Environment
-    $name = $_.Name
-    $type = $_.Type
-    $status = $_.Status
-    $detail = $_.Detail
-$log += "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][STATE]$status[/STATE][DETAIL]$detail[/DETAIL]"
+for ($i = 1; $i -lt $overview.Count; $i++) {
+    $env = $overview[$i].Environment
+    $name = $overview[$i].Name
+    $type = $overview[$i].Type
+    $status = $overview[$i].Status
+    $detail = $overview[$i].Detail
+    $log += "`n"+ "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][STATE]$status[/STATE][DETAIL]$detail[/DETAIL]"
 }
+
 
 $log | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$platform-$element.log
 
