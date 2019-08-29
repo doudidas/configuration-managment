@@ -4,119 +4,94 @@ param(
     [string]$platform,
     [string]$verbose
 )
-try {
-    #Init variables
-    [array]$overview         = @()
-    [array]$details          = @()
-    [string]$path            = "/var/log/jenkins/configuration-drift/"
-    [string]$cachedKey       = ""
-    [string]$cachedType      = ""
-    [string]$referenceBranch = "remotes/origin/$platform-reference"
-    [string]$trimSize        = 14 + $element.Length
-    # Set folder and files
-    If (!(Test-Path "$path")) { New-Item -ItemType Directory -Force -Path "diff" | Out-Null}
-    # If (Test-Path "$path/$platform-$element.log") { Remove-Item -Path "$path/$platform-$element.log" | Out-Null}
 
-    #Get all diffs
-    git add --all "export/$element"
-    $cmd = "git diff --cached $referenceBranch -- 'export/$element/*.json'"
-    Write-Output $cmd
-    [array]$lines = Invoke-Expression -Command $cmd
-    for ($i = 0; $i -lt $lines.Count; $i++) {
-        $lines[$i] = $lines[$i]
-        if ($lines[$i] -match "^diff --git") {
+#Init variables
+[array]$overview = @()
+[string]$path = "/var/log/jenkins/configuration-drift/"
+[string]$referenceBranch = "remotes/origin/$platform-reference"
+[string]$trimSize = 14 + $element.Length
+[string]$log
+[array]$lines
+
+# Set folder and files
+If (!(Test-Path "$path")) {
+    New-Item -ItemType Directory -Force -Path "diff" | Out-Null
+}
+
+# Get modification from previous steps
+git add --all "export/$element"
+
+$lines = Invoke-Expression -Command "git diff --cached $referenceBranch -- 'export/$element/*.json'"
+   
+# Loop on each lines 
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    # Get value from each lines
+    Switch -Regex ($lines[$i]) { 
+        # Checking diff on another file (added/removed/updated)
+        ’^diff --git’ { 
             $overview += $tmp
             $tmp = [PSCustomObject]@{
-                Name    = ''
-                Type    = $element.Substring(4)
-                Added   = ''
-                Updated = ''
-                Deleted = ''
+                Name        = ''
+                Environment = $platform
+                Type        = $element.Substring(4)
+                Status      = ''
+                Detail      = @()
             }
+            break
+        } 
+        # The file has been removed !
+        ’^deleted file mode [0-9].*’ {
+            $tmp.Status = "Deleted"
+            break
         }
-        elseif ($lines[$i] -match "^deleted file mode [0-9].*") {
-            $tmp.Deleted = '   x'
+        # The file has been added !
+        ’^new file mode [0-9].*’ {
+            $tmp.Status = "Added"
+            break
         }
-        elseif ($lines[$i] -match "^new file mode [0-9].*") {
-            $tmp.Added = '  x'
+        # The file has been updated !
+        ’^index [0-9a-z].*..[0-9a-z].* [0-9a-z].*’ {
+            $tmp.Status = "Updated"
+            break
+        } 
+        # We can get the file name
+        ’^(---|\+\+\+)(?! \/dev\/null) ’ {
+            $tmp.Name = $lines[$i].Substring($trimSize).trim().Replace('"', "")
+            break
+        } 
+        # No need to get those lines on the detail
+        ’^index|^@@|^(---|\+\+\+)’ {
+            break
         }
-        elseif ($lines[$i] -match "^index [0-9a-z].*..[0-9a-z].* [0-9a-z].*") {
-            $tmp.Updated = '   x'
-        }
-        elseif ($lines[$i] -match "^(---|\+\+\+)") {
-            if ($lines[$i] -notmatch "(---|\+\+\+) /dev/null") {
-                $tmp.Name = $lines[$i].Substring($trimSize).trim().Replace('"', "")
-            }
-        }
-        elseif ($lines[$i] -match '(^\-|^\+)\s*".*') {
-            $status = @("Added","Removed")[$lines[$i][0] -eq "-"]
-            $m      = ($lines[$i].Substring(1) | select-string '(".*?")|([a-zA-Z0-9{}[\]].*\,*)' -allmatches).matches
-            $key    = $m[0].Value.trim() -replace '\"', ""
-            $value  = $m[1].Value -replace '"', "" -replace ",",""
-            if($key -eq "key" -and $cachedKey -eq "") {
-                $cachedKey = $value
-            }  elseif($key -eq "type" -and $cachedType -eq "") {
-                $cachedType = $value
-            } else{
-                if($key -eq "value" -and $value -notin "{", "[") {
-                    if($cachedKey -ne ''){
-                        $key = $cachedKey
-                        $value = [PSCustomObject]@{
-                            type= $cachedType
-                            value= $value
-                        }
-                    } else {
-                        $value = $value
-                    }
-                    $cachedKey = ""
-                    $cachedType = ""
-                }
-                $detail = [PSCustomObject]@{
-                    Environment = $platform    
-                    Name        = $tmp.Name
-                    Type        = $element.Substring(4)
-                    Key         = $key
-                    Status      = $status
-                    Value       = $value
-                }
-                if($detail.Value -notin "[", "{", ""){
-                    $details += $detail
-                }
-            }
-        }
-    }
-
-    $overview += $tmp
-    $details | Format-Table | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$platform-$element.log
-    $details | ForEach-Object {
-        $env = $_.Environment
-        $name = $_.Name
-        $type = $_.Type
-        $key  =  @($_.Key,"Unkown")[$_.Key -eq ""]
-        $status = $_.Status
-        $value = $_.Value
-        $value = "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][KEY]$key[/KEY][STATE]$status[/STATE][VALUE]$value[/VALUE]"
-    }
-
-    if ($details.count -eq 0) {
-        Write-Output "No diff for $element"
-        exit 0
-    }
-    else {
-        if ($verbose -eq "verbose") {
-            $details | Format-Table | Out-String -Width 4096 | Write-Output
-            exit 9
-        }
-        else {
-            $overview | Format-Table | Out-String -Width 4096 | Write-Output
-            exit 9
-        }
-        exit 0
+        # Any other lines. 
+        ’.*’ {
+            $tmp.Detail += $lines[$i]
+            break
+        }   
     }
 }
-catch {
-    $e = $_.Exception
-    $line = $_.InvocationInfo.ScriptLineNumber
-    Write-Host -ForegroundColor Red "caught exception: $e at $line"
-    exit 9
+
+# Add the last cached value
+$overview += $tmp
+
+
+$overview | ForEach-Object {
+    $env = $_.Environment
+    $name = $_.Name
+    $type = $_.Type
+    $status = $_.Status
+    $detail = $_.Detail | ConvertTo-Json | Out-String
+$log += "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][STATE]$status[/STATE][DETAIL]$detail[/DETAIL]"
 }
+$log | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$platform-$element.log
+
+if ($verbose.count -eq 0) {
+    Write-Output "No diff for $element"
+    exit 0
+} else {
+    $overview | Format-Table | Out-String -Width 4096 | Write-Output
+exit 9
+}
+exit 0
+
+ConvertTo-Json -
