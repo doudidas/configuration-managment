@@ -1,0 +1,50 @@
+{
+  "Id": "82c8d434-1e26-4312-9e65-5af6c2ec29b2",
+  "Name": "Centos copy",
+  "Description": "",
+  "Service": "Copy of Virtual Machines",
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 1,
+  "DateCreated": "2019-08-14T08:41:04.467Z",
+  "LastUpdatedDate": "2019-08-14T08:44:38.703Z",
+  "Requestable": true,
+  "IsNoteworthy": false,
+  "Organization": {
+    "tenantRef": "vsphere.local",
+    "tenantLabel": "vsphere.local",
+    "subtenantRef": null,
+    "subtenantLabel": null
+  },
+  "CatalogItemType": "Composite Blueprint",
+  "OutputResourceType": "Deployment",
+  "Callbacks": null,
+  "Forms": {
+    "itemDetails": {
+      "type": "external",
+      "formId": "composition.catalog.item.details"
+    },
+    "catalogRequestInfoHidden": true,
+    "requestFormScale": "BIG",
+    "requestSubmission": {
+      "type": "extension",
+      "extensionId": "com.vmware.vcac.core.forms.renderer",
+      "extensionPointId": null
+    },
+    "requestDetails": {
+      "type": "extension",
+      "extensionId": "com.vmware.vcac.core.design.blueprints.requestDetailsForm",
+      "extensionPointId": null
+    },
+    "requestPreApproval": null,
+    "requestPostApproval": null
+  },
+  "IconId": "composition.blueprint.png",
+  "ProviderBinding": {
+    "bindingId": "vsphere.local!::!Centoscopy",
+    "providerRef": {
+      "id": "766b90da-6823-4131-9d12-29e1db85f768",
+      "label": "Blueprint Service"
+    }
+  }
+}

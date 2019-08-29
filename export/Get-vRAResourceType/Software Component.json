@@ -1,0 +1,22 @@
+{
+  "Id": "software.resource.type.root",
+  "Callbacks": {
+    "list": false,
+    "details": false
+  },
+  "CostFeatures": null,
+  "Description": "Represents an instance of provisioned software component.",
+  "Forms": null,
+  "ListView": null,
+  "Name": "Software Component",
+  "PluralizedName": "Software Components",
+  "Primary": false,
+  "ProviderTypeId": "com.vmware.csp.component.software.service",
+  "Schema": {
+    "classId": "softwareResourceType",
+    "typeFilter": null
+  },
+  "ListDescendantTypesSeparately": null,
+  "ShowChildrenOutsideParent": false,
+  "Status": "ACTIVE"
+}

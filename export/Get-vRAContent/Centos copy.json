@@ -1,0 +1,14 @@
+{
+  "Id": "e50cf79a-c2fe-4851-a170-71c45a19946b",
+  "ContentId": "Centoscopy",
+  "Name": "Centos copy",
+  "Description": "Centos copy",
+  "ContentTypeId": "composite-blueprint",
+  "MimeType": null,
+  "TenantId": "vsphere.local",
+  "SubtenantId": null,
+  "Dependencies": [],
+  "CreatedDate": "2019-08-14T08:41:04.673Z",
+  "LastUpdated": "2019-08-14T08:41:04.673Z",
+  "Version": 0
+}

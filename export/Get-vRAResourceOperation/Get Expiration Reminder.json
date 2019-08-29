@@ -1,0 +1,53 @@
+{
+  "Id": "0041dcc7-9919-42ef-b884-c5e2c6389486",
+  "Name": "Get Expiration Reminder",
+  "ExternalId": "csp.places.iaas.item.noform.GetExpirationReminder",
+  "Description": "Infrastructure get expiration reminder.",
+  "IconId": "cafe_default_icon_genericResourceOperation",
+  "TargetCriteria": {
+    "type": "and",
+    "subClauses": [
+      {
+        "type": "expression",
+        "operator": {
+          "type": "isDefined"
+        },
+        "leftOperand": {
+          "type": "path",
+          "path": "GetExpirationReminder"
+        },
+        "rightOperand": null
+      },
+      {
+        "type": "expression",
+        "operator": {
+          "type": "equals"
+        },
+        "leftOperand": {
+          "type": "path",
+          "path": "GetExpirationReminder"
+        },
+        "rightOperand": {
+          "type": "constant",
+          "value": {
+            "type": "boolean",
+            "value": true
+          }
+        }
+      }
+    ]
+  },
+  "TargetResourceTypeRef": {
+    "id": "Infrastructure.Machine",
+    "label": "Machine"
+  },
+  "Status": "PUBLISHED",
+  "Entitleable": true,
+  "organization": null,
+  "RequestSchema": null,
+  "Forms": null,
+  "Callbacks": null,
+  "LifecycleAction": null,
+  "BindingId": null,
+  "ProviderTypeRef": null
+}

@@ -1,0 +1,29 @@
+{
+  "Name": "hello",
+  "ID": "2c447726-6e68-41bd-ad5c-11eee7ab22c0",
+  "Description": "",
+  "Roles": null,
+  "ExtensionData": {
+    "entries": [
+      {
+        "key": "iaas-ad-container",
+        "value": {
+          "type": "string",
+          "value": ""
+        }
+      },
+      {
+        "key": "iaas-manager-emails",
+        "value": {
+          "type": "string",
+          "value": "etopin@vmware.com"
+        }
+      }
+    ]
+  },
+  "GroupManagerRole": [],
+  "SupportUserRole": [],
+  "SharedAccessUserRole": null,
+  "UserRole": [],
+  "Tenant": "vsphere.local"
+}

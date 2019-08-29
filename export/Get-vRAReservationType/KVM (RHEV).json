@@ -1,0 +1,55 @@
+{
+  "CreatedDate": "2019-06-24T14:26:58.334Z",
+  "LastUpdated": "2019-06-24T14:26:58.334Z",
+  "Version": 0,
+  "Id": "Infrastructure.Reservation.Virtual.KVM",
+  "Name": "KVM (RHEV)",
+  "Description": "KVM Reservation",
+  "Category": "Virtual",
+  "ServiceTypeId": "com.vmware.csp.iaas.blueprint.service",
+  "TenantId": null,
+  "FormReference": {
+    "type": "extension",
+    "extensionId": "com.vmware.vcac.iaas.reservation.details",
+    "extensionPointId": "cafe.forms.extensions"
+  },
+  "SchemaClassId": "Infrastructure.Reservation.Virtual.KVM",
+  "AlertTypes": [
+    {
+      "createdDate": "2019-06-24T14:26:58.334Z",
+      "lastUpdated": "2019-06-24T14:26:58.334Z",
+      "version": 0,
+      "id": "fd9e5a75-ea5b-457c-aec2-ee68e9454194",
+      "name": "Storage",
+      "description": "The threshold for storage usage. The system will send email notifications when the usage exceeds the threshold.",
+      "referenceResourceId": "storage"
+    },
+    {
+      "createdDate": "2019-06-24T14:26:58.334Z",
+      "lastUpdated": "2019-06-24T14:26:58.334Z",
+      "version": 0,
+      "id": "f035f112-f006-4347-ac53-1ce84ba75656",
+      "name": "Memory",
+      "description": "The threshold for memory usage. The system will send email notifications when the usage exceeds the threshold.",
+      "referenceResourceId": "memory"
+    },
+    {
+      "createdDate": "2019-06-24T14:26:58.335Z",
+      "lastUpdated": "2019-06-24T14:26:58.335Z",
+      "version": 0,
+      "id": "932fcb43-8d88-4ab2-a8f0-14766c24ed11",
+      "name": "CPU",
+      "description": "The threshold for CPU usage. The system will send email notifications when the usage exceeds the threshold.",
+      "referenceResourceId": "cpu"
+    },
+    {
+      "createdDate": "2019-06-24T14:26:58.335Z",
+      "lastUpdated": "2019-06-24T14:26:58.335Z",
+      "version": 0,
+      "id": "29c5b361-9fe2-4256-9f16-2a308f627648",
+      "name": "Machine quota",
+      "description": "The threshold for machine quota usage. The system will send email notifications when the usage exceeds the threshold.",
+      "referenceResourceId": "machine"
+    }
+  ]
+}

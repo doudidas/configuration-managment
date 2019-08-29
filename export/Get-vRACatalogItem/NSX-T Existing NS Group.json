@@ -1,0 +1,26 @@
+{
+  "Id": "3c6024ee-8baa-4be3-815f-1a6144c63eaf",
+  "Name": "NSX-T Existing NS Group",
+  "Description": null,
+  "Service": null,
+  "Status": "PUBLISHED",
+  "Quota": 0,
+  "Version": 0,
+  "DateCreated": "2019-06-24T14:27:00.145Z",
+  "LastUpdatedDate": null,
+  "Requestable": false,
+  "IsNoteworthy": false,
+  "Organization": null,
+  "CatalogItemType": "NSX-T Existing NS Group",
+  "OutputResourceType": "VMware NSX-T Security Group",
+  "Callbacks": null,
+  "Forms": null,
+  "IconId": "cafe_default_icon_genericCatalogItem",
+  "ProviderBinding": {
+    "bindingId": "Infrastructure.Network.SecurityGroup.NSXT.Existing",
+    "providerRef": {
+      "id": "8e80fbde-da18-4582-a3b7-c9a64d5fe8b0",
+      "label": "Network Service"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "Id": "jk",
+  "Label": "jk",
+  "Description": null,
+  "Type": "STRING",
+  "IsMultivalued": false,
+  "Display": "EMAIL",
+  "TenantId": "vsphere.local",
+  "DisplayIndex": null,
+  "PermittedValues": null,
+  "Options": {
+    "mandatory": {
+      "type": "constant",
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
+    },
+    "encrypted": {
+      "type": "constant",
+      "value": {
+        "type": "boolean",
+        "value": false
+      }
+    }
+  },
+  "Version": 2,
+  "DateCreated": "2019-07-16T14:01:01.068Z",
+  "LastUpdatedDate": "2019-07-18T08:39:32.849Z"
+}
