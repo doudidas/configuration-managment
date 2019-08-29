@@ -12,7 +12,7 @@ pipeline {
           }
           steps {
             script {
-              platform = "development"
+              platform = "lab"
             }
 
           }
