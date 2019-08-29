@@ -1,7 +1,7 @@
 pipeline {
   agent any
   triggers {
-    cron(BRANCH_NAME ==~ /(dev|.*-current)/ ? '@midnight' : '')
+    cron(BRANCH_NAME ==~ /(dev|.*-current)/ ? '@hourly' : '')
   }
   stages {
     stage('Set default value') {
