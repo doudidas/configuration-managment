@@ -33,7 +33,7 @@ pipeline {
     }
     stage('Connexion') {
       steps {
-        sh 'pwsh connectToServer.ps1 $platform'
+        sh 'pwsh connectToServer.ps1 ${platform}'
       }
     }
     stage('Capture plateform') {
