@@ -3,8 +3,10 @@ param(
     [string]$target
 )
 
-# Get session information from json file
-$s = GET-Content "session.json" | ConvertFrom-Json
+# Get sessions informations from json file
+[PSCustomObject]$sessions = GET-Content "sessions.json" | ConvertFrom-Json
+Write-Output $sessions.$target
+$s = $sessions.$target
 
 # Init credantials Obj
 $secpasswd = ConvertTo-SecureString $s.password -AsPlainText -Force

@@ -1,0 +1,20 @@
+{
+    "lab": {
+        "url": "cava-n-80-154.eng.vmware.com",
+        "tenant": "vsphere.local",
+        "username": "etopin@vsphere.local",
+        "password": "VMware1!"
+    },
+    "maquette": {
+        "url": "cava-n-80-154.eng.vmware.com",
+        "tenant": "vsphere.local",
+        "username": "etopin@vsphere.local",
+        "password": "VMware1!"
+    },
+    "production": {
+        "url": "cava-n-80-154.eng.vmware.com",
+        "tenant": "vsphere.local",
+        "username": "etopin@vsphere.local",
+        "password": "VMware1!"
+    }
+}
