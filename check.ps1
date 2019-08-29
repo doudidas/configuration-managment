@@ -74,18 +74,18 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
 # Add the last cached value
 $overview += $tmp
 
-
 $overview | ForEach-Object {
     $env = $_.Environment
     $name = $_.Name
     $type = $_.Type
     $status = $_.Status
-    $detail = $_.Detail | ConvertTo-Json | Out-String
+    $detail = $_.Detail
 $log += "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][STATE]$status[/STATE][DETAIL]$detail[/DETAIL]"
 }
+
 $log | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$platform-$element.log
 
-if ($overview.count -eq 0) {
+if ($overview.count -eq 1) {
     Write-Output "No diff for $element"
     exit 0
 } else {
