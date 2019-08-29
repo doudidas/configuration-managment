@@ -1,0 +1,28 @@
+{
+  "Id": "ConfigManagement.Puppet",
+  "Callbacks": {
+    "list": false,
+    "details": false
+  },
+  "CostFeatures": {
+    "lease": false,
+    "leaseCost": false
+  },
+  "Description": "Puppet Node",
+  "Forms": {
+    "catalogResourceInfoHidden": true,
+    "details": null
+  },
+  "ListView": null,
+  "Name": "Puppet",
+  "PluralizedName": "Puppet Nodes",
+  "Primary": false,
+  "ProviderTypeId": "com.vmware.csp.component.cafe.config.management",
+  "Schema": {
+    "classId": "ConfigManagement.Root.Schema",
+    "typeFilter": "ConfigManagement.Puppet.Schema"
+  },
+  "ListDescendantTypesSeparately": null,
+  "ShowChildrenOutsideParent": false,
+  "Status": "ACTIVE"
+}
