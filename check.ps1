@@ -64,7 +64,7 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
             break
         }
         # Any other lines. 
-        ’^(\+|-).*’ {
+        ’.*’ {
             if($tmp.Status -eq "Updated") {
                 $tmp.Detail += $lines[$i]
             } else {
