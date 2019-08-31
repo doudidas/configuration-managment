@@ -7,12 +7,12 @@
     {
       "approvalPolicyId": null,
       "hidden": false,
-      "active": true,
+      "active": false,
       "catalogItemRef": {
         "id": "82c8d434-1e26-4312-9e65-5af6c2ec29b2",
         "label": "Centos copy"
       },
-      "catalogItemRequestable": true
+      "catalogItemRequestable": false
     }
   ],
   "EntitledResourceOperations": [],

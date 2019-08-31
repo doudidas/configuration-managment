@@ -1,0 +1,7 @@
+{
+  "GroupType": "CUSTOM",
+  "Name": "test",
+  "Domain": "vsphere.local",
+  "Description": "",
+  "PrincipalId": "test@vsphere.local"
+}
