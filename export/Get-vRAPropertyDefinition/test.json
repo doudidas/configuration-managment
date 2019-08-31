@@ -1,6 +1,6 @@
 {
   "Id": "test",
-  "Label": "test",
+  "Label": "Test 2",
   "Description": null,
   "Type": "DECIMAL",
   "IsMultivalued": false,
@@ -20,7 +20,7 @@
       "type": "constant",
       "value": {
         "type": "boolean",
-        "value": false
+        "value": true
       }
     },
     "minValue": {
@@ -45,7 +45,7 @@
       }
     }
   },
-  "Version": 0,
+  "Version": 1,
   "DateCreated": "2019-07-16T13:54:25.91Z",
-  "LastUpdatedDate": "2019-07-16T13:54:25.91Z"
+  "LastUpdatedDate": "2019-08-30T08:18:08.186Z"
 }
