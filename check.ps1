@@ -87,7 +87,6 @@ for ($i = 1; $i -lt $overview.Count; $i++) {
     $log += "`n"+ "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][STATE]$status[/STATE][DETAIL]$detail[/DETAIL]"
 }
 
-
 $log | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$platform-$element.log
 
 if ($overview.count -eq 1) {
