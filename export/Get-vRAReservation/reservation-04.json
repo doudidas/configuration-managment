@@ -1,7 +1,7 @@
 {
   "CreatedDate": "2019-08-02T10:46:25.61Z",
-  "LastUpdated": "2019-08-31T21:01:37.603Z",
-  "Version": 2,
+  "LastUpdated": "2019-09-02T09:56:35.868Z",
+  "Version": 3,
   "Id": "989ef742-a128-41d1-a4e5-c6be33760e83",
   "Name": "reservation-04",
   "ReservationTypeId": "Infrastructure.Reservation.Virtual.vSphere",
@@ -169,7 +169,7 @@
                     "key": "computeResourceStorageFreeSizeGB",
                     "value": {
                       "type": "integer",
-                      "value": 85
+                      "value": 84
                     }
                   },
                   {
@@ -189,7 +189,7 @@
         "key": "machineQuota",
         "value": {
           "type": "integer",
-          "value": 10
+          "value": 9
         }
       },
       {
@@ -224,6 +224,16 @@
                       "id": "9763650d-1e45-4e14-8575-98d9c87204c0",
                       "componentId": null,
                       "label": "VMNetwork-PortGroup"
+                    }
+                  },
+                  {
+                    "key": "networkProfile",
+                    "value": {
+                      "type": "entityRef",
+                      "classId": "networkProfile",
+                      "id": "6abd15cc-1898-4068-9f0c-3127c31cb8c5",
+                      "componentId": null,
+                      "label": "np-ext-01"
                     }
                   }
                 ]
