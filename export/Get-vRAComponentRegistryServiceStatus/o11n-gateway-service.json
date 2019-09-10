@@ -3,7 +3,7 @@
   "Name": "o11n-gateway-service",
   "TypeId": "com.vmware.csp.core.o11n.gateway",
   "NotAvailable": false,
-  "LastUpdated": "2019-08-27T04:18:01.174Z",
+  "LastUpdated": "2019-09-10T13:40:01.239Z",
   "EndpointUrl": "https://cava-n-80-154.eng.vmware.com/o11n-gateway-service/api/status",
   "ServiceStatus": {
     "initialized": true,
