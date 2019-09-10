@@ -3,13 +3,13 @@
   "Name": "vco",
   "TypeId": "com.vmware.vco.o11n",
   "NotAvailable": false,
-  "LastUpdated": "2019-08-27T04:18:01.1Z",
+  "LastUpdated": "2019-09-10T13:40:01.527Z",
   "EndpointUrl": "https://cava-n-80-154.eng.vmware.com:443/vco/api/status",
   "ServiceStatus": {
     "initialized": true,
     "serviceName": "vco",
     "solutionUser": "vco-dthtHEpyPA",
-    "startedTime": "2019-06-24T14:16:20.937Z",
+    "startedTime": "2019-09-10T13:36:49.484Z",
     "serviceInitializationStatus": "REGISTERED",
     "errorMessage": null,
     "identityCertificateInfo": {

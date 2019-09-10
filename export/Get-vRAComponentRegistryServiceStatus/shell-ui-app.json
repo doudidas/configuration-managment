@@ -3,7 +3,7 @@
   "Name": "shell-ui-app",
   "TypeId": "com.vmware.csp.core.cafe.shell",
   "NotAvailable": false,
-  "LastUpdated": "2019-08-27T04:18:01.232Z",
+  "LastUpdated": "2019-09-10T13:40:01.35Z",
   "EndpointUrl": "https://cava-n-80-154.eng.vmware.com/vcac/services/api/status",
   "ServiceStatus": {
     "initialized": true,

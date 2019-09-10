@@ -3,7 +3,7 @@
   "Name": "advanced-designer-service",
   "TypeId": "com.vmware.csp.core.designer.service",
   "NotAvailable": false,
-  "LastUpdated": "2019-08-27T04:18:01.038Z",
+  "LastUpdated": "2019-09-10T13:40:01.027Z",
   "EndpointUrl": "https://cava-n-80-154.eng.vmware.com/advanced-designer-service/api/status",
   "ServiceStatus": {
     "initialized": true,
