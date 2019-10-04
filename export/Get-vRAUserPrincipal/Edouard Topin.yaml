@@ -1,11 +1,10 @@
+Description: Edouard Topin
+Disabled: false
+EmailAddress: etopin@vmware.com
 FirstName: Edouard
 LastName: Topin
-EmailAddress: etopin@vmware.com
-Description: Edouard Topin
 Locked: false
-Disabled: false
-Password: 
+Name: Edouard Topin
+Password: null
 PrincipalId: etopin@vsphere.local
 TenantName: vsphere.local
-Name: Edouard Topin
-

@@ -1,39 +1,38 @@
-Id: 3b2cdde9-c381-4e35-aa33-4f504a91b0ad
-Name: Connect using Virtual Desktop
-ExternalId: csp.places.iaas.item.window.ConnectViaVdi
+BindingId: null
+Callbacks: null
 Description: Infrastructure connect using Virtual Desktop
+Entitleable: true
+ExternalId: csp.places.iaas.item.window.ConnectViaVdi
+Forms: null
 IconId: cafe_default_icon_genericResourceOperation
+Id: 3b2cdde9-c381-4e35-aa33-4f504a91b0ad
+LifecycleAction: null
+Name: Connect using Virtual Desktop
+ProviderTypeRef: null
+RequestSchema: null
+Status: PUBLISHED
 TargetCriteria:
-  type: and
   subClauses:
-  - type: expression
+  - leftOperand:
+      path: ConnectViaVdi
+      type: path
     operator:
       type: isDefined
-    leftOperand:
-      type: path
+    rightOperand: null
+    type: expression
+  - leftOperand:
       path: ConnectViaVdi
-    rightOperand: 
-  - type: expression
+      type: path
     operator:
       type: equals
-    leftOperand:
-      type: path
-      path: ConnectViaVdi
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
+    type: expression
+  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-Status: PUBLISHED
-Entitleable: true
-organization: 
-RequestSchema: 
-Forms: 
-Callbacks: 
-LifecycleAction: 
-BindingId: 
-ProviderTypeRef: 
-
+organization: null

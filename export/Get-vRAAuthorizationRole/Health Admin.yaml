@@ -1,14 +1,13 @@
+AssignedPermissions:
+- description: Create Health Configurations
+  id: HB_ADMIN
+  name: Create Health Configurations
+  prereqAdminPermissions: null
+- description: Access my tenant administration GUI.
+  id: GUI_MY_TENANT_MANAGEMENT
+  name: My Tenant Administration User Interface
+  prereqAdminPermissions: null
+Description: Health Admin
 Id: VRHB_ADMIN
 Name: Health Admin
-Description: Health Admin
 Type: TenantRole
-AssignedPermissions:
-- id: HB_ADMIN
-  name: Create Health Configurations
-  description: Create Health Configurations
-  prereqAdminPermissions: 
-- id: GUI_MY_TENANT_MANAGEMENT
-  name: My Tenant Administration User Interface
-  description: Access my tenant administration GUI.
-  prereqAdminPermissions: 
-

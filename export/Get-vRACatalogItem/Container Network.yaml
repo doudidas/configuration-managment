@@ -1,23 +1,22 @@
-Id: 0199912b-ee9e-463a-b649-305cd0495492
-Name: Container Network
-Description: 
-Service: 
-Status: PUBLISHED
-Quota: 0
-Version: 0
-DateCreated: 2019-06-24T14:18:00.7830000Z
-LastUpdatedDate: 
-Requestable: false
-IsNoteworthy: false
-Organization: 
+Callbacks: null
 CatalogItemType: Container Network
-OutputResourceType: Container Network
-Callbacks: 
-Forms: 
+DateCreated: 2019-06-24 14:18:00.783000
+Description: null
+Forms: null
 IconId: cafe_default_icon_genericCatalogItem
+Id: 0199912b-ee9e-463a-b649-305cd0495492
+IsNoteworthy: false
+LastUpdatedDate: null
+Name: Container Network
+Organization: null
+OutputResourceType: Container Network
 ProviderBinding:
   bindingId: App.Network
   providerRef:
     id: 8e80fbde-da18-4582-a3b7-c9a64d5fe8b0
     label: Network Service
-
+Quota: 0
+Requestable: false
+Service: null
+Status: PUBLISHED
+Version: 0

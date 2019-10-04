@@ -1,14 +1,13 @@
-Id: eeb5c060-1b43-481e-a6a6-7410f369dea4
 ContentId: 18793cf3-357e-44fd-b496-66323cd50591
-Name: Azure Machine
-Description: 
 ContentTypeId: xaas-blueprint
-MimeType: 
-TenantId: _internal
-SubtenantId: 
+CreatedDate: 2019-06-24 14:18:33.458000
 Dependencies:
 - 028e85a1-3323-4e08-9d15-6614569b589a
-CreatedDate: 2019-06-24T14:18:33.4580000Z
-LastUpdated: 2019-06-24T14:18:33.4580000Z
+Description: null
+Id: eeb5c060-1b43-481e-a6a6-7410f369dea4
+LastUpdated: 2019-06-24 14:18:33.458000
+MimeType: null
+Name: Azure Machine
+SubtenantId: null
+TenantId: _internal
 Version: 0
-

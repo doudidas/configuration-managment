@@ -1,7 +1,6 @@
-Id: composition.resource.type.deployment
 Callbacks:
-  list: false
   details: false
+  list: false
 CostFeatures:
   lease: true
   leaseCost: true
@@ -9,40 +8,43 @@ Description: Composite Blueprint Deployment Resource Type
 Forms:
   catalogResourceInfoHidden: false
   details:
-    type: external
     formId: composition.deployment.details
+    type: external
+Id: composition.resource.type.deployment
+ListDescendantTypesSeparately: null
 ListView:
   columns:
-  - id: Component
-    label: Component
+  - dataType:
+      type: primitive
+      typeId: STRING
     description: The name of the component from which the machine was provisioned.
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
     displayAdvice: TEXTBOX
-    permissibleValues: 
+    filterable: false
+    id: Component
+    isMultiValued: false
+    label: Component
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets: []
+  - dataType:
+      type: primitive
+      typeId: STRING
+    description: IP Address that is used by other machines to communicate with this
+      machine.
+    displayAdvice: TEXTBOX
     filterable: false
-    sortable: false
+    id: ip_address
     isMultiValued: false
-  - id: ip_address
     label: IP Address
-    description: IP Address that is used by other machines to communicate with this machine.
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
-    displayAdvice: TEXTBOX
-    permissibleValues: 
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets: []
-    filterable: false
-    sortable: false
-    isMultiValued: false
   defaultSequence:
   - Component
   - ip_address
@@ -52,8 +54,6 @@ Primary: true
 ProviderTypeId: com.vmware.csp.component.cafe.composition
 Schema:
   classId: composition.resource.type.deployment
-  typeFilter: 
-ListDescendantTypesSeparately: 
+  typeFilter: null
 ShowChildrenOutsideParent: false
 Status: ACTIVE
-

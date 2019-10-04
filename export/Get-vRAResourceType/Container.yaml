@@ -1,106 +1,107 @@
-Id: App.Container
 Callbacks:
-  list: true
   details: true
-CostFeatures: 
+  list: true
+CostFeatures: null
 Description: Container
 Forms:
-  catalogResourceInfoHidden: 
+  catalogResourceInfoHidden: null
   details:
-    type: external
     formId: Container.Resource.Details
+    type: external
+Id: App.Container
+ListDescendantTypesSeparately: null
 ListView:
   columns:
-  - id: address
-    label: Address
+  - dataType:
+      type: primitive
+      typeId: STRING
     description: The host/ip of the container.
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
     displayAdvice: TEXTBOX
-    permissibleValues: 
+    filterable: false
+    id: address
+    isMultiValued: false
+    label: Address
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets: []
-    filterable: false
-    sortable: false
-    isMultiValued: false
-  - id: status
-    label: Status
+  - dataType:
+      type: primitive
+      typeId: STRING
     description: The Status of the container.
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
     displayAdvice: TEXTBOX
-    permissibleValues: 
+    filterable: false
+    id: status
+    isMultiValued: false
+    label: Status
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets: []
-    filterable: false
-    sortable: false
-    isMultiValued: false
-  - id: image
-    label: Image
+  - dataType:
+      type: primitive
+      typeId: STRING
     description: The Image from which the container is created.
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
     displayAdvice: TEXTBOX
-    permissibleValues: 
+    filterable: false
+    id: image
+    isMultiValued: false
+    label: Image
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets: []
-    filterable: false
-    sortable: false
-    isMultiValued: false
-  - id: container_id
-    label: Container Id
+  - dataType:
+      type: primitive
+      typeId: STRING
     description: The Id of the container.
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
     displayAdvice: TEXTBOX
-    permissibleValues: 
+    filterable: false
+    id: container_id
+    isMultiValued: false
+    label: Container Id
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets: []
-    filterable: false
-    sortable: false
-    isMultiValued: false
-  - id: command
-    label: Commands
+  - dataType:
+      type: primitive
+      typeId: STRING
     description: The commands which the container is started with.
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
     displayAdvice: TEXTBOX
-    permissibleValues: 
+    filterable: false
+    id: command
+    isMultiValued: false
+    label: Commands
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets: []
-    filterable: false
-    sortable: false
-    isMultiValued: false
-  - id: ports
-    label: Ports
+  - dataType:
+      type: primitive
+      typeId: STRING
     description: Ports of the container.
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
     displayAdvice: TEXTBOX
-    permissibleValues: 
+    filterable: false
+    id: ports
+    isMultiValued: false
+    label: Ports
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets: []
-    filterable: false
-    sortable: false
-    isMultiValued: false
   defaultSequence:
   - container_id
   - image
@@ -115,7 +116,5 @@ ProviderTypeId: com.vmware.csp.component.cafe.container
 Schema:
   classId: App.Container.Schema
   typeFilter: App.Container.Schema
-ListDescendantTypesSeparately: 
 ShowChildrenOutsideParent: false
 Status: ACTIVE
-

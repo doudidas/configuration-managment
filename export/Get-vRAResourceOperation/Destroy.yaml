@@ -1,43 +1,42 @@
-Id: 419633a1-f4fc-4e4b-80b3-749c5ed4a888
-Name: Destroy
-ExternalId: REMOVE_RESOURCE
+BindingId: REMOVE_RESOURCE
+Callbacks: null
 Description: Destroy Action
+Entitleable: true
+ExternalId: REMOVE_RESOURCE
+Forms: null
 IconId: icon_destroy.png
+Id: 419633a1-f4fc-4e4b-80b3-749c5ed4a888
+LifecycleAction: Destroy
+Name: Destroy
+ProviderTypeRef:
+  id: com.vmware.csp.component.cafe.container
+  label: Container Service
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: REMOVE_RESOURCE
+Status: PUBLISHED
 TargetCriteria:
-  type: and
   subClauses:
-  - type: expression
+  - leftOperand:
+      path: REMOVE_RESOURCE
+      type: path
     operator:
       type: isDefined
-    leftOperand:
-      type: path
+    rightOperand: null
+    type: expression
+  - leftOperand:
       path: REMOVE_RESOURCE
-    rightOperand: 
-  - type: expression
+      type: path
     operator:
       type: equals
-    leftOperand:
-      type: path
-      path: REMOVE_RESOURCE
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
+    type: expression
+  type: and
 TargetResourceTypeRef:
   id: App.Container
   label: Container
-Status: PUBLISHED
-Entitleable: true
-organization: 
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: REMOVE_RESOURCE
-Forms: 
-Callbacks: 
-LifecycleAction: Destroy
-BindingId: REMOVE_RESOURCE
-ProviderTypeRef:
-  id: com.vmware.csp.component.cafe.container
-  label: Container Service
-
+organization: null

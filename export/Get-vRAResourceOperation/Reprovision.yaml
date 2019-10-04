@@ -1,57 +1,56 @@
-Id: dc5c3a22-cf2d-408c-9e29-7cbb837b61dc
-Name: Reprovision
-ExternalId: Infrastructure.Machine.Action.Reprovision
+BindingId: Infrastructure.Machine.Action.Reprovision
+Callbacks:
+  itemInformation: false
+  itemInitialize: false
+  rollback: false
+  validate: true
 Description: Reprovision a machine.
+Entitleable: true
+ExternalId: Infrastructure.Machine.Action.Reprovision
+Forms:
+  catalogRequestInfoHidden: true
+  requestDetails:
+    formId: Infrastructure.Machine-Resource.Action.Details
+    type: external
+  requestFormScale: BIG
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    formId: Infrastructure.Machine-Resource.Action.Submit
+    type: external
 IconId: machineReprovision.png
+Id: dc5c3a22-cf2d-408c-9e29-7cbb837b61dc
+LifecycleAction: null
+Name: Reprovision
+ProviderTypeRef:
+  id: com.vmware.csp.iaas.blueprint.service
+  label: Infrastructure Service
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Machine.Action.Reprovision
+Status: PUBLISHED
 TargetCriteria:
-  type: and
   subClauses:
-  - type: expression
+  - leftOperand:
+      path: Reprovision
+      type: path
     operator:
       type: isDefined
-    leftOperand:
-      type: path
+    rightOperand: null
+    type: expression
+  - leftOperand:
       path: Reprovision
-    rightOperand: 
-  - type: expression
+      type: path
     operator:
       type: equals
-    leftOperand:
-      type: path
-      path: Reprovision
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
+    type: expression
+  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-Status: PUBLISHED
-Entitleable: true
-organization: 
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: Infrastructure.Machine.Action.Reprovision
-Forms:
-  catalogRequestInfoHidden: true
-  requestFormScale: BIG
-  requestSubmission:
-    type: external
-    formId: Infrastructure.Machine-Resource.Action.Submit
-  requestDetails:
-    type: external
-    formId: Infrastructure.Machine-Resource.Action.Details
-  requestPreApproval: 
-  requestPostApproval: 
-Callbacks:
-  validate: true
-  rollback: false
-  itemInformation: false
-  itemInitialize: false
-LifecycleAction: 
-BindingId: Infrastructure.Machine.Action.Reprovision
-ProviderTypeRef:
-  id: com.vmware.csp.iaas.blueprint.service
-  label: Infrastructure Service
-
+organization: null

@@ -1,24 +1,23 @@
-Id: f149899b-86e5-4ca6-8e81-2b385da34de9
-Name: approval-service
-TypeId: com.vmware.csp.core.cafe.approvals
-NotAvailable: false
-LastUpdated: 2019-06-24T14:17:31.0170000Z
 EndpointUrl: https://cava-n-80-154.eng.vmware.com/approval-service/api/status
+Id: f149899b-86e5-4ca6-8e81-2b385da34de9
+LastUpdated: 2019-06-24 14:17:31.017000
+Name: approval-service
+NotAvailable: false
 ServiceStatus:
+  defaultServiceEndpointType: com.vmware.csp.core.cafe.approvals.api
+  errorMessage: null
+  identityCertificateInfo: null
   initialized: true
-  serviceName: approval-service
-  solutionUser: cafe-OE867l_C_A
-  startedTime: 2019-06-24T14:17:32.8700000Z
   serviceInitializationStatus: REGISTERED
-  errorMessage: 
-  identityCertificateInfo: 
+  serviceName: approval-service
   serviceRegistrationId: f149899b-86e5-4ca6-8e81-2b385da34de9
+  solutionUser: cafe-OE867l_C_A
   sslCertificateInfo:
     identityCertificateExists: true
     issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidAfter: 2024-06-22 13:53:42
+    notValidBefore: 2019-06-24 13:53:42
     principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
-    notValidBefore: 2019-06-24T13:53:42.0000000Z
-    notValidAfter: 2024-06-22T13:53:42.0000000Z
     thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
-  defaultServiceEndpointType: com.vmware.csp.core.cafe.approvals.api
-
+  startedTime: 2019-06-24 14:17:32.870000
+TypeId: com.vmware.csp.core.cafe.approvals

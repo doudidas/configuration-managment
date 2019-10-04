@@ -1,24 +1,23 @@
-Id: App.Network
 Callbacks:
-  list: false
   details: false
-CostFeatures: 
-Description: 
+  list: false
+CostFeatures: null
+Description: null
 Forms:
-  catalogResourceInfoHidden: 
+  catalogResourceInfoHidden: null
   details:
-    type: extension
     extensionId: com.vmware.vcac.core.design.blueprints.network.itemDetails
-    extensionPointId: 
-ListView: 
+    extensionPointId: null
+    type: extension
+Id: App.Network
+ListDescendantTypesSeparately: null
+ListView: null
 Name: Container Network
-PluralizedName: 
+PluralizedName: null
 Primary: false
 ProviderTypeId: com.vmware.csp.component.network.service
 Schema:
   classId: App.Network
-  typeFilter: 
-ListDescendantTypesSeparately: 
+  typeFilter: null
 ShowChildrenOutsideParent: false
 Status: ACTIVE
-

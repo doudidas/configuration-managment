@@ -1,6 +1,5 @@
+ClassId: xaasResourceAction
+Description: '{com.vmware.csp.core.designer.service@resource.action.content.type.description}'
 Id: xaas-resource-action
 Name: '{com.vmware.csp.core.designer.service@resource.action.content.type.name}'
-Description: '{com.vmware.csp.core.designer.service@resource.action.content.type.description}'
-ClassId: xaasResourceAction
 ServiceTypeId: com.vmware.csp.core.designer.service
-

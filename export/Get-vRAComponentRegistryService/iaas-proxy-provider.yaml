@@ -1,15 +1,14 @@
+CreatedDate: null
+EndPoints: null
 Id: aba0038c-190d-4a46-9cbc-d9a6ca8e5ebf
+LastUpdated: null
 Name: iaas-proxy-provider
-CreatedDate: 
-LastUpdated: 
+NameMsgKey: null
 OwnerId: cafe-OE867l_C_A
-ServiceVersion: 
-ServiceAttributes: 
-EndPoints: 
+ServiceAttributes: null
 ServiceType:
-  serviceTypeId: com.vmware.csp.component.iaas.proxy.provider
   productId: com.vmware.csp.component
+  serviceName: null
+  serviceTypeId: com.vmware.csp.component.iaas.proxy.provider
   typeId: iaas.proxy.provider
-  serviceName: 
-NameMsgKey: 
-
+ServiceVersion: null

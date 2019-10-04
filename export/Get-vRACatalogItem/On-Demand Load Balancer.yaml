@@ -1,23 +1,22 @@
-Id: 8e5b7bb5-df37-4dc4-985d-8abec2390e23
-Name: On-Demand Load Balancer
-Description: 
-Service: 
-Status: PUBLISHED
-Quota: 0
-Version: 0
-DateCreated: 2019-06-24T14:27:01.1860000Z
-LastUpdatedDate: 
-Requestable: false
-IsNoteworthy: false
-Organization: 
+Callbacks: null
 CatalogItemType: On-Demand Load Balancer
-OutputResourceType: Load Balancer
-Callbacks: 
-Forms: 
+DateCreated: 2019-06-24 14:27:01.186000
+Description: null
+Forms: null
 IconId: cafe_default_icon_genericCatalogItem
+Id: 8e5b7bb5-df37-4dc4-985d-8abec2390e23
+IsNoteworthy: false
+LastUpdatedDate: null
+Name: On-Demand Load Balancer
+Organization: null
+OutputResourceType: Load Balancer
 ProviderBinding:
   bindingId: Infrastructure.Network.LoadBalancer.NSX.OnDemand
   providerRef:
     id: 8e80fbde-da18-4582-a3b7-c9a64d5fe8b0
     label: Network Service
-
+Quota: 0
+Requestable: false
+Service: null
+Status: PUBLISHED
+Version: 0

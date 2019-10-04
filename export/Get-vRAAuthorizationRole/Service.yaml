@@ -1,18 +1,17 @@
+AssignedPermissions:
+- description: Full Access To Model
+  id: COM_VMWARE_IAAS_FULL_ACCESS_TO_MODEL
+  name: Full Access To Model
+  prereqAdminPermissions: null
+- description: Admin Requires System Admin
+  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  prereqAdminPermissions: null
+- description: Host Servicing
+  id: COM_VMWARE_IAAS_HOST_SERVICING
+  name: Host Servicing
+  prereqAdminPermissions: null
+Description: Service
 Id: COM_VMWARE_IAAS_SERVICE
 Name: Service
-Description: Service
 Type: SystemRole
-AssignedPermissions:
-- id: COM_VMWARE_IAAS_FULL_ACCESS_TO_MODEL
-  name: Full Access To Model
-  description: Full Access To Model
-  prereqAdminPermissions: 
-- id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
-  name: Admin Requires System Admin
-  description: Admin Requires System Admin
-  prereqAdminPermissions: 
-- id: COM_VMWARE_IAAS_HOST_SERVICING
-  name: Host Servicing
-  description: Host Servicing
-  prereqAdminPermissions: 
-

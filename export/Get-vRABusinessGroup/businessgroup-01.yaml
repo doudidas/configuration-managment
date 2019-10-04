@@ -1,37 +1,13 @@
-Name: businessgroup-01
-ID: b3a2dc51-5267-410c-87f3-ddfefc1645a7
 Description: new description
-Roles: 
 ExtensionData:
   entries:
-  - key: Hello-conf-manager
-    value:
-      type: complex
-      componentTypeId: 
-      componentId: 
-      classId: iaas-custom-property
-      typeFilter: 
-      values:
-        entries:
-        - key: encrypted
-          value:
-            type: boolean
-            value: false
-        - key: value
-          value:
-            type: string
-            value: hello
-        - key: prompt-user
-          value:
-            type: boolean
-            value: false
   - key: bytel.registered.status
     value:
-      type: complex
-      componentTypeId: 
-      componentId: 
       classId: iaas-custom-property
-      typeFilter: 
+      componentId: null
+      componentTypeId: null
+      type: complex
+      typeFilter: null
       values:
         entries:
         - key: encrypted
@@ -41,26 +17,28 @@ ExtensionData:
         - key: value
           value:
             type: string
-            value: yes
+            value: true
         - key: prompt-user
           value:
             type: boolean
             value: false
+  - key: iaas-ad-container
+    value:
+      type: string
+      value: ''
   - key: iaas-manager-emails
     value:
       type: string
       value: etopin@vmware.com
-  - key: iaas-ad-container
-    value:
-      type: string
-      value: ""
 GroupManagerRole:
 - domain: vsphere.local
   name: etopin
+ID: b3a2dc51-5267-410c-87f3-ddfefc1645a7
+Name: businessgroup-01
+Roles: null
+SharedAccessUserRole: null
 SupportUserRole: []
-SharedAccessUserRole: 
+Tenant: vsphere.local
 UserRole:
 - domain: vsphere.local
   name: api-user
-Tenant: vsphere.local
-

@@ -1,43 +1,42 @@
-Id: 8b0c1cca-2678-470d-ab27-05f7c8a9fc21
-Name: Centos
-Description: ""
-Service: Virtual Machines
-Status: PUBLISHED
-Quota: 
-Version: 20
-DateCreated: 2019-06-24T16:36:06.5360000Z
-LastUpdatedDate: 2019-09-10T14:45:11.2270000Z
-Requestable: true
-IsNoteworthy: false
-Organization:
-  tenantRef: vsphere.local
-  tenantLabel: vsphere.local
-  subtenantRef: 
-  subtenantLabel: 
+Callbacks: null
 CatalogItemType: Composite Blueprint
-OutputResourceType: Deployment
-Callbacks: 
+DateCreated: 2019-06-24 16:36:06.536000
+Description: ''
+EntitledOrganizations: null
 Forms:
-  itemDetails:
-    type: external
-    formId: composition.catalog.item.details
   catalogRequestInfoHidden: true
-  requestFormScale: BIG
-  requestSubmission:
-    type: extension
-    extensionId: com.vmware.vcac.core.forms.renderer
-    extensionPointId: 
+  itemDetails:
+    formId: composition.catalog.item.details
+    type: external
   requestDetails:
-    type: extension
     extensionId: com.vmware.vcac.core.design.blueprints.requestDetailsForm
-    extensionPointId: 
-  requestPreApproval: 
-  requestPostApproval: 
+    extensionPointId: null
+    type: extension
+  requestFormScale: BIG
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    extensionId: com.vmware.vcac.core.forms.renderer
+    extensionPointId: null
+    type: extension
 IconId: 8b0c1cca-2678-470d-ab27-05f7c8a9fc21
+Id: 8b0c1cca-2678-470d-ab27-05f7c8a9fc21
+IsNoteworthy: false
+LastUpdatedDate: 2019-09-10 14:45:11.227000
+Name: Centos
+Organization:
+  subtenantLabel: null
+  subtenantRef: null
+  tenantLabel: vsphere.local
+  tenantRef: vsphere.local
+OutputResourceType: Deployment
 ProviderBinding:
   bindingId: vsphere.local!::!Centos
   providerRef:
     id: 766b90da-6823-4131-9d12-29e1db85f768
     label: Blueprint Service
-EntitledOrganizations: 
-
+Quota: null
+Requestable: true
+Service: Virtual Machines
+Status: PUBLISHED
+Version: 20

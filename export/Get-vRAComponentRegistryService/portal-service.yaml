@@ -1,15 +1,14 @@
+CreatedDate: null
+EndPoints: null
 Id: 507fce39-67d2-4833-98ed-66e2b230b678
+LastUpdated: null
 Name: portal-service
-CreatedDate: 
-LastUpdated: 
+NameMsgKey: null
 OwnerId: cafe-OE867l_C_A
-ServiceVersion: 
-ServiceAttributes: 
-EndPoints: 
+ServiceAttributes: null
 ServiceType:
-  serviceTypeId: com.vmware.csp.core.portal.service
   productId: com.vmware.csp.core
+  serviceName: null
+  serviceTypeId: com.vmware.csp.core.portal.service
   typeId: portal.service
-  serviceName: 
-NameMsgKey: 
-
+ServiceVersion: null

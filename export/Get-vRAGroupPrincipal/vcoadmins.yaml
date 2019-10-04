@@ -1,6 +1,5 @@
+Description: null
+Domain: vsphere.local
 GroupType: SSO
 Name: vcoadmins
-Domain: vsphere.local
-Description: 
 PrincipalId: vcoadmins@vsphere.local
-

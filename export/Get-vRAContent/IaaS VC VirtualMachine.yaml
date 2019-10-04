@@ -1,13 +1,12 @@
-Id: 6238a2b3-18a6-47d0-8f8c-8699b1ca0c59
 ContentId: f995a426-dc05-4777-8261-dab7d2f0d32f
-Name: IaaS VC VirtualMachine
-Description: 
 ContentTypeId: xaas-resource-mapping
-MimeType: 
-TenantId: _internal
-SubtenantId: 
+CreatedDate: 2019-06-24 14:17:37.186000
 Dependencies: []
-CreatedDate: 2019-06-24T14:17:37.1860000Z
-LastUpdated: 2019-06-24T14:17:37.1860000Z
+Description: null
+Id: 6238a2b3-18a6-47d0-8f8c-8699b1ca0c59
+LastUpdated: 2019-06-24 14:17:37.186000
+MimeType: null
+Name: IaaS VC VirtualMachine
+SubtenantId: null
+TenantId: _internal
 Version: 0
-

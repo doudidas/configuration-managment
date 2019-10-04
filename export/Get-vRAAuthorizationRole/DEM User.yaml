@@ -1,14 +1,13 @@
+AssignedPermissions:
+- description: Admin Requires System Admin
+  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  prereqAdminPermissions: null
+- description: DEM Access To Model
+  id: COM_VMWARE_IAAS_DEM_ACCESS_TO_MODEL
+  name: DEM Access To Model
+  prereqAdminPermissions: null
+Description: DEM User
 Id: COM_VMWARE_IAAS_SCOPE_DEM_USER
 Name: DEM User
-Description: DEM User
 Type: ScopeRole
-AssignedPermissions:
-- id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
-  name: Admin Requires System Admin
-  description: Admin Requires System Admin
-  prereqAdminPermissions: 
-- id: COM_VMWARE_IAAS_DEM_ACCESS_TO_MODEL
-  name: DEM Access To Model
-  description: DEM Access To Model
-  prereqAdminPermissions: 
-

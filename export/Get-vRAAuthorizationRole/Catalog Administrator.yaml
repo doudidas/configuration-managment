@@ -1,14 +1,14 @@
+AssignedPermissions:
+- description: Create, update and publish services, catalog items and actions shared
+    across a Tenant.
+  id: CATALOG_AUTHOR_TENANT
+  name: Catalog Tenant-level Author
+  prereqAdminPermissions: null
+- description: Access my tenant administration GUI.
+  id: GUI_MY_TENANT_MANAGEMENT
+  name: My Tenant Administration User Interface
+  prereqAdminPermissions: null
+Description: Creates and manages service categories and catalog items for the tenant.
 Id: CATALOG_SERVICE_CATALOG_ADMIN
 Name: Catalog Administrator
-Description: Creates and manages service categories and catalog items for the tenant.
 Type: TenantRole
-AssignedPermissions:
-- id: CATALOG_AUTHOR_TENANT
-  name: Catalog Tenant-level Author
-  description: Create, update and publish services, catalog items and actions shared across a Tenant.
-  prereqAdminPermissions: 
-- id: GUI_MY_TENANT_MANAGEMENT
-  name: My Tenant Administration User Interface
-  description: Access my tenant administration GUI.
-  prereqAdminPermissions: 
-

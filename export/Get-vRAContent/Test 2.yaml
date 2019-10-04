@@ -1,13 +1,12 @@
-Id: d35c43ff-4f5d-46d5-bf4c-e49b280bb019
 ContentId: test
-Name: Test 2
-Description: 
 ContentTypeId: property-definition
-MimeType: 
-TenantId: vsphere.local
-SubtenantId: 
+CreatedDate: 2019-07-16 13:54:26.034000
 Dependencies: []
-CreatedDate: 2019-07-16T13:54:26.0340000Z
-LastUpdated: 2019-08-30T08:18:08.1790000Z
+Description: null
+Id: d35c43ff-4f5d-46d5-bf4c-e49b280bb019
+LastUpdated: 2019-08-30 08:18:08.179000
+MimeType: null
+Name: Test 2
+SubtenantId: null
+TenantId: vsphere.local
 Version: 1
-

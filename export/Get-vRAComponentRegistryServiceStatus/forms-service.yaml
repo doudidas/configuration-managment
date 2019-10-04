@@ -1,24 +1,23 @@
-Id: 5faa38bf-d320-46a9-8b0f-c420926ff258
-Name: forms-service
-TypeId: com.vmware.csp.core.cafe.forms
-NotAvailable: false
-LastUpdated: 2019-06-24T14:18:14.7930000Z
 EndpointUrl: https://cava-n-80-154.eng.vmware.com/forms-service/api/status
+Id: 5faa38bf-d320-46a9-8b0f-c420926ff258
+LastUpdated: 2019-06-24 14:18:14.793000
+Name: forms-service
+NotAvailable: false
 ServiceStatus:
+  defaultServiceEndpointType: com.vmware.csp.core.cafe.forms.api
+  errorMessage: null
+  identityCertificateInfo: null
   initialized: true
-  serviceName: forms-service
-  solutionUser: cafe-OE867l_C_A
-  startedTime: 2019-06-24T14:18:16.8850000Z
   serviceInitializationStatus: REGISTERED
-  errorMessage: 
-  identityCertificateInfo: 
+  serviceName: forms-service
   serviceRegistrationId: 5faa38bf-d320-46a9-8b0f-c420926ff258
+  solutionUser: cafe-OE867l_C_A
   sslCertificateInfo:
     identityCertificateExists: true
     issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidAfter: 2024-06-22 13:53:42
+    notValidBefore: 2019-06-24 13:53:42
     principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
-    notValidBefore: 2019-06-24T13:53:42.0000000Z
-    notValidAfter: 2024-06-22T13:53:42.0000000Z
     thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
-  defaultServiceEndpointType: com.vmware.csp.core.cafe.forms.api
-
+  startedTime: 2019-06-24 14:18:16.885000
+TypeId: com.vmware.csp.core.cafe.forms

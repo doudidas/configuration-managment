@@ -1,24 +1,23 @@
-Id: 64922aac-7e3a-4587-b08c-09b85d1f0492
-Name: identity
-TypeId: com.vmware.csp.core.cafe.identity
-NotAvailable: false
-LastUpdated: 2019-06-24T14:13:38.0280000Z
 EndpointUrl: https://cava-n-80-154.eng.vmware.com/identity/api/status
+Id: 64922aac-7e3a-4587-b08c-09b85d1f0492
+LastUpdated: 2019-06-24 14:13:38.028000
+Name: identity
+NotAvailable: false
 ServiceStatus:
+  defaultServiceEndpointType: com.vmware.csp.core.cafe.identity.api
+  errorMessage: null
+  identityCertificateInfo: null
   initialized: true
-  serviceName: identity
-  solutionUser: cafe-OE867l_C_A
-  startedTime: 2019-06-24T14:13:39.3970000Z
   serviceInitializationStatus: REGISTERED
-  errorMessage: 
-  identityCertificateInfo: 
+  serviceName: identity
   serviceRegistrationId: 64922aac-7e3a-4587-b08c-09b85d1f0492
+  solutionUser: cafe-OE867l_C_A
   sslCertificateInfo:
     identityCertificateExists: true
     issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidAfter: 2024-06-22 13:53:42
+    notValidBefore: 2019-06-24 13:53:42
     principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
-    notValidBefore: 2019-06-24T13:53:42.0000000Z
-    notValidAfter: 2024-06-22T13:53:42.0000000Z
     thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
-  defaultServiceEndpointType: com.vmware.csp.core.cafe.identity.api
-
+  startedTime: 2019-06-24 14:13:39.397000
+TypeId: com.vmware.csp.core.cafe.identity

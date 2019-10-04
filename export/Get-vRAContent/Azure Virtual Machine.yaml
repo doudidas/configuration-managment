@@ -1,13 +1,12 @@
-Id: 028e85a1-3323-4e08-9d15-6614569b589a
 ContentId: dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
-Name: Azure Virtual Machine
-Description: 
 ContentTypeId: xaas-resource-type
-MimeType: 
-TenantId: _internal
-SubtenantId: 
+CreatedDate: 2019-06-24 14:18:29.097000
 Dependencies: []
-CreatedDate: 2019-06-24T14:18:29.0970000Z
-LastUpdated: 2019-06-24T14:18:29.0970000Z
+Description: null
+Id: 028e85a1-3323-4e08-9d15-6614569b589a
+LastUpdated: 2019-06-24 14:18:29.097000
+MimeType: null
+Name: Azure Virtual Machine
+SubtenantId: null
+TenantId: _internal
 Version: 0
-
