@@ -1,0 +1,23 @@
+EndpointUrl: https://cava-n-80-154.eng.vmware.com/iaas-proxy-provider/api/status
+Id: 57cb4772-7d96-4160-b744-e33244678127
+LastUpdated: 2019-06-24 14:16:19.171000
+Name: fabric-service
+NotAvailable: false
+ServiceStatus:
+  defaultServiceEndpointType: com.vmware.csp.component.iaas.proxy.provider.api
+  errorMessage: null
+  identityCertificateInfo: null
+  initialized: true
+  serviceInitializationStatus: REGISTERED
+  serviceName: iaas-proxy-provider
+  serviceRegistrationId: aba0038c-190d-4a46-9cbc-d9a6ca8e5ebf
+  solutionUser: cafe-OE867l_C_A
+  sslCertificateInfo:
+    identityCertificateExists: true
+    issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidAfter: 2024-06-22 13:53:42
+    notValidBefore: 2019-06-24 13:53:42
+    principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
+  startedTime: 2019-06-24 14:16:18.762000
+TypeId: com.vmware.csp.fabric.cafe.fabric

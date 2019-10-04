@@ -1,0 +1,5 @@
+ClassId: PropertyDefinition
+Description: Content type corresponding to the property definitions.
+Id: property-definition
+Name: Property Definition
+ServiceTypeId: com.vmware.csp.core.properties.service

@@ -1,0 +1,14 @@
+CreatedDate: null
+EndPoints: null
+Id: a6dd91e2-b9d3-421a-a749-ec91e5e917cf
+LastUpdated: null
+Name: console-proxy-service
+NameMsgKey: null
+OwnerId: cafe-OE867l_C_A
+ServiceAttributes: null
+ServiceType:
+  productId: com.vmware.csp.component
+  serviceName: null
+  serviceTypeId: com.vmware.csp.component.console.proxy.service
+  typeId: console.proxy.service
+ServiceVersion: null

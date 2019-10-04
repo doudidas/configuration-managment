@@ -1,0 +1,52 @@
+BindingId: Infrastructure.Virtual.Action.DeleteSnapshot
+Callbacks: null
+Description: Delete a snapshot of this machine.
+Entitleable: true
+ExternalId: Infrastructure.Virtual.Action.DeleteSnapshot
+Forms:
+  catalogRequestInfoHidden: true
+  requestDetails:
+    formId: Infrastructure.Virtual-Resource.Action.Details
+    type: external
+  requestFormScale: SMALL
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    formId: Infrastructure.Virtual-Resource.Action.Submit
+    type: external
+IconId: virtualDeleteSnapshot.png
+Id: 1cfb81aa-f5e3-43d7-babb-fa2aef22eb74
+LifecycleAction: null
+Name: Delete Snapshot
+ProviderTypeRef:
+  id: com.vmware.csp.iaas.blueprint.service
+  label: Infrastructure Service
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Virtual.Action.DeleteSnapshot
+Status: PUBLISHED
+TargetCriteria:
+  subClauses:
+  - leftOperand:
+      path: DeleteSnapshot
+      type: path
+    operator:
+      type: isDefined
+    rightOperand: null
+    type: expression
+  - leftOperand:
+      path: DeleteSnapshot
+      type: path
+    operator:
+      type: equals
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+    type: expression
+  type: and
+TargetResourceTypeRef:
+  id: Infrastructure.Virtual
+  label: Virtual Machine
+organization: null

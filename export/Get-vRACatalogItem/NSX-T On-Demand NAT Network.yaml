@@ -1,0 +1,22 @@
+Callbacks: null
+CatalogItemType: NSX-T On-Demand NAT Network
+DateCreated: 2019-06-24 14:27:03.271000
+Description: null
+Forms: null
+IconId: cafe_default_icon_genericCatalogItem
+Id: 16a945dc-b3bc-4fe6-9273-fd83e98b6d77
+IsNoteworthy: false
+LastUpdatedDate: null
+Name: NSX-T On-Demand NAT Network
+Organization: null
+OutputResourceType: VMware NSX-T Network
+ProviderBinding:
+  bindingId: Infrastructure.Network.Network.NSXT.OnDemand.NAT
+  providerRef:
+    id: 8e80fbde-da18-4582-a3b7-c9a64d5fe8b0
+    label: Network Service
+Quota: 0
+Requestable: false
+Service: null
+Status: PUBLISHED
+Version: 0

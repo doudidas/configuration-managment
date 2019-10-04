@@ -1,0 +1,73 @@
+AssignedPermissions:
+- description: Manage VCNS Endpoints
+  id: COM_VMWARE_IAAS_MANAGE_VCNS_ENDPOINTS
+  name: Manage VCNS Endpoints
+  prereqAdminPermissions: null
+- description: Full Access To Model
+  id: COM_VMWARE_IAAS_FULL_ACCESS_TO_MODEL
+  name: Full Access To Model
+  prereqAdminPermissions: null
+- description: Manage NSXT Endpoints
+  id: COM_VMWARE_IAAS_MANAGE_NSXT_ENDPOINTS
+  name: Manage NSXT Endpoints
+  prereqAdminPermissions: null
+- description: VRM Administrator Custom Event
+  id: COM_VMWARE_IAAS_VRM_ADMINISTRATOR_CUSTOM_EVENT
+  name: VRM Administrator Custom Event
+  prereqAdminPermissions: null
+- description: Manage Endpoints
+  id: COM_VMWARE_IAAS_MANAGE_ENDPOINTS
+  name: Manage Endpoints
+  prereqAdminPermissions: null
+- description: Manage Failover
+  id: COM_VMWARE_IAAS_MANAGE_FAILOVER
+  name: Manage Failover
+  prereqAdminPermissions: null
+- description: View User Rights
+  id: COM_VMWARE_IAAS_VIEW_USER_RIGHTS
+  name: View User Rights
+  prereqAdminPermissions: null
+- description: Admin Requires System Admin
+  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  prereqAdminPermissions: null
+- description: Manage Application Security Information
+  id: COM_VMWARE_IAAS_MANAGE_APPLICATION_SECURITY_INFORMATION
+  name: Manage Application Security Information
+  prereqAdminPermissions: null
+- description: Access UI
+  id: COM_VMWARE_IAAS_ACCESS_UI
+  name: Access UI
+  prereqAdminPermissions: null
+- description: View Reports
+  id: COM_VMWARE_IAAS_VIEW_REPORTS
+  name: View Reports
+  prereqAdminPermissions: null
+- description: Manage Scope Security Information
+  id: COM_VMWARE_IAAS_MANAGE_SCOPE_SECURITY_INFORMATION
+  name: Manage Scope Security Information
+  prereqAdminPermissions: null
+- description: Manage Enterprise Admins
+  id: COM_VMWARE_IAAS_MANAGE_ENTERPRISE_ADMINS
+  name: Manage Enterprise Admins
+  prereqAdminPermissions: null
+- description: Obtain Security Info
+  id: COM_VMWARE_IAAS_OBTAIN_SECURITY_INFO
+  name: Obtain Security Info
+  prereqAdminPermissions: null
+- description: Manage Model Security Information
+  id: COM_VMWARE_IAAS_MANAGE_MODEL_SECURITY_INFORMATION
+  name: Manage Model Security Information
+  prereqAdminPermissions: null
+- description: Customize Application
+  id: COM_VMWARE_IAAS_CUSTOMIZE_APPLICATION
+  name: Customize Application
+  prereqAdminPermissions: null
+- description: View Admin Reports
+  id: COM_VMWARE_IAAS_VIEW_ADMIN_REPORTS
+  name: View Admin Reports
+  prereqAdminPermissions: null
+Description: IaaS Administrator
+Id: COM_VMWARE_IAAS_IAAS_ADMINISTRATOR
+Name: IaaS Administrator
+Type: SystemRole

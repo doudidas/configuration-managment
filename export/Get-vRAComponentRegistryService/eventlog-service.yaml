@@ -1,0 +1,14 @@
+CreatedDate: null
+EndPoints: null
+Id: 4cd2b9ec-6041-433d-a9c0-3c64cf8eb0a1
+LastUpdated: null
+Name: eventlog-service
+NameMsgKey: null
+OwnerId: cafe-OE867l_C_A
+ServiceAttributes: null
+ServiceType:
+  productId: com.vmware.csp
+  serviceName: null
+  serviceTypeId: com.vmware.csp.cafe.eventlog
+  typeId: cafe.eventlog
+ServiceVersion: null

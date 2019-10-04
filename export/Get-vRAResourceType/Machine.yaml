@@ -1,0 +1,108 @@
+Callbacks:
+  details: true
+  list: true
+CostFeatures:
+  lease: true
+  leaseCost: true
+Description: The common parent type for all types of machines
+Forms:
+  catalogResourceInfoHidden: true
+  details:
+    extensionId: csp.places.iaas.item.details
+    extensionPointId: null
+    type: extension
+Id: Infrastructure.Machine
+ListDescendantTypesSeparately: null
+ListView:
+  columns:
+  - dataType:
+      type: primitive
+      typeId: STRING
+    description: The name of the blueprint from which the machine was provisioned
+    displayAdvice: TEXTBOX
+    filterable: false
+    id: MachineBlueprintName
+    isMultiValued: false
+    label: Blueprint Name
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
+    state:
+      dependencies: []
+      facets: []
+  - dataType:
+      type: primitive
+      typeId: STRING
+    description: IP Address that is used by other machines to communicate with this
+      machine.
+    displayAdvice: TEXTBOX
+    filterable: false
+    id: ip_address
+    isMultiValued: false
+    label: IP Address
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
+    state:
+      dependencies: []
+      facets: []
+  - dataType:
+      type: primitive
+      typeId: STRING
+    description: The current status of a provisioned machine
+    displayAdvice: TEXTBOX
+    filterable: false
+    id: MachineStatus
+    isMultiValued: false
+    label: Status
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
+    state:
+      dependencies: []
+      facets: []
+  - dataType:
+      type: primitive
+      typeId: STRING
+    description: The name of the component from which the machine was provisioned
+    displayAdvice: TEXTBOX
+    filterable: false
+    id: Component
+    isMultiValued: false
+    label: Component
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
+    state:
+      dependencies: []
+      facets: []
+  - dataType:
+      type: primitive
+      typeId: STRING
+    description: The platform type of a provisioned machine
+    displayAdvice: TEXTBOX
+    filterable: false
+    id: MachineInterfaceDisplayName
+    isMultiValued: false
+    label: Platform Type
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
+    state:
+      dependencies: []
+      facets: []
+  defaultSequence:
+  - MachineBlueprintName
+  - Component
+  - ip_address
+  - MachineStatus
+  - MachineInterfaceDisplayName
+Name: Machine
+PluralizedName: Machines
+Primary: true
+ProviderTypeId: com.vmware.csp.iaas.blueprint.service
+Schema:
+  classId: Infrastructure.Machine.Schema
+  typeFilter: null
+ShowChildrenOutsideParent: true
+Status: ACTIVE

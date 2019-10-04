@@ -1,0 +1,29 @@
+AssignedPermissions:
+- description: Admin Requires System Admin
+  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  prereqAdminPermissions: null
+- description: Manage Application Security Information
+  id: COM_VMWARE_IAAS_MANAGE_APPLICATION_SECURITY_INFORMATION
+  name: Manage Application Security Information
+  prereqAdminPermissions: null
+- description: Manage Scope Security Information
+  id: COM_VMWARE_IAAS_MANAGE_SCOPE_SECURITY_INFORMATION
+  name: Manage Scope Security Information
+  prereqAdminPermissions: null
+- description: Obtain Security Info
+  id: COM_VMWARE_IAAS_OBTAIN_SECURITY_INFO
+  name: Obtain Security Info
+  prereqAdminPermissions: null
+- description: Manage Model Security Information
+  id: COM_VMWARE_IAAS_MANAGE_MODEL_SECURITY_INFORMATION
+  name: Manage Model Security Information
+  prereqAdminPermissions: null
+- description: Access Control
+  id: COM_VMWARE_IAAS_ACCESS_CONTROL
+  name: Access Control
+  prereqAdminPermissions: null
+Description: AccessControlAdmin
+Id: COM_VMWARE_IAAS_ACCESSCONTROLADMIN
+Name: AccessControlAdmin
+Type: SystemRole

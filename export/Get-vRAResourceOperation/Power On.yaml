@@ -1,0 +1,42 @@
+BindingId: Infrastructure.Machine.Action.PowerOn
+Callbacks: null
+Description: Power on a machine.
+Entitleable: true
+ExternalId: Infrastructure.Machine.Action.PowerOn
+Forms: null
+IconId: machinePowerOn.png
+Id: 452ca138-9c10-4879-9cc8-1171b469ac8a
+LifecycleAction: null
+Name: Power On
+ProviderTypeRef:
+  id: com.vmware.csp.iaas.blueprint.service
+  label: Infrastructure Service
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Machine.Action.PowerOn
+Status: PUBLISHED
+TargetCriteria:
+  subClauses:
+  - leftOperand:
+      path: PowerOn
+      type: path
+    operator:
+      type: isDefined
+    rightOperand: null
+    type: expression
+  - leftOperand:
+      path: PowerOn
+      type: path
+    operator:
+      type: equals
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+    type: expression
+  type: and
+TargetResourceTypeRef:
+  id: Infrastructure.Machine
+  label: Machine
+organization: null

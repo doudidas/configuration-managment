@@ -1,0 +1,5 @@
+ClassId: xaasResourceMapping
+Description: '{com.vmware.csp.core.designer.service@resource.mapping.content.type.description}'
+Id: xaas-resource-mapping
+Name: '{com.vmware.csp.core.designer.service@resource.mapping.content.type.name}'
+ServiceTypeId: com.vmware.csp.core.designer.service

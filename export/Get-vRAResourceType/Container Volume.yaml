@@ -1,0 +1,24 @@
+Callbacks:
+  details: true
+  list: true
+CostFeatures: null
+Description: Container Volume
+Forms:
+  catalogResourceInfoHidden: null
+  details:
+    formId: Volume.Resource.Details
+    type: external
+Id: App.Volume
+ListDescendantTypesSeparately: null
+ListView:
+  columns: []
+  defaultSequence: []
+Name: Container Volume
+PluralizedName: Container Volume
+Primary: true
+ProviderTypeId: com.vmware.csp.component.cafe.container
+Schema:
+  classId: App.Container.Schema
+  typeFilter: App.Volume.Schema
+ShowChildrenOutsideParent: false
+Status: ACTIVE

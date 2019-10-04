@@ -1,0 +1,12 @@
+ContentId: 81dc4c80-289b-412d-805c-32e028a96c78
+ContentTypeId: xaas-resource-mapping
+CreatedDate: 2019-06-24 14:17:37.321000
+Dependencies: []
+Description: null
+Id: 7b7fa0b0-4410-47ec-a551-b61fb065b675
+LastUpdated: 2019-06-24 14:17:37.321000
+MimeType: null
+Name: IaaS vCD VM
+SubtenantId: null
+TenantId: _internal
+Version: 0

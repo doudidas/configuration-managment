@@ -1,0 +1,38 @@
+BindingId: null
+Callbacks: null
+Description: Infrastructure connect using remote console
+Entitleable: true
+ExternalId: csp.places.iaas.item.window.ConnectViaVmrc
+Forms: null
+IconId: cafe_default_icon_genericResourceOperation
+Id: 95713bf3-3841-4f30-9dd8-67839adb5c72
+LifecycleAction: null
+Name: Connect to Remote Console
+ProviderTypeRef: null
+RequestSchema: null
+Status: PUBLISHED
+TargetCriteria:
+  subClauses:
+  - leftOperand:
+      path: ConnectViaVmrc
+      type: path
+    operator:
+      type: isDefined
+    rightOperand: null
+    type: expression
+  - leftOperand:
+      path: ConnectViaVmrc
+      type: path
+    operator:
+      type: equals
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+    type: expression
+  type: and
+TargetResourceTypeRef:
+  id: Infrastructure.Machine
+  label: Machine
+organization: null

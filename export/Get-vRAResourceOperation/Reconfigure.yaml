@@ -1,0 +1,36 @@
+BindingId: Infrastructure.Network.LoadBalancer.NSX.Action.Reconfigure
+Callbacks:
+  itemInformation: false
+  itemInitialize: false
+  rollback: false
+  validate: true
+Description: Reconfigure a load balancer.
+Entitleable: true
+ExternalId: Infrastructure.Network.LoadBalancer.NSX.Action.Reconfigure
+Forms:
+  catalogRequestInfoHidden: true
+  requestDetails:
+    formId: Infrastructure.Network.LoadBalancer.NSX-Resource.Action.Details
+    type: external
+  requestFormScale: BIG
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    formId: Infrastructure.Network.LoadBalancer.NSX-Resource.Action.Submit
+    type: external
+IconId: icon_reconfigure
+Id: 522a35b5-138c-4731-aeb6-7093f51c9994
+LifecycleAction: Reconfigure
+Name: Reconfigure
+ProviderTypeRef:
+  id: com.vmware.csp.component.network.service
+  label: Network Service
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Network.LoadBalancer.NSX.Action.Reconfigure
+Status: PUBLISHED
+TargetCriteria: null
+TargetResourceTypeRef:
+  id: Infrastructure.Network.LoadBalancer.NSX
+  label: Load Balancer
+organization: null

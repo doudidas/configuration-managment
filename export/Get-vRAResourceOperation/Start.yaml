@@ -1,0 +1,43 @@
+BindingId: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e
+Callbacks: null
+Description: Powers on the specified Azure virtual machine.
+Entitleable: true
+ExternalId: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e
+Forms:
+  catalogRequestInfoHidden: false
+  requestDetails:
+    formId: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e_Resource.Action.Details
+    type: external
+  requestFormScale: BIG
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    formId: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e_Resource.Action.Submit
+    type: external
+IconId: Azure-machinePowerOn.png
+Id: e6dbf62c-0d0e-4552-a6a4-b88015cf3a1a
+LifecycleAction: null
+Name: Start
+ProviderTypeRef:
+  id: com.vmware.csp.core.designer.service
+  label: XaaS
+RequestSchema:
+  classId: asd.resourceActionRequest
+  typeFilter: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e
+Status: PUBLISHED
+TargetCriteria:
+  leftOperand:
+    path: powerState
+    type: path
+  operator:
+    type: equals
+  rightOperand:
+    type: constant
+    value:
+      type: string
+      value: PowerState/stopped
+  type: expression
+TargetResourceTypeRef:
+  id: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
+  label: Azure Virtual Machine
+organization: null

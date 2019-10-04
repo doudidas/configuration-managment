@@ -1,0 +1,47 @@
+AlertTypes:
+- createdDate: 2019-06-24 14:26:58.334000
+  description: The threshold for storage usage. The system will send email notifications
+    when the usage exceeds the threshold.
+  id: fd9e5a75-ea5b-457c-aec2-ee68e9454194
+  lastUpdated: 2019-06-24 14:26:58.334000
+  name: Storage
+  referenceResourceId: storage
+  version: 0
+- createdDate: 2019-06-24 14:26:58.334000
+  description: The threshold for memory usage. The system will send email notifications
+    when the usage exceeds the threshold.
+  id: f035f112-f006-4347-ac53-1ce84ba75656
+  lastUpdated: 2019-06-24 14:26:58.334000
+  name: Memory
+  referenceResourceId: memory
+  version: 0
+- createdDate: 2019-06-24 14:26:58.335000
+  description: The threshold for CPU usage. The system will send email notifications
+    when the usage exceeds the threshold.
+  id: 932fcb43-8d88-4ab2-a8f0-14766c24ed11
+  lastUpdated: 2019-06-24 14:26:58.335000
+  name: CPU
+  referenceResourceId: cpu
+  version: 0
+- createdDate: 2019-06-24 14:26:58.335000
+  description: The threshold for machine quota usage. The system will send email notifications
+    when the usage exceeds the threshold.
+  id: 29c5b361-9fe2-4256-9f16-2a308f627648
+  lastUpdated: 2019-06-24 14:26:58.335000
+  name: Machine quota
+  referenceResourceId: machine
+  version: 0
+Category: Virtual
+CreatedDate: 2019-06-24 14:26:58.334000
+Description: KVM Reservation
+FormReference:
+  extensionId: com.vmware.vcac.iaas.reservation.details
+  extensionPointId: cafe.forms.extensions
+  type: extension
+Id: Infrastructure.Reservation.Virtual.KVM
+LastUpdated: 2019-06-24 14:26:58.334000
+Name: KVM (RHEV)
+SchemaClassId: Infrastructure.Reservation.Virtual.KVM
+ServiceTypeId: com.vmware.csp.iaas.blueprint.service
+TenantId: null
+Version: 0

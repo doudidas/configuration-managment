@@ -1,0 +1,22 @@
+Callbacks: null
+CatalogItemType: On-Demand Routed Network
+DateCreated: 2019-06-24 14:27:02.138000
+Description: null
+Forms: null
+IconId: cafe_default_icon_genericCatalogItem
+Id: 753cf1b6-898b-446f-b74b-c64ba3650791
+IsNoteworthy: false
+LastUpdatedDate: null
+Name: On-Demand Routed Network
+Organization: null
+OutputResourceType: Network
+ProviderBinding:
+  bindingId: Infrastructure.Network.Network.NSX.OnDemand.Routed
+  providerRef:
+    id: 8e80fbde-da18-4582-a3b7-c9a64d5fe8b0
+    label: Network Service
+Quota: 0
+Requestable: false
+Service: null
+Status: PUBLISHED
+Version: 0

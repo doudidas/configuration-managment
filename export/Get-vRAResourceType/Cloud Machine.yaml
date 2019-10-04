@@ -1,0 +1,25 @@
+Callbacks:
+  details: true
+  list: true
+CostFeatures:
+  lease: true
+  leaseCost: true
+Description: Infrastructure Cloud Machine
+Forms:
+  catalogResourceInfoHidden: true
+  details:
+    extensionId: csp.places.iaas.item.details
+    extensionPointId: null
+    type: extension
+Id: Infrastructure.Cloud
+ListDescendantTypesSeparately: null
+ListView: null
+Name: Cloud Machine
+PluralizedName: Cloud Machines
+Primary: false
+ProviderTypeId: com.vmware.csp.iaas.blueprint.service
+Schema:
+  classId: Infrastructure.Machine.Schema
+  typeFilter: Infrastructure.Cloud.Schema
+ShowChildrenOutsideParent: true
+Status: ACTIVE

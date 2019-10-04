@@ -1,0 +1,9 @@
+AssignedPermissions:
+- description: Manage security admin tasks
+  id: SECURITY_ADMIN
+  name: Security Admin Permissions
+  prereqAdminPermissions: null
+Description: CSP Security Administrator
+Id: CSP_SECURITY_ADMIN
+Name: Security Administrator
+Type: SystemRole

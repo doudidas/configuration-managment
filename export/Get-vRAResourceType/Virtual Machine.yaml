@@ -1,0 +1,25 @@
+Callbacks:
+  details: true
+  list: true
+CostFeatures:
+  lease: true
+  leaseCost: true
+Description: Infrastructure Virtual Machine
+Forms:
+  catalogResourceInfoHidden: true
+  details:
+    extensionId: csp.places.iaas.item.details
+    extensionPointId: null
+    type: extension
+Id: Infrastructure.Virtual
+ListDescendantTypesSeparately: null
+ListView: null
+Name: Virtual Machine
+PluralizedName: Virtual Machines
+Primary: false
+ProviderTypeId: com.vmware.csp.iaas.blueprint.service
+Schema:
+  classId: Infrastructure.Machine.Schema
+  typeFilter: Infrastructure.Virtual.Schema
+ShowChildrenOutsideParent: true
+Status: ACTIVE

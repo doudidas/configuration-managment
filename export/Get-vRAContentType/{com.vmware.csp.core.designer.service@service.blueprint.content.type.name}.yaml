@@ -1,0 +1,5 @@
+ClassId: xaasServiceBlueprint
+Description: '{com.vmware.csp.core.designer.service@service.blueprint.content.type.description}'
+Id: xaas-blueprint
+Name: '{com.vmware.csp.core.designer.service@service.blueprint.content.type.name}'
+ServiceTypeId: com.vmware.csp.core.designer.service

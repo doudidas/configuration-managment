@@ -1,0 +1,17 @@
+AssignedPermissions:
+- description: Full Access To Model
+  id: COM_VMWARE_IAAS_FULL_ACCESS_TO_MODEL
+  name: Full Access To Model
+  prereqAdminPermissions: null
+- description: Admin Requires System Admin
+  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  prereqAdminPermissions: null
+- description: View Admin Reports
+  id: COM_VMWARE_IAAS_VIEW_ADMIN_REPORTS
+  name: View Admin Reports
+  prereqAdminPermissions: null
+Description: Full Access Administrator
+Id: COM_VMWARE_IAAS_SCOPE_FULL_ACCESS_ADMINISTRATOR
+Name: Full Access Administrator
+Type: ScopeRole

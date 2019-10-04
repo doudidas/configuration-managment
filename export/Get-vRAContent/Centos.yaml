@@ -1,0 +1,12 @@
+ContentId: Centos
+ContentTypeId: composite-blueprint
+CreatedDate: 2019-07-26 12:46:59.044000
+Dependencies: []
+Description: Centos
+Id: 897e82fa-a961-48e6-b494-ad92cba72761
+LastUpdated: 2019-09-10 14:43:44.820000
+MimeType: null
+Name: Centos
+SubtenantId: null
+TenantId: vsphere.local
+Version: 6

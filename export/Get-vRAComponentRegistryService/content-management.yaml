@@ -1,0 +1,14 @@
+CreatedDate: null
+EndPoints: null
+Id: c54f8c20-0251-4968-9743-7d5ed0d9f670
+LastUpdated: null
+Name: content-management
+NameMsgKey: null
+OwnerId: cafe-OE867l_C_A
+ServiceAttributes: null
+ServiceType:
+  productId: com.vmware.csp.core
+  serviceName: null
+  serviceTypeId: com.vmware.csp.core.content.service
+  typeId: content.service
+ServiceVersion: null

@@ -1,0 +1,47 @@
+AlertTypes:
+- createdDate: 2019-06-24 14:26:58.521000
+  description: The threshold for storage usage. The system will send email notifications
+    when the usage exceeds the threshold.
+  id: 75f8bb23-06c4-45e2-a1d3-47f7a6bce41f
+  lastUpdated: 2019-06-24 14:26:58.521000
+  name: Storage
+  referenceResourceId: storage
+  version: 0
+- createdDate: 2019-06-24 14:26:58.522000
+  description: The threshold for memory usage. The system will send email notifications
+    when the usage exceeds the threshold.
+  id: b1375da9-4ac3-4e44-92b3-a3466e99334e
+  lastUpdated: 2019-06-24 14:26:58.522000
+  name: Memory
+  referenceResourceId: memory
+  version: 0
+- createdDate: 2019-06-24 14:26:58.522000
+  description: The threshold for CPU usage. The system will send email notifications
+    when the usage exceeds the threshold.
+  id: d51676ec-c873-4569-8cbc-c1ef8037e997
+  lastUpdated: 2019-06-24 14:26:58.522000
+  name: CPU
+  referenceResourceId: cpu
+  version: 0
+- createdDate: 2019-06-24 14:26:58.522000
+  description: The threshold for machine quota usage. The system will send email notifications
+    when the usage exceeds the threshold.
+  id: 14d313d1-e175-4a03-bb49-4d660f9e343e
+  lastUpdated: 2019-06-24 14:26:58.522000
+  name: Machine quota
+  referenceResourceId: machine
+  version: 0
+Category: Cloud
+CreatedDate: 2019-06-24 14:26:58.521000
+Description: vCloud Director Reservation
+FormReference:
+  extensionId: com.vmware.vcac.iaas.reservation.details
+  extensionPointId: cafe.forms.extensions
+  type: extension
+Id: Infrastructure.Reservation.Cloud.vCloud
+LastUpdated: 2019-06-24 14:26:58.521000
+Name: vCloud Director
+SchemaClassId: Infrastructure.Reservation.Cloud.vCloud
+ServiceTypeId: com.vmware.csp.iaas.blueprint.service
+TenantId: null
+Version: 0

@@ -1,0 +1,23 @@
+EndpointUrl: https://cava-n-80-154.eng.vmware.com/component-registry/api/status
+Id: 729154ee-2354-4d46-8848-5c2a054ead59
+LastUpdated: 2019-06-24 14:13:20.547000
+Name: component-registry
+NotAvailable: false
+ServiceStatus:
+  defaultServiceEndpointType: null
+  errorMessage: null
+  identityCertificateInfo: null
+  initialized: true
+  serviceInitializationStatus: REGISTERED
+  serviceName: component-registry
+  serviceRegistrationId: null
+  solutionUser: cafe-OE867l_C_A
+  sslCertificateInfo:
+    identityCertificateExists: false
+    issuerName: null
+    notValidAfter: null
+    notValidBefore: null
+    principalName: null
+    thumbprint: null
+  startedTime: 2019-06-24 14:13:20.876000
+TypeId: com.vmware.csp.core.cafe.componentregistry

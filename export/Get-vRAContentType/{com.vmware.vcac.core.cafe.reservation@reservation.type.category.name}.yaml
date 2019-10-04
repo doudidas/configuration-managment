@@ -1,0 +1,5 @@
+ClassId: reservationTypeCategoryType
+Description: '{com.vmware.vcac.core.cafe.reservation@reservation.type.category.description}'
+Id: reservation-type-category-type
+Name: '{com.vmware.vcac.core.cafe.reservation@reservation.type.category.name}'
+ServiceTypeId: com.vmware.vcac.core.cafe.reservation

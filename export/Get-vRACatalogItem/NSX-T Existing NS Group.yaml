@@ -1,0 +1,22 @@
+Callbacks: null
+CatalogItemType: NSX-T Existing NS Group
+DateCreated: 2019-06-24 14:27:00.145000
+Description: null
+Forms: null
+IconId: cafe_default_icon_genericCatalogItem
+Id: 3c6024ee-8baa-4be3-815f-1a6144c63eaf
+IsNoteworthy: false
+LastUpdatedDate: null
+Name: NSX-T Existing NS Group
+Organization: null
+OutputResourceType: VMware NSX-T Security Group
+ProviderBinding:
+  bindingId: Infrastructure.Network.SecurityGroup.NSXT.Existing
+  providerRef:
+    id: 8e80fbde-da18-4582-a3b7-c9a64d5fe8b0
+    label: Network Service
+Quota: 0
+Requestable: false
+Service: null
+Status: PUBLISHED
+Version: 0

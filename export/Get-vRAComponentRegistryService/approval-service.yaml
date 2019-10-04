@@ -1,0 +1,14 @@
+CreatedDate: null
+EndPoints: null
+Id: f149899b-86e5-4ca6-8e81-2b385da34de9
+LastUpdated: null
+Name: approval-service
+NameMsgKey: null
+OwnerId: cafe-OE867l_C_A
+ServiceAttributes: null
+ServiceType:
+  productId: com.vmware.csp.core
+  serviceName: null
+  serviceTypeId: com.vmware.csp.core.cafe.approvals
+  typeId: cafe.approvals
+ServiceVersion: null

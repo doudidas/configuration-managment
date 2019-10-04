@@ -1,0 +1,14 @@
+CreatedDate: null
+EndPoints: null
+Id: 72908da5-b2fd-4bda-8071-54412fb77f67
+LastUpdated: null
+Name: properties-service
+NameMsgKey: null
+OwnerId: cafe-OE867l_C_A
+ServiceAttributes: null
+ServiceType:
+  productId: com.vmware.csp.core
+  serviceName: null
+  serviceTypeId: com.vmware.csp.core.properties.service
+  typeId: properties.service
+ServiceVersion: null

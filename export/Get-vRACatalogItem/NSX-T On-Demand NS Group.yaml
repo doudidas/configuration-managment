@@ -1,0 +1,22 @@
+Callbacks: null
+CatalogItemType: NSX-T On-Demand NS Group
+DateCreated: 2019-06-24 14:27:00.327000
+Description: null
+Forms: null
+IconId: cafe_default_icon_genericCatalogItem
+Id: 22258879-5abb-4b5a-9fa1-8118cfd4d391
+IsNoteworthy: false
+LastUpdatedDate: null
+Name: NSX-T On-Demand NS Group
+Organization: null
+OutputResourceType: VMware NSX-T Security Group
+ProviderBinding:
+  bindingId: Infrastructure.Network.SecurityGroup.NSXT.OnDemand
+  providerRef:
+    id: 8e80fbde-da18-4582-a3b7-c9a64d5fe8b0
+    label: Network Service
+Quota: 0
+Requestable: false
+Service: null
+Status: PUBLISHED
+Version: 0

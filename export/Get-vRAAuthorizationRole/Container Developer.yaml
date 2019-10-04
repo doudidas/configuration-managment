@@ -1,0 +1,9 @@
+AssignedPermissions:
+- description: Manage containers.
+  id: CONTAINER_MANAGE_CONTAINERS
+  name: Manage containers
+  prereqAdminPermissions: null
+Description: Container Developer.
+Id: CONTAINER_DEVELOPER
+Name: Container Developer
+Type: TenantRole

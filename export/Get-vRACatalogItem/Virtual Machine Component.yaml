@@ -1,0 +1,23 @@
+Callbacks: null
+CatalogItemType: Virtual Machine
+DateCreated: 2019-06-24 14:26:53.098000
+Description: Corresponds to any blueprint component that represents Infrastructure
+  Machines of type Virtual.
+Forms: null
+IconId: cafe_default_icon_genericCatalogItem
+Id: f2267194-c67e-45ec-b897-3f55ecf6bcb2
+IsNoteworthy: false
+LastUpdatedDate: null
+Name: Virtual Machine Component
+Organization: null
+OutputResourceType: Virtual Machine
+ProviderBinding:
+  bindingId: Infrastructure.Virtual.Machine.Component
+  providerRef:
+    id: 5986d1a8-ca42-46f3-8c9a-387dac21745a
+    label: Infrastructure Service
+Quota: 0
+Requestable: false
+Service: null
+Status: PUBLISHED
+Version: 0

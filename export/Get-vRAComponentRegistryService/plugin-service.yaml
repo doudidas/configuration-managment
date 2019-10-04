@@ -1,0 +1,14 @@
+CreatedDate: null
+EndPoints: null
+Id: d4f1138b-f576-4531-8352-a0c75ecf4a8d
+LastUpdated: null
+Name: plugin-service
+NameMsgKey: null
+OwnerId: cafe-OE867l_C_A
+ServiceAttributes: null
+ServiceType:
+  productId: com.vmware.csp.core
+  serviceName: null
+  serviceTypeId: com.vmware.csp.core.plugin.service
+  typeId: plugin.service
+ServiceVersion: null

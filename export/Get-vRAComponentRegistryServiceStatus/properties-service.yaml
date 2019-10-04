@@ -1,0 +1,23 @@
+EndpointUrl: https://cava-n-80-154.eng.vmware.com/properties-service/api/status
+Id: 72908da5-b2fd-4bda-8071-54412fb77f67
+LastUpdated: 2019-06-24 14:14:20.170000
+Name: properties-service
+NotAvailable: false
+ServiceStatus:
+  defaultServiceEndpointType: com.vmware.csp.core.properties.service.api
+  errorMessage: null
+  identityCertificateInfo: null
+  initialized: true
+  serviceInitializationStatus: REGISTERED
+  serviceName: properties-service
+  serviceRegistrationId: 72908da5-b2fd-4bda-8071-54412fb77f67
+  solutionUser: cafe-OE867l_C_A
+  sslCertificateInfo:
+    identityCertificateExists: true
+    issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidAfter: 2024-06-22 13:53:42
+    notValidBefore: 2019-06-24 13:53:42
+    principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
+  startedTime: 2019-06-24 14:14:27.145000
+TypeId: com.vmware.csp.core.properties.service

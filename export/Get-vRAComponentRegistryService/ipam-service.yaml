@@ -1,0 +1,14 @@
+CreatedDate: null
+EndPoints: null
+Id: b0e81185-65d9-461b-8474-62f45e23170f
+LastUpdated: null
+Name: ipam-service
+NameMsgKey: null
+OwnerId: cafe-OE867l_C_A
+ServiceAttributes: null
+ServiceType:
+  productId: com.vmware.csp.component
+  serviceName: null
+  serviceTypeId: com.vmware.csp.component.ipam.service
+  typeId: ipam.service
+ServiceVersion: null

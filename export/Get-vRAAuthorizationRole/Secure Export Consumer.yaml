@@ -1,0 +1,10 @@
+AssignedPermissions:
+- description: Has the permission to export the secure content in the clear (non-encrypted)
+    format
+  id: CONTENT_SECURE_EXPORT_TENANT
+  name: Export Secure Content Tenant Wide
+  prereqAdminPermissions: null
+Description: Export the secure basic content in the clear (non-encrypted) format
+Id: CONTENT_SERVICE_SECURE_EXPORT_CONSUMER
+Name: Secure Export Consumer
+Type: TenantRole

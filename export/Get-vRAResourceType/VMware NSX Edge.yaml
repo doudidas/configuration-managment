@@ -1,0 +1,25 @@
+Callbacks:
+  details: true
+  list: true
+CostFeatures:
+  lease: false
+  leaseCost: false
+Description: VMware NSX Edge Gateway Device
+Forms:
+  catalogResourceInfoHidden: true
+  details:
+    extensionId: com.vmware.vcac.core.design.blueprints.nsx.edge.itemDetails
+    extensionPointId: null
+    type: extension
+Id: Infrastructure.Network.Gateway.NSX.Edge
+ListDescendantTypesSeparately: null
+ListView: null
+Name: VMware NSX Edge
+PluralizedName: NSX Edges
+Primary: false
+ProviderTypeId: com.vmware.csp.iaas.blueprint.service
+Schema:
+  classId: Infrastructure.Network.Gateway.NSX.Edge
+  typeFilter: null
+ShowChildrenOutsideParent: false
+Status: ACTIVE

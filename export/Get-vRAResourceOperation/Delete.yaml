@@ -1,0 +1,37 @@
+BindingId: _internal!::!fa3e5313-1e82-4595-9715-b0a66b0337d5
+Callbacks: null
+Description: Deletes the specified Azure virtual machine together with all related
+  resources where applicable.
+Entitleable: true
+ExternalId: _internal!::!fa3e5313-1e82-4595-9715-b0a66b0337d5
+Forms:
+  catalogRequestInfoHidden: false
+  requestDetails:
+    formId: _internal!::!fa3e5313-1e82-4595-9715-b0a66b0337d5_Resource.Action.Details
+    type: external
+  requestFormScale: BIG
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    formId: _internal!::!fa3e5313-1e82-4595-9715-b0a66b0337d5_Resource.Action.Submit
+    type: external
+IconId: Azure-virtualDestroy.png
+Id: 9fa70149-d674-4ebb-b0bf-7af9aa8d925b
+LifecycleAction: Destroy
+Name: Delete
+ProviderTypeRef:
+  id: com.vmware.csp.core.designer.service
+  label: XaaS
+RequestSchema:
+  classId: asd.resourceActionRequest
+  typeFilter: _internal!::!fa3e5313-1e82-4595-9715-b0a66b0337d5
+Status: PUBLISHED
+TargetCriteria:
+  type: constantClause
+  value:
+    type: boolean
+    value: true
+TargetResourceTypeRef:
+  id: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
+  label: Azure Virtual Machine
+organization: null

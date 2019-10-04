@@ -1,0 +1,5 @@
+ClassId: Composite.Blueprint
+Description: The content type corresponding to the composite blueprint
+Id: composite-blueprint
+Name: Composite Blueprint Content Type
+ServiceTypeId: com.vmware.csp.component.cafe.composition

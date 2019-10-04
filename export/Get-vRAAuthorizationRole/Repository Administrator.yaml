@@ -1,0 +1,17 @@
+AssignedPermissions:
+- description: Admin Requires System Admin
+  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  prereqAdminPermissions: null
+- description: Full Access To Models
+  id: COM_VMWARE_IAAS_FULL_ACCESS_TO_MODELS
+  name: Full Access To Models
+  prereqAdminPermissions: null
+- description: Impersonate Users
+  id: COM_VMWARE_IAAS_IMPERSONATE_USERS
+  name: Impersonate Users
+  prereqAdminPermissions: null
+Description: Repository Administrator
+Id: COM_VMWARE_IAAS_SCOPE_REPOSITORY_ADMINISTRATOR
+Name: Repository Administrator
+Type: ScopeRole

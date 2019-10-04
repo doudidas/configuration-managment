@@ -1,0 +1,19 @@
+ChangeWindow: null
+Description: ''
+Hours: null
+IconId: ServiceIcon-1561393447039
+Id: 8a445baf-8436-4955-81ee-9372cd5828d3
+LastUpdatedBy: Edouard Topin
+LastUpdatedDate: 2019-06-24 16:24:39.443000
+Name: Virtual Machines
+NewDuration: null
+Organization:
+  subtenantLabel: null
+  subtenantRef: null
+  tenantLabel: vsphere.local
+  tenantRef: vsphere.local
+Owner: null
+Status: ACTIVE
+StatusName: Active
+SupportTeam: null
+Version: 0

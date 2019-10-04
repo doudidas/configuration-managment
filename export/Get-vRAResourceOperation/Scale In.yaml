@@ -1,0 +1,60 @@
+BindingId: composition.resource.action.deployment.scalein
+Callbacks:
+  itemInformation: true
+  itemInitialize: true
+  rollback: false
+  validate: true
+Description: Scales in any scalable component in a deployment.
+Entitleable: true
+ExternalId: composition.resource.action.deployment.scalein
+Forms:
+  catalogRequestInfoHidden: true
+  requestDetails:
+    extensionId: com.vmware.vcac.core.design.blueprints.scaleIn.requestDetailsForm
+    extensionPointId: null
+    type: extension
+  requestFormScale: BIG
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    extensionId: com.vmware.vcac.core.design.blueprints.scaleIn.requestForm
+    extensionPointId: null
+    type: extension
+IconId: composition.scalein.png
+Id: 4203abc8-ef23-4599-857b-ed0ab212f38b
+LifecycleAction: ScaleIn
+Name: Scale In
+ProviderTypeRef:
+  id: com.vmware.csp.component.cafe.composition
+  label: Blueprint Service
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: composition.resource.action.deployment.scalein
+Status: PUBLISHED
+TargetCriteria:
+  subClauses:
+  - leftOperand:
+      path: parentResource
+      type: path
+    operator:
+      type: equals
+    rightOperand:
+      type: constant
+      value: null
+    type: expression
+  - leftOperand:
+      path: isSingleComponent
+      type: path
+    operator:
+      type: equals
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+    type: expression
+  type: or
+TargetResourceTypeRef:
+  id: composition.resource.type.deployment
+  label: Deployment
+organization: null

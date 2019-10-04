@@ -1,3 +1,8 @@
+# Parameters
+param(
+    [string]$env
+)
+
 $commands = @(
     'getObject.ps1 Get-vRAAuthorizationRole',
     'getObject.ps1 Get-vRABlueprint', 
@@ -28,7 +33,7 @@ $commands = @(
     'getObject.ps1 Get-vRAUserPrincipal', 
     'getObject.ps1 Get-vRAVersion'
 )
-# connectToServer.ps1
+connectToServer.ps1 $env
 foreach ($cmd in $commands) {
     Invoke-Expression -Command "$cmd silent"
 }
