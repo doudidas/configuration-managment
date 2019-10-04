@@ -1,5 +1,6 @@
-ClassId: formDefinition
-Description: '{com.vmware.csp.core.cafe.forms@form.definition.content.type.description}'
 Id: form-definition
 Name: '{com.vmware.csp.core.cafe.forms@form.definition.content.type.name}'
+Description: '{com.vmware.csp.core.cafe.forms@form.definition.content.type.description}'
+ClassId: formDefinition
 ServiceTypeId: com.vmware.csp.core.cafe.forms
+

@@ -1,13 +1,14 @@
+Id: a95caa4c-88fb-4f12-8160-2f1edc22b5b0
 ContentId: 6c4b3b0b-9685-4987-acf3-b393731361ba
+Name: Restart
+Description: 
 ContentTypeId: xaas-resource-action
-CreatedDate: 2019-06-24 14:18:30.796000
+MimeType: 
+TenantId: _internal
+SubtenantId: 
 Dependencies:
 - 028e85a1-3323-4e08-9d15-6614569b589a
-Description: null
-Id: a95caa4c-88fb-4f12-8160-2f1edc22b5b0
-LastUpdated: 2019-06-24 14:18:30.796000
-MimeType: null
-Name: Restart
-SubtenantId: null
-TenantId: _internal
+CreatedDate: 2019-06-24T14:18:30.7960000Z
+LastUpdated: 2019-06-24T14:18:30.7960000Z
 Version: 0
+

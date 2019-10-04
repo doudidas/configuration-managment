@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: 729154ee-2354-4d46-8848-5c2a054ead59
-LastUpdated: null
 Name: component-registry
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: cafe-OE867l_C_A
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.csp.core
-  serviceName: null
   serviceTypeId: com.vmware.csp.core.cafe.componentregistry
+  productId: com.vmware.csp.core
   typeId: cafe.componentregistry
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

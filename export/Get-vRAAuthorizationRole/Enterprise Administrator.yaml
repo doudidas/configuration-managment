@@ -1,121 +1,122 @@
-AssignedPermissions:
-- description: Read VCNS Endpoints
-  id: COM_VMWARE_IAAS_READ_VCNS_ENDPOINTS
-  name: Read VCNS Endpoints
-  prereqAdminPermissions: null
-- description: Read NSXT Endpoints
-  id: COM_VMWARE_IAAS_READ_NSXT_ENDPOINTS
-  name: Read NSXT Endpoints
-  prereqAdminPermissions: null
-- description: Manage Instances
-  id: COM_VMWARE_IAAS_MANAGE_INSTANCES
-  name: Manage Instances
-  prereqAdminPermissions: null
-- description: Manage PropertyDefinitions
-  id: COM_VMWARE_IAAS_MANAGE_PROPERTYDEFINITIONS
-  name: Manage PropertyDefinitions
-  prereqAdminPermissions: null
-- description: Finalize Enterprise Virtual Machine
-  id: COM_VMWARE_IAAS_FINALIZE_ENTERPRISE_VIRTUAL_MACHINE
-  name: Finalize Enterprise Virtual Machine
-  prereqAdminPermissions: null
-- description: Manage Blueprints
-  id: COM_VMWARE_IAAS_MANAGE_BLUEPRINTS
-  name: Manage Blueprints
-  prereqAdminPermissions: null
-- description: Manage Virtual Reservations
-  id: COM_VMWARE_IAAS_MANAGE_VIRTUAL_RESERVATIONS
-  name: Manage Virtual Reservations
-  prereqAdminPermissions: null
-- description: Manage Scope Security Information
-  id: COM_VMWARE_IAAS_MANAGE_SCOPE_SECURITY_INFORMATION
-  name: Manage Scope Security Information
-  prereqAdminPermissions: null
-- description: Register Virtual Machine
-  id: COM_VMWARE_IAAS_REGISTER_VIRTUAL_MACHINE
-  name: Register Virtual Machine
-  prereqAdminPermissions: null
-- description: View Fabric Reports
-  id: COM_VMWARE_IAAS_VIEW_FABRIC_REPORTS
-  name: View Fabric Reports
-  prereqAdminPermissions: null
-- description: Manage KeyPairs
-  id: COM_VMWARE_IAAS_MANAGE_KEYPAIRS
-  name: Manage KeyPairs
-  prereqAdminPermissions: null
-- description: Manage ApprovalPolicy
-  id: COM_VMWARE_IAAS_MANAGE_APPROVALPOLICY
-  name: Manage ApprovalPolicy
-  prereqAdminPermissions: null
-- description: Manage Machines
-  id: COM_VMWARE_IAAS_MANAGE_MACHINES
-  name: Manage Machines
-  prereqAdminPermissions: null
-- description: Manage Profiles
-  id: COM_VMWARE_IAAS_MANAGE_PROFILES
-  name: Manage Profiles
-  prereqAdminPermissions: null
-- description: Manage Enterprise Virtual Machines
-  id: COM_VMWARE_IAAS_MANAGE_ENTERPRISE_VIRTUAL_MACHINES
-  name: Manage Enterprise Virtual Machines
-  prereqAdminPermissions: null
-- description: Manage Network Profiles
-  id: COM_VMWARE_IAAS_MANAGE_NETWORK_PROFILES
-  name: Manage Network Profiles
-  prereqAdminPermissions: null
-- description: Manage Hosts
-  id: COM_VMWARE_IAAS_MANAGE_HOSTS
-  name: Manage Hosts
-  prereqAdminPermissions: null
-- description: Manage Reservations
-  id: COM_VMWARE_IAAS_MANAGE_RESERVATIONS
-  name: Manage Reservations
-  prereqAdminPermissions: null
-- description: Request Lease Extension
-  id: COM_VMWARE_IAAS_REQUEST_LEASE_EXTENSION
-  name: Request Lease Extension
-  prereqAdminPermissions: null
-- description: Admin Requires System Admin
-  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
-  name: Admin Requires System Admin
-  prereqAdminPermissions: null
-- description: Manage Application Security Information
-  id: COM_VMWARE_IAAS_MANAGE_APPLICATION_SECURITY_INFORMATION
-  name: Manage Application Security Information
-  prereqAdminPermissions: null
-- description: Access UI
-  id: COM_VMWARE_IAAS_ACCESS_UI
-  name: Access UI
-  prereqAdminPermissions: null
-- description: View Reports
-  id: COM_VMWARE_IAAS_VIEW_REPORTS
-  name: View Reports
-  prereqAdminPermissions: null
-- description: Enterprise Administrator Custom Event
-  id: COM_VMWARE_IAAS_ENTERPRISE_ADMINISTRATOR_CUSTOM_EVENT
-  name: Enterprise Administrator Custom Event
-  prereqAdminPermissions: null
-- description: Obtain Security Info
-  id: COM_VMWARE_IAAS_OBTAIN_SECURITY_INFO
-  name: Obtain Security Info
-  prereqAdminPermissions: null
-- description: Enterprise Administration
-  id: COM_VMWARE_IAAS_ENTERPRISE_ADMINISTRATION
-  name: Enterprise Administration
-  prereqAdminPermissions: null
-- description: Manage EBS Volumes
-  id: COM_VMWARE_IAAS_MANAGE_EBS_VOLUMES
-  name: Manage EBS Volumes
-  prereqAdminPermissions: null
-- description: Reconfigure Virtual Machine
-  id: COM_VMWARE_IAAS_RECONFIGURE_VIRTUAL_MACHINE
-  name: Reconfigure Virtual Machine
-  prereqAdminPermissions: null
-- description: Manage Model Security Information
-  id: COM_VMWARE_IAAS_MANAGE_MODEL_SECURITY_INFORMATION
-  name: Manage Model Security Information
-  prereqAdminPermissions: null
-Description: Enterprise Administrator
 Id: COM_VMWARE_IAAS_ENTERPRISE_ADMINISTRATOR
 Name: Enterprise Administrator
+Description: Enterprise Administrator
 Type: SystemRole
+AssignedPermissions:
+- id: COM_VMWARE_IAAS_READ_VCNS_ENDPOINTS
+  name: Read VCNS Endpoints
+  description: Read VCNS Endpoints
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_READ_NSXT_ENDPOINTS
+  name: Read NSXT Endpoints
+  description: Read NSXT Endpoints
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_INSTANCES
+  name: Manage Instances
+  description: Manage Instances
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_PROPERTYDEFINITIONS
+  name: Manage PropertyDefinitions
+  description: Manage PropertyDefinitions
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_FINALIZE_ENTERPRISE_VIRTUAL_MACHINE
+  name: Finalize Enterprise Virtual Machine
+  description: Finalize Enterprise Virtual Machine
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_BLUEPRINTS
+  name: Manage Blueprints
+  description: Manage Blueprints
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_VIRTUAL_RESERVATIONS
+  name: Manage Virtual Reservations
+  description: Manage Virtual Reservations
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_SCOPE_SECURITY_INFORMATION
+  name: Manage Scope Security Information
+  description: Manage Scope Security Information
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_REGISTER_VIRTUAL_MACHINE
+  name: Register Virtual Machine
+  description: Register Virtual Machine
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_VIEW_FABRIC_REPORTS
+  name: View Fabric Reports
+  description: View Fabric Reports
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_KEYPAIRS
+  name: Manage KeyPairs
+  description: Manage KeyPairs
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_APPROVALPOLICY
+  name: Manage ApprovalPolicy
+  description: Manage ApprovalPolicy
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_MACHINES
+  name: Manage Machines
+  description: Manage Machines
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_PROFILES
+  name: Manage Profiles
+  description: Manage Profiles
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_ENTERPRISE_VIRTUAL_MACHINES
+  name: Manage Enterprise Virtual Machines
+  description: Manage Enterprise Virtual Machines
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_NETWORK_PROFILES
+  name: Manage Network Profiles
+  description: Manage Network Profiles
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_HOSTS
+  name: Manage Hosts
+  description: Manage Hosts
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_RESERVATIONS
+  name: Manage Reservations
+  description: Manage Reservations
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_REQUEST_LEASE_EXTENSION
+  name: Request Lease Extension
+  description: Request Lease Extension
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  description: Admin Requires System Admin
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_APPLICATION_SECURITY_INFORMATION
+  name: Manage Application Security Information
+  description: Manage Application Security Information
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_ACCESS_UI
+  name: Access UI
+  description: Access UI
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_VIEW_REPORTS
+  name: View Reports
+  description: View Reports
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_ENTERPRISE_ADMINISTRATOR_CUSTOM_EVENT
+  name: Enterprise Administrator Custom Event
+  description: Enterprise Administrator Custom Event
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_OBTAIN_SECURITY_INFO
+  name: Obtain Security Info
+  description: Obtain Security Info
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_ENTERPRISE_ADMINISTRATION
+  name: Enterprise Administration
+  description: Enterprise Administration
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_EBS_VOLUMES
+  name: Manage EBS Volumes
+  description: Manage EBS Volumes
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_RECONFIGURE_VIRTUAL_MACHINE
+  name: Reconfigure Virtual Machine
+  description: Reconfigure Virtual Machine
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_MANAGE_MODEL_SECURITY_INFORMATION
+  name: Manage Model Security Information
+  description: Manage Model Security Information
+  prereqAdminPermissions: 
+

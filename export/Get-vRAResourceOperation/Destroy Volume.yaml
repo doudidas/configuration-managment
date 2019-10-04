@@ -1,29 +1,30 @@
-BindingId: Volume.Remove
-Callbacks: null
-Description: Destroy Action
-Entitleable: true
-ExternalId: Volume.Remove
-Forms: null
-IconId: icon_destroy.png
 Id: e486b10d-256b-4b0b-8fa6-9184d948735a
-LifecycleAction: Destroy
 Name: Destroy Volume
-ProviderTypeRef:
-  id: com.vmware.csp.component.cafe.container
-  label: Container Service
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: Volume.Remove
-Status: PUBLISHED
+ExternalId: Volume.Remove
+Description: Destroy Action
+IconId: icon_destroy.png
 TargetCriteria:
-  leftOperand:
-    path: Volume.Remove
-    type: path
+  type: expression
   operator:
     type: isDefined
-  rightOperand: null
-  type: expression
+  leftOperand:
+    type: path
+    path: Volume.Remove
+  rightOperand: 
 TargetResourceTypeRef:
   id: App.Volume
   label: Container Volume
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Volume.Remove
+Forms: 
+Callbacks: 
+LifecycleAction: Destroy
+BindingId: Volume.Remove
+ProviderTypeRef:
+  id: com.vmware.csp.component.cafe.container
+  label: Container Service
+

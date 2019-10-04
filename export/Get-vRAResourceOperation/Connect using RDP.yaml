@@ -1,38 +1,39 @@
-BindingId: null
-Callbacks: null
-Description: Infrastructure connect using RDP
-Entitleable: true
-ExternalId: csp.places.iaas.item.noform.ConnectViaRdp
-Forms: null
-IconId: cafe_default_icon_genericResourceOperation
 Id: 145f534a-f4ab-4a6f-8074-cc1c4c2ef0de
-LifecycleAction: null
 Name: Connect using RDP
-ProviderTypeRef: null
-RequestSchema: null
-Status: PUBLISHED
+ExternalId: csp.places.iaas.item.noform.ConnectViaRdp
+Description: Infrastructure connect using RDP
+IconId: cafe_default_icon_genericResourceOperation
 TargetCriteria:
+  type: and
   subClauses:
-  - leftOperand:
-      path: ConnectViaRdp
-      type: path
+  - type: expression
     operator:
       type: isDefined
-    rightOperand: null
-    type: expression
-  - leftOperand:
-      path: ConnectViaRdp
+    leftOperand:
       type: path
+      path: ConnectViaRdp
+    rightOperand: 
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: ConnectViaRdp
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
-    type: expression
-  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema: 
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: 
+ProviderTypeRef: 
+

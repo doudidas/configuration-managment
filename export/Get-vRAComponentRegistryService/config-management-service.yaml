@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: d5d546b5-4645-42bd-8ae4-d7339f2267c5
-LastUpdated: null
 Name: config-management-service
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: cafe-OE867l_C_A
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.csp.component
-  serviceName: null
   serviceTypeId: com.vmware.csp.component.cafe.config.management
+  productId: com.vmware.csp.component
   typeId: cafe.config.management
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

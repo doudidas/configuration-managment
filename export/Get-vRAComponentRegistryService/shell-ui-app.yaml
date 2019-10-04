@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: 5524d440-78c2-4bec-85e1-324228fea4e0
-LastUpdated: null
 Name: shell-ui-app
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: cafe-OE867l_C_A
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.csp.core
-  serviceName: null
   serviceTypeId: com.vmware.csp.core.cafe.shell
+  productId: com.vmware.csp.core
   typeId: cafe.shell
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

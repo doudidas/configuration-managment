@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: dd187111-3d6c-432b-a300-478036493b0b
-LastUpdated: null
 Name: reservation-service
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: cafe-OE867l_C_A
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.vcac.core
-  serviceName: null
   serviceTypeId: com.vmware.vcac.core.cafe.reservation
+  productId: com.vmware.vcac.core
   typeId: cafe.reservation
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

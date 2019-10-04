@@ -1,17 +1,18 @@
-EndpointUrl: https://cava-n-88-186.eng.vmware.com/WAPI/api/status
 Id: 5986d1a8-ca42-46f3-8c9a-387dac21745a
-LastUpdated: 2019-06-24 14:21:43.081000
 Name: iaas-service
-NotAvailable: false
-ServiceStatus:
-  defaultServiceEndpointType: com.vmware.csp.iaas.api
-  errorMessage: null
-  identityCertificateInfo: null
-  initialized: true
-  serviceInitializationStatus: REGISTERED
-  serviceName: iaas-service
-  serviceRegistrationId: null
-  solutionUser: null
-  sslCertificateInfo: null
-  startedTime: null
 TypeId: com.vmware.csp.iaas.blueprint.service
+NotAvailable: false
+LastUpdated: 2019-06-24T14:21:43.0810000Z
+EndpointUrl: https://cava-n-88-186.eng.vmware.com/WAPI/api/status
+ServiceStatus:
+  initialized: true
+  serviceName: iaas-service
+  solutionUser: 
+  startedTime: 
+  serviceInitializationStatus: REGISTERED
+  errorMessage: 
+  identityCertificateInfo: 
+  serviceRegistrationId: 
+  sslCertificateInfo: 
+  defaultServiceEndpointType: com.vmware.csp.iaas.api
+

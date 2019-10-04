@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: bfc832f0-04e9-4c25-9f8c-11a542ee999b
-LastUpdated: null
 Name: vco
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: vco-dthtHEpyPA
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.vco
-  serviceName: null
   serviceTypeId: com.vmware.vco.o11n
+  productId: com.vmware.vco
   typeId: o11n
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

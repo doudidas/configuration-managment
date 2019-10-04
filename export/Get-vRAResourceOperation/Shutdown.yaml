@@ -1,42 +1,43 @@
-BindingId: Infrastructure.Machine.Action.Shutdown
-Callbacks: null
-Description: Shutdown a machine.
-Entitleable: true
-ExternalId: Infrastructure.Machine.Action.Shutdown
-Forms: null
-IconId: machineShutdown.png
 Id: 1b9ad1cd-dc63-48fe-9fd5-d0d61db079b4
-LifecycleAction: null
 Name: Shutdown
-ProviderTypeRef:
-  id: com.vmware.csp.iaas.blueprint.service
-  label: Infrastructure Service
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: Infrastructure.Machine.Action.Shutdown
-Status: PUBLISHED
+ExternalId: Infrastructure.Machine.Action.Shutdown
+Description: Shutdown a machine.
+IconId: machineShutdown.png
 TargetCriteria:
+  type: and
   subClauses:
-  - leftOperand:
-      path: Shutdown
-      type: path
+  - type: expression
     operator:
       type: isDefined
-    rightOperand: null
-    type: expression
-  - leftOperand:
-      path: Shutdown
+    leftOperand:
       type: path
+      path: Shutdown
+    rightOperand: 
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: Shutdown
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
-    type: expression
-  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Machine.Action.Shutdown
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: Infrastructure.Machine.Action.Shutdown
+ProviderTypeRef:
+  id: com.vmware.csp.iaas.blueprint.service
+  label: Infrastructure Service
+

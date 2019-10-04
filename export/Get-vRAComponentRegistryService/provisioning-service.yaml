@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: cdbac321-ddb5-4627-a658-ae42821b385c
-LastUpdated: null
 Name: provisioning-service
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: cafe-OE867l_C_A
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.csp.component
-  serviceName: null
   serviceTypeId: com.vmware.csp.component.cafe.provisioning
+  productId: com.vmware.csp.component
   typeId: cafe.provisioning
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

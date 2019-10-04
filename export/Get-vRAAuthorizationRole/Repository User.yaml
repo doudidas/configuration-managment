@@ -1,13 +1,14 @@
-AssignedPermissions:
-- description: Admin Requires System Admin
-  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
-  name: Admin Requires System Admin
-  prereqAdminPermissions: null
-- description: Access Security Information
-  id: COM_VMWARE_IAAS_ACCESS_SECURITY_INFORMATION
-  name: Access Security Information
-  prereqAdminPermissions: null
-Description: Repository User
 Id: COM_VMWARE_IAAS_SCOPE_REPOSITORY_USER
 Name: Repository User
+Description: Repository User
 Type: ScopeRole
+AssignedPermissions:
+- id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  description: Admin Requires System Admin
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_ACCESS_SECURITY_INFORMATION
+  name: Access Security Information
+  description: Access Security Information
+  prereqAdminPermissions: 
+

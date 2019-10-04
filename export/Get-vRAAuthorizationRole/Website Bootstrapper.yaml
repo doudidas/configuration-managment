@@ -1,13 +1,14 @@
-AssignedPermissions:
-- description: Admin Requires System Admin
-  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
-  name: Admin Requires System Admin
-  prereqAdminPermissions: null
-- description: Access ManagerService Workflow Metadata
-  id: COM_VMWARE_IAAS_ACCESS_MANAGERSERVICE_WORKFLOW_METADATA
-  name: Access ManagerService Workflow Metadata
-  prereqAdminPermissions: null
-Description: Website Bootstrapper
 Id: COM_VMWARE_IAAS_SCOPE_WEBSITE_BOOTSTRAPPER
 Name: Website Bootstrapper
+Description: Website Bootstrapper
 Type: ScopeRole
+AssignedPermissions:
+- id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  description: Admin Requires System Admin
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_ACCESS_MANAGERSERVICE_WORKFLOW_METADATA
+  name: Access ManagerService Workflow Metadata
+  description: Access ManagerService Workflow Metadata
+  prereqAdminPermissions: 
+

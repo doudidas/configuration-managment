@@ -1,13 +1,14 @@
-AssignedPermissions:
-- description: Admin Requires System Admin
-  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
-  name: Admin Requires System Admin
-  prereqAdminPermissions: null
-- description: Access UI
-  id: COM_VMWARE_IAAS_ACCESS_UI
-  name: Access UI
-  prereqAdminPermissions: null
-Description: User With UI Access
 Id: COM_VMWARE_IAAS_USER_WITH_UI_ACCESS
 Name: User With UI Access
+Description: User With UI Access
 Type: SystemRole
+AssignedPermissions:
+- id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  description: Admin Requires System Admin
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_ACCESS_UI
+  name: Access UI
+  description: Access UI
+  prereqAdminPermissions: 
+

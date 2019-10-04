@@ -1,13 +1,14 @@
-AssignedPermissions:
-- description: Access Health UI and Tests results
-  id: HB_CONSUMER
-  name: Manage Health Configurations
-  prereqAdminPermissions: null
-- description: Access my tenant administration GUI.
-  id: GUI_MY_TENANT_MANAGEMENT
-  name: My Tenant Administration User Interface
-  prereqAdminPermissions: null
-Description: Health Consumer
 Id: HEALTHBROKER_ADMIN
 Name: Health Consumer
+Description: Health Consumer
 Type: TenantRole
+AssignedPermissions:
+- id: HB_CONSUMER
+  name: Manage Health Configurations
+  description: Access Health UI and Tests results
+  prereqAdminPermissions: 
+- id: GUI_MY_TENANT_MANAGEMENT
+  name: My Tenant Administration User Interface
+  description: Access my tenant administration GUI.
+  prereqAdminPermissions: 
+

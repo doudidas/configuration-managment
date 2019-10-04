@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: 766b90da-6823-4131-9d12-29e1db85f768
-LastUpdated: null
 Name: composition-service
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: cafe-OE867l_C_A
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.csp.component
-  serviceName: null
   serviceTypeId: com.vmware.csp.component.cafe.composition
+  productId: com.vmware.csp.component
   typeId: cafe.composition
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

@@ -1,29 +1,30 @@
-AssignedPermissions:
-- description: Create, update and delete context property definitions for the system
-  id: MANAGE_PROPERTY_DEFINITIONS_SYSTEM
-  name: Manage System Context Property Definitions
-  prereqAdminPermissions: null
-- description: Manage the system tenant.
-  id: SYSTEM_TENANT_MANAGEMENT
-  name: System Tenant Management
-  prereqAdminPermissions: null
-- description: Assign the tenant administrator role to other users.
-  id: TENANT_ADMIN_ROLE_ASSIGNMENT
-  name: Tenant Administrator Role Assignment
-  prereqAdminPermissions: null
-- description: Create, update and delete context property groups for the system
-  id: MANAGE_PROPERTY_GROUP_DEFINITIONS_SYSTEM
-  name: Manage System Context Property Groups
-  prereqAdminPermissions: null
-- description: Access the system tenant management GUI.
-  id: GUI_SYSTEM_TENANT_MANAGEMENT
-  name: System Tenant User Interface
-  prereqAdminPermissions: null
-- description: View event log messages for the tenant
-  id: VIEW_EVENT_LOG
-  name: View tenant event log
-  prereqAdminPermissions: null
-Description: CSP System Administrator
 Id: CSP_SYSTEM_ADMIN
 Name: System Administrator
+Description: CSP System Administrator
 Type: SystemRole
+AssignedPermissions:
+- id: MANAGE_PROPERTY_DEFINITIONS_SYSTEM
+  name: Manage System Context Property Definitions
+  description: Create, update and delete context property definitions for the system
+  prereqAdminPermissions: 
+- id: SYSTEM_TENANT_MANAGEMENT
+  name: System Tenant Management
+  description: Manage the system tenant.
+  prereqAdminPermissions: 
+- id: TENANT_ADMIN_ROLE_ASSIGNMENT
+  name: Tenant Administrator Role Assignment
+  description: Assign the tenant administrator role to other users.
+  prereqAdminPermissions: 
+- id: MANAGE_PROPERTY_GROUP_DEFINITIONS_SYSTEM
+  name: Manage System Context Property Groups
+  description: Create, update and delete context property groups for the system
+  prereqAdminPermissions: 
+- id: GUI_SYSTEM_TENANT_MANAGEMENT
+  name: System Tenant User Interface
+  description: Access the system tenant management GUI.
+  prereqAdminPermissions: 
+- id: VIEW_EVENT_LOG
+  name: View tenant event log
+  description: View event log messages for the tenant
+  prereqAdminPermissions: 
+

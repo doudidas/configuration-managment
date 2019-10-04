@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: 1a74dffd-31f8-418e-a335-1e9c38ba6356
-LastUpdated: null
 Name: healthbroker-proxy-server
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: cafe-OE867l_C_A
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.csp.component
-  serviceName: null
   serviceTypeId: com.vmware.csp.component.healthbroker.proxy
+  productId: com.vmware.csp.component
   typeId: healthbroker.proxy
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

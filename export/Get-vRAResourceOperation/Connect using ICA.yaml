@@ -1,38 +1,39 @@
-BindingId: null
-Callbacks: null
-Description: Infrastructure connect using ICA
-Entitleable: true
-ExternalId: csp.places.iaas.item.noform.ConnectViaIca
-Forms: null
-IconId: cafe_default_icon_genericResourceOperation
 Id: e2f0b67f-acb9-40c9-aec0-7c5403d373d9
-LifecycleAction: null
 Name: Connect using ICA
-ProviderTypeRef: null
-RequestSchema: null
-Status: PUBLISHED
+ExternalId: csp.places.iaas.item.noform.ConnectViaIca
+Description: Infrastructure connect using ICA
+IconId: cafe_default_icon_genericResourceOperation
 TargetCriteria:
+  type: and
   subClauses:
-  - leftOperand:
-      path: ConnectViaIca
-      type: path
+  - type: expression
     operator:
       type: isDefined
-    rightOperand: null
-    type: expression
-  - leftOperand:
-      path: ConnectViaIca
+    leftOperand:
       type: path
+      path: ConnectViaIca
+    rightOperand: 
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: ConnectViaIca
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
-    type: expression
-  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema: 
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: 
+ProviderTypeRef: 
+

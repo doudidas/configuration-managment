@@ -1,76 +1,77 @@
-BindingId: Infrastructure.Machine.Action.ChangeLease
-Callbacks: null
-Description: Change the lease for a machine. Leave empty for indefinite.
-Entitleable: true
-ExternalId: Infrastructure.Machine.Action.ChangeLease
-Forms:
-  catalogRequestInfoHidden: true
-  requestDetails:
-    formId: Infrastructure.Machine-Resource.Action.Details
-    type: external
-  requestFormScale: SMALL
-  requestPostApproval: null
-  requestPreApproval: null
-  requestSubmission:
-    formId: Infrastructure.Machine-Resource.Action.Submit
-    type: external
-IconId: machineChangeLease.png
 Id: 95c0e8dc-6aa7-48ba-8b5b-1fd1ab52f553
-LifecycleAction: ChangeLease
 Name: Change Lease
-ProviderTypeRef:
-  id: com.vmware.csp.iaas.blueprint.service
-  label: Infrastructure Service
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: Infrastructure.Machine.Action.ChangeLease
-Status: PUBLISHED
+ExternalId: Infrastructure.Machine.Action.ChangeLease
+Description: Change the lease for a machine. Leave empty for indefinite.
+IconId: machineChangeLease.png
 TargetCriteria:
+  type: and
   subClauses:
-  - subClauses:
-    - leftOperand:
-        path: ChangeLease
-        type: path
+  - type: and
+    subClauses:
+    - type: expression
       operator:
         type: isDefined
-      rightOperand: null
-      type: expression
-    - leftOperand:
+      leftOperand:
+        type: path
         path: ChangeLease
-        type: path
+      rightOperand: 
+    - type: expression
       operator:
         type: equals
+      leftOperand:
+        type: path
+        path: ChangeLease
       rightOperand:
         type: constant
         value:
           type: boolean
           value: true
-      type: expression
-    type: and
-  - subClauses:
-    - leftOperand:
+  - type: or
+    subClauses:
+    - type: expression
+      operator:
+        type: equals
+      leftOperand:
+        type: path
         path: parentResource
-        type: path
-      operator:
-        type: equals
       rightOperand:
         type: constant
-        value: null
-      type: expression
-    - leftOperand:
-        path: isSingleComponent
-        type: path
+        value: 
+    - type: expression
       operator:
         type: equals
+      leftOperand:
+        type: path
+        path: isSingleComponent
       rightOperand:
         type: constant
         value:
           type: boolean
           value: true
-      type: expression
-    type: or
-  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Machine.Action.ChangeLease
+Forms:
+  catalogRequestInfoHidden: true
+  requestFormScale: SMALL
+  requestSubmission:
+    type: external
+    formId: Infrastructure.Machine-Resource.Action.Submit
+  requestDetails:
+    type: external
+    formId: Infrastructure.Machine-Resource.Action.Details
+  requestPreApproval: 
+  requestPostApproval: 
+Callbacks: 
+LifecycleAction: ChangeLease
+BindingId: Infrastructure.Machine.Action.ChangeLease
+ProviderTypeRef:
+  id: com.vmware.csp.iaas.blueprint.service
+  label: Infrastructure Service
+

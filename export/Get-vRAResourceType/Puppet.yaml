@@ -1,16 +1,15 @@
+Id: ConfigManagement.Puppet
 Callbacks:
-  details: false
   list: false
+  details: false
 CostFeatures:
   lease: false
   leaseCost: false
 Description: Puppet Node
 Forms:
   catalogResourceInfoHidden: true
-  details: null
-Id: ConfigManagement.Puppet
-ListDescendantTypesSeparately: null
-ListView: null
+  details: 
+ListView: 
 Name: Puppet
 PluralizedName: Puppet Nodes
 Primary: false
@@ -18,5 +17,7 @@ ProviderTypeId: com.vmware.csp.component.cafe.config.management
 Schema:
   classId: ConfigManagement.Root.Schema
   typeFilter: ConfigManagement.Puppet.Schema
+ListDescendantTypesSeparately: 
 ShowChildrenOutsideParent: false
 Status: ACTIVE
+

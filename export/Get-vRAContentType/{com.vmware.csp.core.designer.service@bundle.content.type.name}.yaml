@@ -1,5 +1,6 @@
-ClassId: xaasBundleType
-Description: '{com.vmware.csp.core.designer.service@bundle.content.type.description}'
 Id: xaas-bundle-content
 Name: '{com.vmware.csp.core.designer.service@bundle.content.type.name}'
+Description: '{com.vmware.csp.core.designer.service@bundle.content.type.description}'
+ClassId: xaasBundleType
 ServiceTypeId: com.vmware.csp.core.designer.service
+

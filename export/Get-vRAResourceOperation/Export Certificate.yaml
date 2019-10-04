@@ -1,38 +1,39 @@
-BindingId: null
-Callbacks: null
-Description: Infrastructure export certificate
-Entitleable: true
-ExternalId: csp.places.iaas.item.noform.ExportCertificate
-Forms: null
-IconId: cafe_default_icon_genericResourceOperation
 Id: 1f04d030-ac26-4d66-adb7-7062ef69f8ea
-LifecycleAction: null
 Name: Export Certificate
-ProviderTypeRef: null
-RequestSchema: null
-Status: PUBLISHED
+ExternalId: csp.places.iaas.item.noform.ExportCertificate
+Description: Infrastructure export certificate
+IconId: cafe_default_icon_genericResourceOperation
 TargetCriteria:
+  type: and
   subClauses:
-  - leftOperand:
-      path: ExportCertificate
-      type: path
+  - type: expression
     operator:
       type: isDefined
-    rightOperand: null
-    type: expression
-  - leftOperand:
-      path: ExportCertificate
+    leftOperand:
       type: path
+      path: ExportCertificate
+    rightOperand: 
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: ExportCertificate
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
-    type: expression
-  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema: 
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: 
+ProviderTypeRef: 
+

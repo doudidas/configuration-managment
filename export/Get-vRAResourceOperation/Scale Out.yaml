@@ -1,60 +1,61 @@
-BindingId: composition.resource.action.deployment.scaleout
-Callbacks:
-  itemInformation: true
-  itemInitialize: true
-  rollback: false
-  validate: true
-Description: Scales out any scalable component in a deployment.
-Entitleable: true
-ExternalId: composition.resource.action.deployment.scaleout
-Forms:
-  catalogRequestInfoHidden: true
-  requestDetails:
-    extensionId: com.vmware.vcac.core.design.blueprints.scaleOut.requestDetailsForm
-    extensionPointId: null
-    type: extension
-  requestFormScale: BIG
-  requestPostApproval: null
-  requestPreApproval: null
-  requestSubmission:
-    extensionId: com.vmware.vcac.core.design.blueprints.scaleOut.requestForm
-    extensionPointId: null
-    type: extension
-IconId: composition.scaleout.png
 Id: 59c216b2-9d3a-4a51-87dd-f51bb0b6d6c3
-LifecycleAction: ScaleOut
 Name: Scale Out
-ProviderTypeRef:
-  id: com.vmware.csp.component.cafe.composition
-  label: Blueprint Service
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: composition.resource.action.deployment.scaleout
-Status: PUBLISHED
+ExternalId: composition.resource.action.deployment.scaleout
+Description: Scales out any scalable component in a deployment.
+IconId: composition.scaleout.png
 TargetCriteria:
+  type: or
   subClauses:
-  - leftOperand:
-      path: parentResource
-      type: path
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: parentResource
     rightOperand:
       type: constant
-      value: null
-    type: expression
-  - leftOperand:
-      path: isSingleComponent
-      type: path
+      value: 
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: isSingleComponent
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
-    type: expression
-  type: or
 TargetResourceTypeRef:
   id: composition.resource.type.deployment
   label: Deployment
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: composition.resource.action.deployment.scaleout
+Forms:
+  catalogRequestInfoHidden: true
+  requestFormScale: BIG
+  requestSubmission:
+    type: extension
+    extensionId: com.vmware.vcac.core.design.blueprints.scaleOut.requestForm
+    extensionPointId: 
+  requestDetails:
+    type: extension
+    extensionId: com.vmware.vcac.core.design.blueprints.scaleOut.requestDetailsForm
+    extensionPointId: 
+  requestPreApproval: 
+  requestPostApproval: 
+Callbacks:
+  validate: true
+  rollback: false
+  itemInformation: true
+  itemInitialize: true
+LifecycleAction: ScaleOut
+BindingId: composition.resource.action.deployment.scaleout
+ProviderTypeRef:
+  id: com.vmware.csp.component.cafe.composition
+  label: Blueprint Service
+

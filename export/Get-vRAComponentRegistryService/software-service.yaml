@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: 86c50575-3fa7-45a4-93ff-e479375609ac
-LastUpdated: null
 Name: software-service
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: cafe-OE867l_C_A
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.csp.component
-  serviceName: null
   serviceTypeId: com.vmware.csp.component.software.service
+  productId: com.vmware.csp.component
   typeId: software.service
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

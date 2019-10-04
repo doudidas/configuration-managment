@@ -1,13 +1,14 @@
+Id: de9a03c5-d87e-4524-9078-845239f53c48
 ContentId: fa3e5313-1e82-4595-9715-b0a66b0337d5
+Name: Delete
+Description: 
 ContentTypeId: xaas-resource-action
-CreatedDate: 2019-06-24 14:18:30.225000
+MimeType: 
+TenantId: _internal
+SubtenantId: 
 Dependencies:
 - 028e85a1-3323-4e08-9d15-6614569b589a
-Description: null
-Id: de9a03c5-d87e-4524-9078-845239f53c48
-LastUpdated: 2019-06-24 14:18:30.225000
-MimeType: null
-Name: Delete
-SubtenantId: null
-TenantId: _internal
+CreatedDate: 2019-06-24T14:18:30.2250000Z
+LastUpdated: 2019-06-24T14:18:30.2250000Z
 Version: 0
+

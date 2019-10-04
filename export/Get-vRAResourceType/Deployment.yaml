@@ -1,6 +1,7 @@
+Id: composition.resource.type.deployment
 Callbacks:
-  details: false
   list: false
+  details: false
 CostFeatures:
   lease: true
   leaseCost: true
@@ -8,43 +9,40 @@ Description: Composite Blueprint Deployment Resource Type
 Forms:
   catalogResourceInfoHidden: false
   details:
-    formId: composition.deployment.details
     type: external
-Id: composition.resource.type.deployment
-ListDescendantTypesSeparately: null
+    formId: composition.deployment.details
 ListView:
   columns:
-  - dataType:
-      type: primitive
-      typeId: STRING
-    description: The name of the component from which the machine was provisioned.
-    displayAdvice: TEXTBOX
-    filterable: false
-    id: Component
-    isMultiValued: false
+  - id: Component
     label: Component
-    orderIndex: null
-    permissibleValues: null
-    sortable: false
-    state:
-      dependencies: []
-      facets: []
-  - dataType:
+    description: The name of the component from which the machine was provisioned.
+    orderIndex: 
+    dataType:
       type: primitive
       typeId: STRING
-    description: IP Address that is used by other machines to communicate with this
-      machine.
     displayAdvice: TEXTBOX
-    filterable: false
-    id: ip_address
-    isMultiValued: false
-    label: IP Address
-    orderIndex: null
-    permissibleValues: null
-    sortable: false
+    permissibleValues: 
     state:
       dependencies: []
       facets: []
+    filterable: false
+    sortable: false
+    isMultiValued: false
+  - id: ip_address
+    label: IP Address
+    description: IP Address that is used by other machines to communicate with this machine.
+    orderIndex: 
+    dataType:
+      type: primitive
+      typeId: STRING
+    displayAdvice: TEXTBOX
+    permissibleValues: 
+    state:
+      dependencies: []
+      facets: []
+    filterable: false
+    sortable: false
+    isMultiValued: false
   defaultSequence:
   - Component
   - ip_address
@@ -54,6 +52,8 @@ Primary: true
 ProviderTypeId: com.vmware.csp.component.cafe.composition
 Schema:
   classId: composition.resource.type.deployment
-  typeFilter: null
+  typeFilter: 
+ListDescendantTypesSeparately: 
 ShowChildrenOutsideParent: false
 Status: ACTIVE
+

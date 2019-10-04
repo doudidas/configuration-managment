@@ -1,5 +1,6 @@
-ClassId: reservationTypeType
-Description: '{com.vmware.vcac.core.cafe.reservation@reservation.type.description}'
 Id: reservation-type-type
 Name: '{com.vmware.vcac.core.cafe.reservation@reservation.type.name}'
+Description: '{com.vmware.vcac.core.cafe.reservation@reservation.type.description}'
+ClassId: reservationTypeType
 ServiceTypeId: com.vmware.vcac.core.cafe.reservation
+

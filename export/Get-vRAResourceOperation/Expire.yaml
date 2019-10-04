@@ -1,48 +1,49 @@
-BindingId: composition.resource.action.deployment.archive
-Callbacks:
-  itemInformation: true
-  itemInitialize: true
-  rollback: false
-  validate: false
-Description: Expires a deployment and all constituent resources.
-Entitleable: true
-ExternalId: composition.resource.action.deployment.archive
-Forms: null
-IconId: composition.archive.png
 Id: 80d6b720-fb85-427d-90d1-76c9e64ac892
-LifecycleAction: Archive
 Name: Expire
-ProviderTypeRef:
-  id: com.vmware.csp.component.cafe.composition
-  label: Blueprint Service
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: composition.resource.action.deployment.archive
-Status: PUBLISHED
+ExternalId: composition.resource.action.deployment.archive
+Description: Expires a deployment and all constituent resources.
+IconId: composition.archive.png
 TargetCriteria:
+  type: or
   subClauses:
-  - leftOperand:
-      path: parentResource
-      type: path
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: parentResource
     rightOperand:
       type: constant
-      value: null
-    type: expression
-  - leftOperand:
-      path: isSingleComponent
-      type: path
+      value: 
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: isSingleComponent
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
-    type: expression
-  type: or
 TargetResourceTypeRef:
   id: composition.resource.type.deployment
   label: Deployment
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: composition.resource.action.deployment.archive
+Forms: 
+Callbacks:
+  validate: false
+  rollback: false
+  itemInformation: true
+  itemInitialize: true
+LifecycleAction: Archive
+BindingId: composition.resource.action.deployment.archive
+ProviderTypeRef:
+  id: com.vmware.csp.component.cafe.composition
+  label: Blueprint Service
+

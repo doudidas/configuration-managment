@@ -1,13 +1,14 @@
-AssignedPermissions:
-- description: Manage containers hosts.
-  id: CONTAINER_MANAGE_HOSTS
-  name: Manage containers hosts
-  prereqAdminPermissions: null
-- description: Manage containers placements.
-  id: CONTAINER_MANAGE_PLACEMENTS
-  name: Manage containers placements
-  prereqAdminPermissions: null
-Description: Container Administrator
 Id: CONTAINER_ADMIN
 Name: Container Administrator
+Description: Container Administrator
 Type: TenantRole
+AssignedPermissions:
+- id: CONTAINER_MANAGE_HOSTS
+  name: Manage containers hosts
+  description: Manage containers hosts.
+  prereqAdminPermissions: 
+- id: CONTAINER_MANAGE_PLACEMENTS
+  name: Manage containers placements
+  description: Manage containers placements.
+  prereqAdminPermissions: 
+

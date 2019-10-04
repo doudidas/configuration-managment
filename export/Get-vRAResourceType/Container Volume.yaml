@@ -1,15 +1,14 @@
+Id: App.Volume
 Callbacks:
-  details: true
   list: true
-CostFeatures: null
+  details: true
+CostFeatures: 
 Description: Container Volume
 Forms:
-  catalogResourceInfoHidden: null
+  catalogResourceInfoHidden: 
   details:
-    formId: Volume.Resource.Details
     type: external
-Id: App.Volume
-ListDescendantTypesSeparately: null
+    formId: Volume.Resource.Details
 ListView:
   columns: []
   defaultSequence: []
@@ -20,5 +19,7 @@ ProviderTypeId: com.vmware.csp.component.cafe.container
 Schema:
   classId: App.Container.Schema
   typeFilter: App.Volume.Schema
+ListDescendantTypesSeparately: 
 ShowChildrenOutsideParent: false
 Status: ACTIVE
+

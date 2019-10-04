@@ -1,14 +1,15 @@
-CreatedDate: null
-EndPoints: null
 Id: c99e4547-5879-43d6-b3d3-3b37e900b73c
-LastUpdated: null
 Name: sts-service
-NameMsgKey: null
+CreatedDate: 
+LastUpdated: 
 OwnerId: sso-user
-ServiceAttributes: null
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
 ServiceType:
-  productId: com.vmware.cis
-  serviceName: null
   serviceTypeId: com.vmware.cis.core.sso
+  productId: com.vmware.cis
   typeId: core.sso
-ServiceVersion: null
+  serviceName: 
+NameMsgKey: 
+

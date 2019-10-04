@@ -1,23 +1,24 @@
-EndpointUrl: https://cava-n-80-154.eng.vmware.com/ipam-service/api/status
 Id: b0e81185-65d9-461b-8474-62f45e23170f
-LastUpdated: 2019-06-24 14:16:14.921000
 Name: ipam-service
+TypeId: com.vmware.csp.component.ipam.service
 NotAvailable: false
+LastUpdated: 2019-06-24T14:16:14.9210000Z
+EndpointUrl: https://cava-n-80-154.eng.vmware.com/ipam-service/api/status
 ServiceStatus:
-  defaultServiceEndpointType: com.vmware.csp.component.ipam.service.api
-  errorMessage: null
-  identityCertificateInfo: null
   initialized: true
-  serviceInitializationStatus: REGISTERED
   serviceName: ipam-service
-  serviceRegistrationId: b0e81185-65d9-461b-8474-62f45e23170f
   solutionUser: cafe-OE867l_C_A
+  startedTime: 2019-06-24T14:16:17.0640000Z
+  serviceInitializationStatus: REGISTERED
+  errorMessage: 
+  identityCertificateInfo: 
+  serviceRegistrationId: b0e81185-65d9-461b-8474-62f45e23170f
   sslCertificateInfo:
     identityCertificateExists: true
     issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
-    notValidAfter: 2024-06-22 13:53:42
-    notValidBefore: 2019-06-24 13:53:42
     principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidBefore: 2019-06-24T13:53:42.0000000Z
+    notValidAfter: 2024-06-22T13:53:42.0000000Z
     thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
-  startedTime: 2019-06-24 14:16:17.064000
-TypeId: com.vmware.csp.component.ipam.service
+  defaultServiceEndpointType: com.vmware.csp.component.ipam.service.api
+

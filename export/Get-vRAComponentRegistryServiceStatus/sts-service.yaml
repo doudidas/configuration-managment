@@ -1,17 +1,18 @@
-EndpointUrl: https://cava-n-80-154.eng.vmware.com:443/SAAS/API/1.0/REST/system/health
 Id: c99e4547-5879-43d6-b3d3-3b37e900b73c
-LastUpdated: 2019-06-24 14:13:20.442000
 Name: sts-service
-NotAvailable: false
-ServiceStatus:
-  defaultServiceEndpointType: null
-  errorMessage: null
-  identityCertificateInfo: null
-  initialized: true
-  serviceInitializationStatus: REGISTERED
-  serviceName: null
-  serviceRegistrationId: null
-  solutionUser: null
-  sslCertificateInfo: null
-  startedTime: null
 TypeId: com.vmware.cis.core.sso
+NotAvailable: false
+LastUpdated: 2019-06-24T14:13:20.4420000Z
+EndpointUrl: https://cava-n-80-154.eng.vmware.com:443/SAAS/API/1.0/REST/system/health
+ServiceStatus:
+  initialized: true
+  serviceName: 
+  solutionUser: 
+  startedTime: 
+  serviceInitializationStatus: REGISTERED
+  errorMessage: 
+  identityCertificateInfo: 
+  serviceRegistrationId: 
+  sslCertificateInfo: 
+  defaultServiceEndpointType: 
+

@@ -1,18 +1,19 @@
-Callbacks:
-  details: false
-  list: false
-CostFeatures: null
-Description: Represents an instance of provisioned software component.
-Forms: null
 Id: software.resource.type.root
-ListDescendantTypesSeparately: null
-ListView: null
+Callbacks:
+  list: false
+  details: false
+CostFeatures: 
+Description: Represents an instance of provisioned software component.
+Forms: 
+ListView: 
 Name: Software Component
 PluralizedName: Software Components
 Primary: false
 ProviderTypeId: com.vmware.csp.component.software.service
 Schema:
   classId: softwareResourceType
-  typeFilter: null
+  typeFilter: 
+ListDescendantTypesSeparately: 
 ShowChildrenOutsideParent: false
 Status: ACTIVE
+

@@ -1,60 +1,61 @@
-BindingId: composition.resource.action.deployment.resume
-Callbacks:
-  itemInformation: true
-  itemInitialize: true
-  rollback: false
-  validate: false
-Description: Attempts to resume a failed request on a deployment.
-Entitleable: true
-ExternalId: composition.resource.action.deployment.resume
-Forms:
-  catalogRequestInfoHidden: true
-  requestDetails:
-    extensionId: com.vmware.vcac.core.design.blueprints.resume.requestDetailsForm
-    extensionPointId: null
-    type: extension
-  requestFormScale: BIG
-  requestPostApproval: null
-  requestPreApproval: null
-  requestSubmission:
-    extensionId: com.vmware.vcac.core.design.blueprints.resume.requestForm
-    extensionPointId: null
-    type: extension
-IconId: composition.resume.png
 Id: 59155152-c00e-4044-837b-582b90b2d3ba
-LifecycleAction: Resume
 Name: Resume
-ProviderTypeRef:
-  id: com.vmware.csp.component.cafe.composition
-  label: Blueprint Service
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: composition.resource.action.deployment.resume
-Status: PUBLISHED
+ExternalId: composition.resource.action.deployment.resume
+Description: Attempts to resume a failed request on a deployment.
+IconId: composition.resume.png
 TargetCriteria:
+  type: and
   subClauses:
-  - leftOperand:
-      path: parentResource
-      type: path
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: parentResource
     rightOperand:
       type: constant
-      value: null
-    type: expression
-  - leftOperand:
-      path: isResumable
-      type: path
+      value: 
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: isResumable
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
-    type: expression
-  type: and
 TargetResourceTypeRef:
   id: composition.resource.type.deployment
   label: Deployment
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: composition.resource.action.deployment.resume
+Forms:
+  catalogRequestInfoHidden: true
+  requestFormScale: BIG
+  requestSubmission:
+    type: extension
+    extensionId: com.vmware.vcac.core.design.blueprints.resume.requestForm
+    extensionPointId: 
+  requestDetails:
+    type: extension
+    extensionId: com.vmware.vcac.core.design.blueprints.resume.requestDetailsForm
+    extensionPointId: 
+  requestPreApproval: 
+  requestPostApproval: 
+Callbacks:
+  validate: false
+  rollback: false
+  itemInformation: true
+  itemInitialize: true
+LifecycleAction: Resume
+BindingId: composition.resource.action.deployment.resume
+ProviderTypeRef:
+  id: com.vmware.csp.component.cafe.composition
+  label: Blueprint Service
+

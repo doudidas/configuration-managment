@@ -1,38 +1,39 @@
-BindingId: null
-Callbacks: null
-Description: Infrastructure connect using Console Ticket
-Entitleable: true
-ExternalId: csp.places.iaas.item.dialog.ConnectViaConsoleTicket
-Forms: null
-IconId: cafe_default_icon_genericResourceOperation
 Id: b042de87-0d72-4f6e-b8be-95f14fd0791e
-LifecycleAction: null
 Name: Connect using Console Ticket
-ProviderTypeRef: null
-RequestSchema: null
-Status: PUBLISHED
+ExternalId: csp.places.iaas.item.dialog.ConnectViaConsoleTicket
+Description: Infrastructure connect using Console Ticket
+IconId: cafe_default_icon_genericResourceOperation
 TargetCriteria:
+  type: and
   subClauses:
-  - leftOperand:
-      path: ConnectViaConsoleTicket
-      type: path
+  - type: expression
     operator:
       type: isDefined
-    rightOperand: null
-    type: expression
-  - leftOperand:
-      path: ConnectViaConsoleTicket
+    leftOperand:
       type: path
+      path: ConnectViaConsoleTicket
+    rightOperand: 
+  - type: expression
     operator:
       type: equals
+    leftOperand:
+      type: path
+      path: ConnectViaConsoleTicket
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
-    type: expression
-  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-organization: null
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema: 
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: 
+ProviderTypeRef: 
+

@@ -1,35 +1,36 @@
-Callbacks: null
-CatalogItemType: XaaS Blueprint
-DateCreated: 2019-06-24 14:18:32.616000
-Description: Creates new Azure virtual machine
-Forms:
-  catalogRequestInfoHidden: false
-  itemDetails:
-    formId: com.vmware.csp.core.designer.service.serviceblueprint_ServiceBlueprint.Details
-    type: external
-  requestDetails:
-    formId: com.vmware.csp.core.designer.service.serviceblueprint_Request.Details
-    type: external
-  requestFormScale: BIG
-  requestPostApproval: null
-  requestPreApproval: null
-  requestSubmission:
-    formId: com.vmware.csp.core.designer.service.serviceblueprint_Request.Submit
-    type: external
-IconId: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba_icon
 Id: 1a47c670-db8b-4084-a224-0583b6883bb7
-IsNoteworthy: false
-LastUpdatedDate: null
 Name: Azure Machine
-Organization: null
+Description: Creates new Azure virtual machine
+Service: 
+Status: PUBLISHED
+Quota: 0
+Version: 0
+DateCreated: 2019-06-24T14:18:32.6160000Z
+LastUpdatedDate: 
+Requestable: true
+IsNoteworthy: false
+Organization: 
+CatalogItemType: XaaS Blueprint
 OutputResourceType: Azure Virtual Machine
+Callbacks: 
+Forms:
+  itemDetails:
+    type: external
+    formId: com.vmware.csp.core.designer.service.serviceblueprint_ServiceBlueprint.Details
+  catalogRequestInfoHidden: false
+  requestFormScale: BIG
+  requestSubmission:
+    type: external
+    formId: com.vmware.csp.core.designer.service.serviceblueprint_Request.Submit
+  requestDetails:
+    type: external
+    formId: com.vmware.csp.core.designer.service.serviceblueprint_Request.Details
+  requestPreApproval: 
+  requestPostApproval: 
+IconId: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba_icon
 ProviderBinding:
   bindingId: _internal!::!18793cf3-357e-44fd-b496-66323cd50591
   providerRef:
     id: 8bad6605-c731-4b07-b666-ff2a02c3e5c1
     label: XaaS
-Quota: 0
-Requestable: true
-Service: null
-Status: PUBLISHED
-Version: 0
+

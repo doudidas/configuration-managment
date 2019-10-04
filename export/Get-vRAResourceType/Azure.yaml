@@ -1,16 +1,17 @@
-Callbacks:
-  details: true
-  list: false
-CostFeatures: null
-Description: Azure
-Forms: null
 Id: cs_Azure
-ListDescendantTypesSeparately: true
-ListView: null
+Callbacks:
+  list: false
+  details: true
+CostFeatures: 
+Description: Azure
+Forms: 
+ListView: 
 Name: Azure
-PluralizedName: null
+PluralizedName: 
 Primary: true
 ProviderTypeId: com.vmware.csp.core.designer.service
-Schema: null
+Schema: 
+ListDescendantTypesSeparately: true
 ShowChildrenOutsideParent: false
 Status: ACTIVE
+

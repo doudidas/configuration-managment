@@ -1,23 +1,23 @@
-Callbacks: null
-CatalogItemType: Cloud Machine
-DateCreated: 2019-06-24 14:26:53.126000
-Description: Corresponds to any blueprint component that represents Infrastructure
-  Machines of type Cloud.
-Forms: null
-IconId: cafe_default_icon_genericCatalogItem
 Id: c49539dd-8642-4aad-a0a7-8a7dca07600e
-IsNoteworthy: false
-LastUpdatedDate: null
 Name: Cloud Machine Component
-Organization: null
+Description: Corresponds to any blueprint component that represents Infrastructure Machines of type Cloud.
+Service: 
+Status: PUBLISHED
+Quota: 0
+Version: 0
+DateCreated: 2019-06-24T14:26:53.1260000Z
+LastUpdatedDate: 
+Requestable: false
+IsNoteworthy: false
+Organization: 
+CatalogItemType: Cloud Machine
 OutputResourceType: Cloud Machine
+Callbacks: 
+Forms: 
+IconId: cafe_default_icon_genericCatalogItem
 ProviderBinding:
   bindingId: Infrastructure.Cloud.Machine.Component
   providerRef:
     id: 5986d1a8-ca42-46f3-8c9a-387dac21745a
     label: Infrastructure Service
-Quota: 0
-Requestable: false
-Service: null
-Status: PUBLISHED
-Version: 0
+

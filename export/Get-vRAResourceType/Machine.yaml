@@ -1,6 +1,7 @@
+Id: Infrastructure.Machine
 Callbacks:
-  details: true
   list: true
+  details: true
 CostFeatures:
   lease: true
   leaseCost: true
@@ -8,89 +9,86 @@ Description: The common parent type for all types of machines
 Forms:
   catalogResourceInfoHidden: true
   details:
-    extensionId: csp.places.iaas.item.details
-    extensionPointId: null
     type: extension
-Id: Infrastructure.Machine
-ListDescendantTypesSeparately: null
+    extensionId: csp.places.iaas.item.details
+    extensionPointId: 
 ListView:
   columns:
-  - dataType:
-      type: primitive
-      typeId: STRING
-    description: The name of the blueprint from which the machine was provisioned
-    displayAdvice: TEXTBOX
-    filterable: false
-    id: MachineBlueprintName
-    isMultiValued: false
+  - id: MachineBlueprintName
     label: Blueprint Name
-    orderIndex: null
-    permissibleValues: null
-    sortable: false
+    description: The name of the blueprint from which the machine was provisioned
+    orderIndex: 
+    dataType:
+      type: primitive
+      typeId: STRING
+    displayAdvice: TEXTBOX
+    permissibleValues: 
     state:
       dependencies: []
       facets: []
-  - dataType:
-      type: primitive
-      typeId: STRING
-    description: IP Address that is used by other machines to communicate with this
-      machine.
-    displayAdvice: TEXTBOX
     filterable: false
-    id: ip_address
+    sortable: false
     isMultiValued: false
+  - id: ip_address
     label: IP Address
-    orderIndex: null
-    permissibleValues: null
-    sortable: false
+    description: IP Address that is used by other machines to communicate with this machine.
+    orderIndex: 
+    dataType:
+      type: primitive
+      typeId: STRING
+    displayAdvice: TEXTBOX
+    permissibleValues: 
     state:
       dependencies: []
       facets: []
-  - dataType:
-      type: primitive
-      typeId: STRING
-    description: The current status of a provisioned machine
-    displayAdvice: TEXTBOX
     filterable: false
-    id: MachineStatus
+    sortable: false
     isMultiValued: false
+  - id: MachineStatus
     label: Status
-    orderIndex: null
-    permissibleValues: null
-    sortable: false
+    description: The current status of a provisioned machine
+    orderIndex: 
+    dataType:
+      type: primitive
+      typeId: STRING
+    displayAdvice: TEXTBOX
+    permissibleValues: 
     state:
       dependencies: []
       facets: []
-  - dataType:
-      type: primitive
-      typeId: STRING
-    description: The name of the component from which the machine was provisioned
-    displayAdvice: TEXTBOX
     filterable: false
-    id: Component
+    sortable: false
     isMultiValued: false
+  - id: Component
     label: Component
-    orderIndex: null
-    permissibleValues: null
-    sortable: false
-    state:
-      dependencies: []
-      facets: []
-  - dataType:
+    description: The name of the component from which the machine was provisioned
+    orderIndex: 
+    dataType:
       type: primitive
       typeId: STRING
-    description: The platform type of a provisioned machine
     displayAdvice: TEXTBOX
-    filterable: false
-    id: MachineInterfaceDisplayName
-    isMultiValued: false
-    label: Platform Type
-    orderIndex: null
-    permissibleValues: null
-    sortable: false
+    permissibleValues: 
     state:
       dependencies: []
       facets: []
+    filterable: false
+    sortable: false
+    isMultiValued: false
+  - id: MachineInterfaceDisplayName
+    label: Platform Type
+    description: The platform type of a provisioned machine
+    orderIndex: 
+    dataType:
+      type: primitive
+      typeId: STRING
+    displayAdvice: TEXTBOX
+    permissibleValues: 
+    state:
+      dependencies: []
+      facets: []
+    filterable: false
+    sortable: false
+    isMultiValued: false
   defaultSequence:
   - MachineBlueprintName
   - Component
@@ -103,6 +101,8 @@ Primary: true
 ProviderTypeId: com.vmware.csp.iaas.blueprint.service
 Schema:
   classId: Infrastructure.Machine.Schema
-  typeFilter: null
+  typeFilter: 
+ListDescendantTypesSeparately: 
 ShowChildrenOutsideParent: true
 Status: ACTIVE
+

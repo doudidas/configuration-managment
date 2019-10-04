@@ -1,29 +1,30 @@
-EndpointUrl: https://cava-n-80-154.eng.vmware.com:443/vco/api/status
 Id: bfc832f0-04e9-4c25-9f8c-11a542ee999b
-LastUpdated: 2019-09-10 13:40:01.527000
 Name: vco
+TypeId: com.vmware.vco.o11n
 NotAvailable: false
+LastUpdated: 2019-09-10T13:40:01.5270000Z
+EndpointUrl: https://cava-n-80-154.eng.vmware.com:443/vco/api/status
 ServiceStatus:
-  defaultServiceEndpointType: com.vmware.vco.o11n.api
-  errorMessage: null
+  initialized: true
+  serviceName: vco
+  solutionUser: vco-dthtHEpyPA
+  startedTime: 2019-09-10T13:36:49.4840000Z
+  serviceInitializationStatus: REGISTERED
+  errorMessage: 
   identityCertificateInfo:
     identityCertificateExists: false
     issuerName: CN=vCO-16b89ad64dba6f3fe00a679e079
-    notValidAfter: 2049-06-16 13:29:30
-    notValidBefore: 2019-06-23 13:29:30
     principalName: CN=vCO-16b89ad64dba6f3fe00a679e079
+    notValidBefore: 2019-06-23T13:29:30.0000000Z
+    notValidAfter: 2049-06-16T13:29:30.0000000Z
     thumbprint: 25:6D:13:37:A7:E9:5F:9A:C8:2F:AB:05:28:41:EF:E7:BB:F0:34:4E
-  initialized: true
-  serviceInitializationStatus: REGISTERED
-  serviceName: vco
   serviceRegistrationId: bfc832f0-04e9-4c25-9f8c-11a542ee999b
-  solutionUser: vco-dthtHEpyPA
   sslCertificateInfo:
     identityCertificateExists: false
     issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
-    notValidAfter: 2024-06-22 13:53:42
-    notValidBefore: 2019-06-24 13:53:42
     principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidBefore: 2019-06-24T13:53:42.0000000Z
+    notValidAfter: 2024-06-22T13:53:42.0000000Z
     thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
-  startedTime: 2019-09-10 13:36:49.484000
-TypeId: com.vmware.vco.o11n
+  defaultServiceEndpointType: com.vmware.vco.o11n.api
+
