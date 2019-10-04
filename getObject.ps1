@@ -36,4 +36,4 @@ foreach ($element in $elements) {
     }
 }
 
-python ./sortYamlFiles.py $folderPath
+python3 ./sortYamlFiles.py $folderPath
