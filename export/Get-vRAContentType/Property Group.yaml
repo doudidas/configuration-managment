@@ -1,5 +1,0 @@
-ClassId: PropertyGroup
-Description: Content type corresponding to the property groups.
-Id: property-group
-Name: Property Group
-ServiceTypeId: com.vmware.csp.core.properties.service

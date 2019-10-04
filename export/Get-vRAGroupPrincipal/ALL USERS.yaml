@@ -1,5 +1,0 @@
-Description: All users in your organization
-Domain: vsphere.local
-GroupType: SSO
-Name: ALL USERS
-PrincipalId: ALL USERS@vsphere.local

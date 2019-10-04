@@ -1,5 +1,0 @@
-ClassId: Component.Type.Extension.Value
-Description: The content type corresponding to the component type profile value
-Id: component-profile-value
-Name: Component Type Profile Value
-ServiceTypeId: com.vmware.csp.component.cafe.composition
