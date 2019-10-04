@@ -40,7 +40,7 @@ pipeline {
         }
         stage('Install Powershell Lib') {
           steps {
-            sh "pwsh Install-Module powershell-yaml"
+            sh "pwsh init.ps1"
           }
         }
       }
