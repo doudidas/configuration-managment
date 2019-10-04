@@ -21,7 +21,7 @@ If (!(Test-Path "$path")) {
 # Get modification from previous steps
 git add --all "export/$element"
 
-$lines = Invoke-Expression -Command "git diff --cached $referenceBranch -- 'export/$element/*.json'"
+$lines = Invoke-Expression -Command "git diff --cached $referenceBranch -- 'export/$element/*'"
    
 # Loop on each lines 
 for ($i = 0; $i -lt $lines.Count; $i++) {
