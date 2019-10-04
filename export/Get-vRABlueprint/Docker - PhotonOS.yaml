@@ -1,0 +1,8 @@
+Name: Docker - PhotonOS
+Id: DockerPhotonOS
+Description: Sample template for provisioning Docker hosts for Bellevue
+CreatedDate: 2019-06-24T14:27:45.6230000Z
+LastUpdated: 2019-08-09T15:02:05.2090000Z
+Version: 5
+PublishStatus: Published
+

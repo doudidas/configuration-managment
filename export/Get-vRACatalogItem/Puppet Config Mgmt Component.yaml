@@ -1,0 +1,23 @@
+Id: 4e4329af-abdf-4b02-8f69-da1b1b9d0bbf
+Name: Puppet Config Mgmt Component
+Description: Represents Config Management catalog items of type Puppet
+Service: 
+Status: PUBLISHED
+Quota: 0
+Version: 0
+DateCreated: 2019-06-24T14:18:35.9920000Z
+LastUpdatedDate: 
+Requestable: false
+IsNoteworthy: false
+Organization: 
+CatalogItemType: Puppet
+OutputResourceType: Puppet
+Callbacks: 
+Forms: 
+IconId: cafe_default_icon_genericCatalogItem
+ProviderBinding:
+  bindingId: ConfigManagement.Puppet.ConfigMgmt.Component
+  providerRef:
+    id: d5d546b5-4645-42bd-8ae4-d7339f2267c5
+    label: Configuration Management Service
+

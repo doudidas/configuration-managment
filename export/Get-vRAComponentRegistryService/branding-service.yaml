@@ -1,0 +1,15 @@
+Id: 1fbcaace-0d2b-4c50-8139-57df08aa70a2
+Name: branding-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.core.branding.service
+  productId: com.vmware.csp.core
+  typeId: branding.service
+  serviceName: 
+NameMsgKey: 
+

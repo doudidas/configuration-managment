@@ -1,0 +1,15 @@
+Id: 57cb4772-7d96-4160-b744-e33244678127
+Name: fabric-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.fabric.cafe.fabric
+  productId: com.vmware.csp.fabric
+  typeId: cafe.fabric
+  serviceName: 
+NameMsgKey: 
+

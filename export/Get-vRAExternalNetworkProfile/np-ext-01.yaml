@@ -1,0 +1,22 @@
+Id: 6abd15cc-1898-4068-9f0c-3127c31cb8c5
+Name: np-ext-01
+Description: 
+CreatedDate: 2019-07-18T15:55:31.0000000Z
+LastModifiedDate: 2019-07-18T15:55:31.0000000Z
+IsHidden: false
+DefinedRanges: []
+DefinedAddresses: 
+ReclaimedAddresses: 
+IPAMEndpointId: 
+IPAMEndpointName: 
+AddressSpaceExternalId: 
+ProfileType: EXTERNAL
+SubnetMask: 255.255.255.0
+GatewayAddress: 
+PrimaryDnsAddress: 
+SecondaryDnsAddress: 
+DnsSuffix: 
+DnsSearchSuffix: 
+PrimaryWinsAddress: 
+SecondaryWinsAddress: 
+

@@ -1,0 +1,48 @@
+Id: 4e3b85bc-f9b6-404a-a258-caa96b231a86
+Name: Change Security
+ExternalId: composition.resource.type.deployment.Action.ChangeSecurity
+Description: Add or remove security objects for virtual machines in this deployment.
+IconId: icon_changesecurity
+TargetCriteria:
+  type: expression
+  operator:
+    type: equals
+  leftOperand:
+    type: path
+    path: parentResource
+  rightOperand:
+    type: constant
+    value: 
+TargetResourceTypeRef:
+  id: composition.resource.type.deployment
+  label: Deployment
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: composition.resource.type.deployment.Action.ChangeSecurity
+Forms:
+  catalogRequestInfoHidden: true
+  requestFormScale: BIG
+  requestSubmission:
+    type: extension
+    extensionId: com.vmware.vcac.core.design.blueprints.changeSecurity.requestForm
+    extensionPointId: 
+  requestDetails:
+    type: extension
+    extensionId: com.vmware.vcac.core.design.blueprints.changeSecurity.requestDetailsForm
+    extensionPointId: 
+  requestPreApproval: 
+  requestPostApproval: 
+Callbacks:
+  validate: false
+  rollback: false
+  itemInformation: false
+  itemInitialize: false
+LifecycleAction: ChangeSecurity
+BindingId: composition.resource.type.deployment.Action.ChangeSecurity
+ProviderTypeRef:
+  id: com.vmware.csp.component.network.service
+  label: Network Service
+

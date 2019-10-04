@@ -1,0 +1,15 @@
+Id: 9fc5d6d0-1c69-48a5-9ff3-51375312472c
+Name: event-broker-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.cafe.event.broker
+  productId: com.vmware.csp
+  typeId: cafe.event.broker
+  serviceName: 
+NameMsgKey: 
+

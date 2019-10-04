@@ -1,0 +1,23 @@
+Id: Infrastructure.Network.LoadBalancer.NSX
+Callbacks:
+  list: false
+  details: false
+CostFeatures: 
+Description: 
+Forms:
+  catalogResourceInfoHidden: 
+  details:
+    type: external
+    formId: Infrastructure.Network.LoadBalancer.NSX-Resource.Details
+ListView: 
+Name: Load Balancer
+PluralizedName: 
+Primary: false
+ProviderTypeId: com.vmware.csp.component.network.service
+Schema:
+  classId: Infrastructure.Network.LoadBalancer.NSX
+  typeFilter: 
+ListDescendantTypesSeparately: 
+ShowChildrenOutsideParent: false
+Status: ACTIVE
+

@@ -1,0 +1,69 @@
+Id: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
+Callbacks:
+  list: false
+  details: true
+CostFeatures: 
+Description: Azure Virtual Machine
+Forms:
+  catalogResourceInfoHidden: 
+  details:
+    type: external
+    formId: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba_Resource.Details
+ListView:
+  columns:
+  - id: location
+    label: location
+    description: ""
+    orderIndex: 
+    dataType:
+      type: primitive
+      typeId: STRING
+    displayAdvice: 
+    permissibleValues: 
+    state:
+      dependencies: []
+      facets:
+      - type: readOnly
+        value:
+          type: constantClause
+          value:
+            type: boolean
+            value: true
+    filterable: false
+    sortable: false
+    isMultiValued: false
+  - id: powerState
+    label: powerState
+    description: ""
+    orderIndex: 
+    dataType:
+      type: primitive
+      typeId: STRING
+    displayAdvice: 
+    permissibleValues: 
+    state:
+      dependencies: []
+      facets:
+      - type: readOnly
+        value:
+          type: constantClause
+          value:
+            type: boolean
+            value: true
+    filterable: false
+    sortable: false
+    isMultiValued: false
+  defaultSequence:
+  - powerState
+  - location
+Name: Azure Virtual Machine
+PluralizedName: 
+Primary: false
+ProviderTypeId: com.vmware.csp.core.designer.service
+Schema:
+  classId: asd.resourceType
+  typeFilter: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
+ListDescendantTypesSeparately: 
+ShowChildrenOutsideParent: false
+Status: ACTIVE
+

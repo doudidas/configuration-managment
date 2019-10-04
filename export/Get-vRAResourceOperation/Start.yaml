@@ -1,0 +1,44 @@
+Id: e6dbf62c-0d0e-4552-a6a4-b88015cf3a1a
+Name: Start
+ExternalId: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e
+Description: Powers on the specified Azure virtual machine.
+IconId: Azure-machinePowerOn.png
+TargetCriteria:
+  type: expression
+  operator:
+    type: equals
+  leftOperand:
+    type: path
+    path: powerState
+  rightOperand:
+    type: constant
+    value:
+      type: string
+      value: PowerState/stopped
+TargetResourceTypeRef:
+  id: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
+  label: Azure Virtual Machine
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: asd.resourceActionRequest
+  typeFilter: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e
+Forms:
+  catalogRequestInfoHidden: false
+  requestFormScale: BIG
+  requestSubmission:
+    type: external
+    formId: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e_Resource.Action.Submit
+  requestDetails:
+    type: external
+    formId: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e_Resource.Action.Details
+  requestPreApproval: 
+  requestPostApproval: 
+Callbacks: 
+LifecycleAction: 
+BindingId: _internal!::!d45ff428-3a90-419f-8ab0-216360bd4a8e
+ProviderTypeRef:
+  id: com.vmware.csp.core.designer.service
+  label: XaaS
+

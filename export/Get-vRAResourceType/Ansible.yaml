@@ -1,0 +1,23 @@
+Id: ConfigManagement.Ansible
+Callbacks:
+  list: false
+  details: false
+CostFeatures:
+  lease: false
+  leaseCost: false
+Description: Ansible
+Forms:
+  catalogResourceInfoHidden: true
+  details: 
+ListView: 
+Name: Ansible
+PluralizedName: Ansible
+Primary: false
+ProviderTypeId: com.vmware.csp.component.cafe.config.management
+Schema:
+  classId: ConfigManagement.Root.Schema
+  typeFilter: ConfigManagement.Ansible.Schema
+ListDescendantTypesSeparately: 
+ShowChildrenOutsideParent: false
+Status: ACTIVE
+

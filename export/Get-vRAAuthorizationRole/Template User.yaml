@@ -1,0 +1,14 @@
+Id: COM_VMWARE_IAAS_TEMPLATE_USER
+Name: Template User
+Description: Template User
+Type: SystemRole
+AssignedPermissions:
+- id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  description: Admin Requires System Admin
+  prereqAdminPermissions: 
+- id: COM_VMWARE_IAAS_REQUEST_NEW_SECURED_VIRTUAL_MACHINE
+  name: Request New Secured Virtual Machine
+  description: Request New Secured Virtual Machine
+  prereqAdminPermissions: 
+

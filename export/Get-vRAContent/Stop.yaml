@@ -1,0 +1,14 @@
+Id: b383edf5-7e37-4b87-a278-179b4d54d454
+ContentId: 749dd1d9-bb53-40ba-b81f-21ebb89eac10
+Name: Stop
+Description: 
+ContentTypeId: xaas-resource-action
+MimeType: 
+TenantId: _internal
+SubtenantId: 
+Dependencies:
+- 028e85a1-3323-4e08-9d15-6614569b589a
+CreatedDate: 2019-06-24T14:18:34.4570000Z
+LastUpdated: 2019-06-24T14:18:34.4570000Z
+Version: 0
+

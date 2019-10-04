@@ -1,0 +1,29 @@
+{
+    "lab": {
+        "serverType": "vra",
+        "url"       : "cava-n-80-154.eng.vmware.com",
+        "tenant"    : "vsphere.local",
+        "username"  : "etopin@vsphere.local",
+        "password"  : "VMware1!"
+    },
+    "maquette": {
+        "serverType": "vra",
+        "url"       : "cava-n-80-154.eng.vmware.com",
+        "tenant"    : "vsphere.local",
+        "username"  : "etopin@vsphere.local",
+        "password"  : "VMware1!"
+    },
+    "production": {
+        "serverType": "vra",
+        "url"       : "cava-n-80-154.eng.vmware.com",
+        "tenant"    : "vsphere.local",
+        "username"  : "etopin@vsphere.local",
+        "password"  : "VMware1!"
+    },
+    "vdc-lab": {
+        "serverType": "vcd",
+        "url"       : "<fqdn>",
+        "username"  : "<user>",
+        "password"  : "<password>"
+    }
+}

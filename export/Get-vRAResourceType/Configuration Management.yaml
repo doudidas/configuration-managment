@@ -1,0 +1,23 @@
+Id: ConfigManagement.Root
+Callbacks:
+  list: false
+  details: false
+CostFeatures:
+  lease: false
+  leaseCost: false
+Description: Configuration Management Resource type
+Forms:
+  catalogResourceInfoHidden: true
+  details: 
+ListView: 
+Name: Configuration Management
+PluralizedName: Configuration Management
+Primary: true
+ProviderTypeId: com.vmware.csp.component.cafe.config.management
+Schema:
+  classId: ConfigManagement.Root.Schema
+  typeFilter: 
+ListDescendantTypesSeparately: 
+ShowChildrenOutsideParent: false
+Status: ACTIVE
+

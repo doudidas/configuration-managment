@@ -1,0 +1,23 @@
+Id: 1961b79e-3134-4424-9036-445d6db54520
+Name: Ansible Config Mgmt Component
+Description: Represents Config Management catalog items of type Ansible
+Service: 
+Status: PUBLISHED
+Quota: 0
+Version: 0
+DateCreated: 2019-06-24T14:18:36.0250000Z
+LastUpdatedDate: 
+Requestable: false
+IsNoteworthy: false
+Organization: 
+CatalogItemType: Ansible
+OutputResourceType: Ansible
+Callbacks: 
+Forms: 
+IconId: cafe_default_icon_genericCatalogItem
+ProviderBinding:
+  bindingId: ConfigManagement.Ansible.ConfigMgmt.Component
+  providerRef:
+    id: d5d546b5-4645-42bd-8ae4-d7339f2267c5
+    label: Configuration Management Service
+

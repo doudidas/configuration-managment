@@ -1,0 +1,15 @@
+Id: dd187111-3d6c-432b-a300-478036493b0b
+Name: reservation-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.vcac.core.cafe.reservation
+  productId: com.vmware.vcac.core
+  typeId: cafe.reservation
+  serviceName: 
+NameMsgKey: 
+

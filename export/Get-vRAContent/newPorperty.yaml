@@ -1,0 +1,13 @@
+Id: c4916691-1423-4a3b-9837-d7b05f31200a
+ContentId: newPorperty
+Name: newPorperty
+Description: 
+ContentTypeId: property-definition
+MimeType: 
+TenantId: vsphere.local
+SubtenantId: 
+Dependencies: []
+CreatedDate: 2019-07-18T08:16:10.6600000Z
+LastUpdated: 2019-07-18T08:25:45.4640000Z
+Version: 1
+

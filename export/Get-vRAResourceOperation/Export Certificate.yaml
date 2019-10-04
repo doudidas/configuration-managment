@@ -1,0 +1,39 @@
+Id: 1f04d030-ac26-4d66-adb7-7062ef69f8ea
+Name: Export Certificate
+ExternalId: csp.places.iaas.item.noform.ExportCertificate
+Description: Infrastructure export certificate
+IconId: cafe_default_icon_genericResourceOperation
+TargetCriteria:
+  type: and
+  subClauses:
+  - type: expression
+    operator:
+      type: isDefined
+    leftOperand:
+      type: path
+      path: ExportCertificate
+    rightOperand: 
+  - type: expression
+    operator:
+      type: equals
+    leftOperand:
+      type: path
+      path: ExportCertificate
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+TargetResourceTypeRef:
+  id: Infrastructure.Machine
+  label: Machine
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema: 
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: 
+ProviderTypeRef: 
+

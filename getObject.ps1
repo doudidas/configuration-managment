@@ -17,20 +17,26 @@ if ($verbose -ne 'silent') {
 
 $folderPath = "export/$cmd"
  
-If (!(test-path $folderPath)) {
+If (!(Test-Path $folderPath)) {
     New-Item -ItemType Directory -Force -Path $folderPath
-} else {
+}
+else {
     Remove-Item $folderPath/*.json
 }
 
 
 foreach ($element in $elements) {
     if (Get-Member -inputobject $element -name "Name" -Membertype Properties) {
-        $pathToFile = $folderPath + "/" + $element.Name + ".json"
-        ConvertTo-json -InputObject $element -Depth 50 | Out-File -FilePath $pathToFile
+        # $pathToJsonFile = $folderPath + "/" + $element.Name + ".json"
+        $pathToYamlFile = $folderPath + "/" + $element.Name + ".yaml"
+        # ConvertTo-json -InputObject $element -Depth 50 | Out-File -FilePath $pathToJsonFile
+        ConvertTo-Yaml $element | Out-File -FilePath $pathToYamlFile
     }
     elseif (Get-Member -inputobject $element -name "ID" -Membertype Properties) {
-        $pathToFile = $folderPath + "/" + $element.ID + ".json"
-        ConvertTo-Json -InputObject $element -Depth 50 | Out-File -FilePath $pathToFile
+        # $pathToJsonFile = $folderPath + "/" + $element.ID + ".json"
+        $pathToYamlFile = $folderPath + "/" + $element.Name + ".yaml"
+        # ConvertTo-Json -InputObject $element -Depth 50 | Out-File -FilePath $pathToJsonFile
+        ConvertTo-Yaml $element | Out-File -FilePath $pathToYamlFile
+    
     }
 }

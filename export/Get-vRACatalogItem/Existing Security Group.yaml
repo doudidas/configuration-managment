@@ -1,0 +1,23 @@
+Id: ee18ef16-c2bb-42b0-8777-4a67e040d361
+Name: Existing Security Group
+Description: 
+Service: 
+Status: PUBLISHED
+Quota: 0
+Version: 0
+DateCreated: 2019-06-24T14:26:59.5040000Z
+LastUpdatedDate: 
+Requestable: false
+IsNoteworthy: false
+Organization: 
+CatalogItemType: Existing Security Group
+OutputResourceType: Security Group
+Callbacks: 
+Forms: 
+IconId: cafe_default_icon_genericCatalogItem
+ProviderBinding:
+  bindingId: Infrastructure.Network.SecurityGroup.NSX.Existing
+  providerRef:
+    id: 8e80fbde-da18-4582-a3b7-c9a64d5fe8b0
+    label: Network Service
+

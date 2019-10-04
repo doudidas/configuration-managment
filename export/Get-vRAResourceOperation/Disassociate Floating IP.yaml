@@ -1,0 +1,39 @@
+Id: 2cd346fe-be74-42c3-b497-79672e45f679
+Name: Disassociate Floating IP
+ExternalId: csp.places.iaas.item.dialog.DisassociateFloatingIP
+Description: Infrastructure disassociate floating IP
+IconId: cafe_default_icon_genericResourceOperation
+TargetCriteria:
+  type: and
+  subClauses:
+  - type: expression
+    operator:
+      type: isDefined
+    leftOperand:
+      type: path
+      path: DisassociateFloatingIP
+    rightOperand: 
+  - type: expression
+    operator:
+      type: equals
+    leftOperand:
+      type: path
+      path: DisassociateFloatingIP
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+TargetResourceTypeRef:
+  id: Infrastructure.Machine
+  label: Machine
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema: 
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: 
+ProviderTypeRef: 
+

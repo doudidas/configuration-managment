@@ -1,0 +1,15 @@
+Id: cc039681-202d-429a-84ee-a46ba1a7d762
+Name: o11n-gateway-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.core.o11n.gateway
+  productId: com.vmware.csp.core
+  typeId: o11n.gateway
+  serviceName: 
+NameMsgKey: 
+

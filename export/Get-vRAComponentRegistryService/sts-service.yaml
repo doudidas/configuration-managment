@@ -1,0 +1,15 @@
+Id: c99e4547-5879-43d6-b3d3-3b37e900b73c
+Name: sts-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: sso-user
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.cis.core.sso
+  productId: com.vmware.cis
+  typeId: core.sso
+  serviceName: 
+NameMsgKey: 
+

@@ -1,0 +1,26 @@
+Id: CSP_CONSUMER_WITH_SHARED_ACCESS
+Name: Shared Access User
+Description: CSP Shared Access User
+Type: ScopeRole
+AssignedPermissions:
+- id: GUI_ITEMS
+  name: Items User Interface
+  description: Access the provisioned items GUI.
+  prereqAdminPermissions: 
+- id: SUBTENANT_USER_DATA_MANAGEMENT
+  name: Manage user data (requests, items, tasks etc) within a business group.
+  description: Manage user created objects belonging to a specific business group.
+  prereqAdminPermissions: 
+- id: CATALOG_CONSUME_SELF
+  name: Catalog Consume Requests and Resources requested by self
+  description: Consume services and resources for one's self and manage one's own requests
+  prereqAdminPermissions: 
+- id: GUI_CATALOG
+  name: Catalog User Interface
+  description: Access the catalog GUI.
+  prereqAdminPermissions: 
+- id: GUI_REQUESTS
+  name: Requests User Interface
+  description: Access the requests GUI.
+  prereqAdminPermissions: 
+

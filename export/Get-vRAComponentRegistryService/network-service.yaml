@@ -1,0 +1,15 @@
+Id: 8e80fbde-da18-4582-a3b7-c9a64d5fe8b0
+Name: network-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.component.network.service
+  productId: com.vmware.csp.component
+  typeId: network.service
+  serviceName: 
+NameMsgKey: 
+

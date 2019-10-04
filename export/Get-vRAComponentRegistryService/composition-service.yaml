@@ -1,0 +1,15 @@
+Id: 766b90da-6823-4131-9d12-29e1db85f768
+Name: composition-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.component.cafe.composition
+  productId: com.vmware.csp.component
+  typeId: cafe.composition
+  serviceName: 
+NameMsgKey: 
+

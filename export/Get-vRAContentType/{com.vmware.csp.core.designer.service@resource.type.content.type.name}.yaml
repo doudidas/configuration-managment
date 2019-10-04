@@ -1,0 +1,6 @@
+Id: xaas-resource-type
+Name: '{com.vmware.csp.core.designer.service@resource.type.content.type.name}'
+Description: '{com.vmware.csp.core.designer.service@resource.type.content.type.description}'
+ClassId: xaasResourceType
+ServiceTypeId: com.vmware.csp.core.designer.service
+

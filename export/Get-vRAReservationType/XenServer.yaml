@@ -1,0 +1,44 @@
+CreatedDate: 2019-06-24T14:26:58.3550000Z
+LastUpdated: 2019-06-24T14:26:58.3550000Z
+Version: 0
+Id: Infrastructure.Reservation.Virtual.XenServer
+Name: XenServer
+Description: XenServer Reservation
+Category: Virtual
+ServiceTypeId: com.vmware.csp.iaas.blueprint.service
+TenantId: 
+FormReference:
+  type: extension
+  extensionId: com.vmware.vcac.iaas.reservation.details
+  extensionPointId: cafe.forms.extensions
+SchemaClassId: Infrastructure.Reservation.Virtual.XenServer
+AlertTypes:
+- createdDate: 2019-06-24T14:26:58.3550000Z
+  lastUpdated: 2019-06-24T14:26:58.3550000Z
+  version: 0
+  id: b3aa70d2-bfc3-40ba-847d-f51d0bf8d7b7
+  name: Storage
+  description: The threshold for storage usage. The system will send email notifications when the usage exceeds the threshold.
+  referenceResourceId: storage
+- createdDate: 2019-06-24T14:26:58.3560000Z
+  lastUpdated: 2019-06-24T14:26:58.3560000Z
+  version: 0
+  id: 0d1a5575-e117-45d1-b508-b6d62534778c
+  name: Memory
+  description: The threshold for memory usage. The system will send email notifications when the usage exceeds the threshold.
+  referenceResourceId: memory
+- createdDate: 2019-06-24T14:26:58.3560000Z
+  lastUpdated: 2019-06-24T14:26:58.3560000Z
+  version: 0
+  id: bdfea8e2-f1b5-4c83-b4a3-2cab4e0d7a29
+  name: CPU
+  description: The threshold for CPU usage. The system will send email notifications when the usage exceeds the threshold.
+  referenceResourceId: cpu
+- createdDate: 2019-06-24T14:26:58.3560000Z
+  lastUpdated: 2019-06-24T14:26:58.3560000Z
+  version: 0
+  id: 39e940c9-d8c7-4103-9dbc-f223c4ba6be0
+  name: Machine quota
+  description: The threshold for machine quota usage. The system will send email notifications when the usage exceeds the threshold.
+  referenceResourceId: machine
+

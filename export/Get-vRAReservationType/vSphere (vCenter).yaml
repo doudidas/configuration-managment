@@ -1,0 +1,44 @@
+CreatedDate: 2019-06-24T14:26:58.2950000Z
+LastUpdated: 2019-06-24T14:26:58.2950000Z
+Version: 0
+Id: Infrastructure.Reservation.Virtual.vSphere
+Name: vSphere (vCenter)
+Description: vSphere Reservation
+Category: Virtual
+ServiceTypeId: com.vmware.csp.iaas.blueprint.service
+TenantId: 
+FormReference:
+  type: extension
+  extensionId: com.vmware.vcac.iaas.reservation.details
+  extensionPointId: cafe.forms.extensions
+SchemaClassId: Infrastructure.Reservation.Virtual.vSphere
+AlertTypes:
+- createdDate: 2019-06-24T14:26:58.2960000Z
+  lastUpdated: 2019-06-24T14:26:58.2960000Z
+  version: 0
+  id: 752423a3-cb0f-4a14-b68b-1733b09cda8f
+  name: Storage
+  description: The threshold for storage usage. The system will send email notifications when the usage exceeds the threshold.
+  referenceResourceId: storage
+- createdDate: 2019-06-24T14:26:58.2960000Z
+  lastUpdated: 2019-06-24T14:26:58.2960000Z
+  version: 0
+  id: 83a493a0-66b8-433a-87a1-f83b443921b1
+  name: Memory
+  description: The threshold for memory usage. The system will send email notifications when the usage exceeds the threshold.
+  referenceResourceId: memory
+- createdDate: 2019-06-24T14:26:58.2960000Z
+  lastUpdated: 2019-06-24T14:26:58.2960000Z
+  version: 0
+  id: 9972ece7-65b1-4f4a-b89e-e77e8a3ca8a5
+  name: CPU
+  description: The threshold for CPU usage. The system will send email notifications when the usage exceeds the threshold.
+  referenceResourceId: cpu
+- createdDate: 2019-06-24T14:26:58.2960000Z
+  lastUpdated: 2019-06-24T14:26:58.2960000Z
+  version: 0
+  id: 33e980c8-9d84-4364-8e3f-ac6998565580
+  name: Machine quota
+  description: The threshold for machine quota usage. The system will send email notifications when the usage exceeds the threshold.
+  referenceResourceId: machine
+

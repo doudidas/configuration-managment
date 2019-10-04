@@ -1,0 +1,15 @@
+Id: b2e6d392-12a3-4e59-8825-c3274587eb3c
+Name: placement-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.component.cafe.placement
+  productId: com.vmware.csp.component
+  typeId: cafe.placement
+  serviceName: 
+NameMsgKey: 
+

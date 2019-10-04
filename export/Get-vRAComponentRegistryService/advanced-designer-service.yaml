@@ -1,0 +1,15 @@
+Id: 8bad6605-c731-4b07-b666-ff2a02c3e5c1
+Name: advanced-designer-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.core.designer.service
+  productId: com.vmware.csp.core
+  typeId: designer.service
+  serviceName: 
+NameMsgKey: 
+

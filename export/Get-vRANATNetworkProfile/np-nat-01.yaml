@@ -1,0 +1,38 @@
+Id: bcaf2216-5096-414a-a68c-f53307af23c6
+Name: np-nat-01
+Description: 
+CreatedDate: 2019-07-18T15:57:19.0000000Z
+LastModifiedDate: 2019-07-18T15:57:18.0000000Z
+IsHidden: false
+DefinedRanges:
+- id: 9212e67e-a228-40f5-b512-1c098e57a1e1
+  name: range-01
+  description: ""
+  beginIPv4Address: 192.168.0.2
+  endIPv4Address: 192.168.0.10
+  state: UNALLOCATED
+  networkProfileId: 
+  createdDate: 2019-07-18T15:57:19.0000000Z
+  lastModifiedDate: 2019-07-18T15:57:19.0000000Z
+  definedAddresses: 
+  gateway: 
+  externalId: 
+DefinedAddresses: 
+ReclaimedAddresses: 
+IPAMEndpointId: 
+IPAMEndpointName: 
+AddressSpaceExternalId: 
+ProfileType: NAT
+NatType: ONETOONE
+SubnetMask: 255.255.255.0
+GatewayAddress: 192.168.0.1
+PrimaryDnsAddress: 
+SecondaryDnsAddress: 
+DnsSuffix: 
+DnsSearchSuffix: 
+PrimaryWinsAddress: 
+SecondaryWinsAddress: 
+ExternalNetworkProfileId: 6abd15cc-1898-4068-9f0c-3127c31cb8c5
+ExternalNetworkProfileName: np-ext-01
+DhcpConfig: 
+

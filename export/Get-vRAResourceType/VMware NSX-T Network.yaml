@@ -1,0 +1,24 @@
+Id: Infrastructure.Network.Network.NSXT
+Callbacks:
+  list: true
+  details: true
+CostFeatures: 
+Description: 
+Forms:
+  catalogResourceInfoHidden: 
+  details:
+    type: extension
+    extensionId: com.vmware.vcac.core.design.blueprints.network.itemDetails
+    extensionPointId: 
+ListView: 
+Name: VMware NSX-T Network
+PluralizedName: 
+Primary: false
+ProviderTypeId: com.vmware.csp.component.network.service
+Schema:
+  classId: Infrastructure.Network.Network.NSXT
+  typeFilter: 
+ListDescendantTypesSeparately: 
+ShowChildrenOutsideParent: false
+Status: ACTIVE
+

@@ -1,0 +1,15 @@
+Id: 3fbc212f-0f92-4548-ae3e-5135b7553338
+Name: container-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.component.cafe.container
+  productId: com.vmware.csp.component
+  typeId: cafe.container
+  serviceName: 
+NameMsgKey: 
+

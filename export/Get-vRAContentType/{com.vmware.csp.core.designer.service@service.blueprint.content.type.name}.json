@@ -1,7 +1,0 @@
-{
-  "Id": "xaas-blueprint",
-  "Name": "{com.vmware.csp.core.designer.service@service.blueprint.content.type.name}",
-  "Description": "{com.vmware.csp.core.designer.service@service.blueprint.content.type.description}",
-  "ClassId": "xaasServiceBlueprint",
-  "ServiceTypeId": "com.vmware.csp.core.designer.service"
-}

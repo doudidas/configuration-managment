@@ -1,0 +1,15 @@
+Id: 64922aac-7e3a-4587-b08c-09b85d1f0492
+Name: identity
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.core.cafe.identity
+  productId: com.vmware.csp.core
+  typeId: cafe.identity
+  serviceName: 
+NameMsgKey: 
+

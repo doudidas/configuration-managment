@@ -1,0 +1,39 @@
+Id: test
+Label: Test 2
+Description: 
+Type: DECIMAL
+IsMultivalued: false
+Display: SLIDER
+TenantId: vsphere.local
+DisplayIndex: 
+PermittedValues: 
+Options:
+  increment:
+    type: constant
+    value:
+      type: decimal
+      value: 1
+  mandatory:
+    type: constant
+    value:
+      type: boolean
+      value: true
+  minValue:
+    type: constant
+    value:
+      type: integer
+      value: 5
+  maxValue:
+    type: constant
+    value:
+      type: integer
+      value: 10
+  encrypted:
+    type: constant
+    value:
+      type: boolean
+      value: false
+Version: 1
+DateCreated: 2019-07-16T13:54:25.9100000Z
+LastUpdatedDate: 2019-08-30T08:18:08.1860000Z
+

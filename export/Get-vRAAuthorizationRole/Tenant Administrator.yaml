@@ -1,0 +1,54 @@
+Id: CSP_TENANT_ADMIN
+Name: Tenant Administrator
+Description: CSP Tenant Administrator
+Type: SystemRole
+AssignedPermissions:
+- id: CATALOG_ENTITLE_TENANT
+  name: Catalog Tenant-level Entitlement Management
+  description: Entitle services, catalog items and actions to all users within a tenant.
+  prereqAdminPermissions: 
+- id: FILE_EDIT_TENANT
+  name: Manage Tenant Files
+  description: Upload and delete files belonging to this tenant.
+  prereqAdminPermissions: 
+- id: TENANT_ADMIN_ROLE_ASSIGNMENT
+  name: Tenant Administrator Role Assignment
+  description: Assign the tenant administrator role to other users.
+  prereqAdminPermissions: 
+- id: CATALOG_AUTHOR_TENANT
+  name: Catalog Tenant-level Author
+  description: Create, update and publish services, catalog items and actions shared across a Tenant.
+  prereqAdminPermissions: 
+- id: GUI_MY_TENANT_MANAGEMENT
+  name: My Tenant Administration User Interface
+  description: Access my tenant administration GUI.
+  prereqAdminPermissions: 
+- id: GUI_MY_TENANT_TUG_MANAGEMENT
+  name: My Tenant Directories, Groups and Users Administration User Interfaces
+  description: Access my tenant directories, groups and users administration GUIs.
+  prereqAdminPermissions: 
+- id: TENANT_USER_DATA_MANAGEMENT
+  name: Manage user data (requests, items, tasks etc) within a tenant.
+  description: Manage user created objects belonging to the tenant.
+  prereqAdminPermissions: 
+- id: MY_TENANT_MANAGEMENT
+  name: My Tenant Management
+  description: Manage my tenant.
+  prereqAdminPermissions: 
+- id: VIEW_EVENT_LOG
+  name: View tenant event log
+  description: View event log messages for the tenant
+  prereqAdminPermissions: 
+- id: CATALOG_CONSUME_TENANT_MGMT
+  name: Catalog Consume Tenant Management
+  description: Consume services, resources and manage requests on behalf of any user within a Tenant
+  prereqAdminPermissions: 
+- id: MANAGE_PROPERTY_GROUP_DEFINITIONS_TENANT
+  name: Manage Tenant Context Property Groups
+  description: Create, update and delete context property groups within a tenant
+  prereqAdminPermissions: 
+- id: MANAGE_PROPERTY_DEFINITIONS_TENANT
+  name: Manage Tenant Context Property Definitions
+  description: Create, update and delete context property definitions within a tenant
+  prereqAdminPermissions: 
+

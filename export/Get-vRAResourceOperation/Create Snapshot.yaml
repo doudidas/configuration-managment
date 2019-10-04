@@ -1,0 +1,53 @@
+Id: 3fe98e8c-4361-4000-aa8f-df644f822928
+Name: Create Snapshot
+ExternalId: Infrastructure.Virtual.Action.CreateSnapshot
+Description: Create a snapshot for this machine.
+IconId: virtualCreateSnapshot.png
+TargetCriteria:
+  type: and
+  subClauses:
+  - type: expression
+    operator:
+      type: isDefined
+    leftOperand:
+      type: path
+      path: CreateSnapshot
+    rightOperand: 
+  - type: expression
+    operator:
+      type: equals
+    leftOperand:
+      type: path
+      path: CreateSnapshot
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+TargetResourceTypeRef:
+  id: Infrastructure.Virtual
+  label: Virtual Machine
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Virtual.Action.CreateSnapshot
+Forms:
+  catalogRequestInfoHidden: true
+  requestFormScale: SMALL
+  requestSubmission:
+    type: external
+    formId: Infrastructure.Virtual-Resource.Action.Submit
+  requestDetails:
+    type: external
+    formId: Infrastructure.Virtual-Resource.Action.Details
+  requestPreApproval: 
+  requestPostApproval: 
+Callbacks: 
+LifecycleAction: 
+BindingId: Infrastructure.Virtual.Action.CreateSnapshot
+ProviderTypeRef:
+  id: com.vmware.csp.iaas.blueprint.service
+  label: Infrastructure Service
+

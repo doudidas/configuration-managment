@@ -1,0 +1,15 @@
+Id: 91f801a7-f4e9-4e96-a39c-6d27043329af
+Name: endpoint-config-service
+CreatedDate: 
+LastUpdated: 
+OwnerId: cafe-OE867l_C_A
+ServiceVersion: 
+ServiceAttributes: 
+EndPoints: 
+ServiceType:
+  serviceTypeId: com.vmware.csp.core.cafe.endpoint.config
+  productId: com.vmware.csp.core
+  typeId: cafe.endpoint.config
+  serviceName: 
+NameMsgKey: 
+

@@ -1,0 +1,24 @@
+Id: c54f8c20-0251-4968-9743-7d5ed0d9f670
+Name: content-management
+TypeId: com.vmware.csp.core.content.service
+NotAvailable: false
+LastUpdated: 2019-06-24T14:16:45.4100000Z
+EndpointUrl: https://cava-n-80-154.eng.vmware.com/content-management-service/api/status
+ServiceStatus:
+  initialized: true
+  serviceName: content-management
+  solutionUser: cafe-OE867l_C_A
+  startedTime: 2019-06-24T14:16:49.6630000Z
+  serviceInitializationStatus: REGISTERED
+  errorMessage: 
+  identityCertificateInfo: 
+  serviceRegistrationId: c54f8c20-0251-4968-9743-7d5ed0d9f670
+  sslCertificateInfo:
+    identityCertificateExists: true
+    issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidBefore: 2019-06-24T13:53:42.0000000Z
+    notValidAfter: 2024-06-22T13:53:42.0000000Z
+    thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
+  defaultServiceEndpointType: com.vmware.csp.core.content.service.api
+

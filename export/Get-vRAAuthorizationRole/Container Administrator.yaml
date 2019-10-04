@@ -1,0 +1,14 @@
+Id: CONTAINER_ADMIN
+Name: Container Administrator
+Description: Container Administrator
+Type: TenantRole
+AssignedPermissions:
+- id: CONTAINER_MANAGE_HOSTS
+  name: Manage containers hosts
+  description: Manage containers hosts.
+  prereqAdminPermissions: 
+- id: CONTAINER_MANAGE_PLACEMENTS
+  name: Manage containers placements
+  description: Manage containers placements.
+  prereqAdminPermissions: 
+

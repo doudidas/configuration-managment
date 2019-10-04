@@ -1,0 +1,39 @@
+Id: b1eaea46-3007-477e-a7a6-8abf597f7b44
+Name: Connect using SSH
+ExternalId: csp.places.iaas.item.window.ConnectViaSsh
+Description: Infrastructure connect using SSH
+IconId: cafe_default_icon_genericResourceOperation
+TargetCriteria:
+  type: and
+  subClauses:
+  - type: expression
+    operator:
+      type: isDefined
+    leftOperand:
+      type: path
+      path: ConnectViaSsh
+    rightOperand: 
+  - type: expression
+    operator:
+      type: equals
+    leftOperand:
+      type: path
+      path: ConnectViaSsh
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+TargetResourceTypeRef:
+  id: Infrastructure.Machine
+  label: Machine
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema: 
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: 
+ProviderTypeRef: 
+

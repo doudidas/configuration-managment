@@ -1,0 +1,88 @@
+Id: Infrastructure.Network.SecurityTag.NSX
+Callbacks:
+  list: false
+  details: false
+CostFeatures: 
+Description: 
+Forms:
+  catalogResourceInfoHidden: 
+  details:
+    type: static
+    layout:
+      pages:
+      - id: 
+        label: 
+        state:
+          dependencies: []
+          facets: []
+        sections:
+        - id: 
+          label: 
+          state:
+            dependencies: []
+            facets: []
+          rows:
+          - items:
+            - type: field
+              size: 2
+              id: Name
+              label: '{com.vmware.csp.component.network.service@catalog.resource.form.name}'
+              description: 
+              orderIndex: 
+              dataType:
+                type: primitive
+                typeId: STRING
+              displayAdvice: TEXTBOX
+              permissibleValues: 
+              state:
+                dependencies: []
+                facets:
+                - type: readOnly
+                  value:
+                    type: constantClause
+                    value:
+                      type: boolean
+                      value: true
+              labelSize: 
+              detailLayout: 
+              extensionRendererContext: 
+              isMultiValued: false
+              columns: 
+          - items:
+            - type: field
+              size: 2
+              id: Description
+              label: '{com.vmware.csp.component.network.service@catalog.resource.form.description}'
+              description: 
+              orderIndex: 
+              dataType:
+                type: primitive
+                typeId: STRING
+              displayAdvice: TEXTBOX
+              permissibleValues: 
+              state:
+                dependencies: []
+                facets:
+                - type: readOnly
+                  value:
+                    type: constantClause
+                    value:
+                      type: boolean
+                      value: true
+              labelSize: 
+              detailLayout: 
+              extensionRendererContext: 
+              isMultiValued: false
+              columns: 
+ListView: 
+Name: Security Tag
+PluralizedName: 
+Primary: false
+ProviderTypeId: com.vmware.csp.component.network.service
+Schema:
+  classId: Infrastructure.Network.SecurityTag.NSX
+  typeFilter: 
+ListDescendantTypesSeparately: 
+ShowChildrenOutsideParent: false
+Status: ACTIVE
+

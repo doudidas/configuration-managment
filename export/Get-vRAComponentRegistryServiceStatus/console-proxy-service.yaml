@@ -1,0 +1,24 @@
+Id: a6dd91e2-b9d3-421a-a749-ec91e5e917cf
+Name: console-proxy-service
+TypeId: com.vmware.csp.component.console.proxy.service
+NotAvailable: false
+LastUpdated: 2019-06-24T14:14:50.4410000Z
+EndpointUrl: https://cava-n-80-154.eng.vmware.com/console-proxy-service/api/status
+ServiceStatus:
+  initialized: true
+  serviceName: console-proxy-service
+  solutionUser: cafe-OE867l_C_A
+  startedTime: 2019-06-24T14:14:50.0330000Z
+  serviceInitializationStatus: REGISTERED
+  errorMessage: 
+  identityCertificateInfo: 
+  serviceRegistrationId: a6dd91e2-b9d3-421a-a749-ec91e5e917cf
+  sslCertificateInfo:
+    identityCertificateExists: true
+    issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidBefore: 2019-06-24T13:53:42.0000000Z
+    notValidAfter: 2024-06-22T13:53:42.0000000Z
+    thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
+  defaultServiceEndpointType: com.vmware.csp.component.console.proxy.service.api
+

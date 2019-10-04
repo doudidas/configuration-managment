@@ -1,0 +1,43 @@
+Id: 61196929-701c-4a21-9ce1-11dfc9c5b8d5
+Name: Unregister
+ExternalId: Infrastructure.Machine.Action.Unregister
+Description: Unregister a machine.
+IconId: machineUnregister.png
+TargetCriteria:
+  type: and
+  subClauses:
+  - type: expression
+    operator:
+      type: isDefined
+    leftOperand:
+      type: path
+      path: Unregister
+    rightOperand: 
+  - type: expression
+    operator:
+      type: equals
+    leftOperand:
+      type: path
+      path: Unregister
+    rightOperand:
+      type: constant
+      value:
+        type: boolean
+        value: true
+TargetResourceTypeRef:
+  id: Infrastructure.Machine
+  label: Machine
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Machine.Action.Unregister
+Forms: 
+Callbacks: 
+LifecycleAction: 
+BindingId: Infrastructure.Machine.Action.Unregister
+ProviderTypeRef:
+  id: com.vmware.csp.iaas.blueprint.service
+  label: Infrastructure Service
+

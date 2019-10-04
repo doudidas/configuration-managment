@@ -1,0 +1,46 @@
+Id: 41f67c95-8391-45c3-8cbc-7f3f5243557b
+Name: Change Owner
+ExternalId: composition.resource.action.deployment.changeowner
+Description: Change owner of a deployment and all its component resources.
+IconId: composition.changeowner.png
+TargetCriteria:
+  type: expression
+  operator:
+    type: equals
+  leftOperand:
+    type: path
+    path: parentResource
+  rightOperand:
+    type: constant
+    value: 
+TargetResourceTypeRef:
+  id: composition.resource.type.deployment
+  label: Deployment
+Status: PUBLISHED
+Entitleable: true
+organization: 
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: composition.resource.action.deployment.changeowner
+Forms:
+  catalogRequestInfoHidden: true
+  requestFormScale: SMALL
+  requestSubmission:
+    type: external
+    formId: composition.changeowner.request.submission
+  requestDetails:
+    type: external
+    formId: composition.changeowner.request.details
+  requestPreApproval: 
+  requestPostApproval: 
+Callbacks:
+  validate: true
+  rollback: false
+  itemInformation: true
+  itemInitialize: true
+LifecycleAction: ChangeOwner
+BindingId: composition.resource.action.deployment.changeowner
+ProviderTypeRef:
+  id: com.vmware.csp.component.cafe.composition
+  label: Blueprint Service
+
