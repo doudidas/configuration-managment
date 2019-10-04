@@ -31,10 +31,20 @@ pipeline {
         }
       }
     }
-    stage('Connexion') {
-      steps {
-        sh "pwsh connectToServer.ps1 ${platform}"
+    stage('Initiate') {
+      parallel{
+        stage('Connexion') {
+          steps {
+            sh "pwsh connectToServer.ps1 ${platform}"
+          }
+        }
+        stage('Install Powershell Lib') {
+          steps {
+            sh "pwsh Install-Module powershell-yaml"
+          }
+        }
       }
+
     }
     stage('Capture plateform') {
       parallel {
