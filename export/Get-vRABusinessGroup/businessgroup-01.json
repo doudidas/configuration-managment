@@ -6,6 +6,41 @@
   "ExtensionData": {
     "entries": [
       {
+        "key": "Hello-conf-manager",
+        "value": {
+          "type": "complex",
+          "componentTypeId": null,
+          "componentId": null,
+          "classId": "iaas-custom-property",
+          "typeFilter": null,
+          "values": {
+            "entries": [
+              {
+                "key": "encrypted",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                }
+              },
+              {
+                "key": "value",
+                "value": {
+                  "type": "string",
+                  "value": "hello"
+                }
+              },
+              {
+                "key": "prompt-user",
+                "value": {
+                  "type": "boolean",
+                  "value": false
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
         "key": "bytel.registered.status",
         "value": {
           "type": "complex",
@@ -41,17 +76,17 @@
         }
       },
       {
-        "key": "iaas-ad-container",
-        "value": {
-          "type": "string",
-          "value": ""
-        }
-      },
-      {
         "key": "iaas-manager-emails",
         "value": {
           "type": "string",
           "value": "etopin@vmware.com"
+        }
+      },
+      {
+        "key": "iaas-ad-container",
+        "value": {
+          "type": "string",
+          "value": ""
         }
       }
     ]
