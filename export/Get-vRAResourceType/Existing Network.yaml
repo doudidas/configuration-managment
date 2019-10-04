@@ -1,24 +1,23 @@
-Id: Infrastructure.Network.Network.Existing
 Callbacks:
-  list: false
   details: false
-CostFeatures: 
-Description: 
+  list: false
+CostFeatures: null
+Description: null
 Forms:
-  catalogResourceInfoHidden: 
+  catalogResourceInfoHidden: null
   details:
-    type: extension
     extensionId: com.vmware.vcac.core.design.blueprints.network.itemDetails
-    extensionPointId: 
-ListView: 
+    extensionPointId: null
+    type: extension
+Id: Infrastructure.Network.Network.Existing
+ListDescendantTypesSeparately: null
+ListView: null
 Name: Existing Network
-PluralizedName: 
+PluralizedName: null
 Primary: false
 ProviderTypeId: com.vmware.csp.component.network.service
 Schema:
   classId: Infrastructure.Network.Network.Existing
-  typeFilter: 
-ListDescendantTypesSeparately: 
+  typeFilter: null
 ShowChildrenOutsideParent: false
 Status: ACTIVE
-

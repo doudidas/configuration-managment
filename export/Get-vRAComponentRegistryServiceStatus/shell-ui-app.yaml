@@ -1,24 +1,23 @@
-Id: 5524d440-78c2-4bec-85e1-324228fea4e0
-Name: shell-ui-app
-TypeId: com.vmware.csp.core.cafe.shell
-NotAvailable: false
-LastUpdated: 2019-09-10T13:40:01.3500000Z
 EndpointUrl: https://cava-n-80-154.eng.vmware.com/vcac/services/api/status
+Id: 5524d440-78c2-4bec-85e1-324228fea4e0
+LastUpdated: 2019-09-10 13:40:01.350000
+Name: shell-ui-app
+NotAvailable: false
 ServiceStatus:
+  defaultServiceEndpointType: null
+  errorMessage: null
+  identityCertificateInfo: null
   initialized: true
-  serviceName: shell-ui-app
-  solutionUser: cafe-OE867l_C_A
-  startedTime: 2019-06-24T14:17:44.3800000Z
   serviceInitializationStatus: REGISTERED
-  errorMessage: 
-  identityCertificateInfo: 
+  serviceName: shell-ui-app
   serviceRegistrationId: 5524d440-78c2-4bec-85e1-324228fea4e0
+  solutionUser: cafe-OE867l_C_A
   sslCertificateInfo:
     identityCertificateExists: true
     issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidAfter: 2024-06-22 13:53:42
+    notValidBefore: 2019-06-24 13:53:42
     principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
-    notValidBefore: 2019-06-24T13:53:42.0000000Z
-    notValidAfter: 2024-06-22T13:53:42.0000000Z
     thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
-  defaultServiceEndpointType: 
-
+  startedTime: 2019-06-24 14:17:44.380000
+TypeId: com.vmware.csp.core.cafe.shell

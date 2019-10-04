@@ -1,15 +1,14 @@
+CreatedDate: null
+EndPoints: null
 Id: 2e5b0969-32b8-4932-99df-05deb7f9771d
+LastUpdated: null
 Name: endpoint-configuration-service
-CreatedDate: 
-LastUpdated: 
+NameMsgKey: null
 OwnerId: cafe-OE867l_C_A
-ServiceVersion: 
-ServiceAttributes: 
-EndPoints: 
+ServiceAttributes: null
 ServiceType:
-  serviceTypeId: com.vmware.csp.core.endpoint.configuration
   productId: com.vmware.csp.core
+  serviceName: null
+  serviceTypeId: com.vmware.csp.core.endpoint.configuration
   typeId: endpoint.configuration
-  serviceName: 
-NameMsgKey: 
-
+ServiceVersion: null

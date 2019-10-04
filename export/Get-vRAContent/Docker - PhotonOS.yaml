@@ -1,13 +1,12 @@
-Id: 887f3408-adad-480a-9dce-8e3d5e67655c
 ContentId: DockerPhotonOS
-Name: Docker - PhotonOS
-Description: Docker - PhotonOS
 ContentTypeId: composite-blueprint
-MimeType: 
-TenantId: vsphere.local
-SubtenantId: 
+CreatedDate: 2019-08-09 15:02:05.316000
 Dependencies: []
-CreatedDate: 2019-08-09T15:02:05.3160000Z
-LastUpdated: 2019-08-09T15:02:05.3160000Z
+Description: Docker - PhotonOS
+Id: 887f3408-adad-480a-9dce-8e3d5e67655c
+LastUpdated: 2019-08-09 15:02:05.316000
+MimeType: null
+Name: Docker - PhotonOS
+SubtenantId: null
+TenantId: vsphere.local
 Version: 0
-

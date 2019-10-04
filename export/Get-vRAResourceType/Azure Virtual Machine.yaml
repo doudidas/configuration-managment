@@ -1,25 +1,29 @@
-Id: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
 Callbacks:
-  list: false
   details: true
-CostFeatures: 
+  list: false
+CostFeatures: null
 Description: Azure Virtual Machine
 Forms:
-  catalogResourceInfoHidden: 
+  catalogResourceInfoHidden: null
   details:
-    type: external
     formId: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba_Resource.Details
+    type: external
+Id: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
+ListDescendantTypesSeparately: null
 ListView:
   columns:
-  - id: location
+  - dataType:
+      type: primitive
+      typeId: STRING
+    description: ''
+    displayAdvice: null
+    filterable: false
+    id: location
+    isMultiValued: false
     label: location
-    description: ""
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
-    displayAdvice: 
-    permissibleValues: 
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets:
@@ -29,18 +33,18 @@ ListView:
           value:
             type: boolean
             value: true
+  - dataType:
+      type: primitive
+      typeId: STRING
+    description: ''
+    displayAdvice: null
     filterable: false
-    sortable: false
+    id: powerState
     isMultiValued: false
-  - id: powerState
     label: powerState
-    description: ""
-    orderIndex: 
-    dataType:
-      type: primitive
-      typeId: STRING
-    displayAdvice: 
-    permissibleValues: 
+    orderIndex: null
+    permissibleValues: null
+    sortable: false
     state:
       dependencies: []
       facets:
@@ -50,20 +54,15 @@ ListView:
           value:
             type: boolean
             value: true
-    filterable: false
-    sortable: false
-    isMultiValued: false
   defaultSequence:
   - powerState
   - location
 Name: Azure Virtual Machine
-PluralizedName: 
+PluralizedName: null
 Primary: false
 ProviderTypeId: com.vmware.csp.core.designer.service
 Schema:
   classId: asd.resourceType
   typeFilter: _internal!::!dda3cc3f-f2da-45f5-bc64-a292c1ace3ba
-ListDescendantTypesSeparately: 
 ShowChildrenOutsideParent: false
 Status: ACTIVE
-

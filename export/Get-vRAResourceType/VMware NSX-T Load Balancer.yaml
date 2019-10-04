@@ -1,23 +1,22 @@
-Id: Infrastructure.Network.LoadBalancer.NSXT
 Callbacks:
-  list: false
   details: false
-CostFeatures: 
-Description: 
+  list: false
+CostFeatures: null
+Description: null
 Forms:
-  catalogResourceInfoHidden: 
+  catalogResourceInfoHidden: null
   details:
-    type: external
     formId: Infrastructure.Network.LoadBalancer.NSX-Resource.Details
-ListView: 
+    type: external
+Id: Infrastructure.Network.LoadBalancer.NSXT
+ListDescendantTypesSeparately: null
+ListView: null
 Name: VMware NSX-T Load Balancer
-PluralizedName: 
+PluralizedName: null
 Primary: false
 ProviderTypeId: com.vmware.csp.component.network.service
 Schema:
   classId: Infrastructure.Network.LoadBalancer.NSXT
-  typeFilter: 
-ListDescendantTypesSeparately: 
+  typeFilter: null
 ShowChildrenOutsideParent: false
 Status: ACTIVE
-

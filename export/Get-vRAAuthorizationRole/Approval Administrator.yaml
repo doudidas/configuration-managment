@@ -1,10 +1,9 @@
+AssignedPermissions:
+- description: Access my tenant administration GUI.
+  id: GUI_MY_TENANT_MANAGEMENT
+  name: My Tenant Administration User Interface
+  prereqAdminPermissions: null
+Description: CSP Approval Administrator
 Id: CSP_APPROVAL_ADMIN
 Name: Approval Administrator
-Description: CSP Approval Administrator
 Type: SystemRole
-AssignedPermissions:
-- id: GUI_MY_TENANT_MANAGEMENT
-  name: My Tenant Administration User Interface
-  description: Access my tenant administration GUI.
-  prereqAdminPermissions: 
-

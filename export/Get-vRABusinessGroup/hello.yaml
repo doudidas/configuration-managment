@@ -1,20 +1,19 @@
-Name: hello
-ID: 2c447726-6e68-41bd-ad5c-11eee7ab22c0
-Description: ""
-Roles: 
+Description: ''
 ExtensionData:
   entries:
   - key: iaas-ad-container
     value:
       type: string
-      value: ""
+      value: ''
   - key: iaas-manager-emails
     value:
       type: string
       value: etopin@vmware.com
 GroupManagerRole: []
+ID: 2c447726-6e68-41bd-ad5c-11eee7ab22c0
+Name: hello
+Roles: null
+SharedAccessUserRole: null
 SupportUserRole: []
-SharedAccessUserRole: 
-UserRole: []
 Tenant: vsphere.local
-
+UserRole: []

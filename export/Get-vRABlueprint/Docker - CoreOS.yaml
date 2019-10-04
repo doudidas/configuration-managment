@@ -1,8 +1,7 @@
-Name: Docker - CoreOS
-Id: DockerCoreOS
+CreatedDate: 2019-06-24 14:27:44.756000
 Description: Sample template for provisioning Docker hosts for Bellevue
-CreatedDate: 2019-06-24T14:27:44.7560000Z
-LastUpdated: 2019-08-09T15:02:02.6260000Z
-Version: 6
+Id: DockerCoreOS
+LastUpdated: 2019-08-09 15:02:02.626000
+Name: Docker - CoreOS
 PublishStatus: Draft
-
+Version: 6

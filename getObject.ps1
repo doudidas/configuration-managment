@@ -21,22 +21,19 @@ If (!(Test-Path $folderPath)) {
     New-Item -ItemType Directory -Force -Path $folderPath
 }
 else {
-    Remove-Item $folderPath/*.json
+    Remove-Item $folderPath/*
 }
 
 
 foreach ($element in $elements) {
     if (Get-Member -inputobject $element -name "Name" -Membertype Properties) {
-        # $pathToJsonFile = $folderPath + "/" + $element.Name + ".json"
         $pathToYamlFile = $folderPath + "/" + $element.Name + ".yaml"
-        # ConvertTo-json -InputObject $element -Depth 50 | Out-File -FilePath $pathToJsonFile
-        ConvertTo-Yaml $element | Out-File -FilePath $pathToYamlFile
+        $element | ConvertTo-Yaml | Out-File -FilePath $pathToYamlFile
     }
     elseif (Get-Member -inputobject $element -name "ID" -Membertype Properties) {
-        # $pathToJsonFile = $folderPath + "/" + $element.ID + ".json"
         $pathToYamlFile = $folderPath + "/" + $element.Name + ".yaml"
-        # ConvertTo-Json -InputObject $element -Depth 50 | Out-File -FilePath $pathToJsonFile
-        ConvertTo-Yaml $element | Out-File -FilePath $pathToYamlFile
-    
+        $element | ConvertTo-Yaml | Out-File -FilePath $pathToYamlFile    
     }
 }
+
+python ./sortYamlFiles.py $folderPath

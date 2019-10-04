@@ -28,7 +28,7 @@ $commands = @(
     'getObject.ps1 Get-vRAUserPrincipal', 
     'getObject.ps1 Get-vRAVersion'
 )
-connectToServer.ps1
+# connectToServer.ps1
 foreach ($cmd in $commands) {
     Invoke-Expression -Command "$cmd silent"
 }

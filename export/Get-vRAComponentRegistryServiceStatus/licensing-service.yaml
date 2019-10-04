@@ -1,24 +1,23 @@
-Id: 7074c0a9-2ae8-4d4d-8a5d-be43fe7e7bfa
-Name: licensing-service
-TypeId: com.vmware.csp.core.cafe.licensing
-NotAvailable: false
-LastUpdated: 2019-06-24T14:13:20.2360000Z
 EndpointUrl: https://cava-n-80-154.eng.vmware.com/component-registry/api/status
+Id: 7074c0a9-2ae8-4d4d-8a5d-be43fe7e7bfa
+LastUpdated: 2019-06-24 14:13:20.236000
+Name: licensing-service
+NotAvailable: false
 ServiceStatus:
+  defaultServiceEndpointType: null
+  errorMessage: null
+  identityCertificateInfo: null
   initialized: true
-  serviceName: component-registry
-  solutionUser: cafe-OE867l_C_A
-  startedTime: 2019-06-24T14:13:20.8760000Z
   serviceInitializationStatus: REGISTERED
-  errorMessage: 
-  identityCertificateInfo: 
-  serviceRegistrationId: 
+  serviceName: component-registry
+  serviceRegistrationId: null
+  solutionUser: cafe-OE867l_C_A
   sslCertificateInfo:
     identityCertificateExists: false
-    issuerName: 
-    principalName: 
-    notValidBefore: 
-    notValidAfter: 
-    thumbprint: 
-  defaultServiceEndpointType: 
-
+    issuerName: null
+    notValidAfter: null
+    notValidBefore: null
+    principalName: null
+    thumbprint: null
+  startedTime: 2019-06-24 14:13:20.876000
+TypeId: com.vmware.csp.core.cafe.licensing

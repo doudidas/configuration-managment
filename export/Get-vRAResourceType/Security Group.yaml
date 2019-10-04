@@ -1,88 +1,87 @@
-Id: Infrastructure.Network.SecurityGroup.NSX
 Callbacks:
-  list: false
   details: false
-CostFeatures: 
-Description: 
+  list: false
+CostFeatures: null
+Description: null
 Forms:
-  catalogResourceInfoHidden: 
+  catalogResourceInfoHidden: null
   details:
-    type: static
     layout:
       pages:
-      - id: 
-        label: 
-        state:
-          dependencies: []
-          facets: []
+      - id: null
+        label: null
         sections:
-        - id: 
-          label: 
+        - id: null
+          label: null
+          rows:
+          - items:
+            - columns: null
+              dataType:
+                type: primitive
+                typeId: STRING
+              description: null
+              detailLayout: null
+              displayAdvice: TEXTBOX
+              extensionRendererContext: null
+              id: Name
+              isMultiValued: false
+              label: '{com.vmware.csp.component.network.service@catalog.resource.form.name}'
+              labelSize: null
+              orderIndex: null
+              permissibleValues: null
+              size: 2
+              state:
+                dependencies: []
+                facets:
+                - type: readOnly
+                  value:
+                    type: constantClause
+                    value:
+                      type: boolean
+                      value: true
+              type: field
+          - items:
+            - columns: null
+              dataType:
+                type: primitive
+                typeId: STRING
+              description: null
+              detailLayout: null
+              displayAdvice: TEXTBOX
+              extensionRendererContext: null
+              id: Description
+              isMultiValued: false
+              label: '{com.vmware.csp.component.network.service@catalog.resource.form.description}'
+              labelSize: null
+              orderIndex: null
+              permissibleValues: null
+              size: 2
+              state:
+                dependencies: []
+                facets:
+                - type: readOnly
+                  value:
+                    type: constantClause
+                    value:
+                      type: boolean
+                      value: true
+              type: field
           state:
             dependencies: []
             facets: []
-          rows:
-          - items:
-            - type: field
-              size: 2
-              id: Name
-              label: '{com.vmware.csp.component.network.service@catalog.resource.form.name}'
-              description: 
-              orderIndex: 
-              dataType:
-                type: primitive
-                typeId: STRING
-              displayAdvice: TEXTBOX
-              permissibleValues: 
-              state:
-                dependencies: []
-                facets:
-                - type: readOnly
-                  value:
-                    type: constantClause
-                    value:
-                      type: boolean
-                      value: true
-              labelSize: 
-              detailLayout: 
-              extensionRendererContext: 
-              isMultiValued: false
-              columns: 
-          - items:
-            - type: field
-              size: 2
-              id: Description
-              label: '{com.vmware.csp.component.network.service@catalog.resource.form.description}'
-              description: 
-              orderIndex: 
-              dataType:
-                type: primitive
-                typeId: STRING
-              displayAdvice: TEXTBOX
-              permissibleValues: 
-              state:
-                dependencies: []
-                facets:
-                - type: readOnly
-                  value:
-                    type: constantClause
-                    value:
-                      type: boolean
-                      value: true
-              labelSize: 
-              detailLayout: 
-              extensionRendererContext: 
-              isMultiValued: false
-              columns: 
-ListView: 
+        state:
+          dependencies: []
+          facets: []
+    type: static
+Id: Infrastructure.Network.SecurityGroup.NSX
+ListDescendantTypesSeparately: null
+ListView: null
 Name: Security Group
-PluralizedName: 
+PluralizedName: null
 Primary: false
 ProviderTypeId: com.vmware.csp.component.network.service
 Schema:
   classId: Infrastructure.Network.SecurityGroup.NSX
-  typeFilter: 
-ListDescendantTypesSeparately: 
+  typeFilter: null
 ShowChildrenOutsideParent: false
 Status: ACTIVE
-

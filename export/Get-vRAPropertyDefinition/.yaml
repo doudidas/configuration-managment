@@ -1,13 +1,17 @@
-Id: test
-Label: Test 2
-Description: 
-Type: DECIMAL
-IsMultivalued: false
+DateCreated: 2019-07-16 13:54:25.910000
+Description: null
 Display: SLIDER
-TenantId: vsphere.local
-DisplayIndex: 
-PermittedValues: 
+DisplayIndex: null
+Id: test
+IsMultivalued: false
+Label: Test 2
+LastUpdatedDate: 2019-08-30 08:18:08.186000
 Options:
+  encrypted:
+    type: constant
+    value:
+      type: boolean
+      value: false
   increment:
     type: constant
     value:
@@ -18,22 +22,17 @@ Options:
     value:
       type: boolean
       value: true
-  minValue:
-    type: constant
-    value:
-      type: integer
-      value: 5
   maxValue:
     type: constant
     value:
       type: integer
       value: 10
-  encrypted:
+  minValue:
     type: constant
     value:
-      type: boolean
-      value: false
+      type: integer
+      value: 5
+PermittedValues: null
+TenantId: vsphere.local
+Type: DECIMAL
 Version: 1
-DateCreated: 2019-07-16T13:54:25.9100000Z
-LastUpdatedDate: 2019-08-30T08:18:08.1860000Z
-

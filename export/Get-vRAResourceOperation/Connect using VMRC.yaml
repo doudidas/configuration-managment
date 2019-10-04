@@ -1,39 +1,38 @@
-Id: a8726bcd-c7a4-4735-9b97-d486135aa004
-Name: Connect using VMRC
-ExternalId: csp.places.iaas.item.nowindow.ConnectViaNativeVmrc
+BindingId: null
+Callbacks: null
 Description: Infrastructure connect using VMRC
+Entitleable: true
+ExternalId: csp.places.iaas.item.nowindow.ConnectViaNativeVmrc
+Forms: null
 IconId: cafe_default_icon_genericResourceOperation
+Id: a8726bcd-c7a4-4735-9b97-d486135aa004
+LifecycleAction: null
+Name: Connect using VMRC
+ProviderTypeRef: null
+RequestSchema: null
+Status: PUBLISHED
 TargetCriteria:
-  type: and
   subClauses:
-  - type: expression
+  - leftOperand:
+      path: ConnectViaNativeVmrc
+      type: path
     operator:
       type: isDefined
-    leftOperand:
-      type: path
+    rightOperand: null
+    type: expression
+  - leftOperand:
       path: ConnectViaNativeVmrc
-    rightOperand: 
-  - type: expression
+      type: path
     operator:
       type: equals
-    leftOperand:
-      type: path
-      path: ConnectViaNativeVmrc
     rightOperand:
       type: constant
       value:
         type: boolean
         value: true
+    type: expression
+  type: and
 TargetResourceTypeRef:
   id: Infrastructure.Machine
   label: Machine
-Status: PUBLISHED
-Entitleable: true
-organization: 
-RequestSchema: 
-Forms: 
-Callbacks: 
-LifecycleAction: 
-BindingId: 
-ProviderTypeRef: 
-
+organization: null

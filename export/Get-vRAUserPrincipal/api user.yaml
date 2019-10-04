@@ -1,11 +1,10 @@
+Description: api user
+Disabled: false
+EmailAddress: etopin@vmware.com
 FirstName: api
 LastName: user
-EmailAddress: etopin@vmware.com
-Description: api user
 Locked: false
-Disabled: false
-Password: 
+Name: api user
+Password: null
 PrincipalId: api-user@vsphere.local
 TenantName: vsphere.local
-Name: api user
-

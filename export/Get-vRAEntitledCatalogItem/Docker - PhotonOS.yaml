@@ -1,43 +1,42 @@
-Id: 9d935143-13ff-4b68-9fcf-6c54fd251c9e
-Name: Docker - PhotonOS
-Description: Sample template for provisioning Docker hosts for Bellevue
-Service: Virtual Machines
-Status: PUBLISHED
-Quota: 
-Version: 5
-DateCreated: 2019-06-24T14:27:45.6820000Z
-LastUpdatedDate: 2019-08-09T15:02:05.2410000Z
-Requestable: true
-IsNoteworthy: false
-Organization:
-  tenantRef: vsphere.local
-  tenantLabel: vsphere.local
-  subtenantRef: 
-  subtenantLabel: 
+Callbacks: null
 CatalogItemType: Composite Blueprint
-OutputResourceType: Deployment
-Callbacks: 
+DateCreated: 2019-06-24 14:27:45.682000
+Description: Sample template for provisioning Docker hosts for Bellevue
+EntitledOrganizations: null
 Forms:
-  itemDetails:
-    type: external
-    formId: composition.catalog.item.details
   catalogRequestInfoHidden: true
-  requestFormScale: BIG
-  requestSubmission:
-    type: extension
-    extensionId: com.vmware.vcac.core.design.blueprints.requestForm
-    extensionPointId: 
+  itemDetails:
+    formId: composition.catalog.item.details
+    type: external
   requestDetails:
-    type: extension
     extensionId: com.vmware.vcac.core.design.blueprints.requestDetailsForm
-    extensionPointId: 
-  requestPreApproval: 
-  requestPostApproval: 
+    extensionPointId: null
+    type: extension
+  requestFormScale: BIG
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    extensionId: com.vmware.vcac.core.design.blueprints.requestForm
+    extensionPointId: null
+    type: extension
 IconId: composition.blueprint.png
+Id: 9d935143-13ff-4b68-9fcf-6c54fd251c9e
+IsNoteworthy: false
+LastUpdatedDate: 2019-08-09 15:02:05.241000
+Name: Docker - PhotonOS
+Organization:
+  subtenantLabel: null
+  subtenantRef: null
+  tenantLabel: vsphere.local
+  tenantRef: vsphere.local
+OutputResourceType: Deployment
 ProviderBinding:
   bindingId: vsphere.local!::!DockerPhotonOS
   providerRef:
     id: 766b90da-6823-4131-9d12-29e1db85f768
     label: Blueprint Service
-EntitledOrganizations: 
-
+Quota: null
+Requestable: true
+Service: Virtual Machines
+Status: PUBLISHED
+Version: 5

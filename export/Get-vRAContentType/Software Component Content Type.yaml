@@ -1,6 +1,5 @@
+ClassId: softwareComponentType
+Description: '{com.vmware.csp.component.software.service@software.component.content.type.description}'
 Id: software-component
 Name: Software Component Content Type
-Description: '{com.vmware.csp.component.software.service@software.component.content.type.description}'
-ClassId: softwareComponentType
 ServiceTypeId: com.vmware.csp.component.software.service
-

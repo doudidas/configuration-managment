@@ -1,23 +1,22 @@
-Id: 151428bc-b7eb-4333-a1c2-45b694e6a4fd
-Name: Container
-Description: Container
-Service: 
-Status: PUBLISHED
-Quota: 0
-Version: 0
-DateCreated: 2019-06-24T14:18:10.2680000Z
-LastUpdatedDate: 
-Requestable: false
-IsNoteworthy: false
-Organization: 
+Callbacks: null
 CatalogItemType: Container Volume
-OutputResourceType: Container Volume
-Callbacks: 
-Forms: 
+DateCreated: 2019-06-24 14:18:10.268000
+Description: Container
+Forms: null
 IconId: cafe_default_icon_genericCatalogItem
+Id: 151428bc-b7eb-4333-a1c2-45b694e6a4fd
+IsNoteworthy: false
+LastUpdatedDate: null
+Name: Container
+Organization: null
+OutputResourceType: Container Volume
 ProviderBinding:
   bindingId: App.Volume
   providerRef:
     id: 3fbc212f-0f92-4548-ae3e-5135b7553338
     label: Container Service
-
+Quota: 0
+Requestable: false
+Service: null
+Status: PUBLISHED
+Version: 0

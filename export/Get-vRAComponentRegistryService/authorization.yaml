@@ -1,15 +1,14 @@
+CreatedDate: null
+EndPoints: null
 Id: 97414d58-1bce-4b05-8a1b-7f7f9a58c63c
+LastUpdated: null
 Name: authorization
-CreatedDate: 
-LastUpdated: 
+NameMsgKey: null
 OwnerId: cafe-OE867l_C_A
-ServiceVersion: 
-ServiceAttributes: 
-EndPoints: 
+ServiceAttributes: null
 ServiceType:
-  serviceTypeId: com.vmware.csp.cafe.authorization
   productId: com.vmware.csp
+  serviceName: null
+  serviceTypeId: com.vmware.csp.cafe.authorization
   typeId: cafe.authorization
-  serviceName: 
-NameMsgKey: 
-
+ServiceVersion: null

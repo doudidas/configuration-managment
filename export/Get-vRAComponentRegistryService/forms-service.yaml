@@ -1,15 +1,14 @@
+CreatedDate: null
+EndPoints: null
 Id: 5faa38bf-d320-46a9-8b0f-c420926ff258
+LastUpdated: null
 Name: forms-service
-CreatedDate: 
-LastUpdated: 
+NameMsgKey: null
 OwnerId: cafe-OE867l_C_A
-ServiceVersion: 
-ServiceAttributes: 
-EndPoints: 
+ServiceAttributes: null
 ServiceType:
-  serviceTypeId: com.vmware.csp.core.cafe.forms
   productId: com.vmware.csp.core
+  serviceName: null
+  serviceTypeId: com.vmware.csp.core.cafe.forms
   typeId: cafe.forms
-  serviceName: 
-NameMsgKey: 
-
+ServiceVersion: null

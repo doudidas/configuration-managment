@@ -1,24 +1,23 @@
-Id: 1a74dffd-31f8-418e-a335-1e9c38ba6356
-Name: healthbroker-proxy-server
-TypeId: com.vmware.csp.component.healthbroker.proxy
-NotAvailable: false
-LastUpdated: 2019-06-24T14:16:54.8220000Z
 EndpointUrl: https://cava-n-80-154.eng.vmware.com/healthbroker-proxy-server/api/status
+Id: 1a74dffd-31f8-418e-a335-1e9c38ba6356
+LastUpdated: 2019-06-24 14:16:54.822000
+Name: healthbroker-proxy-server
+NotAvailable: false
 ServiceStatus:
+  defaultServiceEndpointType: com.vmware.csp.component.healthbroker.proxy.api
+  errorMessage: null
+  identityCertificateInfo: null
   initialized: true
-  serviceName: healthbroker-proxy-server
-  solutionUser: cafe-OE867l_C_A
-  startedTime: 2019-06-24T14:16:59.8110000Z
   serviceInitializationStatus: REGISTERED
-  errorMessage: 
-  identityCertificateInfo: 
+  serviceName: healthbroker-proxy-server
   serviceRegistrationId: 1a74dffd-31f8-418e-a335-1e9c38ba6356
+  solutionUser: cafe-OE867l_C_A
   sslCertificateInfo:
     identityCertificateExists: true
     issuerName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
+    notValidAfter: 2024-06-22 13:53:42
+    notValidBefore: 2019-06-24 13:53:42
     principalName: CN=VMware vRA,OU=Unit,O=Organisation,L=PA,ST=ON,C=US
-    notValidBefore: 2019-06-24T13:53:42.0000000Z
-    notValidAfter: 2024-06-22T13:53:42.0000000Z
     thumbprint: 80:0D:D5:BF:9F:6E:37:74:1A:10:F4:95:ED:12:D2:91:4C:53:00:26
-  defaultServiceEndpointType: com.vmware.csp.component.healthbroker.proxy.api
-
+  startedTime: 2019-06-24 14:16:59.811000
+TypeId: com.vmware.csp.component.healthbroker.proxy

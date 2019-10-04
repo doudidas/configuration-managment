@@ -1,15 +1,14 @@
+CreatedDate: null
+EndPoints: null
 Id: bd4c6a95-e8ce-4f5e-a570-081bc51fec2d
+LastUpdated: null
 Name: workitem-service
-CreatedDate: 
-LastUpdated: 
+NameMsgKey: null
 OwnerId: cafe-OE867l_C_A
-ServiceVersion: 
-ServiceAttributes: 
-EndPoints: 
+ServiceAttributes: null
 ServiceType:
-  serviceTypeId: com.vmware.csp.core.cafe.workitem
   productId: com.vmware.csp.core
+  serviceName: null
+  serviceTypeId: com.vmware.csp.core.cafe.workitem
   typeId: cafe.workitem
-  serviceName: 
-NameMsgKey: 
-
+ServiceVersion: null

@@ -1,26 +1,25 @@
+AssignedPermissions:
+- description: Manage Files
+  id: COM_VMWARE_IAAS_MANAGE_FILES
+  name: Manage Files
+  prereqAdminPermissions: null
+- description: View ManagementEndpoints
+  id: COM_VMWARE_IAAS_VIEW_MANAGEMENTENDPOINTS
+  name: View ManagementEndpoints
+  prereqAdminPermissions: null
+- description: Admin Requires System Admin
+  id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
+  name: Admin Requires System Admin
+  prereqAdminPermissions: null
+- description: Manage Machine Menu Operations
+  id: COM_VMWARE_IAAS_MANAGE_MACHINE_MENU_OPERATIONS
+  name: Manage Machine Menu Operations
+  prereqAdminPermissions: null
+- description: Full Access To Models
+  id: COM_VMWARE_IAAS_FULL_ACCESS_TO_MODELS
+  name: Full Access To Models
+  prereqAdminPermissions: null
+Description: Design Center User
 Id: COM_VMWARE_IAAS_DESIGN_CENTER_USER
 Name: Design Center User
-Description: Design Center User
 Type: SystemRole
-AssignedPermissions:
-- id: COM_VMWARE_IAAS_MANAGE_FILES
-  name: Manage Files
-  description: Manage Files
-  prereqAdminPermissions: 
-- id: COM_VMWARE_IAAS_VIEW_MANAGEMENTENDPOINTS
-  name: View ManagementEndpoints
-  description: View ManagementEndpoints
-  prereqAdminPermissions: 
-- id: COM_VMWARE_IAAS_ADMIN_REQUIRES_SYSTEM_ADMIN
-  name: Admin Requires System Admin
-  description: Admin Requires System Admin
-  prereqAdminPermissions: 
-- id: COM_VMWARE_IAAS_MANAGE_MACHINE_MENU_OPERATIONS
-  name: Manage Machine Menu Operations
-  description: Manage Machine Menu Operations
-  prereqAdminPermissions: 
-- id: COM_VMWARE_IAAS_FULL_ACCESS_TO_MODELS
-  name: Full Access To Models
-  description: Full Access To Models
-  prereqAdminPermissions: 
-

@@ -1,22 +1,21 @@
-CreatedDate: 2019-06-24T14:18:34.1600000Z
-LastUpdated: 2019-06-24T14:18:34.1600000Z
-Version: 0
-Id: reservation.type.id.azure
-Name: Azure
-Description: Azure Reservation
-Category: reservation.type.category.id.azure
-ServiceTypeId: com.vmware.csp.core.designer.service
-TenantId: 
-FormReference:
-  type: external
-  formId: 4ce874ea-1843-11e6-b6ba-3e1d05defe78
-SchemaClassId: com.vmware.csp.core.designer.service.reservation_4ce874ea-1843-11e6-b6ba-3e1d05defe78
 AlertTypes:
-- createdDate: 2019-06-24T14:18:34.1640000Z
-  lastUpdated: 2019-06-24T14:18:34.1640000Z
-  version: 0
-  id: 09ede300-a9ef-4d60-99cf-eea13db40c15
-  name: AlertTypeName
+- createdDate: 2019-06-24 14:18:34.164000
   description: AlertTypeDescription
+  id: 09ede300-a9ef-4d60-99cf-eea13db40c15
+  lastUpdated: 2019-06-24 14:18:34.164000
+  name: AlertTypeName
   referenceResourceId: machine
-
+  version: 0
+Category: reservation.type.category.id.azure
+CreatedDate: 2019-06-24 14:18:34.160000
+Description: Azure Reservation
+FormReference:
+  formId: 4ce874ea-1843-11e6-b6ba-3e1d05defe78
+  type: external
+Id: reservation.type.id.azure
+LastUpdated: 2019-06-24 14:18:34.160000
+Name: Azure
+SchemaClassId: com.vmware.csp.core.designer.service.reservation_4ce874ea-1843-11e6-b6ba-3e1d05defe78
+ServiceTypeId: com.vmware.csp.core.designer.service
+TenantId: null
+Version: 0

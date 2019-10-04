@@ -1,34 +1,34 @@
+AssignedPermissions:
+- description: Create and publish XaaS services.
+  id: EDIT_ASD_SERVICES
+  name: Create and Publish XaaS services
+  prereqAdminPermissions: null
+- description: Access the blueprint and blueprint component design GUI.
+  id: GUI_DESIGNER
+  name: Access Blueprint and Blueprint Component Design GUI
+  prereqAdminPermissions: null
+- description: Create, update and publish services, catalog items and actions shared
+    across a Tenant.
+  id: CATALOG_AUTHOR_TENANT
+  name: Catalog Tenant-level Author
+  prereqAdminPermissions: null
+- description: Consume and export content in the tenant context.
+  id: CONTENT_CONSUME_TENANT
+  name: Consume content tenant wide
+  prereqAdminPermissions: null
+- description: Import/Export XaaS content.
+  id: MANAGE_ASD_CONTENT
+  name: Manage XaaS content
+  prereqAdminPermissions: null
+- description: Publish blueprint components for reuse in the tenant.
+  id: COMPOSITION_SERVICE_AUTHOR_COMPONENT_TYPES
+  name: Publish Blueprint Components
+  prereqAdminPermissions: null
+- description: Create, edit ,import and publish content in the tenant context.
+  id: CONTENT_AUTHOR_TENANT
+  name: Author content tenant wide
+  prereqAdminPermissions: null
+Description: XaaS Architect
 Id: DESIGNER_SERVICE_ARCHITECT
 Name: XaaS Architect
-Description: XaaS Architect
 Type: TenantRole
-AssignedPermissions:
-- id: EDIT_ASD_SERVICES
-  name: Create and Publish XaaS services
-  description: Create and publish XaaS services.
-  prereqAdminPermissions: 
-- id: GUI_DESIGNER
-  name: Access Blueprint and Blueprint Component Design GUI
-  description: Access the blueprint and blueprint component design GUI.
-  prereqAdminPermissions: 
-- id: CATALOG_AUTHOR_TENANT
-  name: Catalog Tenant-level Author
-  description: Create, update and publish services, catalog items and actions shared across a Tenant.
-  prereqAdminPermissions: 
-- id: CONTENT_CONSUME_TENANT
-  name: Consume content tenant wide
-  description: Consume and export content in the tenant context.
-  prereqAdminPermissions: 
-- id: MANAGE_ASD_CONTENT
-  name: Manage XaaS content
-  description: Import/Export XaaS content.
-  prereqAdminPermissions: 
-- id: COMPOSITION_SERVICE_AUTHOR_COMPONENT_TYPES
-  name: Publish Blueprint Components
-  description: Publish blueprint components for reuse in the tenant.
-  prereqAdminPermissions: 
-- id: CONTENT_AUTHOR_TENANT
-  name: Author content tenant wide
-  description: Create, edit ,import and publish content in the tenant context.
-  prereqAdminPermissions: 
-

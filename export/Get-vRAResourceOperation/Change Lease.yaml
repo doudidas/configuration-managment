@@ -1,77 +1,76 @@
-Id: 95c0e8dc-6aa7-48ba-8b5b-1fd1ab52f553
-Name: Change Lease
-ExternalId: Infrastructure.Machine.Action.ChangeLease
+BindingId: Infrastructure.Machine.Action.ChangeLease
+Callbacks: null
 Description: Change the lease for a machine. Leave empty for indefinite.
-IconId: machineChangeLease.png
-TargetCriteria:
-  type: and
-  subClauses:
-  - type: and
-    subClauses:
-    - type: expression
-      operator:
-        type: isDefined
-      leftOperand:
-        type: path
-        path: ChangeLease
-      rightOperand: 
-    - type: expression
-      operator:
-        type: equals
-      leftOperand:
-        type: path
-        path: ChangeLease
-      rightOperand:
-        type: constant
-        value:
-          type: boolean
-          value: true
-  - type: or
-    subClauses:
-    - type: expression
-      operator:
-        type: equals
-      leftOperand:
-        type: path
-        path: parentResource
-      rightOperand:
-        type: constant
-        value: 
-    - type: expression
-      operator:
-        type: equals
-      leftOperand:
-        type: path
-        path: isSingleComponent
-      rightOperand:
-        type: constant
-        value:
-          type: boolean
-          value: true
-TargetResourceTypeRef:
-  id: Infrastructure.Machine
-  label: Machine
-Status: PUBLISHED
 Entitleable: true
-organization: 
-RequestSchema:
-  classId: resourceActionRequest
-  typeFilter: Infrastructure.Machine.Action.ChangeLease
+ExternalId: Infrastructure.Machine.Action.ChangeLease
 Forms:
   catalogRequestInfoHidden: true
-  requestFormScale: SMALL
-  requestSubmission:
-    type: external
-    formId: Infrastructure.Machine-Resource.Action.Submit
   requestDetails:
-    type: external
     formId: Infrastructure.Machine-Resource.Action.Details
-  requestPreApproval: 
-  requestPostApproval: 
-Callbacks: 
+    type: external
+  requestFormScale: SMALL
+  requestPostApproval: null
+  requestPreApproval: null
+  requestSubmission:
+    formId: Infrastructure.Machine-Resource.Action.Submit
+    type: external
+IconId: machineChangeLease.png
+Id: 95c0e8dc-6aa7-48ba-8b5b-1fd1ab52f553
 LifecycleAction: ChangeLease
-BindingId: Infrastructure.Machine.Action.ChangeLease
+Name: Change Lease
 ProviderTypeRef:
   id: com.vmware.csp.iaas.blueprint.service
   label: Infrastructure Service
-
+RequestSchema:
+  classId: resourceActionRequest
+  typeFilter: Infrastructure.Machine.Action.ChangeLease
+Status: PUBLISHED
+TargetCriteria:
+  subClauses:
+  - subClauses:
+    - leftOperand:
+        path: ChangeLease
+        type: path
+      operator:
+        type: isDefined
+      rightOperand: null
+      type: expression
+    - leftOperand:
+        path: ChangeLease
+        type: path
+      operator:
+        type: equals
+      rightOperand:
+        type: constant
+        value:
+          type: boolean
+          value: true
+      type: expression
+    type: and
+  - subClauses:
+    - leftOperand:
+        path: parentResource
+        type: path
+      operator:
+        type: equals
+      rightOperand:
+        type: constant
+        value: null
+      type: expression
+    - leftOperand:
+        path: isSingleComponent
+        type: path
+      operator:
+        type: equals
+      rightOperand:
+        type: constant
+        value:
+          type: boolean
+          value: true
+      type: expression
+    type: or
+  type: and
+TargetResourceTypeRef:
+  id: Infrastructure.Machine
+  label: Machine
+organization: null

@@ -1,13 +1,12 @@
-Id: 897e82fa-a961-48e6-b494-ad92cba72761
 ContentId: Centos
-Name: Centos
-Description: Centos
 ContentTypeId: composite-blueprint
-MimeType: 
-TenantId: vsphere.local
-SubtenantId: 
+CreatedDate: 2019-07-26 12:46:59.044000
 Dependencies: []
-CreatedDate: 2019-07-26T12:46:59.0440000Z
-LastUpdated: 2019-09-10T14:43:44.8200000Z
+Description: Centos
+Id: 897e82fa-a961-48e6-b494-ad92cba72761
+LastUpdated: 2019-09-10 14:43:44.820000
+MimeType: null
+Name: Centos
+SubtenantId: null
+TenantId: vsphere.local
 Version: 6
-
