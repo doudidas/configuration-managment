@@ -1,14 +1,13 @@
 # Parameters
 param(
     [string]$element,
-    [string]$platform,
-    [string]$verbose
+    [string]$source,
+    [string]$destination
 )
 
 #Init variables
 [array]$overview = @()
 [string]$path = "/var/log/jenkins/configuration-drift/"
-[string]$referenceBranch = "remotes/origin/$platform-reference"
 [string]$trimSize = 14 + $element.Length
 [string]$log = ""
 [array]$lines
@@ -21,8 +20,12 @@ If (!(Test-Path "$path")) {
 # Get modification from previous steps
 git add --all "export/$element"
 
-$lines = Invoke-Expression -Command "git diff --cached $referenceBranch -- 'export/$element/*.json'"
+# Git diff command
+$lines = Invoke-Expression -Command "git diff $source $destination -- 'export/$element/*.yaml'"
    
+$sourceBranch      = $source.split("/")[$source.split("/").Count - 1]
+$destinationBranch = $destination.split("/")[$destination.split("/").Count - 1]
+
 # Loop on each lines 
 for ($i = 0; $i -lt $lines.Count; $i++) {
     # Get value from each lines
@@ -30,10 +33,14 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
         # Checking diff on another file (added/removed/updated)
         ’^diff --git’ { 
             $overview += $tmp
+	    $element.split("-")[1]	
+
             $tmp = [PSCustomObject]@{
                 Name        = ''
-                Environment = $platform
-                Type        = $element.Substring(4)
+                Source      = $sourceBranch
+                Destination = $destinationBranch
+                Product     = $element.split("-")[1].substring('0','3')
+                Type        = $element.split("-")[1].substring('3')
                 Status      = ''
                 Detail      = @()
             }
@@ -41,37 +48,33 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
         } 
         # The file has been removed !
         ’^deleted file mode [0-9].*’ {
-            $tmp.Status = "Deleted"
+            $tmp.Status = "Added"
             break
         }
         # The file has been added !
         ’^new file mode [0-9].*’ {
-            $tmp.Status = "Added"
+            $tmp.Status = "Deleted"
             break
         }
-        # The file has been updated !
+        # The file has been updated ?
         ’^index [0-9a-z].*..[0-9a-z].* [0-9a-z].*’ {
             $tmp.Status = "Updated"
             break
-        } 
+        }
         # We can get the file name
         ’^(---|\+\+\+)(?! \/dev\/null) ’ {
             $tmp.Name = $lines[$i].Substring($trimSize).trim().Replace('"', "")
             break
         } 
-        # No need to get those lines on the detail
+        #No need to get those lines on the detail
         ’^index|^@@|^(---|\+\+\+)’ {
-            break
+         break
         }
         # Any other lines. 
         ’.*’ {
-            if($tmp.Status -eq "Updated") {
-                $tmp.Detail += $lines[$i]
-            } else {
-                $tmp.Detail = ""
-            }
+            $tmp.Detail += $lines[$i] + "|"
             break
-        }   
+        }  
     }
 }
 
@@ -79,18 +82,33 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
 $overview += $tmp
 
 for ($i = 1; $i -lt $overview.Count; $i++) {
-    $env = $overview[$i].Environment
-    $name = $overview[$i].Name
-    $type = $overview[$i].Type
+    $source      = $overview[$i].Source
+    $destination = $overview[$i].Destination
+    $name        = $overview[$i].Name
+    $type        = $overview[$i].Type
+    $product     = $overview[$i].Product
+    $detail      = $overview[$i].Detail
+    
+    # Remove false positive
+    if ($status -eq "Updated") {
+        if ($detail -eq "") {
+	        sizeA = (Get-Item "export/$element/$tmp.Name").length
+        	sizeB = (Get-Item "export_old/$element/$tmp.Name").length
+        	if ($sizeA -eq $sizeB) {
+			$overview[$i].Status = ""
+        	}
+	    }
+    }
+
     $status = $overview[$i].Status
-    $detail = $overview[$i].Detail
-    $log += "`n"+ "[ENV]$env[/ENV][NAME]$name[/NAME][TYPE]$type[/TYPE][STATE]$status[/STATE][DETAIL]$detail[/DETAIL]"
+
+    $log += "`n"+ "[SOURCE]$source[/SOURCE][DESTINATION]$destination[/DESTINATION][NAME]$name[/NAME][TYPE]$type[/TYPE][PRODUCT]$product[/PRODUCT][STATE]$status[/STATE][DETAIL]$detail[/DETAIL]"
 }
 
-$log | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$platform-$element.log
+$log | Out-String -Width 4096 | Out-File /var/log/jenkins/configuration-drift/$sourceBranch-$destinationBranch-$element.log
 
 if ($overview.count -eq 1) {
-    Write-Output "No diff for $element"
+    Write-Output "No diff for $element between $source and $destination"
     exit 0
 } else {
     $overview | Format-Table | Out-String -Width 4096 | Write-Output

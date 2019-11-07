@@ -4,3 +4,4 @@ diff/*
 .cached_session
 push-all.sh
 .gitattributes
+.vscode

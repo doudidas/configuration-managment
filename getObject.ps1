@@ -10,27 +10,33 @@ Get-Content .cached_session.json | ConvertFrom-Json | Set-Variable vRAConnection
 Write-Output $cmd
 
 $elements = Invoke-Expression $cmd
-if ($verbose -ne 'silent') {
-    Write-Output $elements
-}
 
 
-$folderPath = "export/$cmd"
- 
-If (!(test-path $folderPath)) {
+$folderPath    = "./export/$cmd"
+$oldFolderPath = "./export_old/$cmd/" 
+
+If (!(Test-Path $folderPath)) {
     New-Item -ItemType Directory -Force -Path $folderPath
-} else {
-    Remove-Item $folderPath/*.json
+} 
+
+If (Test-Path $oldFolderPath) {
+    Remove-Item -Recurse $oldFolderPath
 }
+
+Copy-Item -Recurse $folderPath $oldFolderPath
 
 
 foreach ($element in $elements) {
     if (Get-Member -inputobject $element -name "Name" -Membertype Properties) {
-        $pathToFile = $folderPath + "/" + $element.Name + ".json"
-        ConvertTo-json -InputObject $element -Depth 50 | Out-File -FilePath $pathToFile
+        $pathToYamlFile = $folderPath + "/" + $element.Name + ".yaml"
+        $element | ConvertTo-Yaml | Out-File -FilePath $pathToYamlFile
     }
     elseif (Get-Member -inputobject $element -name "ID" -Membertype Properties) {
-        $pathToFile = $folderPath + "/" + $element.ID + ".json"
-        ConvertTo-Json -InputObject $element -Depth 50 | Out-File -FilePath $pathToFile
+        $pathToYamlFile = $folderPath + "/" + $element.Name + ".yaml"
+        $element | ConvertTo-Yaml | Out-File -FilePath $pathToYamlFile    
     }
+    $p = $cmd + ": " + $element.Name
+    Write-output $p
 }
+
+python3 ./sortYamlFiles.py $folderPath

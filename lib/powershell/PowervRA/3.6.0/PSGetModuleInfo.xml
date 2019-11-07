@@ -1,0 +1,400 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PowervRA</S>
+      <Version N="Version">3.6.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">PowerShell Module for Managing VMware vRealize Automation</S>
+      <S N="Author">Jakku Labs</S>
+      <Obj N="CompanyName" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>jon_medd</S>
+          <S>craigg</S>
+        </LST>
+      </Obj>
+      <S N="Copyright">(c) 2016 Jakku Labs. All rights reserved.</S>
+      <DT N="PublishedDate">2019-04-05T12:53:03+02:00</DT>
+      <Obj N="InstalledDate" RefId="2">
+        <DT>2019-07-12T09:23:07.983321+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="3">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://raw.githubusercontent.com/jakkulabs/PowervRA/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/jakkulabs/PowervRA</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/jakkulabs/PowervRA/master/media/PowervRA-icon.png</URI>
+      <Obj N="Tags" RefId="4">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Automation</S>
+          <S>VMware</S>
+          <S>vRA</S>
+          <S>vRealize</S>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="5">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-vRACustomForm</S>
+                <S>Add-vRAPrincipalToTenantRole</S>
+                <S>Add-vRAReservationNetwork</S>
+                <S>Add-vRAReservationStorage</S>
+                <S>Connect-vRAServer</S>
+                <S>Disconnect-vRAServer</S>
+                <S>Export-vRAIcon</S>
+                <S>Export-vRAPackage</S>
+                <S>Get-vRAApplianceServiceStatus</S>
+                <S>Get-vRAAuthorizationRole</S>
+                <S>Get-vRABlueprint</S>
+                <S>Get-vRABusinessGroup</S>
+                <S>Get-vRACatalogItem</S>
+                <S>Get-vRACatalogItemRequestTemplate</S>
+                <S>Get-vRACatalogPrincipal</S>
+                <S>Get-vRAComponentRegistryService</S>
+                <S>Get-vRAComponentRegistryServiceEndpoint</S>
+                <S>Get-vRAComponentRegistryServiceStatus</S>
+                <S>Get-vRAContent</S>
+                <S>Get-vRAContentData</S>
+                <S>Get-vRAContentType</S>
+                <S>Get-vRACustomForm</S>
+                <S>Get-vRAEntitledCatalogItem</S>
+                <S>Get-vRAEntitledService</S>
+                <S>Get-vRAEntitlement</S>
+                <S>Get-vRAExternalNetworkProfile</S>
+                <S>Get-vRAGroupPrincipal</S>
+                <S>Get-vRAIcon</S>
+                <S>Get-vRANATNetworkProfile</S>
+                <S>Get-vRANetworkProfileIPAddressList</S>
+                <S>Get-vRANetworkProfileIPRangeSummary</S>
+                <S>Get-vRAPackage</S>
+                <S>Get-vRAPackageContent</S>
+                <S>Get-vRAPropertyDefinition</S>
+                <S>Get-vRAPropertyGroup</S>
+                <S>Get-vRARequest</S>
+                <S>Get-vRARequestDetail</S>
+                <S>Get-vRAReservation</S>
+                <S>Get-vRAReservationComputeResource</S>
+                <S>Get-vRAReservationComputeResourceMemory</S>
+                <S>Get-vRAReservationComputeResourceNetwork</S>
+                <S>Get-vRAReservationComputeResourceResourcePool</S>
+                <S>Get-vRAReservationComputeResourceStorage</S>
+                <S>Get-vRAReservationPolicy</S>
+                <S>Get-vRAReservationTemplate</S>
+                <S>Get-vRAReservationType</S>
+                <S>Get-vRAResource</S>
+                <S>Get-vRAResourceAction</S>
+                <S>Get-vRAResourceActionRequestTemplate</S>
+                <S>Get-vRAResourceMetric</S>
+                <S>Get-vRAResourceOperation</S>
+                <S>Get-vRAResourceType</S>
+                <S>Get-vRARoutedNetworkProfile</S>
+                <S>Get-vRAService</S>
+                <S>Get-vRAServiceBlueprint</S>
+                <S>Get-vRASourceMachine</S>
+                <S>Get-vRAStorageReservationPolicy</S>
+                <S>Get-vRATenant</S>
+                <S>Get-vRATenantDirectory</S>
+                <S>Get-vRATenantDirectoryStatus</S>
+                <S>Get-vRATenantRole</S>
+                <S>Get-vRAUserPrincipal</S>
+                <S>Get-vRAUserPrincipalGroupMembership</S>
+                <S>Get-vRAVersion</S>
+                <S>Import-vRAContentData</S>
+                <S>Import-vRAIcon</S>
+                <S>Import-vRAPackage</S>
+                <S>Invoke-vRADataCollection</S>
+                <S>Invoke-vRARestMethod</S>
+                <S>Invoke-vRATenantDirectorySync</S>
+                <S>New-vRABusinessGroup</S>
+                <S>New-vRAEntitlement</S>
+                <S>New-vRAExternalNetworkProfile</S>
+                <S>New-vRAGroupPrincipal</S>
+                <S>New-vRANATNetworkProfile</S>
+                <S>New-vRANetworkProfileIPRangeDefinition</S>
+                <S>New-vRAPackage</S>
+                <S>New-vRAPropertyDefinition</S>
+                <S>New-vRAPropertyGroup</S>
+                <S>New-vRAReservation</S>
+                <S>New-vRAReservationNetworkDefinition</S>
+                <S>New-vRAReservationPolicy</S>
+                <S>New-vRAReservationStorageDefinition</S>
+                <S>New-vRARoutedNetworkProfile</S>
+                <S>New-vRAService</S>
+                <S>New-vRAStorageReservationPolicy</S>
+                <S>New-vRATenant</S>
+                <S>New-vRATenantDirectory</S>
+                <S>New-vRAUserPrincipal</S>
+                <S>Remove-vRABusinessGroup</S>
+                <S>Remove-vRACustomForm</S>
+                <S>Remove-vRAExternalNetworkProfile</S>
+                <S>Remove-vRAGroupPrincipal</S>
+                <S>Remove-vRAIcon</S>
+                <S>Remove-vRANATNetworkProfile</S>
+                <S>Remove-vRAPackage</S>
+                <S>Remove-vRAPrincipalFromTenantRole</S>
+                <S>Remove-vRAPropertyDefinition</S>
+                <S>Remove-vRAPropertyGroup</S>
+                <S>Remove-vRAReservation</S>
+                <S>Remove-vRAReservationNetwork</S>
+                <S>Remove-vRAReservationPolicy</S>
+                <S>Remove-vRAReservationStorage</S>
+                <S>Remove-vRARoutedNetworkProfile</S>
+                <S>Remove-vRAService</S>
+                <S>Remove-vRAStorageReservationPolicy</S>
+                <S>Remove-vRATenant</S>
+                <S>Remove-vRATenantDirectory</S>
+                <S>Remove-vRAUserPrincipal</S>
+                <S>Request-vRACatalogItem</S>
+                <S>Request-vRAResourceAction</S>
+                <S>Set-vRABusinessGroup</S>
+                <S>Set-vRACatalogItem</S>
+                <S>Set-vRACustomForm</S>
+                <S>Set-vRAEntitlement</S>
+                <S>Set-vRAExternalNetworkProfile</S>
+                <S>Set-vRANATNetworkProfile</S>
+                <S>Set-vRAReservation</S>
+                <S>Set-vRAReservationNetwork</S>
+                <S>Set-vRAReservationPolicy</S>
+                <S>Set-vRAReservationStorage</S>
+                <S>Set-vRARoutedNetworkProfile</S>
+                <S>Set-vRAService</S>
+                <S>Set-vRAStorageReservationPolicy</S>
+                <S>Set-vRATenant</S>
+                <S>Set-vRATenantDirectory</S>
+                <S>Set-vRAUserPrincipal</S>
+                <S>Test-vRAPackage</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-vRACustomForm</S>
+                <S>Add-vRAPrincipalToTenantRole</S>
+                <S>Add-vRAReservationNetwork</S>
+                <S>Add-vRAReservationStorage</S>
+                <S>Connect-vRAServer</S>
+                <S>Disconnect-vRAServer</S>
+                <S>Export-vRAIcon</S>
+                <S>Export-vRAPackage</S>
+                <S>Get-vRAApplianceServiceStatus</S>
+                <S>Get-vRAAuthorizationRole</S>
+                <S>Get-vRABlueprint</S>
+                <S>Get-vRABusinessGroup</S>
+                <S>Get-vRACatalogItem</S>
+                <S>Get-vRACatalogItemRequestTemplate</S>
+                <S>Get-vRACatalogPrincipal</S>
+                <S>Get-vRAComponentRegistryService</S>
+                <S>Get-vRAComponentRegistryServiceEndpoint</S>
+                <S>Get-vRAComponentRegistryServiceStatus</S>
+                <S>Get-vRAContent</S>
+                <S>Get-vRAContentData</S>
+                <S>Get-vRAContentType</S>
+                <S>Get-vRACustomForm</S>
+                <S>Get-vRAEntitledCatalogItem</S>
+                <S>Get-vRAEntitledService</S>
+                <S>Get-vRAEntitlement</S>
+                <S>Get-vRAExternalNetworkProfile</S>
+                <S>Get-vRAGroupPrincipal</S>
+                <S>Get-vRAIcon</S>
+                <S>Get-vRANATNetworkProfile</S>
+                <S>Get-vRANetworkProfileIPAddressList</S>
+                <S>Get-vRANetworkProfileIPRangeSummary</S>
+                <S>Get-vRAPackage</S>
+                <S>Get-vRAPackageContent</S>
+                <S>Get-vRAPropertyDefinition</S>
+                <S>Get-vRAPropertyGroup</S>
+                <S>Get-vRARequest</S>
+                <S>Get-vRARequestDetail</S>
+                <S>Get-vRAReservation</S>
+                <S>Get-vRAReservationComputeResource</S>
+                <S>Get-vRAReservationComputeResourceMemory</S>
+                <S>Get-vRAReservationComputeResourceNetwork</S>
+                <S>Get-vRAReservationComputeResourceResourcePool</S>
+                <S>Get-vRAReservationComputeResourceStorage</S>
+                <S>Get-vRAReservationPolicy</S>
+                <S>Get-vRAReservationTemplate</S>
+                <S>Get-vRAReservationType</S>
+                <S>Get-vRAResource</S>
+                <S>Get-vRAResourceAction</S>
+                <S>Get-vRAResourceActionRequestTemplate</S>
+                <S>Get-vRAResourceMetric</S>
+                <S>Get-vRAResourceOperation</S>
+                <S>Get-vRAResourceType</S>
+                <S>Get-vRARoutedNetworkProfile</S>
+                <S>Get-vRAService</S>
+                <S>Get-vRAServiceBlueprint</S>
+                <S>Get-vRASourceMachine</S>
+                <S>Get-vRAStorageReservationPolicy</S>
+                <S>Get-vRATenant</S>
+                <S>Get-vRATenantDirectory</S>
+                <S>Get-vRATenantDirectoryStatus</S>
+                <S>Get-vRATenantRole</S>
+                <S>Get-vRAUserPrincipal</S>
+                <S>Get-vRAUserPrincipalGroupMembership</S>
+                <S>Get-vRAVersion</S>
+                <S>Import-vRAContentData</S>
+                <S>Import-vRAIcon</S>
+                <S>Import-vRAPackage</S>
+                <S>Invoke-vRADataCollection</S>
+                <S>Invoke-vRARestMethod</S>
+                <S>Invoke-vRATenantDirectorySync</S>
+                <S>New-vRABusinessGroup</S>
+                <S>New-vRAEntitlement</S>
+                <S>New-vRAExternalNetworkProfile</S>
+                <S>New-vRAGroupPrincipal</S>
+                <S>New-vRANATNetworkProfile</S>
+                <S>New-vRANetworkProfileIPRangeDefinition</S>
+                <S>New-vRAPackage</S>
+                <S>New-vRAPropertyDefinition</S>
+                <S>New-vRAPropertyGroup</S>
+                <S>New-vRAReservation</S>
+                <S>New-vRAReservationNetworkDefinition</S>
+                <S>New-vRAReservationPolicy</S>
+                <S>New-vRAReservationStorageDefinition</S>
+                <S>New-vRARoutedNetworkProfile</S>
+                <S>New-vRAService</S>
+                <S>New-vRAStorageReservationPolicy</S>
+                <S>New-vRATenant</S>
+                <S>New-vRATenantDirectory</S>
+                <S>New-vRAUserPrincipal</S>
+                <S>Remove-vRABusinessGroup</S>
+                <S>Remove-vRACustomForm</S>
+                <S>Remove-vRAExternalNetworkProfile</S>
+                <S>Remove-vRAGroupPrincipal</S>
+                <S>Remove-vRAIcon</S>
+                <S>Remove-vRANATNetworkProfile</S>
+                <S>Remove-vRAPackage</S>
+                <S>Remove-vRAPrincipalFromTenantRole</S>
+                <S>Remove-vRAPropertyDefinition</S>
+                <S>Remove-vRAPropertyGroup</S>
+                <S>Remove-vRAReservation</S>
+                <S>Remove-vRAReservationNetwork</S>
+                <S>Remove-vRAReservationPolicy</S>
+                <S>Remove-vRAReservationStorage</S>
+                <S>Remove-vRARoutedNetworkProfile</S>
+                <S>Remove-vRAService</S>
+                <S>Remove-vRAStorageReservationPolicy</S>
+                <S>Remove-vRATenant</S>
+                <S>Remove-vRATenantDirectory</S>
+                <S>Remove-vRAUserPrincipal</S>
+                <S>Request-vRACatalogItem</S>
+                <S>Request-vRAResourceAction</S>
+                <S>Set-vRABusinessGroup</S>
+                <S>Set-vRACatalogItem</S>
+                <S>Set-vRACustomForm</S>
+                <S>Set-vRAEntitlement</S>
+                <S>Set-vRAExternalNetworkProfile</S>
+                <S>Set-vRANATNetworkProfile</S>
+                <S>Set-vRAReservation</S>
+                <S>Set-vRAReservationNetwork</S>
+                <S>Set-vRAReservationPolicy</S>
+                <S>Set-vRAReservationStorage</S>
+                <S>Set-vRARoutedNetworkProfile</S>
+                <S>Set-vRAService</S>
+                <S>Set-vRAStorageReservationPolicy</S>
+                <S>Set-vRATenant</S>
+                <S>Set-vRATenantDirectory</S>
+                <S>Set-vRAUserPrincipal</S>
+                <S>Test-vRAPackage</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://raw.githubusercontent.com/jakkulabs/PowervRA/master/docs/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2016 Jakku Labs. All rights reserved.</S>
+          <S N="description">PowerShell Module for Managing VMware vRealize Automation</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://raw.githubusercontent.com/jakkulabs/PowervRA/master/docs/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2355</S>
+          <S N="downloadCount">15114</S>
+          <S N="packageSize">81990</S>
+          <S N="published">05/04/2019 12:53:03 +02:00</S>
+          <S N="created">05/04/2019 12:53:03 +02:00</S>
+          <S N="lastUpdated">12/07/2019 06:45:30 +02:00</S>
+          <S N="tags">Automation VMware vRA vRealize PSModule PSEdition_Desktop PSEdition_Core PSFunction_Add-vRACustomForm PSCommand_Add-vRACustomForm PSFunction_Add-vRAPrincipalToTenantRole PSCommand_Add-vRAPrincipalToTenantRole PSFunction_Add-vRAReservationNetwork PSCommand_Add-vRAReservationNetwork PSFunction_Add-vRAReservationStorage PSCommand_Add-vRAReservationStorage PSFunction_Connect-vRAServer PSCommand_Connect-vRAServer PSFunction_Disconnect-vRAServer PSCommand_Disconnect-vRAServer PSFunction_Export-vRAIcon PSCommand_Export-vRAIcon PSFunction_Export-vRAPackage PSCommand_Export-vRAPackage PSFunction_Get-vRAApplianceServiceStatus PSCommand_Get-vRAApplianceServiceStatus PSFunction_Get-vRAAuthorizationRole PSCommand_Get-vRAAuthorizationRole PSFunction_Get-vRABlueprint PSCommand_Get-vRABlueprint PSFunction_Get-vRABusinessGroup PSCommand_Get-vRABusinessGroup PSFunction_Get-vRACatalogItem PSCommand_Get-vRACatalogItem PSFunction_Get-vRACatalogItemRequestTemplate PSCommand_Get-vRACatalogItemRequestTemplate PSFunction_Get-vRACatalogPrincipal PSCommand_Get-vRACatalogPrincipal PSFunction_Get-vRAComponentRegistryService PSCommand_Get-vRAComponentRegistryService PSFunction_Get-vRAComponentRegistryServiceEndpoint PSCommand_Get-vRAComponentRegistryServiceEndpoint PSFunction_Get-vRAComponentRegistryServiceStatus PSCommand_Get-vRAComponentRegistryServiceStatus PSFunction_Get-vRAContent PSCommand_Get-vRAContent PSFunction_Get-vRAContentData PSCommand_Get-vRAContentData PSFunction_Get-vRAContentType PSCommand_Get-vRAContentType PSFunction_Get-vRACustomForm PSCommand_Get-vRACustomForm PSFunction_Get-vRAEntitledCatalogItem PSCommand_Get-vRAEntitledCatalogItem PSFunction_Get-vRAEntitledService PSCommand_Get-vRAEntitledService PSFunction_Get-vRAEntitlement PSCommand_Get-vRAEntitlement PSFunction_Get-vRAExternalNetworkProfile PSCommand_Get-vRAExternalNetworkProfile PSFunction_Get-vRAGroupPrincipal PSCommand_Get-vRAGroupPrincipal PSFunction_Get-vRAIcon PSCommand_Get-vRAIcon PSFunction_Get-vRANATNetworkProfile PSCommand_Get-vRANATNetworkProfile PSFunction_Get-vRANetworkProfileIPAddressList PSCommand_Get-vRANetworkProfileIPAddressList PSFunction_Get-vRANetworkProfileIPRangeSummary PSCommand_Get-vRANetworkProfileIPRangeSummary PSFunction_Get-vRAPackage PSCommand_Get-vRAPackage PSFunction_Get-vRAPackageContent PSCommand_Get-vRAPackageContent PSFunction_Get-vRAPropertyDefinition PSCommand_Get-vRAPropertyDefinition PSFunction_Get-vRAPropertyGroup PSCommand_Get-vRAPropertyGroup PSFunction_Get-vRARequest PSCommand_Get-vRARequest PSFunction_Get-vRARequestDetail PSCommand_Get-vRARequestDetail PSFunction_Get-vRAReservation PSCommand_Get-vRAReservation PSFunction_Get-vRAReservationComputeResource PSCommand_Get-vRAReservationComputeResource PSFunction_Get-vRAReservationComputeResourceMemory PSCommand_Get-vRAReservationComputeResourceMemory PSFunction_Get-vRAReservationComputeResourceNetwork PSCommand_Get-vRAReservationComputeResourceNetwork PSFunction_Get-vRAReservationComputeResourceResourcePool PSCommand_Get-vRAReservationComputeResourceResourcePool PSFunction_Get-vRAReservationComputeResourceStorage PSCommand_Get-vRAReservationComputeResourceStorage PSFunction_Get-vRAReservationPolicy PSCommand_Get-vRAReservationPolicy PSFunction_Get-vRAReservationTemplate PSCommand_Get-vRAReservationTemplate PSFunction_Get-vRAReservationType PSCommand_Get-vRAReservationType PSFunction_Get-vRAResource PSCommand_Get-vRAResource PSFunction_Get-vRAResourceAction PSCommand_Get-vRAResourceAction PSFunction_Get-vRAResourceActionRequestTemplate PSCommand_Get-vRAResourceActionRequestTemplate PSFunction_Get-vRAResourceMetric PSCommand_Get-vRAResourceMetric PSFunction_Get-vRAResourceOperation PSCommand_Get-vRAResourceOperation PSFunction_Get-vRAResourceType PSCommand_Get-vRAResourceType PSFunction_Get-vRARoutedNetworkProfile PSCommand_Get-vRARoutedNetworkProfile PSFunction_Get-vRAService PSCommand_Get-vRAService PSFunction_Get-vRAServiceBlueprint PSCommand_Get-vRAServiceBlueprint PSFunction_Get-vRASourceMachine PSCommand_Get-vRASourceMachine PSFunction_Get-vRAStorageReservationPolicy PSCommand_Get-vRAStorageReservationPolicy PSFunction_Get-vRATenant PSCommand_Get-vRATenant PSFunction_Get-vRATenantDirectory PSCommand_Get-vRATenantDirectory PSFunction_Get-vRATenantDirectoryStatus PSCommand_Get-vRATenantDirectoryStatus PSFunction_Get-vRATenantRole PSCommand_Get-vRATenantRole PSFunction_Get-vRAUserPrincipal PSCommand_Get-vRAUserPrincipal PSFunction_Get-vRAUserPrincipalGroupMembership PSCommand_Get-vRAUserPrincipalGroupMembership PSFunction_Get-vRAVersion PSCommand_Get-vRAVersion PSFunction_Import-vRAContentData PSCommand_Import-vRAContentData PSFunction_Import-vRAIcon PSCommand_Import-vRAIcon PSFunction_Import-vRAPackage PSCommand_Import-vRAPackage PSFunction_Invoke-vRADataCollection PSCommand_Invoke-vRADataCollection PSFunction_Invoke-vRARestMethod PSCommand_Invoke-vRARestMethod PSFunction_Invoke-vRATenantDirectorySync PSCommand_Invoke-vRATenantDirectorySync PSFunction_New-vRABusinessGroup PSCommand_New-vRABusinessGroup PSFunction_New-vRAEntitlement PSCommand_New-vRAEntitlement PSFunction_New-vRAExternalNetworkProfile PSCommand_New-vRAExternalNetworkProfile PSFunction_New-vRAGroupPrincipal PSCommand_New-vRAGroupPrincipal PSFunction_New-vRANATNetworkProfile PSCommand_New-vRANATNetworkProfile PSFunction_New-vRANetworkProfileIPRangeDefinition PSCommand_New-vRANetworkProfileIPRangeDefinition PSFunction_New-vRAPackage PSCommand_New-vRAPackage PSFunction_New-vRAPropertyDefinition PSCommand_New-vRAPropertyDefinition PSFunction_New-vRAPropertyGroup PSCommand_New-vRAPropertyGroup PSFunction_New-vRAReservation PSCommand_New-vRAReservation PSFunction_New-vRAReservationNetworkDefinition PSCommand_New-vRAReservationNetworkDefinition PSFunction_New-vRAReservationPolicy PSCommand_New-vRAReservationPolicy PSFunction_New-vRAReservationStorageDefinition PSCommand_New-vRAReservationStorageDefinition PSFunction_New-vRARoutedNetworkProfile PSCommand_New-vRARoutedNetworkProfile PSFunction_New-vRAService PSCommand_New-vRAService PSFunction_New-vRAStorageReservationPolicy PSCommand_New-vRAStorageReservationPolicy PSFunction_New-vRATenant PSCommand_New-vRATenant PSFunction_New-vRATenantDirectory PSCommand_New-vRATenantDirectory PSFunction_New-vRAUserPrincipal PSCommand_New-vRAUserPrincipal PSFunction_Remove-vRABusinessGroup PSCommand_Remove-vRABusinessGroup PSFunction_Remove-vRACustomForm PSCommand_Remove-vRACustomForm PSFunction_Remove-vRAExternalNetworkProfile PSCommand_Remove-vRAExternalNetworkProfile PSFunction_Remove-vRAGroupPrincipal PSCommand_Remove-vRAGroupPrincipal PSFunction_Remove-vRAIcon PSCommand_Remove-vRAIcon PSFunction_Remove-vRANATNetworkProfile PSCommand_Remove-vRANATNetworkProfile PSFunction_Remove-vRAPackage PSCommand_Remove-vRAPackage PSFunction_Remove-vRAPrincipalFromTenantRole PSCommand_Remove-vRAPrincipalFromTenantRole PSFunction_Remove-vRAPropertyDefinition PSCommand_Remove-vRAPropertyDefinition PSFunction_Remove-vRAPropertyGroup PSCommand_Remove-vRAPropertyGroup PSFunction_Remove-vRAReservation PSCommand_Remove-vRAReservation PSFunction_Remove-vRAReservationNetwork PSCommand_Remove-vRAReservationNetwork PSFunction_Remove-vRAReservationPolicy PSCommand_Remove-vRAReservationPolicy PSFunction_Remove-vRAReservationStorage PSCommand_Remove-vRAReservationStorage PSFunction_Remove-vRARoutedNetworkProfile PSCommand_Remove-vRARoutedNetworkProfile PSFunction_Remove-vRAService PSCommand_Remove-vRAService PSFunction_Remove-vRAStorageReservationPolicy PSCommand_Remove-vRAStorageReservationPolicy PSFunction_Remove-vRATenant PSCommand_Remove-vRATenant PSFunction_Remove-vRATenantDirectory PSCommand_Remove-vRATenantDirectory PSFunction_Remove-vRAUserPrincipal PSCommand_Remove-vRAUserPrincipal PSFunction_Request-vRACatalogItem PSCommand_Request-vRACatalogItem PSFunction_Request-vRAResourceAction PSCommand_Request-vRAResourceAction PSFunction_Set-vRABusinessGroup PSCommand_Set-vRABusinessGroup PSFunction_Set-vRACatalogItem PSCommand_Set-vRACatalogItem PSFunction_Set-vRACustomForm PSCommand_Set-vRACustomForm PSFunction_Set-vRAEntitlement PSCommand_Set-vRAEntitlement PSFunction_Set-vRAExternalNetworkProfile PSCommand_Set-vRAExternalNetworkProfile PSFunction_Set-vRANATNetworkProfile PSCommand_Set-vRANATNetworkProfile PSFunction_Set-vRAReservation PSCommand_Set-vRAReservation PSFunction_Set-vRAReservationNetwork PSCommand_Set-vRAReservationNetwork PSFunction_Set-vRAReservationPolicy PSCommand_Set-vRAReservationPolicy PSFunction_Set-vRAReservationStorage PSCommand_Set-vRAReservationStorage PSFunction_Set-vRARoutedNetworkProfile PSCommand_Set-vRARoutedNetworkProfile PSFunction_Set-vRAService PSCommand_Set-vRAService PSFunction_Set-vRAStorageReservationPolicy PSCommand_Set-vRAStorageReservationPolicy PSFunction_Set-vRATenant PSCommand_Set-vRATenant PSFunction_Set-vRATenantDirectory PSCommand_Set-vRATenantDirectory PSFunction_Set-vRAUserPrincipal PSCommand_Set-vRAUserPrincipal PSFunction_Test-vRAPackage PSCommand_Test-vRAPackage PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2019-07-12T06:45:30Z</S>
+          <S N="NormalizedVersion">3.6.0</S>
+          <S N="Authors">Jakku Labs</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PowervRA.nuspec|PowervRA.psd1|PowervRA.psm1</S>
+          <S N="GUID">bbe31f5e-6a10-4859-8b71-2aaef94a8be5</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Jakku Labs</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/Users/etopin/.local/share/powershell/Modules/PowervRA/3.6.0</S>
+    </MS>
+  </Obj>
+</Objs>
