@@ -1,17 +1,14 @@
 pipeline {
   agent any
   stages {
-    parallel{
-      stage('Get from branch name') {
-        steps {
-          script {
-            platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
+    stage('Prepare') {
+      parallel {
+        stage('Get from branch name') {
+          steps {
+            script {
+              platform = sh(returnStdout: true, script: "git name-rev --name-only HEAD | cut -d '-' -f 1").trim()
+            }
           }
-        }
-      }
-      stage('Install python libraries') {
-        steps {
-          sh "pip install -t lib/python -r requirement.txt"
         }
       }
     }
@@ -21,6 +18,11 @@ pipeline {
       }
     }
     stage('Capture plateform') {
+      when {
+        expression {
+          BRANCH_NAME ==~ /.*-current/
+        }
+      }
       parallel {
         stage('vRABlueprint') {
           steps {
@@ -127,8 +129,7 @@ pipeline {
 
       }
       steps {
-        sh '''git config user.name "jenkins"
-              git config user.email "jenkins@bt1resjnkns1.bpa.bouyguestelecom.fr"
+        sh '''
               git add --all
               git commit --allow-empty -m "[${GIT_BRANCH}] Pushed by Jenkins: build #${BUILD_NUMBER}"
               git push -f origin ${GIT_BRANCH}
@@ -136,6 +137,12 @@ pipeline {
       }
     }
     stage('DIFF') {
+      when {
+        expression {
+          BRANCH_NAME ==~ /.*-current/
+        }
+
+      }
       parallel {
         stage('vRABlueprint') {
           steps {
@@ -300,10 +307,7 @@ pipeline {
       }
       steps {
         sh 'git config user.name "jenkins"'
-        sh 'git config user.email "jenkins@bt1resjnkns1.bpa.bouyguestelecom.fr"'
         sh 'git add --all'
-        sh 'git rm -f .cached_session.json'
-        sh 'git rm -rf ./export_old'
         sh 'git commit --allow-empty -m "[${GIT_BRANCH}] Pushed by Jenkins: build #${BUILD_NUMBER}"'
         sh "git push -f origin ${GIT_BRANCH}:${platform}-reference"
       }

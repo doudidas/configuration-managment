@@ -1,8 +1,8 @@
 #!/bin/bash
 git push 
-git push -f origin dev:lab-current
-git push -f origin dev:lab-reference
-git push -f origin dev:maquette-current
-git push -f origin dev:maquette-reference
-git push -f origin dev:production-current
-git push -f origin dev:production-reference
+git push -f origin master:lab-current
+git push -f origin master:lab-reference
+git push -f origin master:maquette-current
+git push -f origin master:maquette-reference
+git push -f origin master:production-current
+git push -f origin master:production-reference
